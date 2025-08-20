@@ -3,7 +3,7 @@ Download area for the Optris Thermal Camera Software Development Kit.
 
 # Provided Binaries
 The following lists the provided binaries for different operating systems and platforms. On request, additional binaries can be provided. 
-Please send your requests to [info@Optris.de](mailto:info@Optris.de).
+Please send your requests to [direct-sdk@optris.com](mailto:direct-sdk@optris.com).
 
 on Linux you can use the following commands to find out the version of your `GLIBC` and `GLIBCXX`. Please, choose a library version that uses 
 the same or an older `GLIBC`/`GLIBCXX` version.
