@@ -1,0 +1,3 @@
+<map id="optris::ImageIterator" name="optris::ImageIterator">
+<area shape="rect" id="Node000001" title="Iterates in a row major fashion over the image and grants read and write access to the pixels." alt="" coords="5,5,153,211"/>
+</map>

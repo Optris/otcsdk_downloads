@@ -1,0 +1,7 @@
+<map id="Pixel.h" name="Pixel.h">
+<area shape="rect" id="Node000001" title="Contains a class encapsulating a pixel with three color channels and 8 bits of color depth." alt="" coords="47,5,113,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,64,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,32,52,69,47,66,70,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="89,79,165,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="90,30,114,66,109,69,85,32"/>
+</map>

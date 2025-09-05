@@ -1,0 +1,9 @@
+<map id="FlagState.h" name="FlagState.h">
+<area shape="rect" id="Node000001" title="Contains an enum representing the different states of the shutter flag." alt="" coords="87,5,183,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,81,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,33,71,72,67,68,119,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="106,79,165,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,31,138,65,133,65,133,31"/>
+<area shape="rect" id="Node000004" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="189,79,292,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,28,214,69,211,73,151,33"/>
+</map>

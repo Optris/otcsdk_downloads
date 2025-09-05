@@ -1,0 +1,31 @@
+<map id="ThermalFrame.h" name="ThermalFrame.h">
+<area shape="rect" id="Node000001" title="Contains a class encapsulating a thermal frame received from a device." alt="" coords="664,5,793,31"/>
+<area shape="rect" id="Node000002" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="719,255,821,280"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="779,28,818,47,836,60,850,77,859,100,861,123,856,147,847,170,821,213,794,246,789,243,817,210,843,168,851,145,855,123,854,101,845,80,832,64,815,51,777,33"/>
+<area shape="rect" id="Node000003" href="$Frame_8h.html" title="Contains a class representing a data frame received from a device." alt="" coords="416,86,599,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="697,33,554,84,552,79,696,28"/>
+<area shape="rect" id="Node000010" href="$TemperatureConverter_8h.html" title="Contains a class that converts between temperatures in the internal SDK format and in °C." alt="" coords="623,79,835,119"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="731,31,731,65,726,65,726,31"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="559,109,672,137,720,152,746,165,759,182,767,202,773,240,768,241,762,203,754,185,743,169,718,157,670,142,557,114"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="509,255,572,280"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="416,110,345,122,282,141,260,153,246,168,244,185,255,205,265,211,287,219,352,234,496,257,495,263,351,239,286,224,263,216,251,208,239,186,242,166,256,149,280,136,344,116,416,105"/>
+<area shape="rect" id="Node000005" href="$Exceptions_8h.html" title="Contains the exceptions raised by the SDK." alt="" coords="39,174,191,199"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="455,114,181,174,180,168,454,109"/>
+<area shape="rect" id="Node000009" href="$FrameIterator_8h.html" title="Contains a class that realizes the iteration over Frames." alt="" coords="501,174,732,199"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="524,109,593,163,589,167,520,114"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="89,255,176,280"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="120,199,130,241,125,242,115,200"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="234,255,293,280"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="138,197,231,246,228,250,136,202"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="5,255,65,280"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="105,201,59,247,55,243,102,198"/>
+<area shape="poly" id="edge11_Node000009_Node000002" title=" " alt="" coords="641,197,736,246,734,251,638,202"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="607,201,563,247,559,243,604,198"/>
+<area shape="poly" id="edge13_Node000010_Node000002" title=" " alt="" coords="755,117,775,139,791,166,795,186,794,206,784,243,779,241,789,206,790,186,786,168,771,142,751,121"/>
+<area shape="rect" id="Node000011" href="$TemperaturePrecision_8h.html" title="Contains an enum representing the different temperature precisions and constants denoting invalid tem..." alt="" coords="265,167,477,207"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="651,121,463,166,462,161,650,116"/>
+<area shape="poly" id="edge17_Node000011_Node000002" title=" " alt="" coords="467,204,706,251,705,256,466,209"/>
+<area shape="poly" id="edge16_Node000011_Node000007" title=" " alt="" coords="347,209,292,248,289,244,344,205"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="333,255,409,280"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="374,207,374,241,369,241,369,207"/>
+</map>

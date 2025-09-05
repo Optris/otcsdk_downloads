@@ -1,0 +1,11 @@
+<map id="Sdk.h" name="Sdk.h">
+<area shape="rect" id="Node000001" title="Contains a static class that allows for the basic configuration of the SDK and for retrieving basic i..." alt="" coords="101,5,159,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="38,152,97,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,27,53,45,30,60,12,80,8,96,14,112,25,127,40,141,37,145,21,131,9,114,3,96,8,77,27,56,51,40,99,22"/>
+<area shape="rect" id="Node000003" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="141,152,244,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,22,210,40,233,56,252,77,257,96,251,114,239,131,223,145,220,141,235,127,246,112,252,96,248,80,230,60,207,45,159,27"/>
+<area shape="rect" id="Node000004" href="$VersionInfo_8h.html" title="Contains a class encapsulating version and build information about the SDK." alt="" coords="23,79,237,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,31,133,65,127,65,127,31"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="122,106,89,143,85,140,118,103"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="142,103,175,140,171,143,138,106"/>
+</map>

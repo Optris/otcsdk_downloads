@@ -1,0 +1,13 @@
+<map id="Unicode.h" name="Unicode.h">
+<area shape="rect" id="Node000001" title="Contains defines handling unicode characters." alt="" coords="112,5,199,31"/>
+<area shape="rect" id="Node000002" href="$IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="88,79,223,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,44,158,79,153,79,153,44"/>
+<area shape="rect" id="Node000003" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="29,152,121,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,115,90,154,87,150,131,111"/>
+<area shape="rect" id="Node000006" href="$IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="146,152,325,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="180,111,224,150,220,154,176,115"/>
+<area shape="rect" id="Node000004" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="5,225,145,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="78,191,78,225,73,225,73,191"/>
+<area shape="rect" id="Node000005" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="6,299,145,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="78,264,78,299,73,299,73,264"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="optris::TemperatureConverter" name="optris::TemperatureConverter">
+<area shape="rect" id="Node000001" title="Converts temperatures in °C to and from their internal SDK representation." alt="" coords="5,5,211,211"/>
+</map>

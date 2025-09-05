@@ -1,0 +1,39 @@
+<map id="EnumerationClient.h" name="EnumerationClient.h">
+<area shape="rect" id="Node000001" title="Contains the interface definition for classes that wish to be updated about the detection of availabl..." alt="" coords="231,5,385,31"/>
+<area shape="rect" id="Node000002" href="$DeviceInfo_8h.html" title="Contains a class encapsulating important information about devices." alt="" coords="202,79,414,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,31,311,65,305,65,305,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="393,313,452,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="202,95,124,102,87,109,55,118,29,131,13,147,8,166,17,191,43,223,72,239,149,263,211,283,273,298,380,317,379,322,272,303,209,288,147,268,69,244,39,227,12,193,3,166,9,144,26,126,53,113,86,104,123,97,202,90"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="182,240,258,265"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="305,106,258,193,237,230,232,227,254,191,300,103"/>
+<area shape="rect" id="Node000005" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="282,240,385,265"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="313,104,332,226,327,226,307,104"/>
+<area shape="rect" id="Node000006" href="$DeviceType_8h.html" title="Contains an enum representing the different types of Optris thermal cameras." alt="" coords="27,159,245,185"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="284,106,175,156,172,151,282,102"/>
+<area shape="rect" id="Node000007" href="$IpAddress_8h.html" title="Contains a class holding IP v4 address." alt="" coords="565,152,736,192"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="358,101,556,146,554,151,357,107"/>
+<area shape="rect" id="Node000013" href="$Port_8h.html" title="Contains a class representing an network port." alt="" coords="371,152,541,192"/>
+<area shape="poly" id="edge19_Node000002_Node000013" title=" " alt="" coords="331,102,410,143,407,148,329,107"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="139,184,147,224,157,245,171,263,207,282,263,297,380,317,379,322,261,302,205,287,168,267,152,248,142,225,134,185"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="150,183,199,229,196,232,147,187"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="166,182,293,232,291,237,164,187"/>
+<area shape="poly" id="edge13_Node000007_Node000003" title=" " alt="" coords="632,194,591,230,540,268,462,310,460,305,537,263,588,226,629,190"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="566,192,554,195,414,217,272,242,271,237,413,212,553,189,565,187"/>
+<area shape="poly" id="edge14_Node000007_Node000005" title=" " alt="" coords="575,195,394,239,392,234,574,189"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="777,240,833,265"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="689,190,772,231,769,236,687,194"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="460,240,527,265"/>
+<area shape="poly" id="edge12_Node000007_Node000009" title=" " alt="" coords="614,194,530,236,528,231,612,190"/>
+<area shape="rect" id="Node000010" href="$Exceptions_8h.html" title="Contains the exceptions raised by the SDK." alt="" coords="601,240,753,265"/>
+<area shape="poly" id="edge15_Node000007_Node000010" title=" " alt="" coords="660,191,672,226,666,228,655,193"/>
+<area shape="poly" id="edge17_Node000010_Node000003" title=" " alt="" coords="637,268,466,315,465,310,636,263"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="682,313,769,339"/>
+<area shape="poly" id="edge16_Node000010_Node000011" title=" " alt="" coords="688,264,712,301,708,304,683,267"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="598,313,658,339"/>
+<area shape="poly" id="edge18_Node000010_Node000012" title=" " alt="" coords="671,267,646,304,642,301,667,264"/>
+<area shape="poly" id="edge21_Node000013_Node000003" title=" " alt="" coords="454,193,431,300,426,299,449,192"/>
+<area shape="poly" id="edge22_Node000013_Node000004" title=" " alt="" coords="400,195,268,238,267,233,399,189"/>
+<area shape="poly" id="edge23_Node000013_Node000005" title=" " alt="" coords="428,194,365,235,362,230,425,190"/>
+<area shape="poly" id="edge20_Node000013_Node000009" title=" " alt="" coords="467,191,484,226,480,229,463,193"/>
+<area shape="poly" id="edge24_Node000013_Node000010" title=" " alt="" coords="510,190,633,233,631,238,508,195"/>
+</map>

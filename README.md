@@ -1,6 +1,10 @@
 # Optris Thermal Camera SDK (otcsdk)
 Download area for the Optris Thermal Camera Software Development Kit. 
 
+# Documentation
+The API documentation is included with the SDK installation.
+Additionally, the documentation for the latest version is available online and can be accessed via this link.
+
 # Provided Binaries
 The following lists the provided binaries for different operating systems and platforms. On request, additional binaries can be provided. 
 Please send your requests to [direct-sdk@optris.com](mailto:direct-sdk@optris.com).

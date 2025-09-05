@@ -1,0 +1,14 @@
+<map id="FlagState.h" name="FlagState.h">
+<area shape="rect" id="Node000001" title="Contains an enum representing the different states of the shutter flag." alt="" coords="79,5,175,31"/>
+<area shape="rect" id="Node000002" href="$FrameMetadata_8h.html" title="Contains a class encapsulating the metadata associated with each frame." alt="" coords="5,79,143,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,43,85,80,81,77,108,40"/>
+<area shape="rect" id="Node000003" href="$IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="62,152,193,177"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="144,42,158,78,159,99,154,120,138,153,133,150,149,118,154,99,153,79,139,44"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,113,121,150,117,153,89,117"/>
+<area shape="rect" id="Node000004" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="81,225,173,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="130,191,130,225,125,225,125,191"/>
+<area shape="rect" id="Node000005" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="57,299,197,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="130,264,130,299,125,299,125,264"/>
+<area shape="rect" id="Node000006" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="58,372,197,397"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="130,338,130,372,125,372,125,338"/>
+</map>

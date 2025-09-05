@@ -1,0 +1,3 @@
+<map id="optris::ConstMeasurementFieldIterator" name="optris::ConstMeasurementFieldIterator">
+<area shape="rect" id="Node000001" title="Iterates over a measurement field in a row major fashion and grants read access." alt="" coords="5,5,251,205"/>
+</map>

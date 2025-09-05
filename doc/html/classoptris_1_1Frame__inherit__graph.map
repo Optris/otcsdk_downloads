@@ -1,0 +1,5 @@
+<map id="optris::Frame" name="optris::Frame">
+<area shape="rect" id="Node000001" title="Represents a data frame received from a device." alt="" coords="33,5,179,271"/>
+<area shape="rect" id="Node000002" href="$classoptris_1_1ThermalFrame.html" title="Encapsulates thermal frame data received from a device." alt="" coords="5,319,207,644"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,285,109,318,103,318,103,285"/>
+</map>

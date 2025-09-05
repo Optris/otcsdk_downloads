@@ -1,0 +1,30 @@
+<map id="DeviceNetworkConfig.h" name="DeviceNetworkConfig.h">
+<area shape="rect" id="Node000001" title="Contains a class encapsulating the on device network configuration." alt="" coords="103,5,278,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="26,167,93,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,33,127,52,95,80,75,117,66,154,60,152,70,115,91,77,124,48,160,28"/>
+<area shape="rect" id="Node000003" href="$IpAddress_8h.html" title="Contains a class holding IP v4 address." alt="" coords="300,79,470,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="220,28,326,71,324,76,218,33"/>
+<area shape="rect" id="Node000011" href="$Port_8h.html" title="Contains a class representing an network port." alt="" coords="105,79,276,119"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="193,31,193,65,188,65,188,31"/>
+<area shape="poly" id="edge5_Node000003_Node000002" title=" " alt="" coords="306,121,107,169,106,164,305,116"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="572,167,628,192"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="437,116,559,161,558,166,435,121"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="420,167,496,192"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="405,117,440,155,436,158,401,121"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="248,240,306,265"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="447,116,478,130,504,148,518,169,517,181,511,194,498,205,479,214,429,230,320,249,319,244,428,225,477,209,495,200,507,190,512,180,513,170,500,152,476,135,445,121"/>
+<area shape="rect" id="Node000007" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="294,167,396,192"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="378,120,359,155,355,153,373,118"/>
+<area shape="rect" id="Node000008" href="$Exceptions_8h.html" title="Contains the exceptions raised by the SDK." alt="" coords="117,167,269,192"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="340,121,235,164,233,159,338,116"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="208,190,254,229,251,233,205,194"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="52,240,139,265"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="179,194,124,234,121,229,176,190"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="163,240,223,265"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="196,192,196,226,190,226,190,192"/>
+<area shape="poly" id="edge13_Node000011_Node000002" title=" " alt="" coords="160,121,92,162,89,157,157,117"/>
+<area shape="poly" id="edge15_Node000011_Node000005" title=" " alt="" coords="255,116,408,161,407,166,254,121"/>
+<area shape="poly" id="edge14_Node000011_Node000006" title=" " alt="" coords="105,117,62,129,27,146,15,155,9,166,9,177,16,190,39,213,61,226,84,232,109,234,165,232,198,233,234,237,234,243,198,238,166,237,109,239,83,238,59,231,35,217,12,194,4,179,4,164,11,152,24,141,60,124,104,112"/>
+<area shape="poly" id="edge16_Node000011_Node000007" title=" " alt="" coords="228,116,311,158,309,163,226,121"/>
+<area shape="poly" id="edge17_Node000011_Node000008" title=" " alt="" coords="194,119,195,153,189,153,188,119"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="Frame.h" name="Frame.h">
+<area shape="rect" id="Node000001" title="Contains a class representing a data frame received from a device." alt="" coords="179,5,254,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,152,68,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,27,84,48,41,63,25,71,15,80,9,94,10,109,23,139,18,141,5,110,4,93,10,77,22,67,39,58,83,42,179,22"/>
+<area shape="rect" id="Node000003" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="115,152,217,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,29,250,43,265,62,274,83,270,105,247,131,218,149,215,144,243,127,265,103,268,84,261,65,246,47,230,33"/>
+<area shape="rect" id="Node000004" href="$Exceptions_8h.html" title="Contains the exceptions raised by the SDK." alt="" coords="331,79,483,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="248,28,364,71,362,76,246,33"/>
+<area shape="rect" id="Node000008" href="$FrameIterator_8h.html" title="Contains a class that realizes the iteration over Frames." alt="" coords="25,79,256,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="206,33,165,71,161,67,203,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="267,152,353,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="393,106,339,146,336,141,390,102"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="378,152,437,177"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="410,104,410,138,405,138,405,104"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="461,152,521,177"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="423,102,469,141,465,145,419,106"/>
+<area shape="poly" id="edge8_Node000008_Node000002" title=" " alt="" coords="125,106,67,146,64,142,122,102"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="147,103,160,138,155,140,142,105"/>
+</map>

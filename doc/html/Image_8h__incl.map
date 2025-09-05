@@ -1,0 +1,29 @@
+<map id="Image.h" name="Image.h">
+<area shape="rect" id="Node000001" title="Contains a class that encapsulates false color images." alt="" coords="213,5,288,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="24,152,87,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,33,84,146,81,141,233,29"/>
+<area shape="rect" id="Node000003" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="164,225,267,251"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,30,165,45,109,69,55,105,33,127,14,153,8,172,12,186,24,199,43,209,95,223,151,231,150,236,94,229,41,214,21,203,8,189,3,171,9,151,28,124,52,101,106,65,163,40,212,25"/>
+<area shape="rect" id="Node000004" href="$Exceptions_8h.html" title="Contains the exceptions raised by the SDK." alt="" coords="569,79,721,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="288,23,569,74,568,79,287,29"/>
+<area shape="rect" id="Node000008" href="$Pixel_8h.html" title="Contains a class encapsulating a pixel with three color channels and 8 bits of color depth." alt="" coords="394,152,568,177"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="288,17,327,22,372,31,417,49,456,77,467,91,475,106,482,138,477,139,469,108,462,93,453,81,415,54,371,36,326,27,288,23"/>
+<area shape="rect" id="Node000010" href="$ImageInfo_8h.html" title="Contains a class holding detail information about the properties of a false color image." alt="" coords="112,152,320,177"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="238,33,218,53,202,80,199,94,200,109,207,139,202,140,194,110,194,94,197,78,214,50,234,29"/>
+<area shape="rect" id="Node000011" href="$ImageIterator_8h.html" title="Contains class that realize the iteration over the pixels of false color images." alt="" coords="212,79,443,104"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="265,29,307,67,303,71,261,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="643,152,730,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="654,103,675,139,671,141,650,106"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="560,225,618,251"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="643,105,601,213,596,212,638,103"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="754,152,814,177"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="669,102,750,143,748,148,666,106"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="500,175,562,215,559,220,497,180"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="443,225,519,251"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="484,178,484,212,478,212,478,178"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="218,178,218,212,213,212,213,178"/>
+<area shape="poly" id="edge13_Node000011_Node000002" title=" " alt="" coords="285,107,102,154,100,149,283,101"/>
+<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="335,104,342,138,341,159,334,179,309,205,277,223,274,218,305,201,330,176,336,158,337,139,329,105"/>
+<area shape="poly" id="edge16_Node000011_Node000008" title=" " alt="" coords="354,102,445,144,443,149,351,106"/>
+<area shape="poly" id="edge15_Node000011_Node000010" title=" " alt="" coords="311,106,247,147,245,142,308,102"/>
+</map>

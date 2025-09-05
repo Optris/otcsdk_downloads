@@ -1,0 +1,21 @@
+<map id="FrameMetadata.h" name="FrameMetadata.h">
+<area shape="rect" id="Node000001" title="Contains a class encapsulating the metadata associated with each frame." alt="" coords="107,5,244,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,68,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,33,73,75,70,70,152,28"/>
+<area shape="rect" id="Node000003" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="68,152,171,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,33,149,54,134,80,126,110,122,139,117,138,120,109,129,78,144,51,162,29"/>
+<area shape="rect" id="Node000004" href="$Exceptions_8h.html" title="Contains the exceptions raised by the SDK." alt="" coords="373,79,525,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="220,28,392,73,391,78,219,33"/>
+<area shape="rect" id="Node000008" href="$FlagState_8h.html" title="Contains an enum representing the different states of the shutter flag." alt="" coords="144,79,348,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="189,29,227,67,223,71,185,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="401,152,488,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="451,104,449,139,443,138,445,104"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="315,152,374,177"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="433,106,375,146,372,142,430,102"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="512,152,572,177"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="465,102,518,141,514,146,462,106"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="227,106,153,147,151,143,224,102"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="263,102,319,142,316,146,260,106"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="208,152,284,177"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="249,104,249,138,243,138,243,104"/>
+</map>

@@ -1,0 +1,27 @@
+var classoptris_1_1ImageBuilder =
+[
+    [ "LookupTable", "classoptris_1_1ImageBuilder.html#a51f87bd4e00f7706baf9dca0aa51216b", null ],
+    [ "ImageBuilder", "classoptris_1_1ImageBuilder.html#a9f614ded340d74204deb69893fd2e2ec", null ],
+    [ "convertTemperatureToPaletteImage", "classoptris_1_1ImageBuilder.html#a5903b216c29b82c67faa41c4f9e173f4", null ],
+    [ "convertTemperatureToPaletteImage", "classoptris_1_1ImageBuilder.html#aff3b0ca7f0f5a395e4265fadc08d4b29", null ],
+    [ "copyImageDataTo", "classoptris_1_1ImageBuilder.html#a6258561c3b6ab493ebdd6da702dafefb", null ],
+    [ "createLookupTable", "classoptris_1_1ImageBuilder.html#a6201ec6ae16c1972d6648ffe67c23628", null ],
+    [ "getHeight", "classoptris_1_1ImageBuilder.html#a36e9adced70e52672ab26e5cc3016eff", null ],
+    [ "getImage", "classoptris_1_1ImageBuilder.html#a0a00cefadc77361c62823e99eda115c6", null ],
+    [ "getImageSizeInBytes", "classoptris_1_1ImageBuilder.html#a57098cbb2371ae2add656c82e7193a39", null ],
+    [ "getImageStride", "classoptris_1_1ImageBuilder.html#a42ab47e197a94cd4bbffd4317c84e27c", null ],
+    [ "getIsothermalMax", "classoptris_1_1ImageBuilder.html#a478245b4c03c1469f885f5afbed0f6dc", null ],
+    [ "getIsothermalMin", "classoptris_1_1ImageBuilder.html#ab0f3975180607e8dc2449666b5f523e0", null ],
+    [ "getMeanTemperatureInRegion", "classoptris_1_1ImageBuilder.html#a57edf2f6e9c79dd87f3bca0d15bea08a", null ],
+    [ "getMinMaxRegions", "classoptris_1_1ImageBuilder.html#ae2578badd5bc4647d2516d508ed61af8", null ],
+    [ "getPalette", "classoptris_1_1ImageBuilder.html#a44f56d8a903aeb6c8778f6d8a9b24e98", null ],
+    [ "getPaletteScalingMethod", "classoptris_1_1ImageBuilder.html#a95151ccd4d69d42afcb5b0240ba57ced", null ],
+    [ "getTemperature", "classoptris_1_1ImageBuilder.html#ae9b74eb00aca77302c9472d327cab297", null ],
+    [ "getTemperature", "classoptris_1_1ImageBuilder.html#a2b95572b6580b0c593aaf9ec308358ba", null ],
+    [ "getThermalFrame", "classoptris_1_1ImageBuilder.html#a141f6cd762f5d1e2452340fb0da4dae4", null ],
+    [ "getWidth", "classoptris_1_1ImageBuilder.html#a74011786f5266db3f39d2ccf8c09596a", null ],
+    [ "setManualTemperatureRange", "classoptris_1_1ImageBuilder.html#a5a6e5fd9f4d9c88c4c37be8330962b83", null ],
+    [ "setPalette", "classoptris_1_1ImageBuilder.html#a505b64b4a2c643cf5a5f9a82d2d3e285", null ],
+    [ "setPaletteScalingMethod", "classoptris_1_1ImageBuilder.html#a8f3513058fc0c5c1526163c88ab52dde", null ],
+    [ "setThermalFrame", "classoptris_1_1ImageBuilder.html#ae6a3ff44be6a610a7f1ca66e0eddae60", null ]
+];

@@ -1,0 +1,16 @@
+<map id="ImageIterator.h" name="ImageIterator.h">
+<area shape="rect" id="Node000001" title="Contains class that realize the iteration over the pixels of false color images." alt="" coords="115,5,238,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,68,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,33,73,75,70,70,153,28"/>
+<area shape="rect" id="Node000003" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="125,152,228,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,32,140,64,133,83,134,103,144,123,157,140,153,143,139,126,129,105,127,83,135,62,161,29"/>
+<area shape="rect" id="Node000004" href="$ImageInfo_8h.html" title="Contains a class holding detail information about the properties of a false color image." alt="" coords="143,79,351,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="190,29,228,67,224,71,186,33"/>
+<area shape="rect" id="Node000005" href="$Pixel_8h.html" title="Contains a class encapsulating a pixel with three color channels and 8 bits of color depth." alt="" coords="375,79,549,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="223,28,403,73,402,78,222,33"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="238,106,200,144,196,140,234,102"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="386,152,445,177"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="457,106,433,142,428,139,452,103"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="469,152,545,177"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="472,103,495,139,490,142,467,106"/>
+</map>

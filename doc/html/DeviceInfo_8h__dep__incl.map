@@ -1,0 +1,17 @@
+<map id="DeviceInfo.h" name="DeviceInfo.h">
+<area shape="rect" id="Node000001" title="Contains a class encapsulating important information about devices." alt="" coords="207,5,311,31"/>
+<area shape="rect" id="Node000002" href="$EnumerationClient_8h.html" title="Contains the interface definition for classes that wish to be updated about the detection of availabl..." alt="" coords="5,79,160,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,38,112,81,110,76,217,33"/>
+<area shape="rect" id="Node000003" href="$EnumerationManager_8h.html" title="Contains a class that monitors available devices." alt="" coords="111,152,284,177"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="245,43,225,80,211,119,202,152,197,151,206,117,220,78,241,41"/>
+<area shape="rect" id="Node000004" href="$EnumerationDetector_8h.html" title="Contains the interface definition for classes detecting available devices." alt="" coords="235,79,407,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="280,39,313,77,309,80,276,43"/>
+<area shape="rect" id="Node000005" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="431,79,523,104"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="308,32,443,76,441,81,306,37"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,109,180,150,177,154,111,113"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="291,113,219,154,216,149,288,108"/>
+<area shape="rect" id="Node000006" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="407,152,547,177"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="480,118,480,152,475,152,475,118"/>
+<area shape="rect" id="Node000007" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="408,225,547,251"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="480,191,480,225,475,225,475,191"/>
+</map>

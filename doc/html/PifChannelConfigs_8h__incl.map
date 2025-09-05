@@ -1,0 +1,17 @@
+<map id="PifChannelConfigs.h" name="PifChannelConfigs.h">
+<area shape="rect" id="Node000001" title="Contains classes holding the configuration parameter for the different process interface channels." alt="" coords="196,5,348,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="183,152,259,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,32,232,140,227,138,265,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="328,152,387,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="276,30,284,64,300,103,315,123,333,141,330,145,311,127,295,105,279,66,271,32"/>
+<area shape="rect" id="Node000004" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="446,152,549,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="349,26,444,45,485,59,510,77,517,92,519,108,512,140,506,138,513,108,512,93,506,80,482,64,443,50,348,31"/>
+<area shape="rect" id="Node000005" href="$Slope_8h.html" title="Contains a class holding the parameters for a linear transformation." alt="" coords="5,79,184,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="244,33,137,76,135,71,243,28"/>
+<area shape="rect" id="Node000006" href="$PifProperties_8h.html" title="Contains enums defining various properties of process interfaces." alt="" coords="310,79,495,104"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="294,28,371,70,368,74,292,33"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="116,102,190,143,187,147,114,106"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="375,107,265,149,263,144,373,102"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="397,106,374,142,370,139,393,103"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="419,102,472,141,469,146,416,106"/>
+</map>

@@ -1,0 +1,29 @@
+<map id="TemperaturePrecision.h" name="TemperaturePrecision.h">
+<area shape="rect" id="Node000001" title="Contains an enum representing the different temperature precisions and constants denoting invalid tem..." alt="" coords="89,5,264,31"/>
+<area shape="rect" id="Node000002" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="29,299,121,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,38,91,55,68,80,56,108,49,139,47,171,50,202,61,258,73,298,68,299,56,260,44,203,42,171,44,138,51,107,64,77,88,51,119,34"/>
+<area shape="rect" id="Node000005" href="$MeasurementFieldConfig_8h.html" title="Contains a class encapsulating the configuration of a measurement field." alt="" coords="79,79,275,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="179,44,179,79,174,79,174,44"/>
+<area shape="rect" id="Node000010" href="$TemperatureConverter_8h.html" title="Contains a class that converts between temperatures in the internal SDK format and in °C." alt="" coords="299,79,478,104"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="224,32,355,76,353,81,223,37"/>
+<area shape="rect" id="Node000003" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="5,372,145,397"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,338,78,372,73,372,73,338"/>
+<area shape="rect" id="Node000004" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="6,445,145,471"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="78,411,78,445,73,445,73,411"/>
+<area shape="rect" id="Node000006" href="$IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="109,152,244,177"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="179,118,179,152,174,152,174,118"/>
+<area shape="rect" id="Node000008" href="$MeasurementField_8h.html" title="Contains a class encapsulating the properties and data of a rectangular measurement field." alt="" coords="277,152,431,177"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="219,107,326,149,324,154,217,112"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="146,187,123,205,103,227,86,265,79,299,74,298,81,263,98,224,119,201,142,183"/>
+<area shape="rect" id="Node000007" href="$IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="113,225,291,251"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="188,189,200,224,195,226,183,191"/>
+<area shape="rect" id="Node000009" href="$IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="315,225,446,251"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="366,189,379,224,374,226,361,191"/>
+<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="319,256,122,302,121,297,318,251"/>
+<area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="379,118,362,153,357,151,375,115"/>
+<area shape="rect" id="Node000011" href="$ThermalFrame_8h.html" title="Contains a class encapsulating a thermal frame received from a device." alt="" coords="456,152,585,177"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="423,108,500,149,498,154,420,113"/>
+<area shape="poly" id="edge14_Node000011_Node000009" title=" " alt="" coords="487,186,405,227,402,223,485,181"/>
+<area shape="rect" id="Node000012" href="$ImageBuilder_8h.html" title="Contains a class that converts thermal frames into false color images." alt="" coords="470,225,590,251"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="527,191,531,225,526,226,521,191"/>
+</map>

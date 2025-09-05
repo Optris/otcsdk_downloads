@@ -1,0 +1,22 @@
+<map id="Port.h" name="Port.h">
+<area shape="rect" id="Node000001" title="Contains a class representing an network port." alt="" coords="365,5,425,31"/>
+<area shape="rect" id="Node000002" href="$DeviceInfo_8h.html" title="Contains a class encapsulating important information about devices." alt="" coords="261,79,365,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="373,42,328,80,325,76,370,38"/>
+<area shape="rect" id="Node000009" href="$DeviceNetworkConfig_8h.html" title="Contains a class encapsulating the on device network configuration." alt="" coords="390,79,565,104"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="420,38,466,76,462,80,417,42"/>
+<area shape="rect" id="Node000003" href="$EnumerationClient_8h.html" title="Contains the interface definition for classes that wish to be updated about the detection of availabl..." alt="" coords="5,152,160,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="264,111,121,154,119,149,262,106"/>
+<area shape="rect" id="Node000004" href="$EnumerationManager_8h.html" title="Contains a class that monitors available devices." alt="" coords="111,225,284,251"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="276,113,248,130,225,154,215,172,208,191,201,226,196,225,202,190,210,169,221,150,245,126,273,108"/>
+<area shape="rect" id="Node000005" href="$EnumerationDetector_8h.html" title="Contains the interface definition for classes detecting available devices." alt="" coords="235,152,407,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="319,117,323,152,317,152,314,118"/>
+<area shape="rect" id="Node000006" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="431,152,523,177"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="353,107,452,149,449,154,351,112"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="114,182,180,223,177,227,111,187"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="291,186,219,227,216,223,288,182"/>
+<area shape="rect" id="Node000007" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="407,225,547,251"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="480,191,480,225,475,225,475,191"/>
+<area shape="rect" id="Node000008" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="408,299,547,324"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="480,264,480,299,475,299,475,264"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="480,118,480,152,475,152,475,118"/>
+</map>

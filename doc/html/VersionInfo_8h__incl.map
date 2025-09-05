@@ -1,0 +1,7 @@
+<map id="VersionInfo.h" name="VersionInfo.h">
+<area shape="rect" id="Node000001" title="Contains a class encapsulating version and build information about the SDK." alt="" coords="33,5,140,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,64,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,33,53,69,49,66,76,29"/>
+<area shape="rect" id="Node000003" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="89,79,191,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="98,29,125,66,121,69,93,33"/>
+</map>

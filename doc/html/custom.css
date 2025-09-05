@@ -1,0 +1,13 @@
+html.dark-mode {
+  /* primary theme color. This will affect the entire websites color scheme: links, arrows, labels, ... */
+  --primary-color: #e3001b;
+  --primary-dark-color: #e3001b;
+  --primary-light-color: #e3001b;
+}
+
+html.light-mode {
+  /* primary theme color. This will affect the entire websites color scheme: links, arrows, labels, ... */
+  --primary-color: #e3001b;
+  --primary-dark-color: #e3001b;
+  --primary-light-color: #e3001b;
+}

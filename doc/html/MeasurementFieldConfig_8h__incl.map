@@ -1,0 +1,19 @@
+<map id="MeasurementFieldConfig.h" name="MeasurementFieldConfig.h">
+<area shape="rect" id="Node000001" title="Contains a class encapsulating the configuration of a measurement field." alt="" coords="273,5,469,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="295,167,353,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="423,28,462,46,480,60,494,77,502,99,494,120,477,131,445,143,368,168,366,163,443,138,475,126,490,117,497,99,490,80,476,64,459,51,421,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="378,167,454,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="461,28,504,46,523,60,538,77,546,98,538,120,524,137,507,151,468,169,466,164,504,146,520,133,534,117,541,98,534,80,519,64,501,51,459,33"/>
+<area shape="rect" id="Node000004" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="81,167,183,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="273,25,197,30,120,40,55,57,31,68,15,80,10,89,8,98,16,117,40,142,71,159,68,164,36,147,11,120,3,98,5,88,11,77,29,63,53,52,119,35,197,25,272,19"/>
+<area shape="rect" id="Node000005" href="$TemperaturePrecision_8h.html" title="Contains an enum representing the different temperature precisions and constants denoting invalid tem..." alt="" coords="26,79,238,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="337,33,203,77,201,72,335,28"/>
+<area shape="rect" id="Node000006" href="$FieldProperties_8h.html" title="Contains various enums representing properties of fields." alt="" coords="262,86,479,111"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="373,31,373,72,368,72,368,31"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="179,116,284,159,282,164,177,121"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="201,116,365,161,364,167,199,121"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="135,119,135,153,129,153,129,119"/>
+<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="366,113,340,156,336,153,361,110"/>
+<area shape="poly" id="edge10_Node000006_Node000003" title=" " alt="" coords="380,110,405,153,400,156,375,113"/>
+<area shape="poly" id="edge11_Node000006_Node000004" title=" " alt="" coords="337,114,180,165,179,160,335,109"/>
+</map>

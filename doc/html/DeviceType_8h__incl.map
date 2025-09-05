@@ -1,0 +1,9 @@
+<map id="DeviceType.h" name="DeviceType.h">
+<area shape="rect" id="Node000001" title="Contains an enum representing the different types of Optris thermal cameras." alt="" coords="72,5,181,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,64,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,33,62,72,59,68,110,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="89,79,165,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,31,129,65,124,65,124,31"/>
+<area shape="rect" id="Node000004" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="189,79,291,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,28,212,69,209,74,143,33"/>
+</map>
