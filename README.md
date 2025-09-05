@@ -3,7 +3,7 @@ Download area for the Optris Thermal Camera Software Development Kit.
 
 # Documentation
 The API documentation is included with the SDK installation.
-Additionally, the documentation for the latest version is available online and can be accessed via this link.
+Additionally, the documentation for the latest version is available online and can be accessed via [this link](https://optris.github.io/otcsdk_downloads/).
 
 # Provided Binaries
 The following lists the provided binaries for different operating systems and platforms. On request, additional binaries can be provided. 
