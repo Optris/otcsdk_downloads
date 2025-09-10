@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('troubleshooting.html',''); initResizab
   <div class="headertitle"><div class="title">Troubleshooting</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md134"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md131"></a>
 Contents</h1>
 <ul>
 <li><a class="el" href="troubleshooting.html#troubleshooting-linux">Linux</a></li>
@@ -115,7 +115,7 @@ Contents</h1>
 </ul>
 <h1><a class="anchor" id="troubleshooting-linux"></a>
 Linux</h1>
-<h2><a class="anchor" id="autotoc_md135"></a>
+<h2><a class="anchor" id="autotoc_md132"></a>
 User Groups</h2>
 <p><em>My SDK application can not access the data stream from the device.</em></p>
 <p>Check, if you as a user are part of the <code>video</code> group:</p>
@@ -123,7 +123,7 @@ User Groups</h2>
 </div><!-- fragment --><p>If this is not the case, add yourself to this group:</p>
 <div class="fragment"><div class="line">sudo usermod -a -G video &lt;username&gt;</div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>You need to log out and in again for the group changes to take effect.</dd></dl>
-<h2><a class="anchor" id="autotoc_md136"></a>
+<h2><a class="anchor" id="autotoc_md133"></a>
 UVC Driver Settings</h2>
 <p>For some devices passing the <code>nodrop</code> option to the UVC kernel driver may prove helpful. You can temporarily activate this option with the following command:</p>
 <div class="fragment"><div class="line">sudo rmmod uvcvideo; sudo modprobe uvcvideo nodrop=1</div>
@@ -132,7 +132,7 @@ UVC Driver Settings</h2>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The changes above are not permanent. They are reset after a reboot.</dd></dl>
 <p>If you find this option helpful, you can activate it permanently by creating the following file:</p>
 <div class="fragment"><div class="line">sudo bash -c &#39;echo &quot;options uvcvideo nodrop=1&quot; &gt; /etc/modprobe.d/uvcvideo.conf&#39;</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md137"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md134"></a>
 No device found</h2>
 <p><em>When I start my SDK application I get the following error message although my device is plugged into the USB port:</em></p>
 <div class="image">
@@ -144,7 +144,7 @@ No device found.</div></div>
 <p>The only way to remedy this issue is to plug the device out and in again. You can avoid this problem by ensuring that the SDK can shutdown gracefully. This can be achieved by either calling <code>IRImager::disconnect()</code> or by making sure that yor <code>IRImager</code> object is destroyed before the application exits.</p>
 <h1><a class="anchor" id="troubleshooting-false-color-images"></a>
 False Color Images</h1>
-<h2><a class="anchor" id="autotoc_md138"></a>
+<h2><a class="anchor" id="autotoc_md135"></a>
 Unexpected Colors</h2>
 <p><em>The false color image does not seem to use the <code>ColoringPalette</code> that I specified.</em></p>
 <p>Check, whether you specified the correct <code>ColorFormat</code> when instantiating the <code>ImageBuilder</code>. Refer to the API documentation of the <code>ColorFormat</code> enum for more details.</p>
@@ -152,7 +152,7 @@ Unexpected Colors</h2>
 <img src="faulty_color_format.jpg" alt=""/>
 <div class="caption">
 Effect of a wrong ColorFormat on the ColoringPalette Iron (left: correct, right: faulty).</div></div>
-    <h2><a class="anchor" id="autotoc_md139"></a>
+    <h2><a class="anchor" id="autotoc_md136"></a>
 Tearing</h2>
 <p><em>The false color image I generated exhibits tearing and lines.</em></p>
 <p>Check, whether you specified the correct <code>WidthAlignment</code> when creating the <code>ImageBuilder</code>. Refer to the API documentation of the <code>WidthAlignment</code> enum for more details.</p>

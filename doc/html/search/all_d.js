@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['gain_0',['gain',['../classoptris_1_1Slope.html#a604e0e34a8ee1e3dea355f0893754140',1,'optris::Slope::gain'],['../important-files.html#autotoc_md101',1,'slope.gain'],['../important-files.html#autotoc_md115',1,'slope.gain']]],
+  ['gain_0',['gain',['../classoptris_1_1Slope.html#a604e0e34a8ee1e3dea355f0893754140',1,'optris::Slope::gain'],['../important-files.html#autotoc_md98',1,'slope.gain'],['../important-files.html#autotoc_md112',1,'slope.gain']]],
   ['gen_5fl_1',['GEN_L',['../Unicode_8h.html#a359049867061d780e2536f3540701eff',1,'Unicode.h']]],
   ['getactiveoperationmode_2',['getActiveOperationMode',['../classoptris_1_1IRImager.html#ad0bab830f67cd898cde78c911f788c67',1,'optris::IRImager']]],
   ['getactualaicount_3',['getActualAiCount',['../classoptris_1_1ProcessInterface.html#a8aae56111cdae03ab51bc93e258a6b67',1,'optris::ProcessInterface']]],
@@ -142,5 +142,5 @@ var searchData=
   ['github_139',['GitHub',['../contact.html#contact-github',1,'']]],
   ['graybw_140',['GrayBW',['../namespaceoptris.html#a742464998770cc0985ebe451cc8e0f89a89ea532194b0604d62c7b8408fc0b3be',1,'optris']]],
   ['graywb_141',['GrayWB',['../namespaceoptris.html#a742464998770cc0985ebe451cc8e0f89a18b6f039fb79ee0dafdfd0b11a25cb46',1,'optris']]],
-  ['groups_142',['User Groups',['../troubleshooting.html#autotoc_md135',1,'']]]
+  ['groups_142',['User Groups',['../troubleshooting.html#autotoc_md132',1,'']]]
 ];

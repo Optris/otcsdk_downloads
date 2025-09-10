@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('example-applications.html',''); initRe
   <div class="headertitle"><div class="title">Example Applications</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md126"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md123"></a>
 Contents</h1>
 <ul>
 <li><a class="el" href="example-applications.html#example-applications-preparations">Preparations</a></li>
@@ -141,7 +141,7 @@ Minimal example.</div></div>
 <h1><a class="anchor" id="example-applications-pif"></a>
 PIF</h1>
 <p>This example is based on the <a class="el" href="example-applications.html#example-applications-minimal">Minimal example</a> but also shows some ways to access and configure the Process Interface (PIF).</p>
-<h2><a class="anchor" id="autotoc_md127"></a>
+<h2><a class="anchor" id="autotoc_md124"></a>
 Setting Modes</h2>
 <p>The configuration of the PIF is grouped in the <code>configurePif()</code> method. It checks which PIF device is connected and, dependent on the available inputs and outputs, sets these following modes for the first pin of each channel:</p>
 <table class="markdownTable">
@@ -164,29 +164,29 @@ Setting Modes</h2>
 <div class="caption">
 Output PIF Channel Configuration</div></div>
     <p>The following sections explain the settings of each mode in this example in greater detail.</p>
-<h3><a class="anchor" id="autotoc_md128"></a>
+<h3><a class="anchor" id="autotoc_md125"></a>
 Analog Input</h3>
 <p>For the analog input, the <b>Uncommitted Value</b> mode was selected for this example. It simulates that a pressure sensor is connected to the input and that its voltage level reflects the current pressure. The unit is set to <code>"Pa"</code> and the offset to <code>0</code>. With a gain of <code>0.1</code> this means that a voltage of 2.16 V translates into 21.6 Pa. Every time the input value changes it will be made available via the <code>onPifUncommittedValue()</code>, which in this example just prints the value.</p>
 <div class="image">
 <img src="example_pif_uncommittedValue.png" alt=""/>
 <div class="caption">
 Example PIF Uncommitted Value</div></div>
-    <h3><a class="anchor" id="autotoc_md129"></a>
+    <h3><a class="anchor" id="autotoc_md126"></a>
 Analog Output</h3>
 <p>For the analog output, the <b>Internal Temperature</b> mode was selected for this example. With a gain of <code>0.1</code> and a offset of <code>0</code>, this means that a internal temperature of 34.5 °C would translate into 3.45 V on the pin.</p>
-<h3><a class="anchor" id="autotoc_md130"></a>
+<h3><a class="anchor" id="autotoc_md127"></a>
 Digital Input</h3>
 <p>For the digital input, the <b>Flag Control</b> mode was selected for this example. Since the parameter <code>openIfLow</code> is set to <code>true</code>, the flag is open if the input voltage is below 2 V.</p>
 <dl class="section attention"><dt>Attention</dt><dd>If a PIF with a digital input is in use (e.g. standard, industrial,... ), the <b>Flag Control</b> mode will be active. Therefore, the input voltage is solely responsible for cycling the flag.</dd></dl>
-<h3><a class="anchor" id="autotoc_md131"></a>
+<h3><a class="anchor" id="autotoc_md128"></a>
 Digital Output</h3>
 <p>For the digital input, the <b>External Communication</b> mode was selected for this example. You can set the output to high or low using the <code>setDoValue()</code> method.</p>
-<h3><a class="anchor" id="autotoc_md132"></a>
+<h3><a class="anchor" id="autotoc_md129"></a>
 Fail Safe</h3>
 <p>If available, this example turns the dedicated <a class="el" href="fail-safe.html">fail safe</a> pin on. The fail safe remains active as long as the camera and the processing chain of the SDK is working correctly. While active the dedicated fail safe pin outputs a voltage level higher than zero and the LED next to the pin lights up. If inactive, the voltage level will be zero and the LED will be off.</p>
 <dl class="section note"><dt>Note</dt><dd>When setting an analog or digital output to the <b>Fail Safe</b> mode the corresponding pins will provide an alternating signal instead of level based one. See the <a class="el" href="fail-safe.html">Fail Safe</a> chapter for more detail.</dd></dl>
 <p>An SDK client can interrupt the all-clear fail safe signal with the help of the <code>interruptFailSafe()</code> method of the <code>IRImager</code> interface.</p>
-<h2><a class="anchor" id="autotoc_md133"></a>
+<h2><a class="anchor" id="autotoc_md130"></a>
 Directly Accessing the Input Values</h2>
 <p>The direct access of the PIF input values is performed in the <code>onThermalFrame()</code> callback via the <code>FrameMetadata</code> object. Since this example is supposed to be as generic as possible, there are some extra checks to determine how many inputs are actually available. The access happens through the <code>getPifXXValue()</code> method, where <code>XX</code> is either <code>Ai</code> or <code>Di</code>. <br  />
  This example prints the value of each available channel for every received frame.</p>

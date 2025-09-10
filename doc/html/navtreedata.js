@@ -134,39 +134,38 @@ var NAVTREE =
         [ "Flag timeout", "fail-safe.html#fail-safe-conditions-flag-timeout", null ],
         [ "Client", "fail-safe.html#fail-safe-conditions-client", null ]
       ] ],
-      [ "PIF Signals", "fail-safe.html#fail-safe-pif-signals", null ],
-      [ "Contents", "fail-safe.html#autotoc_md35", null ]
+      [ "PIF Signals", "fail-safe.html#fail-safe-pif-signals", null ]
     ] ],
     [ "Process Interface (PIF)", "pif.html", [
-      [ "Contents", "pif.html#autotoc_md38", null ],
+      [ "Contents", "pif.html#autotoc_md35", null ],
       [ "Overview", "pif.html#pif-overview", null ],
       [ "Reading Inputs", "pif.html#pif-reading-inputs", null ],
       [ "Creating Outputs", "pif.html#pif-creating-outputs", null ],
       [ "Modes", "pif.html#pif-modes", [
         [ "Universal", "pif.html#pif-modes-universal", [
-          [ "Off", "pif.html#autotoc_md39", null ]
+          [ "Off", "pif.html#autotoc_md36", null ]
         ] ],
         [ "Inputs", "pif.html#pif-modes-inputs", [
-          [ "Ambient Temperature", "pif.html#autotoc_md40", null ],
-          [ "Emissivity", "pif.html#autotoc_md41", null ],
-          [ "Flag Control", "pif.html#autotoc_md42", null ],
-          [ "Uncommitted Value", "pif.html#autotoc_md43", null ]
+          [ "Ambient Temperature", "pif.html#autotoc_md37", null ],
+          [ "Emissivity", "pif.html#autotoc_md38", null ],
+          [ "Flag Control", "pif.html#autotoc_md39", null ],
+          [ "Uncommitted Value", "pif.html#autotoc_md40", null ]
         ] ],
         [ "Outputs", "pif.html#pif-modes-outputs", [
-          [ "External Communication", "pif.html#autotoc_md44", null ],
-          [ "Fail Safe", "pif.html#autotoc_md45", null ],
-          [ "Flag Status", "pif.html#autotoc_md46", null ],
-          [ "Frame Sync", "pif.html#autotoc_md47", null ],
-          [ "Internal Temperature", "pif.html#autotoc_md48", null ],
-          [ "Measurement Field", "pif.html#autotoc_md49", null ]
+          [ "External Communication", "pif.html#autotoc_md41", null ],
+          [ "Fail Safe", "pif.html#autotoc_md42", null ],
+          [ "Flag Status", "pif.html#autotoc_md43", null ],
+          [ "Frame Sync", "pif.html#autotoc_md44", null ],
+          [ "Internal Temperature", "pif.html#autotoc_md45", null ],
+          [ "Measurement Field", "pif.html#autotoc_md46", null ]
         ] ],
         [ "Fail Safe", "pif.html#pif-modes-fail-safe", [
-          [ "On", "pif.html#autotoc_md50", null ]
+          [ "On", "pif.html#autotoc_md47", null ]
         ] ]
       ] ]
     ] ],
     [ "Device Communication", "device-communication.html", [
-      [ "Contents", "device-communication.html#autotoc_md51", null ],
+      [ "Contents", "device-communication.html#autotoc_md48", null ],
       [ "Overview", "device-communication.html#device-communication-overview", null ],
       [ "USB", "device-communication.html#device-communication-usb", [
         [ "Control", "device-communication.html#device-communication-usb-control", null ],
@@ -178,121 +177,121 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Important Files", "important-files.html", [
-      [ "Contents", "important-files.html#autotoc_md52", null ],
+      [ "Contents", "important-files.html#autotoc_md49", null ],
       [ "Configuration", "important-files.html#important-files-configuration", [
         [ "Version", "important-files.html#important-files-configuration-version", [
-          [ "configuration", "important-files.html#autotoc_md53", null ],
-          [ "sdk", "important-files.html#autotoc_md54", null ]
+          [ "configuration", "important-files.html#autotoc_md50", null ],
+          [ "sdk", "important-files.html#autotoc_md51", null ]
         ] ],
         [ "Serial Number", "important-files.html#important-files-configuration-serial-number", [
-          [ "serial_number", "important-files.html#autotoc_md55", null ]
+          [ "serial_number", "important-files.html#autotoc_md52", null ]
         ] ],
         [ "Connection", "important-files.html#important-files-configuration-connection", [
-          [ "interface", "important-files.html#autotoc_md56", null ],
-          [ "ip_address", "important-files.html#autotoc_md57", null ],
-          [ "port", "important-files.html#autotoc_md58", null ],
-          [ "check_ip", "important-files.html#autotoc_md59", null ],
-          [ "timeout", "important-files.html#autotoc_md60", null ]
+          [ "interface", "important-files.html#autotoc_md53", null ],
+          [ "ip_address", "important-files.html#autotoc_md54", null ],
+          [ "port", "important-files.html#autotoc_md55", null ],
+          [ "check_ip", "important-files.html#autotoc_md56", null ],
+          [ "timeout", "important-files.html#autotoc_md57", null ]
         ] ],
         [ "Buffer Queue Size", "important-files.html#important-files-configuration-buffer-queue-size", [
-          [ "buffer_queue_size", "important-files.html#autotoc_md61", null ]
+          [ "buffer_queue_size", "important-files.html#autotoc_md58", null ]
         ] ],
         [ "Optics", "important-files.html#important-files-configuration-optics", [
-          [ "field_of_view", "important-files.html#autotoc_md62", null ],
-          [ "text", "important-files.html#autotoc_md63", null ]
+          [ "field_of_view", "important-files.html#autotoc_md59", null ],
+          [ "text", "important-files.html#autotoc_md60", null ]
         ] ],
         [ "Temperature Range", "important-files.html#important-files-configuration-temperature-range", [
-          [ "min", "important-files.html#autotoc_md64", null ],
-          [ "max", "important-files.html#autotoc_md65", null ],
-          [ "extended", "important-files.html#autotoc_md66", null ],
-          [ "enable_high_precision", "important-files.html#autotoc_md67", null ],
+          [ "min", "important-files.html#autotoc_md61", null ],
+          [ "max", "important-files.html#autotoc_md62", null ],
+          [ "extended", "important-files.html#autotoc_md63", null ],
+          [ "enable_high_precision", "important-files.html#autotoc_md64", null ],
           [ "Video Format", "important-files.html#important-files-configuration-video-format", null ],
-          [ "width", "important-files.html#autotoc_md68", null ],
-          [ "height", "important-files.html#autotoc_md69", null ],
-          [ "framerate", "important-files.html#autotoc_md70", null ],
-          [ "subsampled_framerate", "important-files.html#autotoc_md71", null ]
+          [ "width", "important-files.html#autotoc_md65", null ],
+          [ "height", "important-files.html#autotoc_md66", null ],
+          [ "framerate", "important-files.html#autotoc_md67", null ],
+          [ "subsampled_framerate", "important-files.html#autotoc_md68", null ]
         ] ],
         [ "Auto Flag", "important-files.html#important-files-configuration-auto-flag", [
-          [ "enable", "important-files.html#autotoc_md72", null ],
-          [ "min_interval", "important-files.html#autotoc_md73", null ],
-          [ "max_interval", "important-files.html#autotoc_md74", null ]
+          [ "enable", "important-files.html#autotoc_md69", null ],
+          [ "min_interval", "important-files.html#autotoc_md70", null ],
+          [ "max_interval", "important-files.html#autotoc_md71", null ]
         ] ],
         [ "Sensor Chip Heating", "important-files.html#important-files-configuration-sensor-chip-heating", [
-          [ "mode", "important-files.html#autotoc_md75", null ],
-          [ "temperature", "important-files.html#autotoc_md76", null ]
+          [ "mode", "important-files.html#autotoc_md72", null ],
+          [ "temperature", "important-files.html#autotoc_md73", null ]
         ] ],
         [ "Focus Motor Position", "important-files.html#important-files-configuration-focus-motor-position", [
-          [ "focus_motor_position", "important-files.html#autotoc_md77", null ]
+          [ "focus_motor_position", "important-files.html#autotoc_md74", null ]
         ] ],
         [ "Radiation Parameters", "important-files.html#important-files-configuration-radiation-parameters", [
-          [ "emissivity", "important-files.html#autotoc_md78", null ],
-          [ "transmissivity", "important-files.html#autotoc_md79", null ],
-          [ "ambient", "important-files.html#autotoc_md80", null ]
+          [ "emissivity", "important-files.html#autotoc_md75", null ],
+          [ "transmissivity", "important-files.html#autotoc_md76", null ],
+          [ "ambient", "important-files.html#autotoc_md77", null ]
         ] ],
         [ "Fail Safe", "important-files.html#important-files-configuration-fail-safe", [
-          [ "flag_timeouts.enable", "important-files.html#autotoc_md81", null ],
-          [ "flag_timeouts.max_cycle_failures", "important-files.html#autotoc_md82", null ],
-          [ "processing_chain_timeouts.enable", "important-files.html#autotoc_md83", null ]
+          [ "flag_timeouts.enable", "important-files.html#autotoc_md78", null ],
+          [ "flag_timeouts.max_cycle_failures", "important-files.html#autotoc_md79", null ],
+          [ "processing_chain_timeouts.enable", "important-files.html#autotoc_md80", null ]
         ] ],
         [ "Measurement Fields", "important-files.html#important-files-configuration-measurement-fields", [
-          [ "name", "important-files.html#autotoc_md84", null ],
-          [ "shape", "important-files.html#autotoc_md85", null ],
-          [ "mode", "important-files.html#autotoc_md86", null ],
-          [ "position", "important-files.html#autotoc_md87", null ],
-          [ "position.x", "important-files.html#autotoc_md88", null ],
-          [ "position.y", "important-files.html#autotoc_md89", null ],
-          [ "dimensions", "important-files.html#autotoc_md90", null ],
-          [ "dimensions.width", "important-files.html#autotoc_md91", null ],
-          [ "dimensions.height", "important-files.html#autotoc_md92", null ],
-          [ "radiation.emissivity", "important-files.html#autotoc_md93", null ],
-          [ "radiation.transmissivity", "important-files.html#autotoc_md94", null ],
-          [ "radiation.ambient", "important-files.html#autotoc_md95", null ]
+          [ "name", "important-files.html#autotoc_md81", null ],
+          [ "shape", "important-files.html#autotoc_md82", null ],
+          [ "mode", "important-files.html#autotoc_md83", null ],
+          [ "position", "important-files.html#autotoc_md84", null ],
+          [ "position.x", "important-files.html#autotoc_md85", null ],
+          [ "position.y", "important-files.html#autotoc_md86", null ],
+          [ "dimensions", "important-files.html#autotoc_md87", null ],
+          [ "dimensions.width", "important-files.html#autotoc_md88", null ],
+          [ "dimensions.height", "important-files.html#autotoc_md89", null ],
+          [ "radiation.emissivity", "important-files.html#autotoc_md90", null ],
+          [ "radiation.transmissivity", "important-files.html#autotoc_md91", null ],
+          [ "radiation.ambient", "important-files.html#autotoc_md92", null ]
         ] ],
         [ "Process Interface (PIF)", "important-files.html#important-files-configuration-process-interface", [
-          [ "Device", "important-files.html#autotoc_md96", [
+          [ "Device", "important-files.html#autotoc_md93", [
             [ "device_type", "important-files.html#important-files-configuration-process-interface-device-type", null ],
             [ "device_count", "important-files.html#important-files-configuration-process-interface-device-count", null ]
           ] ],
           [ "Channels", "important-files.html#important-files-configuration-process-interface-channels", [
-            [ "channel.device_index", "important-files.html#autotoc_md97", null ],
-            [ "channel.pin_index", "important-files.html#autotoc_md98", null ]
+            [ "channel.device_index", "important-files.html#autotoc_md94", null ],
+            [ "channel.pin_index", "important-files.html#autotoc_md95", null ]
           ] ],
           [ "analog_inputs", "important-files.html#important-files-configuration-process-interface-analog-inputs", [
-            [ "mode", "important-files.html#autotoc_md99", null ],
-            [ "slope", "important-files.html#autotoc_md100", null ],
-            [ "slope.gain", "important-files.html#autotoc_md101", null ],
-            [ "slope.offset", "important-files.html#autotoc_md102", null ],
-            [ "trigger", "important-files.html#autotoc_md103", null ],
-            [ "trigger.threshold", "important-files.html#autotoc_md104", null ],
-            [ "trigger.low_active", "important-files.html#autotoc_md105", null ],
-            [ "uncommitted_value", "important-files.html#autotoc_md106", null ],
-            [ "uncommitted_value.name", "important-files.html#autotoc_md107", null ],
-            [ "uncommitted_value.unit", "important-files.html#autotoc_md108", null ]
+            [ "mode", "important-files.html#autotoc_md96", null ],
+            [ "slope", "important-files.html#autotoc_md97", null ],
+            [ "slope.gain", "important-files.html#autotoc_md98", null ],
+            [ "slope.offset", "important-files.html#autotoc_md99", null ],
+            [ "trigger", "important-files.html#autotoc_md100", null ],
+            [ "trigger.threshold", "important-files.html#autotoc_md101", null ],
+            [ "trigger.low_active", "important-files.html#autotoc_md102", null ],
+            [ "uncommitted_value", "important-files.html#autotoc_md103", null ],
+            [ "uncommitted_value.name", "important-files.html#autotoc_md104", null ],
+            [ "uncommitted_value.unit", "important-files.html#autotoc_md105", null ]
           ] ],
           [ "digital_inputs", "important-files.html#important-files-configuration-process-interface-digital-inputs", [
-            [ "mode", "important-files.html#autotoc_md109", null ],
-            [ "trigger", "important-files.html#autotoc_md110", null ],
-            [ "trigger.low_active", "important-files.html#autotoc_md111", null ]
+            [ "mode", "important-files.html#autotoc_md106", null ],
+            [ "trigger", "important-files.html#autotoc_md107", null ],
+            [ "trigger.low_active", "important-files.html#autotoc_md108", null ]
           ] ],
           [ "analog_outputs", "important-files.html#important-files-configuration-process-interface-analog-outputs", [
-            [ "mode", "important-files.html#autotoc_md112", null ],
-            [ "output_mode", "important-files.html#autotoc_md113", null ],
-            [ "slope", "important-files.html#autotoc_md114", null ],
-            [ "slope.gain", "important-files.html#autotoc_md115", null ],
-            [ "slope.offset", "important-files.html#autotoc_md116", null ],
-            [ "field_index", "important-files.html#autotoc_md117", null ],
-            [ "output", "important-files.html#autotoc_md118", null ],
-            [ "output.active", "important-files.html#autotoc_md119", null ],
-            [ "output.intermediate", "important-files.html#autotoc_md120", null ],
-            [ "output.inactive", "important-files.html#autotoc_md121", null ]
+            [ "mode", "important-files.html#autotoc_md109", null ],
+            [ "output_mode", "important-files.html#autotoc_md110", null ],
+            [ "slope", "important-files.html#autotoc_md111", null ],
+            [ "slope.gain", "important-files.html#autotoc_md112", null ],
+            [ "slope.offset", "important-files.html#autotoc_md113", null ],
+            [ "field_index", "important-files.html#autotoc_md114", null ],
+            [ "output", "important-files.html#autotoc_md115", null ],
+            [ "output.active", "important-files.html#autotoc_md116", null ],
+            [ "output.intermediate", "important-files.html#autotoc_md117", null ],
+            [ "output.inactive", "important-files.html#autotoc_md118", null ]
           ] ],
           [ "digital_outputs", "important-files.html#important-files-configuration-process-interface-digital-outputs", [
-            [ "mode", "important-files.html#autotoc_md122", null ],
-            [ "output", "important-files.html#autotoc_md123", null ],
-            [ "low_active", "important-files.html#autotoc_md124", null ]
+            [ "mode", "important-files.html#autotoc_md119", null ],
+            [ "output", "important-files.html#autotoc_md120", null ],
+            [ "low_active", "important-files.html#autotoc_md121", null ]
           ] ],
           [ "fail_safe", "important-files.html#important-files-configuration-process-interface-fail-safe", [
-            [ "mode", "important-files.html#autotoc_md125", null ]
+            [ "mode", "important-files.html#autotoc_md122", null ]
           ] ]
         ] ]
       ] ],
@@ -302,32 +301,32 @@ var NAVTREE =
       [ "Dynamic Dead Pixels", "important-files.html#important-files-dynamic-dead-pixels", null ]
     ] ],
     [ "Example Applications", "example-applications.html", [
-      [ "Contents", "example-applications.html#autotoc_md126", null ],
+      [ "Contents", "example-applications.html#autotoc_md123", null ],
       [ "Preparations", "example-applications.html#example-applications-preparations", null ],
       [ "Enumeration", "example-applications.html#example-applications-enumeration", null ],
       [ "Minimal", "example-applications.html#example-applications-minimal", null ],
       [ "PIF", "example-applications.html#example-applications-pif", [
-        [ "Setting Modes", "example-applications.html#autotoc_md127", [
-          [ "Analog Input", "example-applications.html#autotoc_md128", null ],
-          [ "Analog Output", "example-applications.html#autotoc_md129", null ],
-          [ "Digital Input", "example-applications.html#autotoc_md130", null ],
-          [ "Digital Output", "example-applications.html#autotoc_md131", null ],
-          [ "Fail Safe", "example-applications.html#autotoc_md132", null ]
+        [ "Setting Modes", "example-applications.html#autotoc_md124", [
+          [ "Analog Input", "example-applications.html#autotoc_md125", null ],
+          [ "Analog Output", "example-applications.html#autotoc_md126", null ],
+          [ "Digital Input", "example-applications.html#autotoc_md127", null ],
+          [ "Digital Output", "example-applications.html#autotoc_md128", null ],
+          [ "Fail Safe", "example-applications.html#autotoc_md129", null ]
         ] ],
-        [ "Directly Accessing the Input Values", "example-applications.html#autotoc_md133", null ]
+        [ "Directly Accessing the Input Values", "example-applications.html#autotoc_md130", null ]
       ] ],
       [ "Simple View", "example-applications.html#example-applications-simple-view", null ]
     ] ],
     [ "Troubleshooting", "troubleshooting.html", [
-      [ "Contents", "troubleshooting.html#autotoc_md134", null ],
+      [ "Contents", "troubleshooting.html#autotoc_md131", null ],
       [ "Linux", "troubleshooting.html#troubleshooting-linux", [
-        [ "User Groups", "troubleshooting.html#autotoc_md135", null ],
-        [ "UVC Driver Settings", "troubleshooting.html#autotoc_md136", null ],
-        [ "No device found", "troubleshooting.html#autotoc_md137", null ]
+        [ "User Groups", "troubleshooting.html#autotoc_md132", null ],
+        [ "UVC Driver Settings", "troubleshooting.html#autotoc_md133", null ],
+        [ "No device found", "troubleshooting.html#autotoc_md134", null ]
       ] ],
       [ "False Color Images", "troubleshooting.html#troubleshooting-false-color-images", [
-        [ "Unexpected Colors", "troubleshooting.html#autotoc_md138", null ],
-        [ "Tearing", "troubleshooting.html#autotoc_md139", null ]
+        [ "Unexpected Colors", "troubleshooting.html#autotoc_md135", null ],
+        [ "Tearing", "troubleshooting.html#autotoc_md136", null ]
       ] ],
       [ "Video Stream", "troubleshooting.html#troubleshooting-video-stream", null ],
       [ "Temperature Differences to PixConnect", "troubleshooting.html#troubleshooting-temperature-differences-to-pixconnect", null ],
@@ -336,22 +335,22 @@ var NAVTREE =
       [ "Creating a Debug Build with MSVC", "troubleshooting.html#troubleshooting-debug-build-msvc", null ]
     ] ],
     [ "Changelog", "changelog.html", [
-      [ "Contents", "changelog.html#autotoc_md140", null ],
+      [ "Contents", "changelog.html#autotoc_md137", null ],
       [ "Versions 10.x", "changelog.html#changelog_versions_10", [
-        [ "Version 10.1.0", "changelog.html#autotoc_md141", [
-          [ "Features", "changelog.html#autotoc_md142", null ],
-          [ "Changes", "changelog.html#autotoc_md143", null ],
+        [ "Version 10.1.0", "changelog.html#autotoc_md138", [
+          [ "Features", "changelog.html#autotoc_md139", null ],
+          [ "Changes", "changelog.html#autotoc_md140", null ],
+          [ "Bugs", "changelog.html#autotoc_md141", null ]
+        ] ],
+        [ "Version 10.0.1", "changelog.html#autotoc_md142", [
+          [ "Features", "changelog.html#autotoc_md143", null ],
           [ "Bugs", "changelog.html#autotoc_md144", null ]
         ] ],
-        [ "Version 10.0.1", "changelog.html#autotoc_md145", [
-          [ "Features", "changelog.html#autotoc_md146", null ],
-          [ "Bugs", "changelog.html#autotoc_md147", null ]
-        ] ],
-        [ "Version 10.0.0", "changelog.html#autotoc_md148", null ]
+        [ "Version 10.0.0", "changelog.html#autotoc_md145", null ]
       ] ]
     ] ],
     [ "Contact", "contact.html", [
-      [ "Contents", "contact.html#autotoc_md149", null ],
+      [ "Contents", "contact.html#autotoc_md146", null ],
       [ "Website", "contact.html#contact-website", null ],
       [ "E-Mail", "contact.html#contact-e-mail", null ],
       [ "GitHub", "contact.html#contact-github", null ]
@@ -396,8 +395,8 @@ var NAVTREEINDEX =
 "classoptris_1_1IpAddress.html#a886ae71547093d088deb9085ff893a97",
 "classoptris_1_1PifDiConfig.html",
 "classoptris_1_1ThermalFrame.html#af69d5813e6d3e78f172692fcd4811bc4",
-"important-files.html#important-files-configuration-process-interface-digital-outputs",
-"structoptris_1_1SnapshotEvent.html#a8683323634a004981b0a2ee3e04a1096"
+"important-files.html#important-files-configuration-process-interface-fail-safe",
+"structoptris_1_1SnapshotEvent.html#a97f322b314d448c939a4d00420ce854a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

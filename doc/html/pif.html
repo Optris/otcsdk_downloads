@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('pif.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Process Interface (PIF)</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md38"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md35"></a>
 Contents</h1>
 <ul>
 <li><a class="el" href="pif.html#pif-overview">Overview</a></li>
@@ -176,7 +176,7 @@ Modes</h1>
 <p>You can consult the documentation of the <a class="el" href="important-files.html#important-files-configuration-process-interface-channels">channel settings</a> of the <a class="el" href="important-files.html#important-files-configuration">configuration file</a> for more exhaustive details about the available parameters for each mode.</p>
 <h2><a class="anchor" id="pif-modes-universal"></a>
 Universal</h2>
-<h3><a class="anchor" id="autotoc_md39"></a>
+<h3><a class="anchor" id="autotoc_md36"></a>
 Off</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -187,7 +187,7 @@ Off</h3>
 <p>The channel is switched off and does not offer any special functionality.</p>
 <h2><a class="anchor" id="pif-modes-inputs"></a>
 Inputs</h2>
-<h3><a class="anchor" id="autotoc_md40"></a>
+<h3><a class="anchor" id="autotoc_md37"></a>
 Ambient Temperature</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -198,7 +198,7 @@ Ambient Temperature</h3>
 <p>Converts the voltage level U_in on an analog input into an <a href="https://optris.com/lexicon/ambient-temperature/">ambient temperature</a> t_ambient as follows</p>
 <p><code>t_ambient = (U_in - offset) / gain</code></p>
 <p>and applies it to the overall thermal frame as part of the radiation parameters. In order to minimize computational effort the radiation parameters are only updated at most every <em>500 ms</em>.</p>
-<h3><a class="anchor" id="autotoc_md41"></a>
+<h3><a class="anchor" id="autotoc_md38"></a>
 Emissivity</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -209,7 +209,7 @@ Emissivity</h3>
 <p>Converts the voltage level U_in on an analog input into an <a href="https://optris.com/lexicon/emissivity/">emissivity</a> e in the range of [0.01, 1.1] as follows</p>
 <p><code>e = (U_in - offset) / gain</code></p>
 <p>and applies it to the overall thermal frame as part of the radiation parameters. In order to minimize computational effort the radiation parameters are only updated at most every <em>500 ms</em>.</p>
-<h3><a class="anchor" id="autotoc_md42"></a>
+<h3><a class="anchor" id="autotoc_md39"></a>
 Flag Control</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -239,7 +239,7 @@ Flag Control</h3>
 <td class="markdownTableBodyNone">open the shutter flag   </td><td class="markdownTableBodyNone"><code>S_in == high</code>   </td><td class="markdownTableBodyNone"><code>S_in == low</code>   </td></tr>
 </table>
 <dl class="section attention"><dt>Attention</dt><dd>If this mode is set on any channel, the SDK and its clients will be unable to control the shutter flag. In this case the entity providing the input signal is solely responsible for closing the flag regularly to compensate for temperature drifts and to pass the initial calibration phase.</dd></dl>
-<h3><a class="anchor" id="autotoc_md43"></a>
+<h3><a class="anchor" id="autotoc_md40"></a>
 Uncommitted Value</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -253,7 +253,7 @@ Uncommitted Value</h3>
 <dl class="section note"><dt>Note</dt><dd>The callback is only triggered when the input voltage U_in changes.</dd></dl>
 <h2><a class="anchor" id="pif-modes-outputs"></a>
 Outputs</h2>
-<h3><a class="anchor" id="autotoc_md44"></a>
+<h3><a class="anchor" id="autotoc_md41"></a>
 External Communication</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -267,7 +267,7 @@ External Communication</h3>
 <li><code>setDoValue(deviceIndex, pinIndex, value)</code></li>
 </ul>
 <p>For more details refer to the <a class="el" href="public-api.html#public-api-process-interface-channels-output-values">Output Value</a> section of the <a class="el" href="public-api.html">Public API</a> chapter.</p>
-<h3><a class="anchor" id="autotoc_md45"></a>
+<h3><a class="anchor" id="autotoc_md42"></a>
 Fail Safe</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -278,7 +278,7 @@ Fail Safe</h3>
 <p>A heart beat signal is output on the given channel that indicated whether the camera and the processing chain of the SDK is working correctly. See the <a class="el" href="fail-safe.html">Fails Safe</a> chapter for details about the generated signal and about the conditions that dictate when the fail safe is active.</p>
 <p>The value of the active parameter defines the height of the provided heart beat signal.</p>
 <dl class="section note"><dt>Note</dt><dd>Some PIF variants offer an extra fail safe channel that can be used independently of this mode.</dd></dl>
-<h3><a class="anchor" id="autotoc_md46"></a>
+<h3><a class="anchor" id="autotoc_md43"></a>
 Flag Status</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -307,7 +307,7 @@ Flag Status</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Closed   </td><td class="markdownTableBodyNone">low   </td><td class="markdownTableBodyNone">high   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md47"></a>
+<h3><a class="anchor" id="autotoc_md44"></a>
 Frame Sync</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -320,7 +320,7 @@ Frame Sync</h3>
 <p>The moment a frame is captured the output level will rise to the value specified by the active parameter and will will shortly afterwards revert back to the lower limit defined by the configured output mode.</p>
 <p><b>digital output</b></p>
 <p>When a frame is captured the output signal will be set for a brief time to high and will then revert back to low.</p>
-<h3><a class="anchor" id="autotoc_md48"></a>
+<h3><a class="anchor" id="autotoc_md45"></a>
 Internal Temperature</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -332,7 +332,7 @@ Internal Temperature</h3>
 <p><code>X_out = gain * t_internal + offset</code></p>
 <p>which is then provided on the designated channel.</p>
 <dl class="section note"><dt>Note</dt><dd>The value of X_out is always clipped to the limits of the configured output mode.</dd></dl>
-<h3><a class="anchor" id="autotoc_md49"></a>
+<h3><a class="anchor" id="autotoc_md46"></a>
 Measurement Field</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -351,7 +351,7 @@ Measurement Field</h3>
 </ul>
 <h2><a class="anchor" id="pif-modes-fail-safe"></a>
 Fail Safe</h2>
-<h3><a class="anchor" id="autotoc_md50"></a>
+<h3><a class="anchor" id="autotoc_md47"></a>
 On</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
