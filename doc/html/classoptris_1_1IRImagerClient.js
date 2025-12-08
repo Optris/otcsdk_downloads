@@ -12,6 +12,7 @@ var classoptris_1_1IRImagerClient =
     [ "onProcessExit", "classoptris_1_1IRImagerClient.html#aef74db5e2dc33eb87df2d6ca9e08f53b", null ],
     [ "onThermalFrame", "classoptris_1_1IRImagerClient.html#a73041548b2e8b7f2fb73018868a6458e", null ],
     [ "onThermalFrameEvent", "classoptris_1_1IRImagerClient.html#a6c4165ebc0aa09664496c0b356d687dc", null ],
+    [ "onVideoFormatChanged", "classoptris_1_1IRImagerClient.html#a8455226727db052433cc75f387b9de3a", null ],
     [ "operator=", "classoptris_1_1IRImagerClient.html#af2e2918bc3f6f13d9f60b9a332a5fd24", null ],
     [ "operator=", "classoptris_1_1IRImagerClient.html#ac79194811e0e60de9c2c6107772da443", null ]
 ];

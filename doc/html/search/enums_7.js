@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['widthalignment_0',['WidthAlignment',['../namespaceoptris.html#acd74ce0a25f41cfb780c481217479e66',1,'optris']]]
+  ['verbosity_0',['Verbosity',['../namespaceoptris.html#a4965aa8dec3ddb7f234d001077702588',1,'optris']]]
 ];

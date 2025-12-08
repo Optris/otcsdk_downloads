@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['↓_20code_20↓_0',['↓ Code ↓',['../code.html',1,'']]]
+  ['↓_0',['↓ Code ↓',['../code.html',1,'']]],
+  ['↓_20code_20↓_1',['↓ Code ↓',['../code.html',1,'']]]
 ];

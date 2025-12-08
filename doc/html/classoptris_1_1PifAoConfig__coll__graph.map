@@ -1,5 +1,5 @@
 <map id="optris::PifAoConfig" name="optris::PifAoConfig">
-<area shape="rect" id="Node000001" title="Encapsulates the configuration for a PIF analog output channel." alt="" coords="5,173,243,519"/>
-<area shape="rect" id="Node000002" href="$classoptris_1_1Slope.html" title="Encapsulates the parameters of a linear transformation." alt="" coords="77,5,171,111"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,111,127,157,121,157,121,111"/>
+<area shape="rect" id="Node000001" title="Encapsulates the configuration for a PIF analog output channel." alt="" coords="5,181,212,549"/>
+<area shape="rect" id="Node000002" href="$classoptris_1_1Slope.html" title="Encapsulates the parameters of a linear transformation." alt="" coords="67,5,151,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,117,112,164,106,164,106,117"/>
 </map>

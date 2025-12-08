@@ -1,25 +1,25 @@
 <map id="ProcessInterface.h" name="ProcessInterface.h">
-<area shape="rect" id="Node000001" title="Contains the interface that defines how to interact with process interfaces." alt="" coords="399,5,542,31"/>
-<area shape="rect" id="Node000002" href="$PifConfig_8h.html" title="Contains a class that encapsulates the the configuration for the process interface." alt="" coords="390,79,550,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="473,31,473,65,468,65,468,31"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="22,299,98,324"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,106,286,124,172,150,118,166,72,185,36,205,13,227,8,242,12,258,22,273,36,287,32,291,18,276,7,260,3,242,8,224,32,201,70,180,117,161,170,145,285,119,389,101"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="599,152,662,177"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="497,102,593,144,591,149,495,106"/>
-<area shape="rect" id="Node000005" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="459,299,562,324"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="478,103,496,155,513,225,515,285,510,285,508,226,491,157,473,105"/>
-<area shape="rect" id="Node000006" href="$PifChannelConfigs_8h.html" title="Contains classes holding the configuration parameter for the different process interface channels." alt="" coords="204,152,424,177"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="446,106,353,149,351,144,444,102"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="204,177,148,184,94,195,50,209,23,227,18,241,20,256,40,287,35,290,15,258,12,240,19,224,48,204,93,189,147,179,204,171"/>
-<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="395,175,444,193,467,206,487,224,504,253,511,285,506,286,499,255,483,227,464,211,441,198,393,180"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="285,299,344,324"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="306,179,291,200,278,226,277,242,280,258,297,287,292,289,275,260,271,242,273,225,286,197,302,176"/>
-<area shape="rect" id="Node000008" href="$Slope_8h.html" title="Contains a class holding the parameters for a linear transformation." alt="" coords="33,225,212,251"/>
-<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="284,180,168,223,166,218,283,175"/>
-<area shape="rect" id="Node000009" href="$PifProperties_8h.html" title="Contains enums defining various properties of process interfaces." alt="" coords="287,225,472,251"/>
-<area shape="poly" id="edge11_Node000006_Node000009" title=" " alt="" coords="327,176,362,213,358,217,323,179"/>
-<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="114,253,81,290,77,286,110,249"/>
-<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="329,253,112,301,111,296,328,248"/>
-<area shape="poly" id="edge14_Node000009_Node000005" title=" " alt="" coords="402,248,478,290,476,294,399,253"/>
-<area shape="poly" id="edge13_Node000009_Node000007" title=" " alt="" coords="371,253,336,290,332,287,367,249"/>
+<area shape="rect" id="Node000001" title="Contains the interface that defines how to interact with process interfaces." alt="" coords="375,5,507,32"/>
+<area shape="rect" id="Node000002" href="$PifConfig_8h.html" title="Contains a class that encapsulates the the configuration for the process interface." alt="" coords="367,80,515,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="444,33,444,64,438,64,438,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="23,304,91,331"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="367,109,270,128,162,155,112,172,68,190,34,210,13,231,8,246,12,261,33,292,29,295,7,264,3,246,8,228,31,205,66,185,110,167,160,150,269,123,366,104"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="566,155,623,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="469,105,555,145,552,150,467,110"/>
+<area shape="rect" id="Node000005" href="$Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="430,304,524,331"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="448,106,465,159,481,229,481,256,480,288,475,288,476,256,476,230,460,160,443,108"/>
+<area shape="rect" id="Node000006" href="$PifChannelConfigs_8h.html" title="Contains classes holding the configuration parameter for the different process interface channels." alt="" coords="193,155,396,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="417,110,335,150,332,145,414,105"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="193,181,91,200,50,214,24,231,19,245,20,260,38,291,33,293,15,261,13,244,20,228,47,209,89,195,192,176"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="367,179,413,197,435,211,454,228,471,257,478,288,473,290,466,259,450,231,432,215,411,202,365,184"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="268,304,321,331"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="287,183,273,204,262,230,261,246,264,261,278,290,273,292,259,263,255,246,257,229,268,202,282,180"/>
+<area shape="rect" id="Node000008" href="$Slope_8h.html" title="Contains a class holding the parameters for a linear transformation." alt="" coords="35,229,197,256"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="264,184,162,226,160,221,262,179"/>
+<area shape="rect" id="Node000009" href="$PifProperties_8h.html" title="Contains enums defining various properties of process interfaces." alt="" coords="272,229,440,256"/>
+<area shape="poly" id="edge11_Node000006_Node000009" title=" " alt="" coords="307,180,337,216,333,219,303,184"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="108,258,79,293,75,290,103,255"/>
+<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="304,259,107,307,106,302,303,254"/>
+<area shape="poly" id="edge14_Node000009_Node000005" title=" " alt="" coords="378,254,444,293,441,298,375,259"/>
+<area shape="poly" id="edge13_Node000009_Node000007" title=" " alt="" coords="347,258,317,294,313,290,343,255"/>
 </map>

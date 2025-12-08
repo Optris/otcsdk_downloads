@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['x1_0',['x1',['../structoptris_1_1TemperatureRegion.html#af09e9bbea02c85b171aba66ad559ce3e',1,'optris::TemperatureRegion']]],
-  ['x2_1',['x2',['../structoptris_1_1TemperatureRegion.html#a2e137d24f63a7d1b3cb9ebeb77a282b9',1,'optris::TemperatureRegion']]]
+  ['width_0',['width',['../classoptris_1_1MeasurementFieldConfig.html#a68012aa68bf6ae25ca51b8fe4f83eb52',1,'optris::MeasurementFieldConfig::width'],['../classoptris_1_1IRImagerConfig.html#a771fde1ea78670e9780ab89f14e5bb28',1,'optris::IRImagerConfig::width']]]
 ];

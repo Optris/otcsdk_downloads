@@ -1,18 +1,18 @@
 <map id="PifChannelConfigs.h" name="PifChannelConfigs.h">
-<area shape="rect" id="Node000001" title="Contains classes holding the configuration parameter for the different process interface channels." alt="" coords="82,5,234,31"/>
-<area shape="rect" id="Node000002" href="$PifConfig_8h.html" title="Contains a class that encapsulates the the configuration for the process interface." alt="" coords="112,79,204,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,44,161,79,155,79,155,44"/>
-<area shape="rect" id="Node000003" href="$IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="172,152,307,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="183,111,228,150,224,154,180,115"/>
-<area shape="rect" id="Node000008" href="$ProcessInterface_8h.html" title="Contains the interface that defines how to interact with process interfaces." alt="" coords="5,152,148,177"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="136,115,92,154,88,150,133,111"/>
-<area shape="rect" id="Node000004" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="32,225,124,251"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="202,185,105,228,103,223,200,180"/>
-<area shape="rect" id="Node000007" href="$IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="150,225,329,251"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="242,191,242,225,237,225,237,191"/>
-<area shape="rect" id="Node000005" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="8,299,148,324"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="81,264,81,299,75,299,75,264"/>
-<area shape="rect" id="Node000006" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="9,372,147,397"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="81,338,81,372,75,372,75,338"/>
-<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="80,191,80,225,75,225,74,191"/>
+<area shape="rect" id="Node000001" title="Contains classes holding the configuration parameter for the different process interface channels." alt="" coords="76,5,218,32"/>
+<area shape="rect" id="Node000002" href="$PifConfig_8h.html" title="Contains a class that encapsulates the the configuration for the process interface." alt="" coords="104,80,190,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,48,150,80,144,80,144,48"/>
+<area shape="rect" id="Node000003" href="$IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="161,155,285,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="173,116,212,152,208,156,169,119"/>
+<area shape="rect" id="Node000008" href="$ProcessInterface_8h.html" title="Contains the interface that defines how to interact with process interfaces." alt="" coords="5,155,137,181"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="125,119,86,156,82,152,121,116"/>
+<area shape="rect" id="Node000004" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="29,229,116,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="184,191,100,231,98,226,182,186"/>
+<area shape="rect" id="Node000007" href="$IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="140,229,306,256"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="226,197,226,229,220,229,220,197"/>
+<area shape="rect" id="Node000005" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="8,304,137,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="75,272,75,304,70,304,70,272"/>
+<area shape="rect" id="Node000006" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="8,379,137,405"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="75,346,75,378,70,378,70,346"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="74,197,75,229,69,229,69,197"/>
 </map>

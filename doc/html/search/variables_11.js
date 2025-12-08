@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['version_0',['version',['../classoptris_1_1IRImagerConfig.html#aaff9d57816b98ebd4e1f6f9cb6065279',1,'optris::IRImagerConfig']]]
+  ['uncommittedvaluename_0',['uncommittedValueName',['../classoptris_1_1PifAiConfig.html#a793bf19f8233ecc12bc73effb4b6dc26',1,'optris::PifAiConfig']]],
+  ['uncommittedvalueunit_1',['uncommittedValueUnit',['../classoptris_1_1PifAiConfig.html#a03b384086896bf9784834b72458292c4',1,'optris::PifAiConfig']]]
 ];

@@ -1,20 +1,20 @@
 <map id="FieldProperties.h" name="FieldProperties.h">
-<area shape="rect" id="Node000001" title="Contains various enums representing properties of fields." alt="" coords="130,5,261,31"/>
-<area shape="rect" id="Node000002" href="$MeasurementFieldConfig_8h.html" title="Contains a class encapsulating the configuration of a measurement field." alt="" coords="98,79,294,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,44,198,79,193,79,193,44"/>
-<area shape="rect" id="Node000003" href="$IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="44,152,179,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="173,115,127,154,124,150,170,111"/>
-<area shape="rect" id="Node000008" href="$MeasurementField_8h.html" title="Contains a class encapsulating the properties and data of a rectangular measurement field." alt="" coords="208,152,362,177"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="222,110,272,150,269,154,219,115"/>
-<area shape="rect" id="Node000004" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="91,299,183,324"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="66,185,41,198,20,213,9,231,9,239,13,249,28,267,48,281,92,299,90,304,45,286,25,271,8,252,3,240,4,229,16,209,38,193,64,180"/>
-<area shape="rect" id="Node000007" href="$IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="22,225,201,251"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="114,191,114,225,109,225,109,191"/>
-<area shape="rect" id="Node000005" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="67,372,207,397"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="140,338,140,372,134,372,134,338"/>
-<area shape="rect" id="Node000006" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="68,445,206,471"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="140,411,140,445,134,445,134,411"/>
-<area shape="rect" id="Node000009" href="$IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="225,225,356,251"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="290,191,292,225,287,225,284,191"/>
-<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="255,259,163,301,161,296,252,254"/>
+<area shape="rect" id="Node000001" title="Contains various enums representing properties of fields." alt="" coords="122,5,242,32"/>
+<area shape="rect" id="Node000002" href="$MeasurementFieldConfig_8h.html" title="Contains a class encapsulating the configuration of a measurement field." alt="" coords="93,80,271,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,48,185,80,179,80,179,48"/>
+<area shape="rect" id="Node000003" href="$IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="43,155,167,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="159,119,120,156,116,152,156,116"/>
+<area shape="rect" id="Node000008" href="$MeasurementField_8h.html" title="Contains a class encapsulating the properties and data of a rectangular measurement field." alt="" coords="196,155,336,181"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="210,115,253,152,250,156,207,119"/>
+<area shape="rect" id="Node000004" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="86,304,172,331"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="59,191,36,204,18,219,9,237,9,245,12,255,27,272,45,286,86,304,84,309,42,290,23,276,8,257,3,246,3,235,14,216,33,200,56,186"/>
+<area shape="rect" id="Node000007" href="$IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="22,229,188,256"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="107,197,107,229,102,229,102,197"/>
+<area shape="rect" id="Node000005" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="64,379,193,405"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="131,346,131,378,126,378,126,346"/>
+<area shape="rect" id="Node000006" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="64,453,193,480"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="131,421,131,453,126,453,126,421"/>
+<area shape="rect" id="Node000009" href="$IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="213,229,333,256"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="271,197,274,229,269,229,266,197"/>
+<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="235,266,155,306,153,301,233,261"/>
 </map>

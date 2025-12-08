@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['verbosity_0',['Verbosity',['../namespaceoptris.html#a4965aa8dec3ddb7f234d001077702588',1,'optris']]]
+  ['temperatureprecision_0',['TemperaturePrecision',['../namespaceoptris.html#a8f8f0dbacc90e3b4301aae65478382d4',1,'optris']]]
 ];

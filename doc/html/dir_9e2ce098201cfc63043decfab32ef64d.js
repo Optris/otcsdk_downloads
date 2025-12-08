@@ -11,6 +11,7 @@ var dir_9e2ce098201cfc63043decfab32ef64d =
     [ "ImageIterator.h", "ImageIterator_8h.html", "ImageIterator_8h" ],
     [ "OperationMode.h", "OperationMode_8h.html", "OperationMode_8h" ],
     [ "Pixel.h", "Pixel_8h.html", "Pixel_8h" ],
+    [ "RadiationParameters.h", "RadiationParameters_8h.html", "RadiationParameters_8h" ],
     [ "Slope.h", "Slope_8h.html", "Slope_8h" ],
     [ "SnapshotEvent.h", "SnapshotEvent_8h.html", "SnapshotEvent_8h" ],
     [ "TemperatureConverter.h", "TemperatureConverter_8h.html", "TemperatureConverter_8h" ],

@@ -1,9 +1,9 @@
 <map id="Exceptions.h" name="Exceptions.h">
-<area shape="rect" id="Node000001" title="Contains the exceptions raised by the SDK." alt="" coords="93,5,199,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,92,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,33,77,72,74,68,129,29"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="117,79,175,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,31,149,65,143,65,143,31"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="200,79,260,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,29,207,67,204,72,158,33"/>
+<area shape="rect" id="Node000001" title="Contains the exceptions raised by the SDK." alt="" coords="85,5,182,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,83,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,35,73,72,70,68,116,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="107,80,160,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,33,136,64,131,64,131,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="184,80,237,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="149,31,188,67,184,71,145,34"/>
 </map>
