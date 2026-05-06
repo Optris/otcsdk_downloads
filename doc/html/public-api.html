@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -109,164 +109,71 @@ $(function(){initNavTree('public-api.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_pages_205__public__api"></a></p>
-<h1><a class="anchor" id="autotoc_md26"></a>
+<h1><a class="anchor" id="autotoc_md27"></a>
 Contents</h1>
 <ul>
 <li><a class="el" href="#public-api-architecture">Architecture</a></li>
-<li><a class="el" href="#public-api-device-enumeration">Device Enumeration</a></li>
-<li><a class="el" href="#public-api-operation-modes">Operation Modes</a></li>
 <li><a class="el" href="#public-api-thermal-data">Thermal Data</a></li>
 <li><a class="el" href="#public-api-false-color-images">False Color Images</a></li>
-<li><a class="el" href="#public-api-measurement-fields">Measurement Fields</a></li>
-<li><a class="el" href="#public-api-process-interface">Process Interface (PIF)</a></li>
-<li><a class="el" href="#public-api-client-fail-safe">Client Fail Safe</a></li>
 </ul>
 <h1><a class="anchor" id="public-api-architecture"></a>
 Architecture</h1>
-<p>The following UML diagram illustrates the class structure of the public SDK API. All the details about the class members are omitted to ensure it is clear and easy to understand.</p>
+<p>The following UML diagram illustrates the class structure of the public SDK API. All the details about the class members as well as some minor helper classes are omitted to ensure it is clear and easy to understand.</p>
 <div class="image">
 <img src="otcsdk_user_classes.png" alt=""/>
 <div class="caption">
 Class diagram detailing the class structure of the public API.</div></div>
     <p>A number of design patterns are employed to make the API easy to use. They include but are not limited to</p>
 <p><b>Observers</b> (red)</p>
-<p>The SDK features two Observer structures. The most important one is constituted by the <code>IRImager</code> interface and the <code>IRImagerClient</code>. Each <code>IRImager</code> instance represents a single thermal camera and its interface defines how you can interact with it. By registering a child class of the <code>IRImageClient</code> with the <code>addClient()</code> method you can receive processed thermal frames, flag states and other status information. To process this data implement the corresponding callback methods defined by the <code>IRImagerClient</code> in your child class.</p>
-<p>The <code>EnumerationManger</code> uses the same pattern to inform <code>EnumerationClient</code> classes of newly attached or removed devices.</p>
+<p>The SDK features two Observer structures. The most important one is constituted by the <code>IRImager</code> interface and the <code>IRImagerClient</code>. Each <code>IRImager</code> instance represents a single thermal camera and its interface defines how you can interact with it. By registering a child class of the <code>IRImagerClient</code> with the <code>addClient()</code> method you can receive processed thermal frames, flag states and other status information. To process this data implement the corresponding callback methods defined by the <code>IRImagerClient</code> in your child class.</p>
+<p>The <code>EnumerationManger</code> uses the same pattern to inform <code>EnumerationClient</code> classes of newly detected or removed devices or devices that changed their busy status.</p>
 <p>Both client classes feature empty default implementations for the callbacks they define. Therefore, you only need to override the callbacks that you need.</p>
+<dl class="section attention"><dt>Attention</dt><dd>Remove your <code>IRImagerClient</code> or <code>EnumerationClient</code> instance from the <code>IRImager</code> or <code>EnumerationManager</code> with <code>removeClient()</code> before destroying it. Otherwise you may provoke a segmentation fault.</dd></dl>
 <p><b>Factories</b> (green)</p>
 <p>Factories encapsulate the instantiation of classes. The public API features two such factories: The first one is the <code>IRImagerFactory</code> that creates objects of classes that implement the <code>IRImager</code> interface based on a provided string. By requesting a <code>native</code> instance you get an <code>IRImager</code> implementation that can interact with thermal cameras via USB and Ethernet.</p>
-<p>The second factory loads a <a class="el" href="important-files.html#important-files-configuration">configuration files</a> from the given path and returns an <code>IRImagerConfig</code> object with the read configuration values.</p>
-<p><b>Iterators</b> (blue)</p>
-<p>The iterator classes are designed to offer a uniform and convenient way to iterate over the data values stored in <code>Frame</code>, <code>ThermalFrame</code>, <code>MeasurementField</code> and <code>Image</code> objects. However, they do not offer the best performance for this purpose particularly in programming languages that are supported via bindings.</p>
-<p>For more details on efficient ways to access <a href="https://optris.com/lexicon/thermal-image/">thermal and image data</a> please refer to the sections <a class="el" href="#public-api-thermal-data">Retrieving Thermal Data</a> and <a class="el" href="#public-api-false-color-images">Creating False Color Images</a>.</p>
+<p>The second factory loads a <a class="el" href="important-files.html#important-files-configuration">configuration file</a> from the given path and returns an <code>IRImagerConfig</code> object with the read configuration values.</p>
 <p><b>Singletons</b></p>
 <p>Both the <code>IRImagerFactory</code> and the <code>EnumerationManager</code> are Singletons. This means there can only be one object per class and per application. To access this object you have to call the static method <code>getInstance()</code>.</p>
-<p><b>Static Classes</b></p>
+<p><b>Static Classes</b> (yellow)</p>
 <p>Apart from the design patterns there is another important class: the static <code>Sdk</code> class. It contains the <code>init()</code> method required to initialize the SDK, methods to manipulate some SDK wide behavior and access to <code>VersionInfo</code> objects holding version and build information.</p>
-<h1><a class="anchor" id="public-api-device-enumeration"></a>
-Device Enumeration</h1>
-<p>The <code>EnumerationManager</code> can detect available devices on the USB port and on the network. It fetches their connection details and basic information about the device like its serial number, its firmware and hardware revisions.</p>
-<h2><a class="anchor" id="autotoc_md27"></a>
-Prerequisites</h2>
-<p>Devices connected via USB can be detected out of the box. Ethernet devices, on the other hand, need to feature at least the following firmware revisions or the SDK will not be able to locate them on the network:</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Device Type   </th><th class="markdownTableHeadNone">Minimal Required Firmware Revision    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Xi 80   </td><td class="markdownTableBodyNone">3031    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Xi 320 MT   </td><td class="markdownTableBodyNone">3351    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Xi 410   </td><td class="markdownTableBodyNone">3824    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Xi 1M   </td><td class="markdownTableBodyNone">4020   </td></tr>
-</table>
-<p>Please use the <a href="https://optris.com/software/pixconnect/">PixConnect 3</a> to verify the firmware revision of your device and updated it as needed. You can also use the <a class="el" href="basic-usage.html#basic-usage-command-line-tools-otc-find-devices">otc_find_devices</a> command line tool to determine the firmware revision. This will, however, only work reliably, if your device is connected via USB because the required firmware update for Ethernet detection may not yet been installed.</p>
-<h2><a class="anchor" id="autotoc_md28"></a>
-Usage</h2>
-<p>The manager is implemented as a Singleton so that its unique instance can be accessed application wide via the static method <code>getInstance()</code>.</p>
-<p>The <code>EnumerationManager</code> is initialized in the <code>Sdk::init()</code> function. It adds an <code>EnumerationDetector</code> for USB devices to the manager and starts its detection loop in a dedicated thread (<code>runAsync()</code>). You can stop this loop at any time by calling <code>stopRunning()</code>. Use either <code>run()</code> or <code>runAsync()</code> to restart it. The first version runs the detection loop synchronously and will block while the second one runs the loop asynchronously in a separate thread.</p>
-<p>You can add and remove detectors for USB and Ethernet devices at any time with the help of the following methods of the <code>EnumerationManager</code>:</p>
-<p><b>USB</b> <br  />
- Only one detector for USB devices can be added per program.</p>
-<div class="fragment"><div class="line"><span class="comment">// Add</span></div>
-<div class="line">EnumerationManager::getInstance().addUsbDetector();</div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// Remove</span></div>
-<div class="line">EnumerationManager::getInstance().removeUsbDetector();</div>
-</div><!-- fragment --><p><b>Ethernet</b> <br  />
- Only detector for Ethernet devices can be added per network and per program. If you wish to manipulate a detector for the network <code>192.168.0.0</code> with subnet mask <code>255.255.255.0</code>, you can use the following methods:</p>
-<div class="fragment"><div class="line"><span class="comment">// Add</span></div>
-<div class="line">EnumerationManager::getInstance().addEthernetDetector(<span class="stringliteral">&quot;192.168.0.0/24&quot;</span>);</div>
-<div class="line">EnumerationManager::getInstance().addEthernetDetector(IpAddress(192, 168, 0, 0), 24);</div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// Remove</span></div>
-<div class="line">EnumerationManager::getInstance().removeEthernetDetector(<span class="stringliteral">&quot;192.168.0.0/24&quot;</span>);</div>
-<div class="line">EnumerationManager::getInstance().removeEthernetDetector(IpAddress(192, 168, 0, 0), 24);</div>
-</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The <code>/24</code> is a short hand for the subnet mask <code>255.255.255.0</code>. The <code>24</code> refers to the number of <code>1</code> bits in the subnet mask.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>The Ethernet device detection utilizes UDP broadcasts. Some network infrastructure like routers and switches may impose limits on these broadcasts. Consequently, restraining the ability of the SDK to find these devices.</dd></dl>
-<p>The methods adding detectors return a string key that uniquely identifies the added detector instances. If this string is empty, adding the detector failed for one of the following reasons:</p>
-<ul>
-<li>A USB detector or an Ethernet for a specific network already exists.</li>
-<li>The network address string could not be parsed.</li>
-<li>The Ethernet detector failed to allocate required resources.</li>
-</ul>
-<p>The <code>EnumerationManager</code> offers some additional methods to handle the device detectors:</p>
-<ul>
-<li><code>getDetectorNames()</code> returns the names of all active detectors.</li>
-<li><code>removeDetector()</code> removes the detector with the given name.</li>
-<li><code>clearDetectors()</code> removes all detectors.</li>
-</ul>
-<p>There are two ways to extract information about detected devices from the <code>EnumerationManager</code>:</p>
-<ul>
-<li>call <code>getDetectedDevices()</code> to get <code>DeviceInfo</code> objects for all currently detected devices.</li>
-<li>Derive a class from <code>EnumerationClient</code> and register an instance as an observer with the <code>EnumerationManager</code> via the <code>addClient()</code> method. Then the manager will notify it about newly detected devices, lost devices and devices whose connection details or status have changed.</li>
-</ul>
-<p>For more hands-on details about the device enumeration take a look at the <a class="el" href="example-applications.html#example-applications-enumeration">Enumeration</a> example.</p>
-<h1><a class="anchor" id="public-api-operation-modes"></a>
-Operation Modes</h1>
-<p>An operation mode represents a valid combination of optics, temperature range and video format settings that is supported by a device. These three categories are comprised out of the following individual setting options:</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Category   </th><th class="markdownTableHeadNone">Individual Setting Options    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Optics   </td><td class="markdownTableBodyNone">Field of view (FOV), optics text    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Temperature Range   </td><td class="markdownTableBodyNone"><b>Non</b>-extended lower and upper limit    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Video Format   </td><td class="markdownTableBodyNone">Frame width, frame height and framerate (<b>not</b> subsampled)   </td></tr>
-</table>
-<p>The availability of the different operation modes depends on the device type, the available calibration data and the used device connection interface (USB, Ethernet).</p>
-<dl class="section attention"><dt>Attention</dt><dd>Different operation modes may be available for devices of the same type because of<ul>
-<li>additional or different <b>optics</b>. <br  />
- Each of these optics require their own set of calibration data. Otherwise, they can not be utilized.</li>
-<li>different <b>connection interfaces</b> (USB, Ethernet). <br  />
- Ethernet connections typically offer a higher bandwidth. Thus, they allow for larger formats and/or higher framerates like for the <a class="el" href="features.html#features-supported-cameras-xi410">Xi 410</a>.</li>
-</ul>
-</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If the connection interface of an Ethernet capable device has changed, the SDK will automatically select the first suitable video format when the one specified in the configuration is not supported.</dd></dl>
-<h2><a class="anchor" id="autotoc_md29"></a>
-Available And Active Modes</h2>
-<p>You can use the <code>IRImager::getOperationModes()</code> method to get a container with all the available operation modes for the current device connection. The container is always sorted in ascending order with the following prioritization of the individual settings:</p>
-<p><code>field of view &gt; optics text &gt; lower temperature limit &gt; upper temperature limit &gt; frame width &gt; frame height &gt; framerate</code></p>
-<p>The currently active operation mode is returned by the <code>IRImager::getActiveOperationMode()</code> method. With its <code>OperationMode::getIndex()</code> method you can identify its index within the container of available modes.</p>
-<h2><a class="anchor" id="autotoc_md30"></a>
-Setting The Active Mode</h2>
-<p>You have two options to set the active operations mode:</p><ul>
-<li>In the <a class="el" href="important-files.html#important-files-configuration">configuration file</a> with the <a class="el" href="important-files.html#important-files-configuration-optics">optics</a>, <a class="el" href="important-files.html#important-files-configuration-temperature-range">temperature range</a> and <a class="el" href="important-files.html#important-files-configuration-video-format">video format</a> settings. <br  />
- Please note, that all three of these sections in the configuration file feature some additional options that have no direct impact on the operation modes.</li>
-<li>At runtime via the <code>IRImager::setActiveOperation()</code> methods. <br  />
- You can either provide the instance of the operation mode to set or you can specify the desired mode by providing all the individual setting options listed in the table above. The second approach features the same support for "wildcards" as their configuration file counterparts. This means you can, for example, let the SDK choose the video format by providing zeros for the <code>width</code>, <code>height</code> and <code>framerate</code> arguments.</li>
-</ul>
-<p>When changing an active operation mode at runtime, the SDK pauses the processing of thermal frames while reconfiguring the incoming data stream and reinitializing the processing pipeline. Once completed it enters an initialization phase similar to the <a class="el" href="basic-usage.html#basic-usage-startup-process-startup-calibration">startup calibration</a> upon a new device connection. This phase, however, is significantly shorter. Nevertheless, thermal data during this phase is equally <b>unreliable</b>. The SDK denotes that phase by setting the <code>FlagState</code> to <code>Initializing</code>. SDK clients can check for this value either via the <code>IRImagerClient::onFlagStateChange()</code> callback or via the state contained within the <code>FrameMetadata</code> object returned by the <code>IRImagerClient::onThermalFrame()</code> callback.</p>
-<dl class="section attention"><dt>Attention</dt><dd>If the newly active operation mode features different frame dimensions from the old one, the SDK will scale the position and dimensions of all active measurement fields to ensure that they stay completely within the frame. For more details please refer to the <a class="el" href="#public-api-measurement-fields">measurement fields</a> section.</dd></dl>
+<p>Additionally, it allows you to set application/process wide settings that affect, for example, <a class="el" href="calibration-file-acquisition.html">calibration file acquisition</a> or <a class="el" href="color-palettes.html">color palette loading</a>.</p>
+<p><b>Event Classes</b> (blue)</p>
+<p>All the information provided by the <code>IRImagerClient</code> callbacks are encapsulated in event classes. They feature public fields through which clients can access the data they desire. In the case of the <code>ConnectionEvent</code> clients can even send back data to the SDK to influence the automatic <a class="el" href="calibration-file-acquisition.html">calibration file acquisition</a>.</p>
+<p><b>Configuration Classes</b> (orange)</p>
+<p>They are simple plain data classes that feature only public member variables. They can also have a static <code>validate()</code> method for verifying the configuration settings they hold.</p>
 <h1><a class="anchor" id="public-api-thermal-data"></a>
 Thermal Data</h1>
-<p>As illustrated in the previous section, the SDK uses an Observer pattern to relay the latest thermal data to a client. This primarily happens via the following method of the <code>IRImagerClient</code> class (C++):</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> onThermalFrame(<span class="keyword">const</span> ThermalFrame&amp; thermal, <span class="keyword">const</span> FrameMetadata&amp; meta);</div>
-</div><!-- fragment --><p>The thermal data is encapsulated in an object of the <code>ThermalFrame</code> class while a <code>FrameMetadata</code> object holds its corresponding metadata. There are a few important things to note:</p>
+<p>As illustrated in the previous section, the SDK uses an Observer pattern to relay the latest frame data to a client. This primarily happens via the following method of the <code>IRImagerClient</code> class (C++):</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> onFrame(<span class="keyword">const</span> FrameEvent&amp; evt);</div>
+</div><!-- fragment --><p>This callback is triggered whenever the SDK finished processing a frame. This occurs at maximum at the device framerate of the currently used video format (see <a class="el" href="features.html#features-supported-cameras">Supported Cameras</a> section for more details). This rate can be reduced by setting a sub-sampled framerate via the <a class="el" href="important-files.html#important-files-configuration-video-format">configuration file</a> or the <code>IRImager</code> interface.</p>
+<p>The callback provides a reference to a <code>FrameEvent</code> object that contains all the results of the processing pipeline:</p>
 <ul>
-<li><p class="startli">The method does only provide <b>references</b> (<code>&amp;</code>) to these objects that grant access to their data. The references and the objects are only <b>valid during the callback</b>. If you wish to use the <code>ThermalFrame</code> data or the <code>FrameMetadata</code> outside the callback, you will have to make an explicit copy.</p>
-<dl class="section attention"><dt>Attention</dt><dd>In C++ a simple assignment is enough. In any other language you have to use the <code>clone()</code> methods of the <code>ThermalFrame</code> and <code>FrameMetadata</code> classes to ensure an explicit copy is created.</dd></dl>
-</li>
-<li><p class="startli">The provided references are <code>const</code>. This means you can not manipulate the objects to which they are pointing to. You have only <b>read access</b>.</p>
-<dl class="section attention"><dt>Attention</dt><dd>The <code>const</code> qualifier is typically not mirrored in the bindings of the other supported programming languages. Thus, it may appear that you can manipulate these objects but this will certainly lead to errors.</dd></dl>
-</li>
-<li>Keep your method implementation <b>short</b> because no further frames are processed while it is active.</li>
+<li><code>thermalFrame</code> is a <code>ThermalFrame</code> object that holds the thermal data of the overall frame.</li>
+<li><code>meta</code> is a <code>FrameMetadata</code> object which provides the corresponding meta data.</li>
+<li><code>fields</code> is a map containing the <code>MeasurementFieldStatus</code> for each active measurement field.</li>
 </ul>
-<dl class="section note"><dt>Note</dt><dd>These observations also apply to the <code>onMeasurementField()</code> and <code>onThermalFrameEvent()</code> methods of the <code>IRImagerClient</code> class.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The process output configuration lets clients switch on and off specific processing outputs. If thermal frames are deactivated, the <code>thermalFrame</code> object will be empty. Likewise will be the <code>fields</code> map, if the fields are deactivated. Refer to the configuration file <a class="el" href="important-files.html#important-files-configuration-processing">documentation</a> or the API documentation of the <code>ProcessingOutputConfig</code> for more details.</dd></dl>
+<p>There are a few important things to note when implementing the <code>onFrame()</code> callback:</p>
+<ul>
+<li><p class="startli">The method only provides a <b>reference</b> (<code>&amp;</code>) to the <code>FrameEvent</code> object. It refers to an <b>internal buffer</b> that will be <b>reused</b> by the SDK once the callback is finished. Thus, if you wish to use the event outside of the callback you will have to make an explicit copy with a simple assignment (C++) or with its <code>clone()</code> method (any other language).</p>
+<dl class="section attention"><dt>Attention</dt><dd>The SDK uses a <b>pool of internal buffers</b> to store the results of the processing pipeline. This is done to avoid continuous memory allocations. The pool starts empty and is <b>grown as needed</b>. It can hold up to a limited maximum number of result buffers. This number is configurable in the <a class="el" href="important-files.html#important-files-configuration-processing">configuration file</a> or through the <code>IRImager</code> interface.</dd></dl>
+</li>
+<li>Keep your implementation <b>short</b>. The callback does not block the processing pipeline directly but every unprocessed callback blocks a result buffer. Once all available buffers are in use the SDK starts to reclaim the buffers with the oldest processing results. This effectively leads to <b>frame drops</b>.</li>
+</ul>
+<p>The same points hold true for the <code>onRawFrame()</code> callback verbatim. This callback, however, is deactivated by default by the <code>ProcessingOutputConfig</code>.</p>
+<dl class="section attention"><dt>Attention</dt><dd>Sluggish processing of the <code>onFrame()</code> and <code>onRawFrame()</code> callbacks will lead to <b>frame drops</b>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>All the other callbacks of the <code>IRImagerClient</code> have similar properties: They provide references to an internal buffers and sluggish callback implementations will slow down event processing but they will not lead to dropped frames.</dd></dl>
 <p>The <code>ThermalFrame</code> object contains the measured temperatures for each pixel in an internal format. These values are represented by <b>unsigned 16 bit integers</b>. You can convert the internal values into degree Celsius with the help of an <code>TemperatureConverter</code> object. Retrieve it for <b>every</b> <code>ThermalFrame</code> with the <code>getConverter()</code> method.</p>
 <dl class="section attention"><dt>Attention</dt><dd>Do not use <code>TemperatureConverter</code> objects that you instantiated yourself but retrieve them from <b>every</b> <code>ThermalFrame</code> you process. This is necessary because the internal values differ depending which <code>TemperaturePrecision</code> is currently active.</dd></dl>
-<p>You have multiple ways to access the thermal data that is internally stored in a one-dimensional array:</p>
+<p>You have multiple ways to access the thermal data that is internally stored in a one-dimensional row-major array:</p>
 <ul>
 <li>Use the <code>getValue()</code> methods to access the internal temperature values for individual pixels.</li>
 <li>Use the <code>getTemperature()</code> methods to access the temperature in degree Celsius for individual pixels.</li>
-<li>Use the <code>getConstIterator()</code> method to get an iterator that allows you iterate over the entire frame.</li>
 </ul>
-<p>The iterator is convenient but does not offer the best performance particularly in programming languages that are supported via bindings. The most efficient ways to access the thermal data are:</p>
+<p>These methods are convenient but do not offer the best performance since they do range checks. The most efficient ways to access the thermal data are:</p>
 <p><b>C++</b><br  />
  Use the <code>getData()</code> method to acquire a const pointer to the <b>internal temperature value</b> of the first pixel. All the values are stored in one continuous section of the memory like they would in a standard C array. As an alternative, you can use the <code>copyDataTo()</code> method.</p>
-<p>The <b>temperatures in degree Celsius</b> can be acquired with <code>copyTemperaturesTo()</code> in the same way.</p>
+<p>The <b>temperatures in degree Celsius</b> can be acquired with the <code>copyTemperaturesTo()</code> in the same way.</p>
 <div class="fragment"><div class="line">std::vector&lt;unsigned int&gt; data(thermal.getSize());          <span class="comment">// Thermal data in internal format</span></div>
 <div class="line">std::vector&lt;float&gt;        temperatures(thermal.getSize());  <span class="comment">// Thermal data in degree Celsius</span></div>
 <div class="line"> </div>
@@ -288,26 +195,21 @@ Thermal Data</h1>
 <div class="line"> </div>
 <div class="line">thermal.copyDataTo(data)</div>
 <div class="line">thermal.copyTemperaturesTo(temperatures)</div>
-</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>These remarks also apply to the thermal data stored in <code>MeasurementField</code> objects.</dd></dl>
-<h1><a class="anchor" id="public-api-false-color-images"></a>
+</div><!-- fragment --><h1><a class="anchor" id="public-api-false-color-images"></a>
 False Color Images</h1>
-<p>You can easily convert a <code>ThermalFrame</code> into a false color image with the help of an <code>ImageBuilder</code> object. The resulting images have three channels: red, blue and green. Each channel has a color depth of 8 bits. The color values are stored in a continuous one-dimensional array. When setting up the <code>ImageBuilder</code> there are few things to consider:</p>
+<p>You can easily convert a <code>ThermalFrame</code> into a false color image with the help of an <code>ImageBuilder</code> object. The resulting images have three channels: red, blue and green. Each channel has a color depth of 8 bits. The color values are stored in a continuous one-dimensional row-major array. When setting up the <code>ImageBuilder</code> there are few things to consider:</p>
 <ul>
 <li><p class="startli">The <code>ColorFormat</code> defines the sequence in which the individual color values for each pixel are stored in the image array. If set to <code>RGB</code>, the value for red will have the lowest index and the value for blue will have the highest. With <code>BGR</code> things are the other way around.</p>
 <dl class="section note"><dt>Note</dt><dd>Not all libraries or programming languages may interpret <code>RGB</code> and <code>BGR</code> this way.</dd></dl>
 </li>
 <li>The <code>WidthAlignment</code> specifies whether the size of each row/line in the resulting image should adhere to a specific alignment. For example the <code>FourBytes</code> alignment ensures that the size of every row/line in bytes is a multiple of four. If this is not the case out of the box, padding bytes will be added at the end of each line. Some libraries depend on a certain alignment to efficiently read image data.</li>
-<li>The <a href="https://optris.com/lexicon/color-palettes/"><code>ColorPalette</code></a> defines with what set of colors the different temperatures are represented. Refer to the API documentation of the <code>ColorPalette</code> enum to get an idea what options are available.</li>
-<li>The <code>PaletteScalingMethod</code> specifies how the <a href="https://optris.com/lexicon/color-palettes/"><code>ColorPalette</code></a> gets applied to the temperature spectrum found in a <code>ThermalFrame</code>.</li>
+<li>The <a class="el" href="color-palettes.html">color palette</a> defines which set of colors is used to represent the temperature spectrum. Palettes are identified by name (e.g. <code>"Iron"</code>, <code>"Rainbow"</code>) and are loaded from <code>CSV</code> files at runtime. The SDK also feature a hardcode version of the <code>Iron</code> palette that is used, if no palette files were found. The palette files are loaded during the call of <code>Sdk::init()</code>. For more information on how reload, manage or create your own palettes refer to the <a class="el" href="color-palettes.html">color palettes</a> chapter.</li>
+<li>The <code>TemperatureScalingMode</code> specifies how the palette is mapped onto the temperature spectrum found in a <code>ThermalFrame</code>.</li>
 </ul>
 <p>Once the <code>ImageBuilder</code> object is set up you can set the <code>ThermalFrame</code> to convert with the <code>setThermalFrame()</code> method. Trigger the conversion with <code>convertTemperatureToPaletteImage()</code> and access the result with <code>getImage()</code>. The image data is encapsulated in an <code>Image</code> object.</p>
 <dl class="section attention"><dt>Attention</dt><dd>The <code>getImage()</code> method returns only a <b>reference</b> to the <code>Image</code> object that grants <b>read access</b>. If you want to retain a copy in languages other than C++, use the <code>clone()</code> method to force an explicit copy. Keep in mind that you can not manipulate the referenced <code>Image</code> object even if the API of the bindings may suggest it.</dd></dl>
-<p>You can access the image data in different ways:</p>
-<ul>
-<li>Use the <code>getPixel()</code> methods to get a <code>Pixel</code> object containing the color values.</li>
-<li>Use the <code>getConstIterator()</code> method to get an iterator that enables you to iterate over the image pixel by pixel.</li>
-</ul>
-<p>The iterator is more convenient than the ones for the thermal data because you do not need to worry about the order of the color values and potential padding bytes. It shares, however, the same downsides. Therefore, the SDK provides more efficient ways to access the image data:</p>
+<dl class="section note"><dt>Note</dt><dd>For more performance you can let the <code>ImageBuilder</code> write the false color image to a buffer you provide. Refer to the API documentation of the corresponding <code>convertTemperatureToPaletteImage()</code> method for more details.</dd></dl>
+<p>You can access the individual pixels by using the <code>getPixel()</code> methods. They return a <code>Pixel</code> object containing the color values. This is convenient because you do not need to worry about the order of the color values and potential padding bytes. However, this and the included range checking introduces overhead. Therefore, the SDK provides more efficient ways to access the image data:</p>
 <p><b>C++</b><br  />
  Use the <code>getData()</code> method to acquire a const pointer to the color value array. All the values are stored in one continuous section of the memory like they would in a standard C array. As an alternative, you can use the <code>copyDataTo()</code> method. The following example uses the shortcut methods provided by the <code>ImageBuilder</code> class.</p>
 <div class="fragment"><div class="line">std::vector&lt;unsigned char&gt; image(imageBuilder.getImageSizeInBytes());</div>
@@ -324,175 +226,7 @@ False Color Images</h1>
 <div class="line"> </div>
 <div class="line">image_builder.copyImageDataTo(image)</div>
 </div><!-- fragment --><dl class="section attention"><dt>Attention</dt><dd>A downside of these more efficient ways is that you have to take care of the color value order and of potential padding bytes at the end of every image row/line yourself.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The <code>ImageBuilder</code> offers the shortcut methods <code>copyImageDataTo()</code> and <code>getImageSizeInBytes()</code> that allow you direct access the data of the <code>Image</code> object.</dd></dl>
-<h1><a class="anchor" id="public-api-measurement-fields"></a>
-Measurement Fields</h1>
-<p><a href="https://optris.com/lexicon/measurement-field/">Measurement fields</a> are sub-sections of the thermal frame that can be processed with a different set of radiation parameters (<a href="https://optris.com/lexicon/emissivity/">emissivity</a>, <a href="https://optris.com/lexicon/transmissivity/">transmissivity</a> and <a href="https://optris.com/lexicon/ambient-temperature/">ambient temperature</a>). The minimum, maximum and mean temperatures in degree Celsius are calculated for every measurement field by default and can be accessed through the corresponding member functions of the <code>MeasurementField</code> class.</p>
-<p>Measurement fields are created by providing their configuration in either the <a class="el" href="important-files.html#important-files-configuration-measurement-fields">configuration file</a> or by passing an instance of the <code>MeasurementFieldConfig</code> class to the <code>addMeasurementField()</code> method of the <code>IRImager</code>. This method returns an integer representing the index of the measurement field. This index starts at zero and is incremented with each added field reflecting their <b>creation order</b>. The fields in the configuration will always be added first. The index can be used to refer to a specific <a href="https://optris.com/lexicon/measurement-field/">measurement field</a>.</p>
-<dl class="section note"><dt>Note</dt><dd>Internally the SDK uses an unique auto assigned ID to identify the different measurement fields.</dd></dl>
-<p>At the moment the SDK only supports rectangular measurement fields. They are defined by their width and height in pixels and by the position of their upper left corner. Multiple overlapping and/or equal fields can exist at the same time.</p>
-<div class="image">
-<img src="measurement_field.png" alt=""/>
-<div class="caption">
-Defining a rectangular measurement field within a thermal frame.</div></div>
-    <dl class="section attention"><dt>Attention</dt><dd>The position and dimensions of the measurement field will be linked to the dimensions of the thermal frame at the time of their creation. If you change to an <a class="el" href="#public-api-operation-modes">operation mode</a> with different frame dimensions, the field position and dimensions will be scaled accordingly to ensure that the field remains within the frame.</dd>
-<dd>
-If, for example, the height of the thermal frame is halved, so will be the x-position and the height of the field. The SDK <b>rounds</b> fractional pixel values to the next integer and ensures that the<ul>
-<li>field dimensions will always be <b>at least 1</b> in size</li>
-<li>position and dimensions of the field are <b>correctly restored</b> when using the thermal frame dimension the field was linked to.</li>
-</ul>
-</dd></dl>
-<p>The <code>mode</code> of the measurement field specifies which of the three available temperatures (minimum, maximum, mean) is returned by the <code>getDataPoint()</code> method of the <code>MeasurementField</code> class. The option is primarily used by the SDK to identify which data point should be output on a <a class="el" href="pif.html">Process Interface</a> channel. This mechanism can of course also be utilized by SDK clients. <br  />
-</p>
-<p>Once the SDK finished processing a measurement field it informs all registered <code>IRImagerClient</code>s via their <code>onMeasurementField()</code> callback method. Please note, that this method just provides a constant reference to the corresponding <code>MeasurementField</code> object. This reference only grants <b>read access</b> and is only <b>valid during the callback</b>. For details about how to extract the thermal data or how to retain a copy please refer to the section about <a class="el" href="#public-api-thermal-data">Thermal Data</a>.</p>
-<h1><a class="anchor" id="public-api-process-interface"></a>
-Process Interface (PIF)</h1>
-<p>The <a class="el" href="pif.html">Process Interface</a> can be setup via the <a class="el" href="important-files.html#important-files-configuration-process-interface">configuration file</a>. At runtime you can access it through the methods exposed by the <code>ProcessInterface</code> interface. This is, however, only possible when the <code>IRImager</code> has an active camera connection. If no connection is established, calls of the <code>getPif()</code> methods will result in a <code>SDKException</code>.</p>
-<dl class="section attention"><dt>Attention</dt><dd>The <code>IRImager::getPif()</code> methods return a <b>reference</b> to the implementation object of the <code>ProcessInterface</code>. This reference is only <b>valid during an active camera connection</b>. Therefore, take great care when you are retaining a copy of this reference!</dd></dl>
-<p>The <code>ProcessInterface</code> allows you to get and set the configuration for an entire process interface or just for its individual channels. By providing coherent configurations instead of single options at a time the SDK can better ensure their overall validity and consistency .</p>
-<h2><a class="anchor" id="autotoc_md31"></a>
-Device</h2>
-<h3><a class="anchor" id="autotoc_md32"></a>
-Type</h3>
-<p>The configuration requires you to specify the type of PIF you wish to use. The SDK will then check your choice against the PIF type reported by the camera firmware. Depending on the camera type this will either be</p>
-<ul>
-<li>the set PIF type in the on-device configuration (Xi 80, Xi 410(MT), Xi 1M)</li>
-<li>the detected PIF type (all other cameras)</li>
-</ul>
-<p>Depending on the situation the SDK will try set the desired device. This can yield the following outcomes:</p>
-<ul>
-<li>The set PIF type is actually connected. Then the SDK will apply the channel configurations.</li>
-<li>A <code>SDKException</code>, if the desired PIF type is not compatible with the camera.</li>
-<li>A <code>SDKException</code>, if the set type is <code>Proprietary</code> or <code>TemperatureProbe</code> and an actual PIF is connected.</li>
-<li>If a PIF type was set but no PIF is actually connected, the SDK will use the <code>None</code> type and will ignore all channel configurations.</li>
-<li>If a PIF type was set but a different type is connected, the SDK will assume the reported type and will try to apply all the specified channel configurations. This, however, may fail because not all analog output modes are supported by all PIF devices.</li>
-</ul>
-<dl class="section note"><dt>Note</dt><dd>You can set the PIF type to <code>Automatic</code>. The SDK will then automatically use the type reported by the firmware. In this case it will also try to apply all specified channel configurations. This can, however, fail because of unsupported analog output modes.</dd></dl>
-<p>For more details please refer to <a class="el" href="important-files.html#important-files-configuration-process-interface-device-type">configuration file</a> documentation or to the <a class="el" href="pif.html">Process Interface (PIF)</a> chapter.</p>
-<h3><a class="anchor" id="autotoc_md33"></a>
-Count</h3>
-<p>When using <b>stackable PIFs</b> you need to set the number of PIF devices you wish to use. In all other cases the SDK can derive this count from the set PIF device type.</p>
-<dl class="section note"><dt>Note</dt><dd>A maximum of <b>three</b> stackable PIFs can be attached to same camera at the same time.</dd></dl>
-<p>The number of stackable PIFs has to be defined either in the <a class="el" href="important-files.html#important-files-configuration-process-interface-device-count">configuration file</a> or via the <code>deviceCount</code> member variable in the <code>PifConfig</code> class when using the <code>setConfig()</code> method of the <code>ProcessInterface</code>.</p>
-<dl class="section attention"><dt>Attention</dt><dd>The device count specifies how many stackable PIFs can be <b>accessed and configured</b> through the SDK. The count of <b>actually connected</b> PIFs can be lower!</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The SDK will not be able to detect more connected stackable PIFs than specified by this device count.</dd></dl>
-<p>This behavior allows clients to configure PIFs without the need to connect them to the camera. At the moment, however, this is pointless because the SDK does not support autonomous settings that would retain the set configuration on-device. Currently, the configuration is lost when the camera loses power.</p>
-<h2><a class="anchor" id="public-api-process-interface-channels"></a>
-Channels</h2>
-<p>Depending on the used PIF different channel types are available:</p>
-<ul>
-<li><b>analog inputs</b> can read input voltages between 0 - 10 V.</li>
-<li><b>digital inputs</b> can read binary voltage signals.</li>
-<li><b>analog outputs</b> can potentially output signals in the output modes 0 - 10 V, 0 - 20 mA and 4 - 20 mA depending on the type of process interface.</li>
-<li><b>digital outputs</b> can output binary voltage signals.</li>
-<li><b>fail safe</b> can output a level based voltage signal indicating whether the camera and the processing pipeline of the SDK is working properly.</li>
-</ul>
-<dl class="section note"><dt>Note</dt><dd>The SDK uses the following abbreviations to mark resources for the specific channel types, like classes or enums:<ul>
-<li><code>Ai</code> - analog inputs</li>
-<li><code>Di</code> - digital inputs</li>
-<li><code>Ao</code> - analog outputs</li>
-<li><code>Do</code> - digital outputs</li>
-<li><code>Fs</code> - fail safe</li>
-</ul>
-</dd></dl>
-<h3><a class="anchor" id="public-api-process-interface-channels-addressing"></a>
-Addressing</h3>
-<p>The individual channels are addressed by a pair of indices: <code>[deviceIndex, pinIndex]</code>. The <code>deviceIndex</code> refers to the physical process interface on with the pins for the desired channel are located. It is <b>only relevant for stackable PIFs</b>. In all other cases the <code>deviceIndex</code> is <code>0</code>.</p>
-<p>The <code>pinIndex</code> identifies the actual pins on the specified PIF device that correspond with the desired channel.</p>
-<p>To better understand the addressing of the channels please consider the setup shown in the figure below: <b>Three</b> stackable PIFs are configured but only <b>two</b> are actually connected to the camera (the one not connected is grayed out).</p>
-<div class="image">
-<img src="stackable_pifs.png" alt=""/>
-<div class="caption">
-Stackable process interface example.</div></div>
-    <p>In this case the <code>deviceIndex</code> can be in <code>[0, 2]</code> and the <code>pinIndex</code> can be in <code>[0, 1]</code>. Thus, manipulating the pins <code>0</code> and <code>1</code> on the PIF device <code>2</code> is possible but will yield any tangible effects.</p>
-<p>The properties of this addressing schema are also reflected in the getter methods for the device and channels counts provided by the <code>ProcessInterface</code>. Their differences are best understood with the above example in mind:</p>
-<p><b>Devices</b></p><ul>
-<li><code>getActualDeviceCount()</code> returns the number of actually connected devices. Example: 2.</li>
-<li><code>getConfigurableDeviceCount()</code> returns the number configurable devices. Example: 3.</li>
-</ul>
-<dl class="section note"><dt>Note</dt><dd>On non-stackable PIFs these methods yield the same values.</dd></dl>
-<p><b>Channels</b> (<code>XX</code> denotes the channel type)</p><ul>
-<li><code>getActualXXCount()</code> returns the count of all <code>XX</code> channels on actually connected devices. Example: 2 * 2 = 4.</li>
-<li><code>getConfigurableXXCount()</code> returns the count of all <code>XX</code> channels on configurable devices. Example: 3 * 2 = 6.</li>
-<li><code>getXXCountPerDevice()</code> returns the count of <code>XX</code> channels per individual device. Example: 2.</li>
-</ul>
-<dl class="section note"><dt>Note</dt><dd>On non-stackable PIFs these methods yield the same values.</dd></dl>
-<p>The fail safe channel is an exception. If available, there will always be only one of it. Even in the case of multiple stackable PIFs that each have separate pins for this channel. In this case these pins will all output the same signal.</p>
-<h3><a class="anchor" id="autotoc_md34"></a>
-Configuration</h3>
-<p>Each available channel on a PIF can be configured to have a specific functionality by assigning it a <b>mode</b>. This can either be done with the help of the <a class="el" href="important-files.html#important-files-configuration-process-interface-channels">configuration file</a> or through the configuration setter methods exposed by the <code>ProcessInterface</code>. With them you can either set the configuration for the entire device at once or just for a single channel.</p>
-<p>The most important configuration option that specifies the desired functionality is the mode. Depending on your chosen mode you may need to provide additional configuration parameters. Each channel type has its own configuration class that encapsulates all the potential parameters required by the different modes:</p>
-<ul>
-<li>analog inputs - <code>PifAiConfig</code></li>
-<li>digital inputs - <code>PifDiConfig</code></li>
-<li>analog output - <code>PifAoConfig</code></li>
-<li>digital output - <code>PifDoConfig</code></li>
-<li>fail safe - <code>PifFsConfig</code></li>
-</ul>
-<p>You can either refer to the API or <a class="el" href="important-files.html#important-files-configuration-process-interface-channels">configuration file</a> documentation for a comprehensive explanation of their effects. In order to make it easy to generate correct configurations all the configuration classes listed above feature a static create method for each supported mode. If you want to output a frame synchronization signal with a pulse height of 7.5 V on the analog output channel [0, 1], you will be able to generate the required configuration object in C++ as follows:</p>
-<div class="fragment"><div class="line"><span class="keyword">auto</span> aoConfig = PifAoConfig::createFrameSync(0, 1, PifAoOutputMode::_0_10V, 7.5);</div>
-</div><!-- fragment --><p>To apply this configuration you can either</p>
-<ul>
-<li>call <code>setAoConfig(aoConfig)</code> from the <code>ProcessInterface</code> to adjust a single channel configuration or</li>
-<li><p class="startli">add it to an instance of the <code>PifConfig</code> class</p>
-<div class="fragment"><div class="line">PifConfig pifConfig;</div>
-<div class="line">...</div>
-<div class="line">pifConfig.analogOutputs.push_back(aoConfig);</div>
-</div><!-- fragment --><p class="startli">and call <code>setConfig(pifConfig)</code> of the <code>ProcessInterface</code> to set the overall PIF configuration.</p>
-</li>
-</ul>
-<dl class="section note"><dt>Note</dt><dd>All channels that do not have an explicit configuration in a <code>PifConfig</code> object are set to the mode <code>off</code>.</dd></dl>
-<p>You can also use the getter methods for the overall PIF configuration or for the individual channel configurations to get objects encapsulating their current state. You can then update them by adjusting the values of their member variables and passing them back to their respective setter methods.</p>
-<p>The following modes are <b>unique</b>, meaning they can only be applied once per PIF:</p>
-<ul>
-<li><code>AmbientTemperature</code></li>
-<li><code>Emissivity</code></li>
-<li><code>FailSafe</code></li>
-<li><code>FlagControl</code></li>
-<li><code>FrameSync</code></li>
-<li><code>InternalTemperature</code></li>
-</ul>
-<dl class="section note"><dt>Note</dt><dd>The fail safe channel can be activated regardless of a PIF output channel set to <code>FailSafe</code> mode.</dd></dl>
-<h3><a class="anchor" id="public-api-process-interface-channels-output-values"></a>
-Output Values</h3>
-<p>Aside from letting the SDK or camera firmware generate signals on the output channels you can also do this manually. To this end, you have to set the desired output channel to the mode <code>ExternalCommunication</code>. For the analog output channel [0, 1] this could be done in C++ as follows:</p>
-<div class="fragment"><div class="line">setAoConfig(PifAoConfig::createExternalCommunication(0, 1, PifAoOutputMode::_0_10V));</div>
-</div><!-- fragment --><p>If successful you can now set an output voltage of 5.5 V on this channel by calling</p>
-<div class="fragment"><div class="line">setAoValue(0, 1, 5.5);</div>
-</div><!-- fragment --><p>from the <code>ProcessInterface</code>.</p>
-<dl class="section note"><dt>Note</dt><dd>The provided output value will automatically be clipped to the limits the configured output mode.</dd></dl>
-<p>The same approach applies to digital outputs. Here a value of <code>true</code> generates a high signal and a value of <code>false</code> a low signal.</p>
-<dl class="section attention"><dt>Attention</dt><dd>If you try to call <code>setAoValue()</code> or <code>setDoValue()</code> without setting the respective channel mode to <code>ExternalCommunication</code>, the SDK will throw an exception. In this way the SDK prevents you from meddling with and potentially <b>disrupting</b> other output channel functionality.</dd></dl>
-<h3><a class="anchor" id="public-api-process-interface-channels-input-values"></a>
-Input Values</h3>
-<p>The currently read values on the input channel pins can be accessed at any time through the <code>FrameMetadata</code> object provided by the <code>onThermalFrame()</code> callback of the <code>IRImagerClient</code> interface.</p>
-<dl class="section note"><dt>Note</dt><dd>You will be able to access the input values even if the respective channel mode was set to <code>off</code>.</dd></dl>
-<p>Use the method</p>
-<ul>
-<li><p class="startli"><code>getPifAiValue(deviceIndex, pinIndex)</code> to get the currently read voltage on the corresponding analog input pins.</p>
-<dl class="section note"><dt>Note</dt><dd>There are a few points to keep in mind when reading analog input voltages<ul>
-<li>Analog inputs can read voltages between 0 V and 10 v.</li>
-<li>Voltages above 10 V register as 10 V with the PIF and consequently the SDK.</li>
-<li>The measured voltages are subject to a calibration. This can include a fixed offset. As a result, the SDK can report voltages slightly above 10 V as well as voltages slightly above 0 V when the pins are pulled to ground.</li>
-<li>The SDK may report voltages above 0 V when the pins are floating.</li>
-</ul>
-</dd></dl>
-</li>
-<li><code>getPifDiValue(deviceIndex, pinIndex)</code> to get a boolean indicating whether the voltage signal on the digital input pins is high (<code>true</code>) or low (<code>false</code>).</li>
-</ul>
-<p>The <code>FrameMetadata</code> object contains inputs values for all <b>configurable</b> PIF devices regardless of whether they are connect or not.</p>
-<dl class="section attention"><dt>Attention</dt><dd>The input values for channels with pins on a stackable PIF that is <b>configurable</b> but is <b>not connected</b> are <b>invalid</b>! In the example this would be the case for input channels using the pins <code>0</code> and <code>1</code> on PIF <code>2</code>.</dd></dl>
-<p>The <code>FrameMetadata</code> also contains the count of configurable and actually connected PIFs that can be accessed via its <code>getPifActualDeviceCount()</code> and <code>getPifConfigurableDeviceCount()</code> methods. With their help you can easily identify the <code>deviceIndex</code> values that refer to valid input data:</p>
-<p><code>0 &lt;= deviceIndex &lt; getPifActualDeviceCount()</code></p>
-<h1><a class="anchor" id="public-api-client-fail-safe"></a>
-Client Fail Safe</h1>
-<p>The fail safe mechanism of the SDK continuously monitors various conditions which indicate that the camera and the processing chain of the SDK are working properly. If one of these conditions fails, the fail safe will be deactivated. As result, the SDK will no longer publish a heart beat signal on respectively configured PIF output or fail safe channels.</p>
-<p>By calling</p>
-<div class="fragment"><div class="line">interruptFailSafe(<span class="keyword">true</span>, <span class="stringliteral">&quot;GUI thread crashed.&quot;</span>);</div>
-</div><!-- fragment --><p>of the <code>IRImager</code> interface clients can actively fail one of those conditions and thus deactivate the fail safe and its signal. The condition can be restored to a passing state when the same method is called as follows:</p>
-<div class="fragment"><div class="line">setClientFailSafeActive(<span class="keyword">false</span>, <span class="stringliteral">&quot;GUI thread restored.&quot;</span>);</div>
-</div><!-- fragment --><p>This will, however, not necessarily activate the fail safe signal, if other required conditions still fail.</p>
-<p>For more details please refer to the <a class="el" href="fail-safe.html">Fail Safe</a> chapter. </p>
+<dl class="section note"><dt>Note</dt><dd>The <code>ImageBuilder</code> offers the shortcut methods <code>copyImageDataTo()</code> and <code>getImageSizeInBytes()</code> that allow you direct access the data of the <code>Image</code> object. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

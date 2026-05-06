@@ -1,0 +1,15 @@
+<map id="optris::IRImagerConfig" name="optris::IRImagerConfig">
+<area shape="rect" id="Node000001" title="Holds the SDK settings found in the configuration file." alt="" coords="384,481,607,767"/>
+<area shape="rect" id="Node000002" href="$classoptris_1_1IpAddress.html" title="Encapsulates an IP v4 address." alt="" coords="5,153,161,419"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,404,176,417,222,457,271,494,371,556,368,561,268,498,218,461,172,421,160,408"/>
+<area shape="rect" id="Node000003" href="$structoptris_1_1ProcessingOutputConfig.html" title="Specifies which outputs should be computed and provided by the SDK." alt="" coords="186,226,359,346"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="298,345,323,400,355,456,376,486,372,489,350,459,319,402,293,347"/>
+<area shape="rect" id="Node000004" href="$structoptris_1_1RadiationParameters.html" title="Holds the radiation parameters for a frame or a measurement field." alt="" coords="383,213,607,359"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="498,359,498,465,493,465,493,359"/>
+<area shape="rect" id="Node000005" href="$structoptris_1_1AlarmsConfig.html" title="Holds the alarm configuration." alt="" coords="631,253,778,319"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="687,320,595,469,590,466,683,317"/>
+<area shape="rect" id="Node000006" href="$structoptris_1_1PifConfig.html" title="Holds the configuration of the processing interface." alt="" coords="803,203,927,369"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="828,371,792,420,753,459,710,495,622,556,619,551,707,491,749,455,788,417,824,367"/>
+<area shape="rect" id="Node000007" href="$structoptris_1_1PifFsConfig.html" title="Encapsulates the configuration for a PIF fail safe channel." alt="" coords="799,5,931,91"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="867,91,867,187,862,187,862,91"/>
+</map>

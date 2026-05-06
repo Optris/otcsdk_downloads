@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -112,70 +112,17 @@ $(function(){initNavTree('EnumerationClient_8h.html',''); initResizable(true); }
 </div><!--header-->
 <div class="contents">
 
-<p>Contains the interface definition for classes that wish to be updated about the detection of available devices.  
+<p>Contains the base class for all clients observing the EnumerationManager.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="DeviceInfo_8h_source.html">otcsdk/common/DeviceInfo.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for EnumerationClient.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="EnumerationClient_8h__incl.png" border="0" usemap="#aEnumerationClient_8h" alt=""/></div>
-<map name="aEnumerationClient_8h" id="aEnumerationClient_8h">
-<area shape="rect" title="Contains the interface definition for classes that wish to be updated about the detection of availabl..." alt="" coords="312,5,452,32"/>
-<area shape="rect" href="DeviceInfo_8h.html" title="Contains a class encapsulating important information about devices." alt="" coords="286,80,478,107"/>
-<area shape="poly" title=" " alt="" coords="385,33,385,64,379,64,379,33"/>
-<area shape="rect" title=" " alt="" coords="305,320,358,347"/>
-<area shape="poly" title=" " alt="" coords="286,100,209,105,131,116,65,132,40,143,24,156,13,173,8,189,10,204,17,218,45,244,88,267,139,286,193,302,290,322,288,328,192,307,137,291,85,272,42,248,13,221,5,205,3,189,8,171,20,153,38,139,63,127,130,110,209,100,285,94"/>
-<area shape="rect" title=" " alt="" coords="835,163,884,189"/>
-<area shape="poly" title=" " alt="" coords="479,95,555,101,642,112,733,128,823,152,826,153,824,158,821,157,732,134,641,117,554,107,478,101"/>
-<area shape="rect" href="Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="223,245,317,272"/>
-<area shape="poly" title=" " alt="" coords="355,110,323,129,296,156,280,193,274,230,268,230,275,192,292,153,320,125,352,105"/>
-<area shape="rect" href="DeviceType_8h.html" title="Contains an enum representing the different types of Optris thermal cameras." alt="" coords="34,163,232,189"/>
-<area shape="poly" title=" " alt="" coords="344,110,187,160,185,155,342,105"/>
-<area shape="rect" href="MacAddress_8h.html" title="Contains a class representing a MAC address." alt="" coords="658,155,810,197"/>
-<area shape="poly" title=" " alt="" coords="438,105,643,151,642,156,437,110"/>
-<area shape="rect" href="IpAddress_8h.html" title="Contains a class holding IP v4 address." alt="" coords="482,155,634,197"/>
-<area shape="poly" title=" " alt="" coords="411,105,500,145,498,150,408,110"/>
-<area shape="rect" href="Port_8h.html" title="Contains a class representing an network port." alt="" coords="306,155,458,197"/>
-<area shape="poly" title=" " alt="" coords="385,107,385,139,379,139,379,107"/>
-<area shape="poly" title=" " alt="" coords="141,189,165,228,182,250,202,270,246,298,291,317,289,322,244,302,199,274,178,254,161,231,137,191"/>
-<area shape="poly" title=" " alt="" coords="155,188,237,235,234,240,153,192"/>
-<area shape="rect" title=" " alt="" coords="341,245,410,272"/>
-<area shape="poly" title=" " alt="" coords="171,187,328,239,326,244,170,192"/>
-<area shape="poly" title=" " alt="" coords="765,196,784,213,799,232,806,253,805,264,798,274,780,281,741,289,622,305,374,331,373,325,622,299,740,283,778,276,795,270,800,262,801,253,795,235,780,216,761,200"/>
-<area shape="poly" title=" " alt="" coords="658,198,646,200,491,224,332,247,332,242,490,219,646,195,657,193"/>
-<area shape="poly" title=" " alt="" coords="658,197,647,200,425,249,424,244,645,195,657,192"/>
-<area shape="rect" title=" " alt="" coords="649,245,710,272"/>
-<area shape="poly" title=" " alt="" coords="722,199,699,234,694,231,718,196"/>
-<area shape="rect" title=" " alt="" coords="734,245,785,272"/>
-<area shape="poly" title=" " alt="" coords="743,197,753,229,748,231,738,199"/>
-<area shape="rect" href="Exceptions_8h.html" title="Contains the exceptions raised by the SDK." alt="" coords="485,245,626,272"/>
-<area shape="poly" title=" " alt="" coords="689,200,598,241,596,236,687,196"/>
-<area shape="poly" title=" " alt="" coords="517,275,374,321,372,316,516,270"/>
-<area shape="rect" title=" " alt="" coords="561,320,638,347"/>
-<area shape="poly" title=" " alt="" coords="565,271,586,305,582,308,561,274"/>
-<area shape="rect" title=" " alt="" coords="484,320,536,347"/>
-<area shape="poly" title=" " alt="" coords="550,274,528,308,524,305,545,271"/>
-<area shape="poly" title=" " alt="" coords="530,200,424,274,364,314,361,309,421,270,527,196"/>
-<area shape="poly" title=" " alt="" coords="485,201,331,243,329,238,483,195"/>
-<area shape="poly" title=" " alt="" coords="512,200,419,241,417,236,510,195"/>
-<area shape="poly" title=" " alt="" coords="591,196,649,234,646,239,588,200"/>
-<area shape="poly" title=" " alt="" coords="611,195,721,239,719,244,609,200"/>
-<area shape="poly" title=" " alt="" coords="560,198,559,230,554,229,555,198"/>
-<area shape="poly" title=" " alt="" coords="307,191,255,211,232,226,214,247,209,259,210,269,216,280,227,289,257,306,290,318,288,323,254,311,223,293,212,283,205,271,203,258,209,244,228,222,252,206,305,186"/>
-<area shape="poly" title=" " alt="" coords="355,200,301,238,298,234,352,196"/>
-<area shape="poly" title=" " alt="" coords="383,198,380,230,375,230,378,198"/>
-<area shape="poly" title=" " alt="" coords="459,195,635,242,633,247,458,200"/>
-<area shape="poly" title=" " alt="" coords="428,196,516,236,513,241,426,200"/>
-</map>
-</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="EnumerationClient_8h__dep__incl.png" border="0" usemap="#aEnumerationClient_8hdep" alt=""/></div>
 <map name="aEnumerationClient_8hdep" id="aEnumerationClient_8hdep">
-<area shape="rect" title="Contains the interface definition for classes that wish to be updated about the detection of availabl..." alt="" coords="13,5,153,32"/>
-<area shape="rect" href="EnumerationManager_8h.html" title="Contains a class that monitors available devices." alt="" coords="5,80,161,107"/>
-<area shape="poly" title=" " alt="" coords="86,48,86,80,80,80,80,48"/>
+<area shape="rect" title="Contains the base class for all clients observing the EnumerationManager." alt="" coords="15,5,169,31"/>
+<area shape="rect" href="EnumerationManager_8h.html" title="Contains a class that monitors available devices." alt="" coords="5,79,179,104"/>
+<area shape="poly" title=" " alt="" coords="95,44,95,79,89,79,89,44"/>
 </map>
 </div>
 </div>
@@ -184,7 +131,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptris_1_1EnumerationClient.html">optris::EnumerationClient</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the interface for classes that want to be updated about the detection of available devices.  <a href="classoptris_1_1EnumerationClient.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all clients observing the <a class="el" href="classoptris_1_1EnumerationManager.html" title="Detects and monitors available devices.">EnumerationManager</a>.  <a href="classoptris_1_1EnumerationClient.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -194,7 +141,7 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains the interface definition for classes that wish to be updated about the detection of available devices. </p>
+<div class="textblock"><p>Contains the base class for all clients observing the EnumerationManager. </p>
 <dl class="section author"><dt>Author</dt><dd>Optris GmbH &amp; Co. KG </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2024-09-23 </dd></dl>
 </div></div><!-- contents -->

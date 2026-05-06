@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['graybw_0',['GrayBW',['../namespaceoptris.html#a742464998770cc0985ebe451cc8e0f89a89ea532194b0604d62c7b8408fc0b3be',1,'optris']]],
-  ['graywb_1',['GrayWB',['../namespaceoptris.html#a742464998770cc0985ebe451cc8e0f89a18b6f039fb79ee0dafdfd0b11a25cb46',1,'optris']]]
+  ['high_0',['High',['../namespaceoptris.html#a8f8f0dbacc90e3b4301aae65478382d4a655d20c1ca69519ca647684edbb2db35',1,'optris']]]
 ];

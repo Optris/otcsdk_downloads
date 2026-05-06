@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -108,13 +108,23 @@ $(function(){initNavTree('pif.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Process Interface (PIF)</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_pages_207__process__interface"></a></p>
-<h1><a class="anchor" id="autotoc_md38"></a>
+<div class="textblock"><p><a class="anchor" id="md_pages_211i__process__interface"></a></p>
+<h1><a class="anchor" id="autotoc_md178"></a>
 Contents</h1>
 <ul>
 <li><a class="el" href="#pif-overview">Overview</a></li>
-<li><a class="el" href="#pif-reading-inputs">Reading Inputs</a></li>
-<li><a class="el" href="#pif-creating-outputs">Creating Outputs</a></li>
+<li><a class="el" href="#pif-device">Device</a><ul>
+<li><a class="el" href="#pif-device-type">Type</a></li>
+<li><a class="el" href="#pif-device-count">Count</a></li>
+</ul>
+</li>
+<li><a class="el" href="#pif-channels">Channels</a><ul>
+<li><a class="el" href="#pif-channels-addressing">Addressing</a></li>
+<li><a class="el" href="#pif-channels-configuration">Configuration</a></li>
+<li><a class="el" href="#pif-channels-reading-inputs">Reading Inputs</a></li>
+<li><a class="el" href="#pif-channels-creating-outputs">Creating Outputs</a></li>
+</ul>
+</li>
 <li><a class="el" href="#pif-modes">Modes</a><ul>
 <li><a class="el" href="#pif-modes-universal">Universal</a></li>
 <li><a class="el" href="#pif-modes-inputs">Inputs</a></li>
@@ -133,7 +143,19 @@ Overview</h1>
 <li><b>digital output</b> that provide voltage based binary signals (high/low).</li>
 <li><b>fail safe</b> that provides a level and voltage based signal indicating whether the camera and the SDK is working correctly.</li>
 </ul>
-<p>The following table offers an quick overview of the available channels and analog output modes for each supported PIF:</p>
+<dl class="section note"><dt>Note</dt><dd>The SDK uses the following abbreviations to mark resources for the specific channel types, like classes or enums:<ul>
+<li><code>Ai</code> - analog inputs</li>
+<li><code>Di</code> - digital inputs</li>
+<li><code>Ao</code> - analog outputs</li>
+<li><code>Do</code> - digital outputs</li>
+<li><code>Fs</code> - fail safe</li>
+</ul>
+</dd></dl>
+<div class="image">
+<img src="pif_variants.png" alt=""/>
+<div class="caption">
+PIF variants.</div></div>
+    <p>The following table offers an quick overview of the available channels and analog output modes for each supported PIF:</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Device Type   </th><th class="markdownTableHeadNone">Analog Inputs <code>Ai</code>   </th><th class="markdownTableHeadNone">Digital Inputs <code>Di</code>   </th><th class="markdownTableHeadNone">Analog Outputs <code>Ao</code>   </th><th class="markdownTableHeadNone">Digital Outputs <code>Do</code>   </th><th class="markdownTableHeadNone">Fail Safe <code>Fs</code>   </th><th class="markdownTableHeadNone">Analog Output Modes    </th></tr>
@@ -149,32 +171,146 @@ Overview</h1>
 <td class="markdownTableBodyNone">Stackable   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">yes   </td><td class="markdownTableBodyNone">1 - 10 V, <br  />
  0/4 - 20 mA   </td></tr>
 </table>
-<p>For more details about the different PIF variants please refer to the <a class="el" href="features.html#features-supported-pifs">Supported Process Interfaces (PIFs)</a> section of the <a class="el" href="features.html">Features</a> chapter.</p>
-<dl class="section note"><dt>Note</dt><dd>The SDK uses the abbreviations <code>Ai</code>, <code>Di</code>, etc. to mark channel type specific resources like enums, classes and methods.</dd></dl>
+<p>For more details about the different PIF variants please refer to the <a class="el" href="features.html#features-supported-pifs">Supported Process Interfaces (PIFs)</a> section of the <a class="el" href="features.html">Features</a> chapter. It also contains links to their respective product pages that feature more detailed spec sheets and manuals in their download section.</p>
 <p>The process interface and its channels can either be configured via</p>
 <ul>
 <li>the <a class="el" href="important-files.html#important-files-configuration-process-interface">configuration file</a> or</li>
-<li>the <code>ProcessInterface</code> exposed by the <a class="el" href="public-api.html#public-api-process-interface">Public API</a></li>
+<li>the <code>ProcessInterface</code> accessible via <code>IRImager::getPif()</code> at runtime</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>When the SDK auto generates a configuration file for a new camera it will use the PIF device type and count reported by the firmware. In this configuration all channels will be turned off because the SDK can not anticipate your needs.</dd></dl>
 <p>The function of a channel is determined by its <b>mode</b>. Depending on the channel type different modes are available. For a detailed description of these modes please refer to the <a class="el" href="#pif-modes">Modes</a> section.</p>
-<h1><a class="anchor" id="pif-reading-inputs"></a>
-Reading Inputs</h1>
-<p>The values read by the PIF on its input channels can be accessed at any time regardless of the configured mode through the <code>FrameMetadata</code> object provided by the <code>onThermalFrame()</code> callback of the <code>IRImagerClient</code>. Use the method</p><ul>
-<li><code>getPifAiValue(deviceIndex, pinIndex)</code> to get the current voltage level on an analog input.</li>
-<li><code>getPifDiValues(deviceIndex, pinIndex)</code> to get the current state of the binary on the digital input.</li>
-</ul>
-<p>Refer to the corresponding section in the <a class="el" href="public-api.html#public-api-process-interface">Public API</a> chapter to get more exhaustive details about <a class="el" href="public-api.html#public-api-process-interface-channels-addressing">addressing</a> the channels and how the <a class="el" href="public-api.html#public-api-process-interface-channels-input-values">input values</a> are read.</p>
-<h1><a class="anchor" id="pif-creating-outputs"></a>
-Creating Outputs</h1>
-<p>Outputs on the PIF channels can either be generated by the functionality (mode) assigned to them or manually by the SDK clients.</p>
-<p>If you wish to set outputs manually through the API, you will first have set the mode of the channel to <code>ExternalCommunication</code>. Only then you can use the following methods of the <code>ProcessInterface</code> to set the output values:</p>
+<p>The documentation of the <a class="el" href="important-files.html#important-files-configuration-process-interface">configuration file</a> explains in detail how you can setup your PIF device in this way. At runtime you can get and set the configuration for an entire process interface or just for its individual channels through the <code>ProcessInterface</code> class. By providing coherent configurations instead of single options at a time the SDK can better ensure their overall validity and consistency. The <code>ProcessInterface</code> can be access at runtime via the <code>IRImager::getPif()</code> method. This is, however, only possible when the <code>IRImager</code> has an active camera connection. If no connection is established, calls of the <code>getPif()</code> methods will result in a <code>SDKException</code>.</p>
+<dl class="section attention"><dt>Attention</dt><dd>The <code>IRImager::getPif()</code> methods return a <b>reference</b> to the implementation object of the <code>ProcessInterface</code>. This reference is only <b>valid during an active camera connection</b>. Therefore, take great care when you are retaining a copy of this reference!</dd></dl>
+<h1><a class="anchor" id="pif-device"></a>
+Device</h1>
+<p>This section explains in more detail the different properties of the process interface devices so that you can easily configure it as you desire.</p>
+<h2><a class="anchor" id="pif-device-type"></a>
+Type</h2>
+<p>The configuration requires you to specify the type of PIF you wish to use. The SDK will then check your choice against the PIF type reported by the firmware of the camera. Depending on the camera type this will either be</p>
 <ul>
-<li><code>setAoValue(deviceIndex, pinIndex, value)</code></li>
-<li><code>setDoValue(deviceIndex, pinIndex, value)</code></li>
+<li>the <b>set</b> PIF type in the <b>on-device configuration</b> (Xi 80, Xi 320 MT, Xi 410(MT), Xi xM)</li>
+<li>the <b>detected</b> PIF type (all other cameras)</li>
 </ul>
-<p>Refer to the corresponding section in the <a class="el" href="public-api.html#public-api-process-interface">Public API</a> chapter to get more exhaustive details about setting <a class="el" href="public-api.html#public-api-process-interface-channels-output-values">output values</a>.</p>
-<dl class="section note"><dt>Note</dt><dd>The SDK only allows the use of these methods for channels set to <code>ExternalCommunication</code>. In this way it prevents you from interfering with and potentially disrupting other functionalities.</dd></dl>
+<p>Depending on the situation the SDK will try set the desired device. This can yield the following outcomes:</p>
+<ul>
+<li>The set PIF type is actually connected. Then the SDK will apply the channel configurations.</li>
+<li>A <code>SDKException</code>, if the desired PIF type is not compatible with the camera.</li>
+<li>A <code>SDKException</code>, if the set type is <code>Proprietary</code> or <code>TemperatureProbe</code> and an actual PIF is connected.</li>
+<li>If a PIF type was set but no PIF is actually connected, the SDK will use the <code>None</code> type and will ignore all channel configurations.</li>
+<li>If a PIF type was set but a different type is connected, the SDK will assume the reported type and will try to apply all the specified channel configurations. This, however, may fail because not all analog output modes are supported by all PIF devices.</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>You can set the PIF type to <code>Automatic</code>. The SDK will then automatically use the type reported by the firmware. In this case it will also try to apply all specified channel configurations. This can, however, fail because of unsupported analog output modes.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>The firmware of Xi 80, Xi 320 MT, Xi 410 and Xi xMs report the device type configured in their on-board memory. As a result, the <code>Automatic</code> mode may no report the type of the PIF that is actually connected to the camera.</dd></dl>
+<p>The <code>ProcessInterface</code> provides the <code>getSupportedDeviceTypes()</code> method that allows clients to query the subset of PIF device types that the current connected camera supports.</p>
+<h2><a class="anchor" id="pif-device-count"></a>
+Count</h2>
+<p>When using <b>stackable PIFs</b> you need to set the number of PIF devices you wish to use. In all other cases the SDK can derive this count from the set PIF device type.</p>
+<dl class="section note"><dt>Note</dt><dd>A maximum of <b>three</b> stackable PIFs can be attached to same camera at once.</dd></dl>
+<p>The number of stackable PIFs has to be defined either in the <a class="el" href="important-files.html#important-files-configuration-process-interface-device-count">configuration file</a> or via the <code>deviceCount</code> member variable in the <code>PifConfig</code> class when using the <code>setConfig()</code> method of the <code>ProcessInterface</code>.</p>
+<dl class="section attention"><dt>Attention</dt><dd>The device count specifies how many stackable PIFs can be <b>accessed and configured</b> through the SDK. The count of <b>actually connected</b> PIFs can be lower!</dd></dl>
+<p>This behavior allows clients to configure PIFs without the need to connect them to the camera. At the moment, however, this is pointless because the SDK does not support autonomous settings that would retain the set configuration on-device. Currently, the configuration is lost when the camera loses power.</p>
+<dl class="section attention"><dt>Attention</dt><dd>The SDK will not be able to detect more connected stackable PIFs than specified by this device count.</dd></dl>
+<h1><a class="anchor" id="pif-channels"></a>
+Channels</h1>
+<p>This section explains in more detail the different properties of the PIF so that you can easily configure them as you like.</p>
+<h2><a class="anchor" id="pif-channels-addressing"></a>
+Addressing</h2>
+<p>The individual channels are addressed by a pair of indices: <code>[deviceIndex, pinIndex]</code>.</p>
+<p>The <code>deviceIndex</code> refers to the physical process interface on with the pins for the desired channel are located. It is <b>only relevant for stackable PIFs</b>. In all other cases the <code>deviceIndex</code> is <code>0</code>.</p>
+<p>The <code>pinIndex</code> identifies the actual pins on the specified PIF device that correspond with the desired channel.</p>
+<dl class="section note"><dt>Note</dt><dd>The SDK uses the simple <code>PifIndex</code> class to hold the device and pin indices in the PIF channel configuration classes.</dd></dl>
+<p>To better understand the addressing of the channels please consider the setup shown in the figure below: <b>Three</b> stackable PIFs are configured but only <b>two</b> are actually connected to the camera (the one not connected is grayed out).</p>
+<div class="image">
+<img src="stackable_pifs.png" alt=""/>
+<div class="caption">
+Stackable process interface example.</div></div>
+    <p>In this case the <code>deviceIndex</code> can be in <code>[0, 2]</code> and the <code>pinIndex</code> can be in <code>[0, 1]</code>. Thus, manipulating the pins <code>0</code> and <code>1</code> on the PIF device <code>2</code> is possible but will not yield any tangible effects.</p>
+<p>The properties of this addressing schema are also reflected in the getter methods for the device and channels counts provided by the <code>ProcessInterface</code>. Their differences are best understood with the above example in mind:</p>
+<p><b>Devices</b></p>
+<ul>
+<li><code>getActualDeviceCount()</code> returns the number of actually connected devices. Example: 2.</li>
+<li><code>getConfigurableDeviceCount()</code> returns the number configurable devices. Example: 3.</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>On non-stackable PIFs these methods yield the same values.</dd></dl>
+<p><b>Channels</b> (<code>XX</code> denotes the channel type)</p>
+<ul>
+<li><code>getActualXXCount()</code> returns the count of all <code>XX</code> channels on actually connected devices. Example: 2 * 2 = 4.</li>
+<li><code>getConfigurableXXCount()</code> returns the count of all <code>XX</code> channels on configurable devices. Example: 3 * 2 = 6.</li>
+<li><code>getXXCountPerDevice()</code> returns the count of <code>XX</code> channels per individual device. Example: 2.</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>On non-stackable PIFs these methods yield the same values.</dd></dl>
+<p>The fail safe channel is an exception. If available, there will always be single one. Even in the case of multiple stackable PIFs that each have separate pins for this channel. In this case these pins will all output the same signal.</p>
+<h2><a class="anchor" id="pif-channels-configuration"></a>
+Configuration</h2>
+<p>Each available channel on a PIF can be configured to have a specific functionality by assigning it a <b>mode</b>. This can either be done with the help of the <a class="el" href="important-files.html#important-files-configuration-process-interface-channels">configuration file</a> or through the configuration setter methods exposed by the <code>ProcessInterface</code>. With them you can either set the configuration for the entire device at once or just for a single channel.</p>
+<p>The most important configuration option that specifies the desired functionality is the mode. Depending on your chosen mode you may need to provide additional configuration parameters. Each channel type has its own configuration class that encapsulates all the potential parameters required by the different modes:</p>
+<ul>
+<li>analog inputs - <code>PifAiConfig</code></li>
+<li>digital inputs - <code>PifDiConfig</code></li>
+<li>analog output - <code>PifAoConfig</code></li>
+<li>digital output - <code>PifDoConfig</code></li>
+<li>fail safe - <code>PifFsConfig</code></li>
+</ul>
+<p>You can either refer to the API or the <a class="el" href="important-files.html#important-files-configuration-process-interface-channels">configuration file</a> documentation for a comprehensive explanation of their effects. In order to make it easy to generate correct configurations all the configuration classes listed above feature a static create method for each supported mode. If you want to output a frame synchronization signal with a pulse height of 7.5 V on the analog output channel [0, 1], you will be able to generate the required configuration object in C++ as follows:</p>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> aoConfig = PifAoConfig::createFrameSync(0, 1, PifAoOutputMode::_0_10V, 7.5);</div>
+</div><!-- fragment --><p>To apply this configuration you can either</p>
+<ul>
+<li>call <code>setAoConfig(aoConfig)</code> from the <code>ProcessInterface</code> to adjust a single channel configuration or</li>
+<li><p class="startli">add it to an instance of the <code>PifConfig</code> class</p>
+<div class="fragment"><div class="line">PifConfig pifConfig;</div>
+<div class="line">...</div>
+<div class="line">pifConfig.analogOutputs.push_back(aoConfig);</div>
+</div><!-- fragment --><p class="startli">and call <code>setConfig(pifConfig)</code> of the <code>ProcessInterface</code> to set the overall PIF configuration.</p>
+</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>All channels that do not have an explicit configuration in a <code>PifConfig</code> object are set to the mode <code>Off</code>.</dd></dl>
+<p>You can also use the getter methods for the overall PIF configuration or for the individual channel configurations to get objects encapsulating their current state. You can then update them by adjusting the values of their member variables and passing them back to their respective setter methods.</p>
+<p>The following modes are <b>unique</b>, meaning they can only be applied once per PIF:</p>
+<ul>
+<li><code>AmbientTemperature</code></li>
+<li><code>Emissivity</code></li>
+<li><code>FailSafe</code></li>
+<li><code>FlagControl</code></li>
+<li><code>FrameSync</code></li>
+<li><code>InternalTemperature</code></li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>The fail safe channel can be activated regardless of a PIF output channel set to <code>FailSafe</code> mode.</dd></dl>
+<h2><a class="anchor" id="pif-channels-reading-inputs"></a>
+Reading Inputs</h2>
+<p>The values read by the PIF on its input channel pins can be accessed at <b>any time regardless of the configured mode</b> through the <code>meta</code> field in the <code>FrameEvent</code> object provided by the <code>onFrame()</code> callback of the <code>IRImagerClient</code>.</p>
+<dl class="section note"><dt>Note</dt><dd>You will be able to access the input values even if the respective channel mode was set to <code>Off</code>.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>The read input values are transmitted by the camera to the SDK as part of the overall frame. Therefore, the SDK only receives updates for these values at the current framerate of the camera. An activated subsampling further reduces the rate at which PIF input values are provided to a SDK client.<br  />
+<br  />
+ <b>The sample rate of signals on PIF input pins is at maximum equal to the framerate of the currently used video format!</b><br  />
+<br  />
+ Keep this in mind when generating signals you want to read with the process interface.</dd></dl>
+<p>Use the method</p>
+<ul>
+<li><p class="startli"><code>getPifAiValue(deviceIndex, pinIndex)</code> to get the currently read voltage on the corresponding analog input pins.</p>
+<dl class="section note"><dt>Note</dt><dd>There are a few points to keep in mind when reading analog input voltages<ul>
+<li>Analog inputs can read voltages between 0 V and 10 v.</li>
+<li>Voltages above 10 V register as 10 V with the PIF and consequently the SDK.</li>
+<li>The measured voltages are subject to a calibration. This can include a fixed offset. As a result, the SDK can report voltages slightly above 10 V as well as voltages slightly above 0 V when the pins are pulled to ground.</li>
+<li>The SDK may report voltages above 0 V when the pins are floating.</li>
+</ul>
+</dd></dl>
+</li>
+<li><code>getPifDiValue(deviceIndex, pinIndex)</code> to get a boolean indicating whether the voltage signal on the digital input pins is high (<code>true</code>) or low (<code>false</code>).</li>
+</ul>
+<p>The <code>FrameMetadata</code> object contains inputs values for all <b>configurable</b> PIF devices regardless of whether they are connect or not.</p>
+<dl class="section attention"><dt>Attention</dt><dd>The input values for channels with pins on a stackable PIF that is <b>configurable</b> but is <b>not connected</b> are <b>invalid</b>! In the example this would be the case for input channels using the pins <code>0</code> and <code>1</code> on PIF <code>2</code>.</dd></dl>
+<p>The <code>FrameMetadata</code> also contains the count of configurable and actually connected PIFs that can be accessed via its <code>getPifActualDeviceCount()</code> and <code>getPifConfigurableDeviceCount()</code> methods. With their help you can easily identify the <code>deviceIndex</code> values that refer to valid input data:</p>
+<p><code>0 &lt;= deviceIndex &lt; getPifActualDeviceCount()</code></p>
+<h2><a class="anchor" id="pif-channels-creating-outputs"></a>
+Creating Outputs</h2>
+<p>Aside from letting the SDK or the camera firmware generate signals on the output channels you can also do this manually. To this end, you have to set the desired output channel to the mode <code>ExternalCommunication</code>. For the analog output channel [0, 1] this could be done in C++ as follows:</p>
+<div class="fragment"><div class="line">setAoConfig(PifAoConfig::createExternalCommunication(0, 1, PifAoOutputMode::_0_10V));</div>
+</div><!-- fragment --><p>If successful you can now set an output voltage of 5.5 V on this channel by calling</p>
+<div class="fragment"><div class="line">setAoValue(0, 1, 5.5);</div>
+</div><!-- fragment --><p>from the <code>ProcessInterface</code>.</p>
+<dl class="section note"><dt>Note</dt><dd>The provided output value will automatically be clipped to the limits the configured output mode.</dd></dl>
+<p>The same approach applies to digital outputs. Here a value of <code>true</code> generates a high signal and a value of <code>false</code> a low signal.</p>
+<dl class="section attention"><dt>Attention</dt><dd>If you try to call <code>setAoValue()</code> or <code>setDoValue()</code> without setting the respective channel mode to <code>ExternalCommunication</code>, the SDK will throw an exception. In this way the SDK prevents you from meddling with and potentially <b>disrupting</b> other output channel functionality.</dd></dl>
 <h1><a class="anchor" id="pif-modes"></a>
 Modes</h1>
 <p>As mentioned before, the mode of a channel determines what functionality it provides. Regardless of the configured mode you will always be able to access the input values read by the PIF on its input channels.</p>
@@ -183,7 +319,7 @@ Modes</h1>
 <p>You can consult the documentation of the <a class="el" href="important-files.html#important-files-configuration-process-interface-channels">channel settings</a> of the <a class="el" href="important-files.html#important-files-configuration">configuration file</a> for more exhaustive details about the available parameters for each mode.</p>
 <h2><a class="anchor" id="pif-modes-universal"></a>
 Universal</h2>
-<h3><a class="anchor" id="autotoc_md39"></a>
+<h3><a class="anchor" id="autotoc_md179"></a>
 Off</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -194,7 +330,7 @@ Off</h3>
 <p>The channel is switched off and does not offer any special functionality.</p>
 <h2><a class="anchor" id="pif-modes-inputs"></a>
 Inputs</h2>
-<h3><a class="anchor" id="autotoc_md40"></a>
+<h3><a class="anchor" id="autotoc_md180"></a>
 Ambient Temperature</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -205,7 +341,7 @@ Ambient Temperature</h3>
 <p>Converts the voltage level U_in on an analog input into an <a href="https://optris.com/lexicon/ambient-temperature/">ambient temperature</a> t_ambient as follows</p>
 <p><code>t_ambient = (U_in - offset) / gain</code></p>
 <p>and applies it to the overall thermal frame as part of the radiation parameters. In order to minimize computational effort the radiation parameters are only updated at most every <em>500 ms</em>.</p>
-<h3><a class="anchor" id="autotoc_md41"></a>
+<h3><a class="anchor" id="autotoc_md181"></a>
 Emissivity</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -216,7 +352,7 @@ Emissivity</h3>
 <p>Converts the voltage level U_in on an analog input into an <a href="https://optris.com/lexicon/emissivity/">emissivity</a> e in the range of [0.01, 1.1] as follows</p>
 <p><code>e = (U_in - offset) / gain</code></p>
 <p>and applies it to the overall thermal frame as part of the radiation parameters. In order to minimize computational effort the radiation parameters are only updated at most every <em>500 ms</em>.</p>
-<h3><a class="anchor" id="autotoc_md42"></a>
+<h3><a class="anchor" id="autotoc_md182"></a>
 Flag Control</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -246,7 +382,7 @@ Flag Control</h3>
 <td class="markdownTableBodyNone">open the shutter flag   </td><td class="markdownTableBodyNone"><code>S_in == high</code>   </td><td class="markdownTableBodyNone"><code>S_in == low</code>   </td></tr>
 </table>
 <dl class="section attention"><dt>Attention</dt><dd>If this mode is set on any channel, the SDK and its clients will be unable to control the shutter flag. In this case the entity providing the input signal is solely responsible for closing the flag regularly to compensate for temperature drifts and to pass the initial calibration phase.</dd></dl>
-<h3><a class="anchor" id="autotoc_md43"></a>
+<h3><a class="anchor" id="pif-modes-inputs-uncommitted-value"></a>
 Uncommitted Value</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -260,38 +396,70 @@ Uncommitted Value</h3>
 <dl class="section note"><dt>Note</dt><dd>The callback is only triggered when the input voltage U_in changes.</dd></dl>
 <h2><a class="anchor" id="pif-modes-outputs"></a>
 Outputs</h2>
-<h3><a class="anchor" id="autotoc_md44"></a>
+<h3><a class="anchor" id="pif-modes-outputs-alarm"></a>
+Alarm</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Supported by   </th><th class="markdownTableHeadNone">Parameters   </th><th class="markdownTableHeadNone">Unique    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">analog and digital outputs   </td><td class="markdownTableBodyNone">output mode, active, inactive, low active   </td><td class="markdownTableBodyNone">no   </td></tr>
+</table>
+<p>This mode allows you to output whether one or more <a class="el" href="alarms.html">alarm channels</a> are in their <code>Active</code> state. An alarm channel is <code>Active</code>, if the value it is monitoring falls outside the set alarm range. Multiple alarm channels can route their state to a single PIF channel. The PIF channel will consider the <b>combined alarm</b> as <code>Active</code> if at least one of these alarm channels is <code>Active</code> (<b>logic or-connection</b>). If none of the alarm channels is <code>Active</code> or no alarm channels are associated with the PIF channel it will consider the <b>combined alarm</b> as inactive.</p>
+<dl class="section note"><dt>Note</dt><dd>The SDK takes care of the association of the alarm and PIF channels regardless in what order they are configured.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>The configurations of the individual <a class="el" href="alarms.html">alarm channels</a> specify to which PIF outputs their status is routed.</dd></dl>
+<p>The PIF channel will retain this mode no matter if it has associated alarm channels or not.</p>
+<p><b>analog outputs</b></p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Condition   </th><th class="markdownTableHeadNone">Level Set by Parameter    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">At least one associated alarm channel is <code>Active</code>   </td><td class="markdownTableBodyNone">active    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">None of the associated alarm channels is <code>Active</code><br  />
+ No alarm channel associated   </td><td class="markdownTableBodyNone">inactive   </td></tr>
+</table>
+<p><b>digital outputs</b></p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Condition   </th><th class="markdownTableHeadNone">Output with low active   </th><th class="markdownTableHeadNone">Output with not low active    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">At least one associated alarm channel is <code>Active</code>   </td><td class="markdownTableBodyNone">low   </td><td class="markdownTableBodyNone">high    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">None of the associated alarm channels is <code>Active</code> <br  />
+ No alarm channel associated   </td><td class="markdownTableBodyNone">high   </td><td class="markdownTableBodyNone">low   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md183"></a>
 External Communication</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported by   </th><th class="markdownTableHeadNone">Parameters   </th><th class="markdownTableHeadNone">Unique    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">analog and digital outputs   </td><td class="markdownTableBodyNone">output_mode   </td><td class="markdownTableBodyNone">no   </td></tr>
+<td class="markdownTableBodyNone">analog and digital outputs   </td><td class="markdownTableBodyNone">output mode   </td><td class="markdownTableBodyNone">no   </td></tr>
 </table>
 <p>In this mode the output of the configured channel can be controlled by the clients of the SDK. To this end, they can use the following methods of the <code>ProcessInterface</code>:</p>
 <ul>
 <li><code>setAoValue(deviceIndex, pinIndex, value)</code></li>
 <li><code>setDoValue(deviceIndex, pinIndex, value)</code></li>
 </ul>
-<p>For more details refer to the <a class="el" href="public-api.html#public-api-process-interface-channels-output-values">Output Value</a> section of the <a class="el" href="public-api.html">Public API</a> chapter.</p>
-<h3><a class="anchor" id="autotoc_md45"></a>
+<p>For more details refer to the <a class="el" href="#pif-channels-creating-outputs">Output Value</a> section of this chapter.</p>
+<h3><a class="anchor" id="autotoc_md184"></a>
 Fail Safe</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported by   </th><th class="markdownTableHeadNone">Parameters   </th><th class="markdownTableHeadNone">Unique    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">analog and digital outputs   </td><td class="markdownTableBodyNone">output_mode, active   </td><td class="markdownTableBodyNone">yes   </td></tr>
+<td class="markdownTableBodyNone">analog and digital outputs   </td><td class="markdownTableBodyNone">output mode, active   </td><td class="markdownTableBodyNone">yes   </td></tr>
 </table>
 <p>A heart beat signal is output on the given channel that indicated whether the camera and the processing chain of the SDK is working correctly. See the <a class="el" href="fail-safe.html">Fails Safe</a> chapter for details about the generated signal and about the conditions that dictate when the fail safe is active.</p>
 <p>The value of the active parameter defines the height of the provided heart beat signal.</p>
 <dl class="section note"><dt>Note</dt><dd>Some PIF variants offer an extra fail safe channel that can be used independently of this mode.</dd></dl>
-<h3><a class="anchor" id="autotoc_md46"></a>
+<h3><a class="anchor" id="autotoc_md185"></a>
 Flag Status</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported by   </th><th class="markdownTableHeadNone">Parameters   </th><th class="markdownTableHeadNone">Unique    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">analog and digital outputs   </td><td class="markdownTableBodyNone">output_mode, active, intermediate, inactive, low active   </td><td class="markdownTableBodyNone">yes   </td></tr>
+<td class="markdownTableBodyNone">analog and digital outputs   </td><td class="markdownTableBodyNone">output mode, active, intermediate, inactive, low active   </td><td class="markdownTableBodyNone">yes   </td></tr>
 </table>
 <p>The signal output on the configured channel indicates the current status of the shutter flag. Depending on the channel type the following output values are generated:</p>
 <p><b>analog outputs</b></p>
@@ -314,51 +482,51 @@ Flag Status</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Closed   </td><td class="markdownTableBodyNone">low   </td><td class="markdownTableBodyNone">high   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md47"></a>
+<h3><a class="anchor" id="autotoc_md186"></a>
 Frame Sync</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported by   </th><th class="markdownTableHeadNone">Parameters   </th><th class="markdownTableHeadNone">Unique    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">analog and digital outputs   </td><td class="markdownTableBodyNone">output_mode, active   </td><td class="markdownTableBodyNone">yes   </td></tr>
+<td class="markdownTableBodyNone">analog and digital outputs   </td><td class="markdownTableBodyNone">output mode, active   </td><td class="markdownTableBodyNone">yes   </td></tr>
 </table>
 <p>Every time a new frame is captured a short pulse is output on the designated channel. Depending on the channel type this pulse takes the following form:</p>
 <p><b>analog outputs</b></p>
 <p>The moment a frame is captured the output level will rise to the value specified by the active parameter and will will shortly afterwards revert back to the lower limit defined by the configured output mode.</p>
 <p><b>digital output</b></p>
 <p>When a frame is captured the output signal will be set for a brief time to high and will then revert back to low.</p>
-<h3><a class="anchor" id="autotoc_md48"></a>
+<h3><a class="anchor" id="autotoc_md187"></a>
 Internal Temperature</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported by   </th><th class="markdownTableHeadNone">Parameters   </th><th class="markdownTableHeadNone">Unique    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">analog outputs   </td><td class="markdownTableBodyNone">output_mode, gain, offset   </td><td class="markdownTableBodyNone">yes   </td></tr>
+<td class="markdownTableBodyNone">analog outputs   </td><td class="markdownTableBodyNone">output mode, gain, offset   </td><td class="markdownTableBodyNone">yes   </td></tr>
 </table>
 <p>The current internal temperature of the camera is measured by a built-in probe. Its value t_internal is converted into an output value X_out as follows</p>
 <p><code>X_out = gain * t_internal + offset</code></p>
 <p>which is then provided on the designated channel.</p>
 <dl class="section note"><dt>Note</dt><dd>The value of X_out is always clipped to the limits of the configured output mode.</dd></dl>
-<h3><a class="anchor" id="autotoc_md49"></a>
+<h3><a class="anchor" id="autotoc_md188"></a>
 Measurement Field</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported by   </th><th class="markdownTableHeadNone">Parameters   </th><th class="markdownTableHeadNone">Unique    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">analog outputs   </td><td class="markdownTableBodyNone">output_mode, field index, gain, offset   </td><td class="markdownTableBodyNone">no   </td></tr>
+<td class="markdownTableBodyNone">analog outputs   </td><td class="markdownTableBodyNone">output mode, field index, field stat, gain, offset   </td><td class="markdownTableBodyNone">no   </td></tr>
 </table>
-<p>A specific data point of a measurement field can be output on the designated channel. The field index parameter identifies the measurement field and the configured mode of that field defines the data point (<code>MeasurementFieldConfig::mode</code>). The value x_field of this data point is converted to an output value X_out</p>
+<p>A specific data point of a measurement field can be output on the designated channel. The field index parameter identifies the measurement field and the field stat defines the data point. The value x_field of this data point is converted to an output value X_out</p>
 <p><code>X_out = gain * x_field + offset</code></p>
 <p>and is then provided on the channel.</p>
 <dl class="section note"><dt>Note</dt><dd>The value of X_out is always clipped to the limits of the configured output mode.</dd></dl>
 <p>You can <b>create</b> a measurement field in one of the following two ways:</p>
 <ul>
 <li><a class="el" href="important-files.html#important-files-configuration-measurement-fields">Configuration file</a>. Measurement fields defined here are always added first in the order they are specified in the file. As a result the first field always has the index 0.</li>
-<li><a class="el" href="public-api.html#public-api-measurement-fields">Public API</a>. You can use the <code>addMeasurementField()</code> method of the <code>IRImager</code> to add a field at runtime. On success the method returns the index you need to refer to the field when configuring this mode.</li>
+<li><a class="el" href="measurement-fields.html#measurement-fields-adding-fields">Public API</a>. You can use the <code>addMeasurementField()</code> method of the <code>IRImager</code> to add a field at runtime. On success it returns a <code>MeasurementField</code> handle that can be used to generate the channel configuration. Additionally, you can access the field index via the <code>MeasurementField::getIndex()</code> method.</li>
 </ul>
 <h2><a class="anchor" id="pif-modes-fail-safe"></a>
 Fail Safe</h2>
-<h3><a class="anchor" id="autotoc_md50"></a>
+<h3><a class="anchor" id="autotoc_md189"></a>
 On</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">

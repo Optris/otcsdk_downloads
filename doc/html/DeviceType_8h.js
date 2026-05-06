@@ -22,6 +22,7 @@ var DeviceType_8h =
       [ "optris::DeviceType::Xi640", "namespaceoptris.html#aafdfe9dc8c434a63aedc67450cb9a0d8a764b4383c74f196068eed6358b67ebdb", null ],
       [ "optris::DeviceType::Xi1M", "namespaceoptris.html#aafdfe9dc8c434a63aedc67450cb9a0d8a9ac7e0666761426518d69accfc5d16d8", null ]
     ] ],
+    [ "optris::hasFocusMotor", "namespaceoptris.html#a9adf92f37c0f5a7eb6332f0977e32912", null ],
     [ "optris::is1MDevice", "namespaceoptris.html#a588aae2748d1d8733ad4458722d8e226", null ],
     [ "optris::isAutonomousDevice", "namespaceoptris.html#a5d59bc9063038fc754ba30dea963d786", null ],
     [ "optris::isDeviceAnsweringAllCommands", "namespaceoptris.html#a5da957d551bfe1396024f760484dc115", null ],

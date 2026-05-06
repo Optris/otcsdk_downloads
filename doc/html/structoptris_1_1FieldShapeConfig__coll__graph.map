@@ -1,0 +1,5 @@
+<map id="optris::FieldShapeConfig" name="optris::FieldShapeConfig">
+<area shape="rect" id="Node000001" title="Encapsulates the configuration of a field shape." alt="" coords="5,208,176,313"/>
+<area shape="rect" id="Node000002" href="$structoptris_1_1Vector2.html" title=" " alt="" coords="7,5,174,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,131,93,191,88,191,88,131"/>
+</map>

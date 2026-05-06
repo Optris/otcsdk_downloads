@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -112,7 +112,7 @@ $(function(){initNavTree('classoptris_1_1ThermalFrame.html',''); initResizable(t
 </div><!--header-->
 <div class="contents">
 
-<p>Encapsulates thermal frame data received from a device.  
+<p>Encapsulates processed thermal frame data.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ThermalFrame_8h_source.html">ThermalFrame.h</a>&gt;</code></p>
@@ -121,9 +121,9 @@ Inheritance diagram for optris::ThermalFrame:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptris_1_1ThermalFrame__inherit__graph.png" border="0" usemap="#aoptris_1_1ThermalFrame_inherit__map" alt="Inheritance graph"/></div>
 <map name="aoptris_1_1ThermalFrame_inherit__map" id="aoptris_1_1ThermalFrame_inherit__map">
-<area shape="rect" title="Encapsulates thermal frame data received from a device." alt="" coords="5,336,181,683"/>
-<area shape="rect" href="classoptris_1_1Frame.html" title="Represents a data frame received from a device." alt="" coords="30,5,156,288"/>
-<area shape="poly" title=" " alt="" coords="96,303,96,337,91,337,91,303"/>
+<area shape="rect" title="Encapsulates processed thermal frame data." alt="" coords="5,319,207,624"/>
+<area shape="rect" href="classoptris_1_1Frame.html" title="Represents a data frame received from a device." alt="" coords="49,5,163,271"/>
+<area shape="poly" title=" " alt="" coords="109,285,109,319,103,319,103,285"/>
 </map>
 </div>
 <div class="dynheader">
@@ -131,9 +131,9 @@ Collaboration diagram for optris::ThermalFrame:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptris_1_1ThermalFrame__coll__graph.png" border="0" usemap="#aoptris_1_1ThermalFrame_coll__map" alt="Collaboration graph"/></div>
 <map name="aoptris_1_1ThermalFrame_coll__map" id="aoptris_1_1ThermalFrame_coll__map">
-<area shape="rect" title="Encapsulates thermal frame data received from a device." alt="" coords="5,336,181,683"/>
-<area shape="rect" href="classoptris_1_1Frame.html" title="Represents a data frame received from a device." alt="" coords="30,5,156,288"/>
-<area shape="poly" title=" " alt="" coords="96,303,96,337,91,337,91,303"/>
+<area shape="rect" title="Encapsulates processed thermal frame data." alt="" coords="5,319,207,624"/>
+<area shape="rect" href="classoptris_1_1Frame.html" title="Represents a data frame received from a device." alt="" coords="49,5,163,271"/>
+<area shape="poly" title=" " alt="" coords="109,285,109,319,103,319,103,285"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -184,9 +184,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf2981fdcbee86c0ab2cfb7d71aafb92" id="r_acf2981fdcbee86c0ab2cfb7d71aafb92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptris_1_1TemperatureConverter.html">TemperatureConverter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf2981fdcbee86c0ab2cfb7d71aafb92">getConverter</a> () const noexcept</td></tr>
 <tr class="memdesc:acf2981fdcbee86c0ab2cfb7d71aafb92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the temperature converter.  <br /></td></tr>
 <tr class="separator:acf2981fdcbee86c0ab2cfb7d71aafb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c46f032aab18751558dcb58637530e1" id="r_a2c46f032aab18751558dcb58637530e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptris_1_1ThermalFrame.html">ThermalFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c46f032aab18751558dcb58637530e1">clone</a> () const noexcept</td></tr>
-<tr class="memdesc:a2c46f032aab18751558dcb58637530e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a complete copy of this frame.  <br /></td></tr>
-<tr class="separator:a2c46f032aab18751558dcb58637530e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classoptris_1_1Frame"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classoptris_1_1Frame')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classoptris_1_1Frame.html">optris::Frame</a></td></tr>
 <tr class="memitem:af925701c995a8f9c62187adda3b09a4d inherit pub_methods_classoptris_1_1Frame" id="r_af925701c995a8f9c62187adda3b09a4d"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Frame</b> () noexcept</td></tr>
@@ -218,9 +215,6 @@ virtual <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_S
 <tr class="memitem:a4ea3007338ae4df349b1a70dab0c3d7e inherit pub_methods_classoptris_1_1Frame" id="r_a4ea3007338ae4df349b1a70dab0c3d7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptris_1_1Frame.html#a4ea3007338ae4df349b1a70dab0c3d7e">getValue</a> (int x, int y) const noexcept(false)</td></tr>
 <tr class="memdesc:a4ea3007338ae4df349b1a70dab0c3d7e inherit pub_methods_classoptris_1_1Frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the frame data value at the given coordinates.  <br /></td></tr>
 <tr class="separator:a4ea3007338ae4df349b1a70dab0c3d7e inherit pub_methods_classoptris_1_1Frame"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a564ddcb495cd0fb42ca928c1a7e2efc1 inherit pub_methods_classoptris_1_1Frame" id="r_a564ddcb495cd0fb42ca928c1a7e2efc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <a class="el" href="classoptris_1_1ConstFrameIterator.html">ConstFrameIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptris_1_1Frame.html#a564ddcb495cd0fb42ca928c1a7e2efc1">getConstIterator</a> () const noexcept</td></tr>
-<tr class="memdesc:a564ddcb495cd0fb42ca928c1a7e2efc1 inherit pub_methods_classoptris_1_1Frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator with read access.  <br /></td></tr>
-<tr class="separator:a564ddcb495cd0fb42ca928c1a7e2efc1 inherit pub_methods_classoptris_1_1Frame"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3024e9452afd4fd4463bb2c4681acd4 inherit pub_methods_classoptris_1_1Frame" id="r_af3024e9452afd4fd4463bb2c4681acd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptris_1_1Frame.html#af3024e9452afd4fd4463bb2c4681acd4">getWidth</a> () const noexcept</td></tr>
 <tr class="memdesc:af3024e9452afd4fd4463bb2c4681acd4 inherit pub_methods_classoptris_1_1Frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width in pixels of the frame.  <br /></td></tr>
 <tr class="separator:af3024e9452afd4fd4463bb2c4681acd4 inherit pub_methods_classoptris_1_1Frame"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,9 +234,6 @@ virtual <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_S
 <tr class="memitem:aae16b5287552a1417441a45a0864ef3f inherit pub_methods_classoptris_1_1Frame" id="r_aae16b5287552a1417441a45a0864ef3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptris_1_1Frame.html#aae16b5287552a1417441a45a0864ef3f">resize</a> (int width, int height)</td></tr>
 <tr class="memdesc:aae16b5287552a1417441a45a0864ef3f inherit pub_methods_classoptris_1_1Frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the frame.  <br /></td></tr>
 <tr class="separator:aae16b5287552a1417441a45a0864ef3f inherit pub_methods_classoptris_1_1Frame"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade57a081ad72b8cfc52c102a9935d7ab inherit pub_methods_classoptris_1_1Frame" id="r_ade57a081ad72b8cfc52c102a9935d7ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <a class="el" href="classoptris_1_1Frame.html">Frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptris_1_1Frame.html#ade57a081ad72b8cfc52c102a9935d7ab">clone</a> () const noexcept</td></tr>
-<tr class="memdesc:ade57a081ad72b8cfc52c102a9935d7ab inherit pub_methods_classoptris_1_1Frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a complete copy of this frame.  <br /></td></tr>
-<tr class="separator:ade57a081ad72b8cfc52c102a9935d7ab inherit pub_methods_classoptris_1_1Frame"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60ed4b0e851dc55fb52b409cca53aea8 inherit pub_methods_classoptris_1_1Frame" id="r_a60ed4b0e851dc55fb52b409cca53aea8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptris_1_1Frame.html#a60ed4b0e851dc55fb52b409cca53aea8">setData</a> (const unsigned short *source)</td></tr>
 <tr class="memdesc:a60ed4b0e851dc55fb52b409cca53aea8 inherit pub_methods_classoptris_1_1Frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the frame data values.  <br /></td></tr>
 <tr class="separator:a60ed4b0e851dc55fb52b409cca53aea8 inherit pub_methods_classoptris_1_1Frame"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,36 +256,8 @@ std::vector&lt; unsigned short &gt;&#160;</td><td class="memItemRight" valign="b
 <tr class="separator:a0ccc23818337f5b21b110b620230d0ea inherit pro_attribs_classoptris_1_1Frame"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Encapsulates thermal frame data received from a device. </p>
+<div class="textblock"><p>Encapsulates processed thermal frame data. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2c46f032aab18751558dcb58637530e1" name="a2c46f032aab18751558dcb58637530e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c46f032aab18751558dcb58637530e1">&#9670;&#160;</a></span>clone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classoptris_1_1ThermalFrame.html">ThermalFrame</a> optris::ThermalFrame::clone </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a complete copy of this frame. </p>
-<dl class="section return"><dt>Returns</dt><dd>a complete copy of this frame. </dd></dl>
-
-</div>
-</div>
 <a id="abe8f01bdc47a5b5d3a11a5f540fcfdc7" name="abe8f01bdc47a5b5d3a11a5f540fcfdc7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe8f01bdc47a5b5d3a11a5f540fcfdc7">&#9670;&#160;</a></span>copyTemperaturesTo()</h2>
 

@@ -1,0 +1,5 @@
+<map id="optris::PifDoConfig" name="optris::PifDoConfig">
+<area shape="rect" id="Node000001" title="Encapsulates the configuration for a PIF digital output channel." alt="" coords="5,153,243,339"/>
+<area shape="rect" id="Node000002" href="$structoptris_1_1PifIndex.html" title="Holds the indices that identify the physical pin on a PIF device for a PIF channel." alt="" coords="68,5,180,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,91,127,137,121,137,121,91"/>
+</map>

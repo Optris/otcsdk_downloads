@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -108,12 +108,12 @@ $(function(){initNavTree('EnumerationDetector_8h_source.html',''); initResizable
   <div class="headertitle"><div class="title">EnumerationDetector.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="EnumerationDetector_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2008-2025 Optris GmbH &amp; Co. KG</span></div>
+<a href="EnumerationDetector_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2008-2026 Optris GmbH &amp; Co. KG</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="DeviceInfo_8h.html">otcsdk/common/DeviceInfo.h</a>&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
@@ -136,27 +136,20 @@ $(function(){initNavTree('EnumerationDetector_8h_source.html',''); initResizable
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classoptris_1_1EnumerationDetector.html#ab10ee49e3c6ff740b521f2826c0afb65">   39</a></span>  <span class="keyword">virtual</span> <a class="code hl_function" href="classoptris_1_1EnumerationDetector.html#ab10ee49e3c6ff740b521f2826c0afb65">~EnumerationDetector</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classoptris_1_1EnumerationDetector.html#a31134bc31f4a5682cd38be48eb752cf7">   43</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1EnumerationDetector.html#a31134bc31f4a5682cd38be48eb752cf7">run</a>() = 0;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classoptris_1_1EnumerationDetector.html#a0e4a78be02b9b0131b3036b16a61ffce">   46</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1EnumerationDetector.html#a0e4a78be02b9b0131b3036b16a61ffce">stopRunning</a>() = 0;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classoptris_1_1EnumerationDetector.html#a9084841211d198e1bc6e05c4075d2658">   55</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1EnumerationDetector.html#a9084841211d198e1bc6e05c4075d2658">detectDevices</a>(std::set&lt;DeviceInfo&gt;&amp; devices) <span class="keyword">noexcept</span> = 0;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classoptris_1_1EnumerationDetector.html#a45689b3f158f4e8d698cc4130a859a94">   48</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1EnumerationDetector.html#a45689b3f158f4e8d698cc4130a859a94">detectDevices</a>(std::vector&lt;DeviceInfo&gt;&amp; devices) <span class="keyword">noexcept</span> = 0;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
 </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>} <span class="comment">// namespace optris</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>} <span class="comment">// namespace optris</span></div>
 <div class="ttc" id="aDeviceInfo_8h_html"><div class="ttname"><a href="DeviceInfo_8h.html">DeviceInfo.h</a></div><div class="ttdoc">Contains a class encapsulating important information about devices.</div></div>
-<div class="ttc" id="aclassoptris_1_1EnumerationDetector_html_a0e4a78be02b9b0131b3036b16a61ffce"><div class="ttname"><a href="classoptris_1_1EnumerationDetector.html#a0e4a78be02b9b0131b3036b16a61ffce">optris::EnumerationDetector::stopRunning</a></div><div class="ttdeci">virtual void stopRunning()=0</div><div class="ttdoc">Stops running the detector.</div></div>
 <div class="ttc" id="aclassoptris_1_1EnumerationDetector_html_a24c511ce7d0bd0e08b0f3b616f8d0790"><div class="ttname"><a href="classoptris_1_1EnumerationDetector.html#a24c511ce7d0bd0e08b0f3b616f8d0790">optris::EnumerationDetector::operator=</a></div><div class="ttdeci">EnumerationDetector &amp; operator=(EnumerationDetector &amp;&amp;)=delete</div><div class="ttdoc">Move assignment.</div></div>
 <div class="ttc" id="aclassoptris_1_1EnumerationDetector_html_a26a9f8aca5773e65e1be3e5785f7585c"><div class="ttname"><a href="classoptris_1_1EnumerationDetector.html#a26a9f8aca5773e65e1be3e5785f7585c">optris::EnumerationDetector::operator=</a></div><div class="ttdeci">EnumerationDetector &amp; operator=(const EnumerationDetector &amp;)=delete</div><div class="ttdoc">No copy assignment.</div></div>
-<div class="ttc" id="aclassoptris_1_1EnumerationDetector_html_a31134bc31f4a5682cd38be48eb752cf7"><div class="ttname"><a href="classoptris_1_1EnumerationDetector.html#a31134bc31f4a5682cd38be48eb752cf7">optris::EnumerationDetector::run</a></div><div class="ttdeci">virtual void run()=0</div><div class="ttdoc">Starts to run the detector (usefull for background activity).</div></div>
+<div class="ttc" id="aclassoptris_1_1EnumerationDetector_html_a45689b3f158f4e8d698cc4130a859a94"><div class="ttname"><a href="classoptris_1_1EnumerationDetector.html#a45689b3f158f4e8d698cc4130a859a94">optris::EnumerationDetector::detectDevices</a></div><div class="ttdeci">virtual void detectDevices(std::vector&lt; DeviceInfo &gt; &amp;devices) noexcept=0</div><div class="ttdoc">Detects available devices.</div></div>
 <div class="ttc" id="aclassoptris_1_1EnumerationDetector_html_a4954d1d26bcb50237a98b50ff26dc6ac"><div class="ttname"><a href="classoptris_1_1EnumerationDetector.html#a4954d1d26bcb50237a98b50ff26dc6ac">optris::EnumerationDetector::EnumerationDetector</a></div><div class="ttdeci">EnumerationDetector(EnumerationDetector &amp;&amp;)=delete</div><div class="ttdoc">Move constructor.</div></div>
 <div class="ttc" id="aclassoptris_1_1EnumerationDetector_html_a71a8dcae142d5f45d4716ef5e8943db3"><div class="ttname"><a href="classoptris_1_1EnumerationDetector.html#a71a8dcae142d5f45d4716ef5e8943db3">optris::EnumerationDetector::EnumerationDetector</a></div><div class="ttdeci">EnumerationDetector()=default</div><div class="ttdoc">Constructor.</div></div>
 <div class="ttc" id="aclassoptris_1_1EnumerationDetector_html_a809e30dba847d771cb57f57845a0d7d4"><div class="ttname"><a href="classoptris_1_1EnumerationDetector.html#a809e30dba847d771cb57f57845a0d7d4">optris::EnumerationDetector::EnumerationDetector</a></div><div class="ttdeci">EnumerationDetector(const EnumerationDetector &amp;)=delete</div><div class="ttdoc">No copy constructor.</div></div>
-<div class="ttc" id="aclassoptris_1_1EnumerationDetector_html_a9084841211d198e1bc6e05c4075d2658"><div class="ttname"><a href="classoptris_1_1EnumerationDetector.html#a9084841211d198e1bc6e05c4075d2658">optris::EnumerationDetector::detectDevices</a></div><div class="ttdeci">virtual void detectDevices(std::set&lt; DeviceInfo &gt; &amp;devices) noexcept=0</div><div class="ttdoc">Detects available devices.</div></div>
 <div class="ttc" id="aclassoptris_1_1EnumerationDetector_html_ab10ee49e3c6ff740b521f2826c0afb65"><div class="ttname"><a href="classoptris_1_1EnumerationDetector.html#ab10ee49e3c6ff740b521f2826c0afb65">optris::EnumerationDetector::~EnumerationDetector</a></div><div class="ttdeci">virtual ~EnumerationDetector()=default</div><div class="ttdoc">Destructor.</div></div>
-<div class="ttc" id="anamespaceoptris_html"><div class="ttname"><a href="namespaceoptris.html">optris</a></div><div class="ttdoc">Main SDK namespace.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:24</div></div>
+<div class="ttc" id="anamespaceoptris_html"><div class="ttname"><a href="namespaceoptris.html">optris</a></div><div class="ttdoc">Main SDK namespace.</div><div class="ttdef"><b>Definition</b> AlarmChannel.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

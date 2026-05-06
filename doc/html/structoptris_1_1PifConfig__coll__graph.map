@@ -1,0 +1,5 @@
+<map id="optris::PifConfig" name="optris::PifConfig">
+<area shape="rect" id="Node000001" title="Holds the configuration of the processing interface." alt="" coords="9,153,133,319"/>
+<area shape="rect" id="Node000002" href="$structoptris_1_1PifFsConfig.html" title="Encapsulates the configuration for a PIF fail safe channel." alt="" coords="5,5,137,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,91,74,137,69,137,69,91"/>
+</map>

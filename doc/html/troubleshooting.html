@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -108,20 +108,24 @@ $(function(){initNavTree('troubleshooting.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Troubleshooting</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_pages_211__troubleshooting"></a></p>
-<h1><a class="anchor" id="autotoc_md135"></a>
+<div class="textblock"><p><a class="anchor" id="md_pages_209__troubleshooting"></a></p>
+<h1><a class="anchor" id="autotoc_md156"></a>
 Contents</h1>
 <ul>
+<li><a class="el" href="#troubleshooting-terminology">Terminology</a></li>
 <li><a class="el" href="#troubleshooting-linux">Linux</a></li>
 <li><a class="el" href="#troubleshooting-windows">Windows</a></li>
 <li><a class="el" href="#troubleshooting-false-color-images">False Color Images</a></li>
 <li><a class="el" href="#troubleshooting-video-stream">Video Streams</a></li>
 <li><a class="el" href="#troubleshooting-temperature-differences-to-pixconnect">Temperature Difference to PixConnect</a></li>
-<li><a class="el" href="#troubleshooting-disconnecting-in-callbacks">Disconnecting in Callbacks</a></li>
 </ul>
+<h1><a class="anchor" id="troubleshooting-terminology"></a>
+Terminology</h1>
+<p><em>Emissivity, distortion, flags? You are talking in an incomprehensible technical jargon? Can help me out here?</em></p>
+<p>Yes, Optris can. We assembled a comprehensive <a href="https://optris.com/support-service/temperature-measurement-lexicon/">Lexicon</a> explaining many terms in regards to thermal imaging and measuring temperatures.</p>
 <h1><a class="anchor" id="troubleshooting-linux"></a>
 Linux</h1>
-<h2><a class="anchor" id="autotoc_md136"></a>
+<h2><a class="anchor" id="autotoc_md157"></a>
 User Groups</h2>
 <p><em>My SDK application can not access the data stream from the device.</em></p>
 <p>Check, if you as a user are part of the <code>video</code> group:</p>
@@ -129,16 +133,36 @@ User Groups</h2>
 </div><!-- fragment --><p>If this is not the case, add yourself to this group:</p>
 <div class="fragment"><div class="line">sudo usermod -a -G video &lt;username&gt;</div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>You need to log out and in again for the group changes to take effect.</dd></dl>
-<h2><a class="anchor" id="autotoc_md137"></a>
+<h2><a class="anchor" id="autotoc_md158"></a>
 UVC Driver Settings</h2>
-<p>For some devices passing the <code>nodrop</code> option to the UVC kernel driver may prove helpful. You can temporarily activate this option with the following command:</p>
-<div class="fragment"><div class="line">sudo rmmod uvcvideo; sudo modprobe uvcvideo nodrop=1</div>
-</div><!-- fragment --><p>Alternatively, the parameter can be modified via the <code>sysfs</code> (this is also not permanent):</p>
-<div class="fragment"><div class="line">sudo bash -c &#39;echo -n 1 &gt; /sys/module/uvcvideo/parameters/nodrop&#39;</div>
-</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The changes above are not permanent. They are reset after a reboot.</dd></dl>
-<p>If you find this option helpful, you can activate it permanently by creating the following file:</p>
-<div class="fragment"><div class="line">sudo bash -c &#39;echo &quot;options uvcvideo nodrop=1&quot; &gt; /etc/modprobe.d/uvcvideo.conf&#39;</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md138"></a>
+<dl class="section note"><dt>Note</dt><dd>You should check if there is a firmware/driver update available for your host system and its components. For example on a Raspberry Pi you can run <code>rpi-eeprom-update</code>.</dd></dl>
+<p>On some host systems, cameras with higher resolutions or high frame rates (e.g., PI/Xi 640) may experience compatibility issues between the USB controller and the camera firmware. The UVC kernel driver provides settings that allow users to establish a connection despite these complications. The <code>nodrop</code> option and some of the so-called <code>quirks</code> have proven to be the most useful. How to configure these is explained in the following section.</p>
+<dl class="section note"><dt>Note</dt><dd>At first, you should add the settings temporarily to test them. Further down, we’ll describe how to set them permanently.</dd></dl>
+<p>To get started, unload the <code>uvcvideo</code> module. You need to close every application that uses a camera (webcam as well) and you might need to unplug the camera. Then run this command: <br  />
+</p>
+<div class="fragment"><div class="line">sudo rmmod uvcvideo</div>
+</div><!-- fragment --><p>Now you can reload it with the desired settings. We recommend that you try one or more of the following options:</p>
+<ul>
+<li><code>nodrop = 1</code>: Some hardware might have trouble receiving all isochronous packets of a frame. This setting ensures that all frames, even if some are not fully received, reach user-space and thus the applications.</li>
+<li><code>quirk = 2</code>: Sometimes, due to timing mismatches, the probe commands of the UVC driver don't get answered correctly by the camera. This option skips these probe commands.</li>
+<li><code>quirk = 100</code>: Goes a step further by skipping both probe and commit commands, which can help in cases where the camera firmware is particularly unresponsive to UVC protocol negotiations.</li>
+</ul>
+<p>More detailed information on the quirks as well as additional available options can be found <a href="https://www.ideasonboard.org/uvc/faq/#faq5">here</a>.</p>
+<p>For debugging purposes you can activate the kernel logs for the <code>uvcvideo</code> module with the <code>trace=0xffff</code> setting. However, make sure to disable this option before creating your log-file (<code>trace=0x0</code>) so as not to spam your kernel logs.</p>
+<p>The following example shows how to load <code>uvcvideo</code> with some activated options:</p>
+<div class="fragment"><div class="line">sudo modprobe uvcvideo nodrop=1 quirks=2 trace=0xffff</div>
+</div><!-- fragment --><p>Since the kernel log messages of the UVC module are quite numerous, we recommend you write them directly to a file:</p>
+<div class="fragment"><div class="line">sudo dmesg -c  # clear the log first</div>
+<div class="line">sudo dmesg -w &gt; ~/uvc_kernel.log    # start logging</div>
+<div class="line"># plug in the camera / start your application / ...</div>
+</div><!-- fragment --><p>All these changes disappear if you restart your system. To make them permanent, write them to the configuration file of the <code>uvcvideo</code> module:</p>
+<div class="fragment"><div class="line">sudo nano /etc/modprobe.d/uvcvideo.conf  # open the configuration file</div>
+<div class="line"># Add your settings like this</div>
+<div class="line">options uvcvideo nodrop=1 quirks=0x2</div>
+<div class="line"># save and close</div>
+<div class="line"># reboot your system</div>
+<div class="line">sudo reboot  </div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md159"></a>
 No device found</h2>
 <p><em>When I start my SDK application I get the following error message although my device is plugged into the USB port:</em></p>
 <div class="image">
@@ -146,15 +170,24 @@ No device found</h2>
 <div class="caption">
 No device found.</div></div>
     <p><em>It does not even show up when I use the tool <a class="el" href="basic-usage.html#basic-usage-command-line-tools-otc-find-devices">otc_find_devices</a>.</em></p>
-<p>You can run into this situation when you are using a <a href="https://optris.com/products/thermal-cameras/compact-line/xi-80/">Xi 80</a>, a <a href="https://optris.com/products/thermal-cameras/compact-line/xi-410-lt/">Xi 410</a> or a <a href="https://optris.com/products/thermal-cameras/compact-line/xi-1m/">Xi 1M</a> via USB on Linux. It happens when a SDK application is shutdown abruptly, for example, with <code>Ctrl + C</code> or by killing it in a task manager. This prevents the SDK from properly releasing its resources. As a result, the Linux kernel thinks that the device is still in use and subsequently refuses any attempt to connect to it.</p>
-<p>The only way to remedy this issue is to plug the device out and in again. You can avoid this problem by ensuring that the SDK can shutdown gracefully. This can be achieved by either calling <code>IRImager::disconnect()</code> or by making sure that yor <code>IRImager</code> object is destroyed before the application exits.</p>
+<p>You can run into this situation when you are using a <a href="https://optris.com/products/thermal-cameras/compact-line/xi-80/">Xi 80</a>, a <a href="https://optris.com/products/thermal-cameras/compact-line/xi-320-mt/">Xi 320 MT</a>, a <a href="https://optris.com/products/thermal-cameras/compact-line/xi-410-lt/">Xi 410</a> or a <a href="https://optris.com/products/thermal-cameras/compact-line/xi-1m/">Xi 1M</a> via USB on Linux. It happens when a SDK application is shutdown abruptly, for example, with <code>Ctrl + C</code> or by killing it in a task manager. This prevents the SDK from properly releasing its resources. As a result, the SDK application can not return control over the device back to the kernel. When searching for USB cameras after the restart of the application the camera does not appear because the kernel still thinks it used by another process.</p>
+<p>The only way to remedy this issue is to plug the device out and in again. You can avoid this problem by ensuring that the SDK can shutdown gracefully. This can be achieved by either calling <code>IRImager::disconnect()</code> or by making sure that your <code>IRImager</code> object is destroyed before the application exits.</p>
+<h2><a class="anchor" id="autotoc_md160"></a>
+No video stream due to Linux kernel issues</h2>
+<p><em>I have trouble getting a video stream from my PI 640(i) on Linux.</em></p>
+<p>Due to a fix in the Linux kernel all received frames can be discarded when a certain event occurs. For more details please refer to</p>
+<ul>
+<li><a href="https://github.com/torvalds/linux/commit/d56b0b2ab142940b06eac56dcb3ab1ab88df38a2">Original issue</a></li>
+<li><a href="https://github.com/torvalds/linux/commit/d56b0b2ab142940b06eac56dcb3ab1ab88df38a2">Bugfix</a></li>
+</ul>
+<p>This affects at least Linux kernels 6.11 - 6.12.22 and devices using isochronous data transfer. This includes all Optris cameras with the exception of Xi 80s, Xi 320 MTs, Xi 410s and Xi 1Ms.</p>
 <h1><a class="anchor" id="troubleshooting-windows"></a>
 Windows</h1>
 <p><em>The SDK example applications do not start.</em></p>
 <p>In such a case try installing the <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version">C++ redistributable v14</a> for the <code>amd64</code>/<code>X64</code> architecture from Microsoft. If you install Visual Studio 2022 with the <code>Workload</code> <code>Desktop development with C++</code> (s. <a class="el" href="start-developing.html#start-developing-toolchains-cpp">Start Developing - C++</a>), the required C++ redistributable will be installed automatically.</p>
 <h1><a class="anchor" id="troubleshooting-false-color-images"></a>
 False Color Images</h1>
-<h2><a class="anchor" id="autotoc_md139"></a>
+<h2><a class="anchor" id="autotoc_md161"></a>
 Unexpected Colors</h2>
 <p><em>The false color image does not seem to use the <code>ColoringPalette</code> that I specified.</em></p>
 <p>Check, whether you specified the correct <code>ColorFormat</code> when instantiating the <code>ImageBuilder</code>. Refer to the API documentation of the <code>ColorFormat</code> enum for more details.</p>
@@ -162,7 +195,7 @@ Unexpected Colors</h2>
 <img src="faulty_color_format.jpg" alt=""/>
 <div class="caption">
 Effect of a wrong ColorFormat on the ColoringPalette Iron (left: correct, right: faulty).</div></div>
-    <h2><a class="anchor" id="autotoc_md140"></a>
+    <h2><a class="anchor" id="autotoc_md162"></a>
 Tearing</h2>
 <p><em>The false color image I generated exhibits tearing and lines.</em></p>
 <p>Check, whether you specified the correct <code>WidthAlignment</code> when creating the <code>ImageBuilder</code>. Refer to the API documentation of the <code>WidthAlignment</code> enum for more details.</p>
@@ -179,7 +212,7 @@ Video Stream</h1>
 Data stream from a PI640.</div></div>
     <p>Nothing is wrong. The player just visualizes the raw data. Its needs processing by the SDK in order to become usable.</p>
 <p><em>Wait a minute I did not even get that far. The device shows up as a capture device but I can not open it.</em></p>
-<p>This happens with Xi 80, Xi410 and Xi 1Ms on Linux. The reason for this is the USB transfer mode used by these devices. For more detailed information please refer to the <a class="el" href="device-communication.html#device-communication-usb-streaming">Streaming</a> section in the <a class="el" href="device-communication.html">Device Communication</a> chapter.</p>
+<p>This happens with Xi 80s, Xi 320 MTs, Xi410s and Xi 1Ms on Linux. The reason for this is the USB transfer mode used by these devices. For more detailed information please refer to the <a class="el" href="device-communication.html#device-communication-usb-streaming">Streaming</a> section in the <a class="el" href="device-communication.html">Device Communication</a> chapter.</p>
 <p><em>I am still puzzled: The frames in the VLC player are larger than the ones returned by the SDK. Where did they disappear?</em></p>
 <p>These additional rows or columns contain the metadata of the frame. They are decoded by the SDK and provided separately in form of a <code>FrameMetadata</code> object in thermal frame callbacks.</p>
 <h1><a class="anchor" id="troubleshooting-temperature-differences-to-pixconnect"></a>
@@ -191,12 +224,7 @@ Temperature Differences to PixConnect</h1>
 <img src="direct_temperature_mode.png" alt=""/>
 <div class="caption">
 Direct Temperature Mode.</div></div>
-    <h1><a class="anchor" id="troubleshooting-disconnecting-in-callbacks"></a>
-Disconnecting in Callbacks</h1>
-<p><em>The IRImagerClient callbacks tell me that I lost or timed out my camera connection so I decided to use the <code>disconnect()</code> method of the <code>IRImager</code> to close the connection but then my program got stuck.</em></p>
-<p>This issue can arise when you started the image processing with <code>runAsync()</code>. In this case the SDK creates a dedicated thread to run the processing pipeline. All callbacks are triggered from this thread. When calling <code>disconnect()</code> the SDK will try to join and delete this thread that you are currently still using to execute this disconnect. This will result in a dead lock.</p>
-<p>To circumvent this issue, please use a synchronized flag to signal to another thread that it should call the <code>disconnect()</code> method. Take a peak at the C++ or the C# Simple View examples for an inspiration on how to accomplish this. </p>
-</div></div><!-- contents -->
+     </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

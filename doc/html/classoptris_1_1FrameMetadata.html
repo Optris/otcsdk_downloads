@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -107,7 +107,6 @@ $(function(){initNavTree('classoptris_1_1FrameMetadata.html',''); initResizable(
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classoptris_1_1FrameMetadata-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">optris::FrameMetadata Class Reference</div></div>
 </div><!--header-->
@@ -122,7 +121,7 @@ Collaboration diagram for optris::FrameMetadata:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptris_1_1FrameMetadata__coll__graph.png" border="0" usemap="#aoptris_1_1FrameMetadata_coll__map" alt="Collaboration graph"/></div>
 <map name="aoptris_1_1FrameMetadata_coll__map" id="aoptris_1_1FrameMetadata_coll__map">
-<area shape="rect" title="Encapsulates the metadata of frames provided by the devices." alt="" coords="5,5,159,309"/>
+<area shape="rect" title="Encapsulates the metadata of frames provided by the devices." alt="" coords="5,5,193,271"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -132,33 +131,25 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FrameMetadata</b> () noexcept</td></tr>
 <tr class="memdesc:a0f3d5f4758a80361bd3d165357eb3bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
 <tr class="separator:a0f3d5f4758a80361bd3d165357eb3bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfd94f4f7c8cfaabb9342079069db045" id="r_adfd94f4f7c8cfaabb9342079069db045"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfd94f4f7c8cfaabb9342079069db045">getSize</a> () const noexcept</td></tr>
-<tr class="memdesc:adfd94f4f7c8cfaabb9342079069db045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the raw metadata structure in bytes.  <br /></td></tr>
-<tr class="separator:adfd94f4f7c8cfaabb9342079069db045"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d1c77a420e882e580c4cd2b25cccc00" id="r_a8d1c77a420e882e580c4cd2b25cccc00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d1c77a420e882e580c4cd2b25cccc00">setSize</a> (int size) noexcept</td></tr>
-<tr class="memdesc:a8d1c77a420e882e580c4cd2b25cccc00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the size of the raw metadata structure in bytes.  <br /></td></tr>
-<tr class="separator:a8d1c77a420e882e580c4cd2b25cccc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc43c3b1a6d05da6f70c80794557fb0f" id="r_afc43c3b1a6d05da6f70c80794557fb0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc43c3b1a6d05da6f70c80794557fb0f">isFrameDataReliable</a> () const noexcept</td></tr>
-<tr class="memdesc:afc43c3b1a6d05da6f70c80794557fb0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the data provided in the associated frame is reliable.  <br /></td></tr>
-<tr class="separator:afc43c3b1a6d05da6f70c80794557fb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c38b8a7a6fe5451779c02386034ff4c" id="r_a2c38b8a7a6fe5451779c02386034ff4c"><td class="memItemLeft" align="right" valign="top"><a id="a2c38b8a7a6fe5451779c02386034ff4c" name="a2c38b8a7a6fe5451779c02386034ff4c"></a>
+<a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><b>setFrom</b> (const FrameMetadata2 &amp;raw) noexcept</td></tr>
+<tr class="memdesc:a2c38b8a7a6fe5451779c02386034ff4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the metadata from the raw metadata provided by the processing pipeline. <br /></td></tr>
+<tr class="separator:a2c38b8a7a6fe5451779c02386034ff4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581e52313389c285fb97000f6246fb5a" id="r_a581e52313389c285fb97000f6246fb5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a581e52313389c285fb97000f6246fb5a">isThermalDataReliable</a> () const noexcept</td></tr>
+<tr class="memdesc:a581e52313389c285fb97000f6246fb5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the provided thermal data is reliable.  <br /></td></tr>
+<tr class="separator:a581e52313389c285fb97000f6246fb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d14cdb7213f0a5bdfdb59ae7a04dc48" id="r_a3d14cdb7213f0a5bdfdb59ae7a04dc48"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d14cdb7213f0a5bdfdb59ae7a04dc48">getCounter</a> () const noexcept</td></tr>
 <tr class="memdesc:a3d14cdb7213f0a5bdfdb59ae7a04dc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a consecutive number for each received frame.  <br /></td></tr>
 <tr class="separator:a3d14cdb7213f0a5bdfdb59ae7a04dc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6cfccc1255a5d843d3115d412020c68" id="r_af6cfccc1255a5d843d3115d412020c68"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6cfccc1255a5d843d3115d412020c68">getCounterHardware</a> () const noexcept</td></tr>
 <tr class="memdesc:af6cfccc1255a5d843d3115d412020c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the frame number received from the device.  <br /></td></tr>
 <tr class="separator:af6cfccc1255a5d843d3115d412020c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4771a2d62a491c95bd729214ebe82cc0" id="r_a4771a2d62a491c95bd729214ebe82cc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4771a2d62a491c95bd729214ebe82cc0">setCounters</a> (unsigned int counter, unsigned int counterHardware) noexcept</td></tr>
-<tr class="memdesc:a4771a2d62a491c95bd729214ebe82cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the frame counters.  <br /></td></tr>
-<tr class="separator:a4771a2d62a491c95bd729214ebe82cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afae037ee0d57cb94abb19492f978d6c1" id="r_afae037ee0d57cb94abb19492f978d6c1"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afae037ee0d57cb94abb19492f978d6c1">getTimestamp</a> () const noexcept</td></tr>
 <tr class="memdesc:afae037ee0d57cb94abb19492f978d6c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the frame timestamp in UNITS (10000000 units per second).  <br /></td></tr>
 <tr class="separator:afae037ee0d57cb94abb19492f978d6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe6c312aa98ff26f1e79fb4e7622f961" id="r_abe6c312aa98ff26f1e79fb4e7622f961"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe6c312aa98ff26f1e79fb4e7622f961">getTimestampMedia</a> () const noexcept</td></tr>
 <tr class="memdesc:abe6c312aa98ff26f1e79fb4e7622f961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the media timestamp.  <br /></td></tr>
 <tr class="separator:abe6c312aa98ff26f1e79fb4e7622f961"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a56f389e402f8701bdad9ef577311cf" id="r_a7a56f389e402f8701bdad9ef577311cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a56f389e402f8701bdad9ef577311cf">setTimestamps</a> (long long timestamp, long long timestampMedia) noexcept</td></tr>
-<tr class="memdesc:a7a56f389e402f8701bdad9ef577311cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the timestamps.  <br /></td></tr>
-<tr class="separator:a7a56f389e402f8701bdad9ef577311cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8148fd4a4c1bc9e48f6494e4c6831eb2" id="r_a8148fd4a4c1bc9e48f6494e4c6831eb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoptris.html#a23ddb213a1599a8ca715eab2198833f8">FlagState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8148fd4a4c1bc9e48f6494e4c6831eb2">getFlagState</a> () const noexcept</td></tr>
 <tr class="memdesc:a8148fd4a4c1bc9e48f6494e4c6831eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the shutter flag at frame capturing time.  <br /></td></tr>
 <tr class="separator:a8148fd4a4c1bc9e48f6494e4c6831eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,24 +165,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0ab486af687fbeb38090e19fee90bfc6" id="r_a0ab486af687fbeb38090e19fee90bfc6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ab486af687fbeb38090e19fee90bfc6">getTemperatureChip</a> () const noexcept</td></tr>
 <tr class="memdesc:a0ab486af687fbeb38090e19fee90bfc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sensor chip temperature in °C at frame capturing time.  <br /></td></tr>
 <tr class="separator:a0ab486af687fbeb38090e19fee90bfc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02cd63afef7caf92e668d0adb85c2559" id="r_a02cd63afef7caf92e668d0adb85c2559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02cd63afef7caf92e668d0adb85c2559">setProbeTemperatures</a> (float flag, float box, float chip) noexcept</td></tr>
-<tr class="memdesc:a02cd63afef7caf92e668d0adb85c2559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the flag, box and chip probe temperatures in °C.  <br /></td></tr>
-<tr class="separator:a02cd63afef7caf92e668d0adb85c2559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ae8909325ad6828e2dfa44c0abe615f" id="r_a4ae8909325ad6828e2dfa44c0abe615f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoptris.html#a13d369b3aa1ce7f0ad98c27f77f58e28">RadiationParameterSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ae8909325ad6828e2dfa44c0abe615f">getEmissivitySource</a> () const noexcept</td></tr>
-<tr class="memdesc:a4ae8909325ad6828e2dfa44c0abe615f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source of the emissivity value.  <br /></td></tr>
+<tr class="memdesc:a4ae8909325ad6828e2dfa44c0abe615f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source of the standard emissivity value.  <br /></td></tr>
 <tr class="separator:a4ae8909325ad6828e2dfa44c0abe615f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90fd75af1e28f77675bfb9acc76ce45a" id="r_a90fd75af1e28f77675bfb9acc76ce45a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoptris.html#a13d369b3aa1ce7f0ad98c27f77f58e28">RadiationParameterSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90fd75af1e28f77675bfb9acc76ce45a">getTransmissivitySource</a> () const noexcept</td></tr>
-<tr class="memdesc:a90fd75af1e28f77675bfb9acc76ce45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source of the transmissivity value.  <br /></td></tr>
+<tr class="memdesc:a90fd75af1e28f77675bfb9acc76ce45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source of the standard transmissivity value.  <br /></td></tr>
 <tr class="separator:a90fd75af1e28f77675bfb9acc76ce45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39f302e71217119eba6851d657690c22" id="r_a39f302e71217119eba6851d657690c22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoptris.html#a13d369b3aa1ce7f0ad98c27f77f58e28">RadiationParameterSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39f302e71217119eba6851d657690c22">getAmbientTemperatureSource</a> () const noexcept</td></tr>
-<tr class="memdesc:a39f302e71217119eba6851d657690c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source of the ambient temperature value.  <br /></td></tr>
+<tr class="memdesc:a39f302e71217119eba6851d657690c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source of the standard ambient temperature value.  <br /></td></tr>
 <tr class="separator:a39f302e71217119eba6851d657690c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fd7008930f2130f88c777b61a7e2397" id="r_a1fd7008930f2130f88c777b61a7e2397"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptris_1_1RadiationParameters.html">RadiationParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fd7008930f2130f88c777b61a7e2397">getRadiationParameters</a> () const noexcept</td></tr>
-<tr class="memdesc:a1fd7008930f2130f88c777b61a7e2397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grants read access to the radiation parameters use to process the thermal frame.  <br /></td></tr>
+<tr class="memitem:a1fd7008930f2130f88c777b61a7e2397" id="r_a1fd7008930f2130f88c777b61a7e2397"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoptris_1_1RadiationParameters.html">RadiationParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fd7008930f2130f88c777b61a7e2397">getRadiationParameters</a> () const noexcept</td></tr>
+<tr class="memdesc:a1fd7008930f2130f88c777b61a7e2397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the standard radiation parameters.  <br /></td></tr>
 <tr class="separator:a1fd7008930f2130f88c777b61a7e2397"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57b05c959ba42e836a2df9332a36aa29" id="r_a57b05c959ba42e836a2df9332a36aa29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57b05c959ba42e836a2df9332a36aa29">setRadiationParameterSources</a> (<a class="el" href="namespaceoptris.html#a13d369b3aa1ce7f0ad98c27f77f58e28">RadiationParameterSource</a> emissivitySource, <a class="el" href="namespaceoptris.html#a13d369b3aa1ce7f0ad98c27f77f58e28">RadiationParameterSource</a> ambientTemperatureSource) noexcept</td></tr>
-<tr class="memdesc:a57b05c959ba42e836a2df9332a36aa29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the radiation parameters sources.  <br /></td></tr>
-<tr class="separator:a57b05c959ba42e836a2df9332a36aa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac107cfcd10ea36368f827b2914f64856" id="r_ac107cfcd10ea36368f827b2914f64856"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac107cfcd10ea36368f827b2914f64856">setRadiationParameters</a> (const <a class="el" href="structoptris_1_1RadiationParameters.html">RadiationParameters</a> &amp;radiation) noexcept</td></tr>
+<tr class="memdesc:ac107cfcd10ea36368f827b2914f64856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the standard radiation parameters used to process the frame. Intended for code paths that reconstruct a <a class="el" href="classoptris_1_1FrameMetadata.html" title="Encapsulates the metadata of frames provided by the devices.">FrameMetadata</a> from an external source (ZMQ wire, recorded frames, tests) where the SDK's internal processing pipeline isn't the producer of this metadata.  <br /></td></tr>
+<tr class="separator:ac107cfcd10ea36368f827b2914f64856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64b492d671636bb7245c92fad7309bf2" id="r_a64b492d671636bb7245c92fad7309bf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64b492d671636bb7245c92fad7309bf2">getPifAiValue</a> (int deviceIndex, int pinIndex) const</td></tr>
 <tr class="memdesc:a64b492d671636bb7245c92fad7309bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the analog input value on the given PIF channel.  <br /></td></tr>
 <tr class="separator:a64b492d671636bb7245c92fad7309bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,108 +198,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa60854333f557c033e6eb22c2cfbd735" id="r_aa60854333f557c033e6eb22c2cfbd735"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa60854333f557c033e6eb22c2cfbd735">getPifDiCountPerDevice</a> () const noexcept</td></tr>
 <tr class="memdesc:aa60854333f557c033e6eb22c2cfbd735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the count of digital input channels per PIF device.  <br /></td></tr>
 <tr class="separator:aa60854333f557c033e6eb22c2cfbd735"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b51a6a69c14a6b2511451b3222faa8" id="r_ae2b51a6a69c14a6b2511451b3222faa8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2b51a6a69c14a6b2511451b3222faa8">setPifCounts</a> (int actualDeviceCount, int configurableDeviceCount, int aiCountPerDevice, int diCountPerDevice) noexcept</td></tr>
-<tr class="memdesc:ae2b51a6a69c14a6b2511451b3222faa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the counts of the PIF devices and input channels.  <br /></td></tr>
-<tr class="separator:ae2b51a6a69c14a6b2511451b3222faa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99a8df7488bbee9a32708b0bc044e5b1" id="r_a99a8df7488bbee9a32708b0bc044e5b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99a8df7488bbee9a32708b0bc044e5b1">setPifAiValue</a> (int deviceIndex, int pinIndex, float value)</td></tr>
-<tr class="memdesc:a99a8df7488bbee9a32708b0bc044e5b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the specified PIF analog input channel.  <br /></td></tr>
-<tr class="separator:a99a8df7488bbee9a32708b0bc044e5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a013267eb7f5ef718bdc5de8a950d3eba" id="r_a013267eb7f5ef718bdc5de8a950d3eba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a013267eb7f5ef718bdc5de8a950d3eba">setPifDiValue</a> (int deviceIndex, int pinIndex, bool value)</td></tr>
-<tr class="memdesc:a013267eb7f5ef718bdc5de8a950d3eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the specified PIF digital input channel.  <br /></td></tr>
-<tr class="separator:a013267eb7f5ef718bdc5de8a950d3eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11bd29458b85d5d14fd87eb992d46026" id="r_a11bd29458b85d5d14fd87eb992d46026"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <a class="el" href="classoptris_1_1FrameMetadata.html">FrameMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11bd29458b85d5d14fd87eb992d46026">clone</a> () const noexcept</td></tr>
-<tr class="memdesc:a11bd29458b85d5d14fd87eb992d46026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a complete copy of this metadata.  <br /></td></tr>
-<tr class="separator:a11bd29458b85d5d14fd87eb992d46026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aabd7faa685855f18a8a1500f663e489e" id="r_aabd7faa685855f18a8a1500f663e489e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classoptris_1_1FrameMetadata.html">FrameMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabd7faa685855f18a8a1500f663e489e">fromRawMetadata</a> (FrameMetadata2 *raw, bool initializing, int pifActualDeviceCount, int pifConfigurableDeviceCount)</td></tr>
-<tr class="memdesc:aabd7faa685855f18a8a1500f663e489e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a frame metadata object from raw metadata.  <br /></td></tr>
-<tr class="separator:aabd7faa685855f18a8a1500f663e489e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulates the metadata of frames provided by the devices. </p>
 <p>This metadata is passed alongside the frame data from the devices via the streaming interface (e.g. USB, Ethernet). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a11bd29458b85d5d14fd87eb992d46026" name="a11bd29458b85d5d14fd87eb992d46026"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11bd29458b85d5d14fd87eb992d46026">&#9670;&#160;</a></span>clone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classoptris_1_1FrameMetadata.html">FrameMetadata</a> optris::FrameMetadata::clone </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a complete copy of this metadata. </p>
-<dl class="section return"><dt>Returns</dt><dd>a complete copy of this metadata. </dd></dl>
-
-</div>
-</div>
-<a id="aabd7faa685855f18a8a1500f663e489e" name="aabd7faa685855f18a8a1500f663e489e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabd7faa685855f18a8a1500f663e489e">&#9670;&#160;</a></span>fromRawMetadata()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classoptris_1_1FrameMetadata.html">FrameMetadata</a> optris::FrameMetadata::fromRawMetadata </td>
-          <td>(</td>
-          <td class="paramtype">FrameMetadata2 *</td>          <td class="paramname"><span class="paramname"><em>raw</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>initializing</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>pifActualDeviceCount</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>pifConfigurableDeviceCount</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a frame metadata object from raw metadata. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">raw</td><td>metadata to convert. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">initializing</td><td>true if the device is currently performing the startup calibrations. False otherwise. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pifActualDeviceCount</td><td>count of actually connected PIF devices. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pifConfigurableDeviceCount</td><td>count of configurable PIF devices.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>frame metadata object. </dd></dl>
-
-</div>
-</div>
 <a id="a39f302e71217119eba6851d657690c22" name="a39f302e71217119eba6851d657690c22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a39f302e71217119eba6851d657690c22">&#9670;&#160;</a></span>getAmbientTemperatureSource()</h2>
 
@@ -335,8 +226,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the source of the ambient temperature value. </p>
-<dl class="section return"><dt>Returns</dt><dd>source of the ambient temperature value. </dd></dl>
+<p>Returns the source of the standard ambient temperature value. </p>
+<dl class="section return"><dt>Returns</dt><dd>source of the standard ambient temperature value. </dd></dl>
 
 </div>
 </div>
@@ -393,7 +284,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns the frame number received from the device. </p>
 <dl class="section note"><dt>Note</dt><dd>This counter may overflow.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>frame number received form the device. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>frame number received from the device. </dd></dl>
 
 </div>
 </div>
@@ -420,8 +311,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the source of the emissivity value. </p>
-<dl class="section return"><dt>Returns</dt><dd>source of the emissivity value. </dd></dl>
+<p>Returns the source of the standard emissivity value. </p>
+<dl class="section return"><dt>Returns</dt><dd>source of the standard emissivity value. </dd></dl>
 
 </div>
 </div>
@@ -651,7 +542,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classoptris_1_1RadiationParameters.html">RadiationParameters</a> optris::FrameMetadata::getRadiationParameters </td>
+          <td class="memname"><a class="el" href="structoptris_1_1RadiationParameters.html">RadiationParameters</a> optris::FrameMetadata::getRadiationParameters </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -664,38 +555,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Grants read access to the radiation parameters use to process the thermal frame. </p>
-<dl class="section attention"><dt>Attention</dt><dd>The radiation parameters may be modified via the process interface (PIF) and through automated ambient temperature estimations. This method return the parameters set in the configuration or vis <a class="el" href="classoptris_1_1IRImager.html#a282874cfc488aa80b9254d3515a993e6" title="Sets the radiation parameters (emissivity, transmissivity and ambient temperature).">IRImager::setRadiationParameters()</a>.</dd></dl>
-<p>To get the set/configured parameters see <a class="el" href="classoptris_1_1IRImager.html#a265f05d8e2b248637c9bf7fd5b3867cb" title="Returns the set/configured radiation parameters.">IRImager::getRadiationParameters()</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>read access to the radiation parameters use to process the thermal frame. </dd></dl>
-
-</div>
-</div>
-<a id="adfd94f4f7c8cfaabb9342079069db045" name="adfd94f4f7c8cfaabb9342079069db045"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfd94f4f7c8cfaabb9342079069db045">&#9670;&#160;</a></span>getSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int optris::FrameMetadata::getSize </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the size of the raw metadata structure in bytes. </p>
-<dl class="section return"><dt>Returns</dt><dd>size of the raw metadata structure in bytes. </dd></dl>
+<p>Returns the standard radiation parameters. </p>
+<p>The standard radiation parameters are used to process the thermal frame and all measurement fields that do not specify a custom emissivity. Measurement fields with a custom emissivity, however, will still utilize the transmissivity and ambient temperature from the standard radiation parameters.</p>
+<dl class="section attention"><dt>Attention</dt><dd>The standard radiation parameters may be modified via the process interface (PIF) and through automated ambient temperature estimations. This method return the parameters set in the configuration or via <a class="el" href="classoptris_1_1IRImager.html#a282874cfc488aa80b9254d3515a993e6" title="Sets the radiation parameters (emissivity, transmissivity and ambient temperature).">IRImager::setRadiationParameters()</a>.</dd></dl>
+<p>To get the set/configured parameters see <a class="el" href="classoptris_1_1IRImager.html#ae865c8ca970e27f985fe8616f56f9702" title="Returns the set/configured radiation parameters.">IRImager::getRadiationParameters()</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>standard radiation parameters. </dd></dl>
 
 </div>
 </div>
@@ -835,7 +699,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the media timestamp. </p>
-<dl class="section return"><dt>Returns</dt><dd>media time stamp. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>media timestamp. </dd></dl>
 
 </div>
 </div>
@@ -862,13 +726,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the source of the transmissivity value. </p>
-<dl class="section return"><dt>Returns</dt><dd>source of the transmissivity value. </dd></dl>
+<p>Returns the source of the standard transmissivity value. </p>
+<dl class="section return"><dt>Returns</dt><dd>source of the standard transmissivity value. </dd></dl>
 
 </div>
 </div>
-<a id="afc43c3b1a6d05da6f70c80794557fb0f" name="afc43c3b1a6d05da6f70c80794557fb0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc43c3b1a6d05da6f70c80794557fb0f">&#9670;&#160;</a></span>isFrameDataReliable()</h2>
+<a id="a581e52313389c285fb97000f6246fb5a" name="a581e52313389c285fb97000f6246fb5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581e52313389c285fb97000f6246fb5a">&#9670;&#160;</a></span>isThermalDataReliable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -877,7 +741,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool optris::FrameMetadata::isFrameDataReliable </td>
+          <td class="memname">bool optris::FrameMetadata::isThermalDataReliable </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -890,47 +754,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns whether the data provided in the associated frame is reliable. </p>
-<p>During the initial startup calibration the data provide by the device is not reliable.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if the data provided in the associated frame is reliable. False otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="a4771a2d62a491c95bd729214ebe82cc0" name="a4771a2d62a491c95bd729214ebe82cc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4771a2d62a491c95bd729214ebe82cc0">&#9670;&#160;</a></span>setCounters()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void optris::FrameMetadata::setCounters </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>counter</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>counterHardware</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the frame counters. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">counter</td><td>to set. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">counterHardware</td><td>to set. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Indicates whether the provided thermal data is reliable. </p>
+<p>During the initial startup calibration the provided thermal data is not reliable. This is equivalent to the shutter flag being in the Initializing state</p>
+<dl class="section return"><dt>Returns</dt><dd>true if the provided thermal data is reliable. False otherwise. </dd></dl>
 
 </div>
 </div>
@@ -967,50 +793,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a99a8df7488bbee9a32708b0bc044e5b1" name="a99a8df7488bbee9a32708b0bc044e5b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99a8df7488bbee9a32708b0bc044e5b1">&#9670;&#160;</a></span>setPifAiValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::FrameMetadata::setPifAiValue </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>deviceIndex</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>pinIndex</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the value of the specified PIF analog input channel. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">deviceIndex</td><td>of the PIF device. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pinIndex</td><td>of the pin on the specified PIF device. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>to set.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if either the device or pin index is out of range. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae2b51a6a69c14a6b2511451b3222faa8" name="ae2b51a6a69c14a6b2511451b3222faa8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2b51a6a69c14a6b2511451b3222faa8">&#9670;&#160;</a></span>setPifCounts()</h2>
+<a id="ac107cfcd10ea36368f827b2914f64856" name="ac107cfcd10ea36368f827b2914f64856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac107cfcd10ea36368f827b2914f64856">&#9670;&#160;</a></span>setRadiationParameters()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1019,183 +803,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::FrameMetadata::setPifCounts </td>
+          <td class="memname">void optris::FrameMetadata::setRadiationParameters </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>actualDeviceCount</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>configurableDeviceCount</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>aiCountPerDevice</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>diCountPerDevice</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the counts of the PIF devices and input channels. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">actualDeviceCount</td><td>count of actual connected PIF devices. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">configurableDeviceCount</td><td>count of configurable PIF devices. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiCountPerDevice</td><td>count of analog input channels per PIF device. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">diCountPerDevice</td><td>count of digital input channels per PIF device. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a013267eb7f5ef718bdc5de8a950d3eba" name="a013267eb7f5ef718bdc5de8a950d3eba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a013267eb7f5ef718bdc5de8a950d3eba">&#9670;&#160;</a></span>setPifDiValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::FrameMetadata::setPifDiValue </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>deviceIndex</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>pinIndex</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the value of the specified PIF digital input channel. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">deviceIndex</td><td>of the PIF device. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pinIndex</td><td>of the pin on the specified PIF device. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>to set.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if either the device or pin index is out of range. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a02cd63afef7caf92e668d0adb85c2559" name="a02cd63afef7caf92e668d0adb85c2559"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02cd63afef7caf92e668d0adb85c2559">&#9670;&#160;</a></span>setProbeTemperatures()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void optris::FrameMetadata::setProbeTemperatures </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>flag</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>box</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>chip</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set the flag, box and chip probe temperatures in °C. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flag</td><td>temperature in °C. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">box</td><td>temperature in °C. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">chip</td><td>temperature in °C. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a57b05c959ba42e836a2df9332a36aa29" name="a57b05c959ba42e836a2df9332a36aa29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57b05c959ba42e836a2df9332a36aa29">&#9670;&#160;</a></span>setRadiationParameterSources()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void optris::FrameMetadata::setRadiationParameterSources </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceoptris.html#a13d369b3aa1ce7f0ad98c27f77f58e28">RadiationParameterSource</a></td>          <td class="paramname"><span class="paramname"><em>emissivitySource</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceoptris.html#a13d369b3aa1ce7f0ad98c27f77f58e28">RadiationParameterSource</a></td>          <td class="paramname"><span class="paramname"><em>ambientTemperatureSource</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the radiation parameters sources. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">emissivitySource</td><td>to set. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ambientTemperatureSource</td><td>to set. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8d1c77a420e882e580c4cd2b25cccc00" name="a8d1c77a420e882e580c4cd2b25cccc00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d1c77a420e882e580c4cd2b25cccc00">&#9670;&#160;</a></span>setSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void optris::FrameMetadata::setSize </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1RadiationParameters.html">RadiationParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>radiation</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1206,48 +816,10 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the size of the raw metadata structure in bytes. </p>
+<p>Sets the standard radiation parameters used to process the frame. Intended for code paths that reconstruct a <a class="el" href="classoptris_1_1FrameMetadata.html" title="Encapsulates the metadata of frames provided by the devices.">FrameMetadata</a> from an external source (ZMQ wire, recorded frames, tests) where the SDK's internal processing pipeline isn't the producer of this metadata. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>of the raw metadata structure in bytes. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a7a56f389e402f8701bdad9ef577311cf" name="a7a56f389e402f8701bdad9ef577311cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a56f389e402f8701bdad9ef577311cf">&#9670;&#160;</a></span>setTimestamps()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void optris::FrameMetadata::setTimestamps </td>
-          <td>(</td>
-          <td class="paramtype">long long</td>          <td class="paramname"><span class="paramname"><em>timestamp</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">long long</td>          <td class="paramname"><span class="paramname"><em>timestampMedia</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the timestamps. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>frame timestamp in UNITS (10000000 units per second). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timestampMedia</td><td>media timestamp. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">radiation</td><td>the radiation parameters to store. </td></tr>
   </table>
   </dd>
 </dl>

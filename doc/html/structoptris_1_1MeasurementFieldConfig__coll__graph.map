@@ -1,0 +1,7 @@
+<map id="optris::MeasurementFieldConfig" name="optris::MeasurementFieldConfig">
+<area shape="rect" id="Node000001" title="Encapsulates the configuration of a measurement field." alt="" coords="5,376,185,496"/>
+<area shape="rect" id="Node000002" href="$structoptris_1_1FieldShapeConfig.html" title="Encapsulates the configuration of a field shape." alt="" coords="10,208,181,313"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,313,98,360,93,360,93,313"/>
+<area shape="rect" id="Node000003" href="$structoptris_1_1Vector2.html" title=" " alt="" coords="12,5,179,131"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,131,98,191,93,191,93,131"/>
+</map>

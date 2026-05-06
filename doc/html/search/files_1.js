@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['deviceinfo_2eh_0',['DeviceInfo.h',['../DeviceInfo_8h.html',1,'']]],
-  ['devicenetworkconfig_2eh_1',['DeviceNetworkConfig.h',['../DeviceNetworkConfig_8h.html',1,'']]],
-  ['devicetype_2eh_2',['DeviceType.h',['../DeviceType_8h.html',1,'']]]
+  ['chipheatingmode_2eh_0',['ChipHeatingMode.h',['../ChipHeatingMode_8h.html',1,'']]],
+  ['compositealarmevent_2eh_1',['CompositeAlarmEvent.h',['../CompositeAlarmEvent_8h.html',1,'']]],
+  ['compositealarmstatus_2eh_2',['CompositeAlarmStatus.h',['../CompositeAlarmStatus_8h.html',1,'']]],
+  ['connectionevent_2eh_3',['ConnectionEvent.h',['../ConnectionEvent_8h.html',1,'']]],
+  ['connectionstate_2eh_4',['ConnectionState.h',['../ConnectionState_8h.html',1,'']]]
 ];

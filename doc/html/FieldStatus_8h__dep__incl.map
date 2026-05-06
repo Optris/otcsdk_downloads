@@ -1,0 +1,13 @@
+<map id="FieldStatus.h" name="FieldStatus.h">
+<area shape="rect" id="Node000001" title="Contains a class that encapsulates status of a processed measurement field." alt="" coords="22,5,129,31"/>
+<area shape="rect" id="Node000002" href="$FrameEvent_8h.html" title="Contains a class representing a frame event." alt="" coords="19,79,131,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,44,78,79,73,79,73,44"/>
+<area shape="rect" id="Node000003" href="$IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="10,152,141,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,118,78,152,73,152,73,118"/>
+<area shape="rect" id="Node000004" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="29,225,121,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="78,191,78,225,73,225,73,191"/>
+<area shape="rect" id="Node000005" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="5,299,145,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="78,264,78,299,73,299,73,264"/>
+<area shape="rect" id="Node000006" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="6,372,145,397"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="78,338,78,372,73,372,73,338"/>
+</map>

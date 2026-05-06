@@ -1,5 +1,6 @@
 var PifProperties_8h =
 [
+    [ "optris::PifIndex", "structoptris_1_1PifIndex.html", "structoptris_1_1PifIndex" ],
     [ "optris::PifAiMode", "namespaceoptris.html#a48cea19aaa2bdcb26030ccdb6b30019b", [
       [ "optris::PifAiMode::Off", "namespaceoptris.html#a48cea19aaa2bdcb26030ccdb6b30019bad15305d7a4e34e02489c74a5ef542f36", null ],
       [ "optris::PifAiMode::FlagControl", "namespaceoptris.html#a48cea19aaa2bdcb26030ccdb6b30019bacf2eda110b11c521955d9c9957006cb2", null ],
@@ -14,7 +15,8 @@ var PifProperties_8h =
       [ "optris::PifAoMode::FailSafe", "namespaceoptris.html#a40688afc0f8bde05f59f9ecec8ee8f41ac91605399e08063be00b46f8ba6b4167", null ],
       [ "optris::PifAoMode::ExternalCommunication", "namespaceoptris.html#a40688afc0f8bde05f59f9ecec8ee8f41a2bb436cd51c25ed9dc8cd8ef52bbe050", null ],
       [ "optris::PifAoMode::MeasurementField", "namespaceoptris.html#a40688afc0f8bde05f59f9ecec8ee8f41a54f88fc6460a14df3366fa6e9dd40262", null ],
-      [ "optris::PifAoMode::InternalTemperature", "namespaceoptris.html#a40688afc0f8bde05f59f9ecec8ee8f41a5f304e122830aee8d4e03343811798f9", null ]
+      [ "optris::PifAoMode::InternalTemperature", "namespaceoptris.html#a40688afc0f8bde05f59f9ecec8ee8f41a5f304e122830aee8d4e03343811798f9", null ],
+      [ "optris::PifAoMode::Alarm", "namespaceoptris.html#a40688afc0f8bde05f59f9ecec8ee8f41a46c4c4d980dfe025ae5b35aa0011dde4", null ]
     ] ],
     [ "optris::PifAoOutputMode", "namespaceoptris.html#adfa97c0fdc668e87c48ba48dd7c5bf08", [
       [ "optris::PifAoOutputMode::_0_20mA", "namespaceoptris.html#adfa97c0fdc668e87c48ba48dd7c5bf08a36e9963f1659faa9198c65bf54f0132b", null ],
@@ -41,7 +43,8 @@ var PifProperties_8h =
       [ "optris::PifDoMode::FlagStatus", "namespaceoptris.html#af26cbc38bd9cf379a7d0e4236de69535ab4622bc514cf7ba0222e0fe8260a40c6", null ],
       [ "optris::PifDoMode::FrameSync", "namespaceoptris.html#af26cbc38bd9cf379a7d0e4236de69535a9068e29f4997fa720a3a8326b5803171", null ],
       [ "optris::PifDoMode::FailSafe", "namespaceoptris.html#af26cbc38bd9cf379a7d0e4236de69535ac91605399e08063be00b46f8ba6b4167", null ],
-      [ "optris::PifDoMode::ExternalCommunication", "namespaceoptris.html#af26cbc38bd9cf379a7d0e4236de69535a2bb436cd51c25ed9dc8cd8ef52bbe050", null ]
+      [ "optris::PifDoMode::ExternalCommunication", "namespaceoptris.html#af26cbc38bd9cf379a7d0e4236de69535a2bb436cd51c25ed9dc8cd8ef52bbe050", null ],
+      [ "optris::PifDoMode::Alarm", "namespaceoptris.html#af26cbc38bd9cf379a7d0e4236de69535a46c4c4d980dfe025ae5b35aa0011dde4", null ]
     ] ],
     [ "optris::PifFsMode", "namespaceoptris.html#a49dc57659218ebbec401ed0ad00db7ff", [
       [ "optris::PifFsMode::Off", "namespaceoptris.html#a49dc57659218ebbec401ed0ad00db7ffad15305d7a4e34e02489c74a5ef542f36", null ],
@@ -49,6 +52,7 @@ var PifProperties_8h =
     ] ],
     [ "optris::clampValue", "namespaceoptris.html#a3b274b8e40b310c41d1cac047860116f", null ],
     [ "optris::lowerLimit", "namespaceoptris.html#ae6fe74c172b8859e6547806e5f4c4112", null ],
+    [ "optris::operator!=", "namespaceoptris.html#a3e04b435a40260a260ed4e687e75c503", null ],
     [ "optris::operator<<", "namespaceoptris.html#ae51971f1fe7c1c444782cc97ec05bc13", null ],
     [ "optris::operator<<", "namespaceoptris.html#a5b4f4c6b5c3618ee5f027cd0652d4cff", null ],
     [ "optris::operator<<", "namespaceoptris.html#a63b619f94d4b603b19eef205b52b4a2b", null ],
@@ -56,6 +60,9 @@ var PifProperties_8h =
     [ "optris::operator<<", "namespaceoptris.html#a83a8ffa57e878d7d4ca3191b80272d9c", null ],
     [ "optris::operator<<", "namespaceoptris.html#a595ea7e61fb15d59bd550a6ff1edf8e3", null ],
     [ "optris::operator<<", "namespaceoptris.html#a49c6e901446829c9996d2200fe4c3901", null ],
+    [ "optris::operator<<", "namespaceoptris.html#a19749158995aa32b34ad58785bc80ded", null ],
+    [ "optris::operator==", "namespaceoptris.html#a68f0a311e0184a3e176d89ec022e0a6d", null ],
+    [ "optris::toString", "namespaceoptris.html#aeff96fad1c00e7aba17eb61a865f1e5f", null ],
     [ "optris::toString", "namespaceoptris.html#aa6ca3a3fabe00fca99ed0f6f326201c5", null ],
     [ "optris::toString", "namespaceoptris.html#a85e3dd9bce1c2917d5752af600235f84", null ],
     [ "optris::toString", "namespaceoptris.html#ae6119a3da2cfa87145145123ccf9cb61", null ],

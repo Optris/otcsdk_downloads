@@ -1,0 +1,5 @@
+<map id="optris::AlarmEvent" name="optris::AlarmEvent">
+<area shape="rect" id="Node000001" title="Event containing the status of an alarm channel." alt="" coords="35,273,169,339"/>
+<area shape="rect" id="Node000002" href="$classoptris_1_1AlarmChannelStatus.html" title="Encapsulates the status of an alarm channel." alt="" coords="5,5,199,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,211,105,257,99,257,99,211"/>
+</map>

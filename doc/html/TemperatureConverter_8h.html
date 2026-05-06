@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -117,43 +117,25 @@ $(function(){initNavTree('TemperatureConverter_8h.html',''); initResizable(true)
 <div class="textblock"><code>#include &quot;<a class="el" href="Api_8h_source.html">otcsdk/Api.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TemperaturePrecision_8h_source.html">otcsdk/common/TemperaturePrecision.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for TemperatureConverter.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="TemperatureConverter_8h__incl.png" border="0" usemap="#aTemperatureConverter_8h" alt=""/></div>
-<map name="aTemperatureConverter_8h" id="aTemperatureConverter_8h">
-<area shape="rect" title="Contains a class that converts between temperatures in the internal SDK format and in °C." alt="" coords="24,5,185,32"/>
-<area shape="rect" href="Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="5,171,100,197"/>
-<area shape="poly" title=" " alt="" coords="96,34,80,55,67,81,58,119,55,156,50,155,53,118,62,79,76,52,92,31"/>
-<area shape="rect" href="TemperaturePrecision_8h.html" title="Contains an enum representing the different temperature precisions and constants denoting invalid tem..." alt="" coords="76,80,266,123"/>
-<area shape="poly" title=" " alt="" coords="117,31,147,67,143,70,113,34"/>
-<area shape="poly" title=" " alt="" coords="142,125,85,164,82,160,139,121"/>
-<area shape="rect" title=" " alt="" coords="130,171,199,197"/>
-<area shape="poly" title=" " alt="" coords="172,123,169,155,164,155,167,123"/>
-<area shape="rect" title=" " alt="" coords="223,171,276,197"/>
-<area shape="poly" title=" " alt="" coords="193,121,229,157,225,161,190,125"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="TemperatureConverter_8h__dep__incl.png" border="0" usemap="#aTemperatureConverter_8hdep" alt=""/></div>
 <map name="aTemperatureConverter_8hdep" id="aTemperatureConverter_8hdep">
-<area shape="rect" title="Contains a class that converts between temperatures in the internal SDK format and in °C." alt="" coords="70,5,232,32"/>
-<area shape="rect" href="MeasurementField_8h.html" title="Contains a class encapsulating the properties and data of a rectangular measurement field." alt="" coords="5,80,145,107"/>
-<area shape="poly" title=" " alt="" coords="129,45,90,82,86,78,125,41"/>
-<area shape="rect" href="ThermalFrame_8h.html" title="Contains a class encapsulating a thermal frame received from a device." alt="" coords="169,80,285,107"/>
-<area shape="poly" title=" " alt="" coords="177,41,216,78,212,82,173,45"/>
-<area shape="rect" href="IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="22,155,142,181"/>
-<area shape="poly" title=" " alt="" coords="80,122,83,154,78,155,75,123"/>
-<area shape="rect" href="IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="38,229,125,256"/>
-<area shape="poly" title=" " alt="" coords="84,197,84,229,79,229,79,197"/>
-<area shape="rect" href="IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="17,304,146,331"/>
-<area shape="poly" title=" " alt="" coords="84,272,84,304,79,304,79,272"/>
-<area shape="rect" href="IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="17,379,146,405"/>
-<area shape="poly" title=" " alt="" coords="84,346,84,378,79,378,79,346"/>
-<area shape="poly" title=" " alt="" coords="189,116,108,156,106,152,187,111"/>
-<area shape="rect" href="ImageBuilder_8h.html" title="Contains a class that converts thermal frames into false color images." alt="" coords="173,155,281,181"/>
-<area shape="poly" title=" " alt="" coords="230,122,230,154,224,154,224,122"/>
+<area shape="rect" title="Contains a class that converts between temperatures in the internal SDK format and in °C." alt="" coords="55,5,234,31"/>
+<area shape="rect" href="ThermalFrame_8h.html" title="Contains a class encapsulating a processed thermal frame." alt="" coords="80,79,209,104"/>
+<area shape="poly" title=" " alt="" coords="147,44,147,79,142,79,142,44"/>
+<area shape="rect" href="FrameEvent_8h.html" title="Contains a class representing a frame event." alt="" coords="19,152,131,177"/>
+<area shape="poly" title=" " alt="" coords="126,116,88,154,85,150,122,112"/>
+<area shape="rect" href="ImageBuilder_8h.html" title="Contains a class that converts thermal frames into false color images." alt="" coords="155,152,275,177"/>
+<area shape="poly" title=" " alt="" coords="168,112,206,150,202,154,164,116"/>
+<area shape="rect" href="IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="10,225,141,251"/>
+<area shape="poly" title=" " alt="" coords="78,191,78,225,73,225,73,191"/>
+<area shape="rect" href="IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="29,299,121,324"/>
+<area shape="poly" title=" " alt="" coords="78,264,78,299,73,299,73,264"/>
+<area shape="rect" href="IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="5,372,145,397"/>
+<area shape="poly" title=" " alt="" coords="78,338,78,372,73,372,73,338"/>
+<area shape="rect" href="IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="6,445,145,471"/>
+<area shape="poly" title=" " alt="" coords="78,411,78,445,73,445,73,411"/>
 </map>
 </div>
 </div>

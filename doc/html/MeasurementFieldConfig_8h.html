@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -117,61 +117,46 @@ $(function(){initNavTree('MeasurementFieldConfig_8h.html',''); initResizable(tru
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="Api_8h_source.html">otcsdk/Api.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="RadiationParameters_8h_source.html">otcsdk/common/RadiationParameters.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Exceptions_8h_source.html">otcsdk/Exceptions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Vector_8h_source.html">otcsdk/common/Vector.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="FieldProperties_8h_source.html">otcsdk/fields/FieldProperties.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for MeasurementFieldConfig.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="MeasurementFieldConfig_8h__incl.png" border="0" usemap="#aMeasurementFieldConfig_8h" alt=""/></div>
-<map name="aMeasurementFieldConfig_8h" id="aMeasurementFieldConfig_8h">
-<area shape="rect" title="Contains a class encapsulating the configuration of a measurement field." alt="" coords="177,5,354,32"/>
-<area shape="rect" title=" " alt="" coords="254,229,307,256"/>
-<area shape="poly" title=" " alt="" coords="177,33,82,52,44,65,21,82,12,96,8,110,10,123,15,135,37,158,71,179,113,196,158,211,239,231,237,236,156,216,111,201,69,184,34,163,11,138,4,124,3,110,7,94,17,78,42,61,81,47,176,27"/>
-<area shape="rect" title=" " alt="" coords="174,155,242,181"/>
-<area shape="poly" title=" " alt="" coords="265,33,243,108,226,142,221,140,238,106,260,32"/>
-<area shape="rect" href="Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="266,155,361,181"/>
-<area shape="poly" title=" " alt="" coords="272,32,307,139,302,141,267,33"/>
-<area shape="rect" href="RadiationParameters_8h.html" title="Contains a class holding the individual radiation parameters." alt="" coords="353,80,605,107"/>
-<area shape="poly" title=" " alt="" coords="304,30,428,72,427,77,302,35"/>
-<area shape="rect" href="FieldProperties_8h.html" title="Contains various enums representing properties of fields." alt="" coords="31,80,228,107"/>
-<area shape="poly" title=" " alt="" coords="243,35,168,75,165,70,241,30"/>
-<area shape="poly" title=" " alt="" coords="466,109,374,183,315,223,312,219,371,179,463,105"/>
-<area shape="poly" title=" " alt="" coords="432,110,258,156,257,151,431,105"/>
-<area shape="poly" title=" " alt="" coords="451,110,358,150,356,145,449,105"/>
-<area shape="rect" href="Exceptions_8h.html" title="Contains the exceptions raised by the SDK." alt="" coords="435,155,576,181"/>
-<area shape="poly" title=" " alt="" coords="486,106,498,139,493,141,481,108"/>
-<area shape="poly" title=" " alt="" coords="467,184,322,231,320,226,465,179"/>
-<area shape="rect" title=" " alt="" coords="511,229,588,256"/>
-<area shape="poly" title=" " alt="" coords="515,180,536,215,532,217,511,183"/>
-<area shape="rect" title=" " alt="" coords="434,229,486,256"/>
-<area shape="poly" title=" " alt="" coords="500,183,478,217,474,215,495,180"/>
-<area shape="poly" title=" " alt="" coords="134,106,143,142,151,162,164,180,180,195,200,208,240,227,237,231,197,213,177,199,159,183,147,164,138,144,129,107"/>
-<area shape="poly" title=" " alt="" coords="145,105,185,142,182,146,141,109"/>
-<area shape="poly" title=" " alt="" coords="163,105,268,146,266,151,161,110"/>
-</map>
-</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="MeasurementFieldConfig_8h__dep__incl.png" border="0" usemap="#aMeasurementFieldConfig_8hdep" alt=""/></div>
 <map name="aMeasurementFieldConfig_8hdep" id="aMeasurementFieldConfig_8hdep">
-<area shape="rect" title="Contains a class encapsulating the configuration of a measurement field." alt="" coords="93,5,271,32"/>
-<area shape="rect" href="IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="43,80,167,107"/>
-<area shape="poly" title=" " alt="" coords="159,45,120,82,116,78,156,41"/>
-<area shape="rect" href="MeasurementField_8h.html" title="Contains a class encapsulating the properties and data of a rectangular measurement field." alt="" coords="196,80,336,107"/>
-<area shape="poly" title=" " alt="" coords="210,40,253,78,250,82,207,45"/>
-<area shape="rect" href="IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="86,229,172,256"/>
-<area shape="poly" title=" " alt="" coords="59,116,36,129,18,145,9,162,9,171,12,180,27,197,45,211,86,229,84,234,42,216,23,201,8,183,3,172,3,161,14,141,33,125,56,111"/>
-<area shape="rect" href="IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="22,155,188,181"/>
-<area shape="poly" title=" " alt="" coords="107,122,107,154,102,154,102,122"/>
-<area shape="rect" href="IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="64,304,193,331"/>
-<area shape="poly" title=" " alt="" coords="131,272,131,304,126,304,126,272"/>
-<area shape="rect" href="IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="64,379,193,405"/>
-<area shape="poly" title=" " alt="" coords="131,346,131,378,126,378,126,346"/>
-<area shape="rect" href="IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="213,155,333,181"/>
-<area shape="poly" title=" " alt="" coords="271,122,274,154,269,155,266,123"/>
-<area shape="poly" title=" " alt="" coords="235,191,155,231,153,226,233,186"/>
+<area shape="rect" title="Contains a class encapsulating the configuration of a measurement field." alt="" coords="35,5,231,31"/>
+<area shape="rect" href="IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="27,299,162,324"/>
+<area shape="poly" title=" " alt="" coords="131,45,116,125,101,226,97,299,92,298,96,225,110,124,126,44"/>
+<area shape="rect" href="MeasurementField_8h.html" title="Contains an interface representing a measurement field." alt="" coords="221,79,376,104"/>
+<area shape="poly" title=" " alt="" coords="173,34,273,76,271,81,171,38"/>
+<area shape="rect" href="IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="285,372,377,397"/>
+<area shape="poly" title=" " alt="" coords="146,325,293,369,292,374,145,330"/>
+<area shape="rect" href="IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="5,372,184,397"/>
+<area shape="poly" title=" " alt="" coords="97,338,97,372,92,372,92,338"/>
+<area shape="rect" href="IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="261,445,401,471"/>
+<area shape="poly" title=" " alt="" coords="333,411,333,445,328,445,328,411"/>
+<area shape="rect" href="IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="261,519,400,544"/>
+<area shape="poly" title=" " alt="" coords="333,484,333,519,328,519,328,484"/>
+<area shape="poly" title=" " alt="" coords="390,99,440,117,462,132,481,150,509,194,521,237,521,258,516,280,493,326,469,350,439,366,408,377,377,383,376,377,406,372,437,361,466,345,489,322,511,278,516,258,516,237,504,197,477,154,459,136,437,122,389,104"/>
+<area shape="rect" href="AlarmChannelConfig_8h.html" title="Contains a class defining the configuration of an alarm channel." alt="" coords="123,152,290,177"/>
+<area shape="poly" title=" " alt="" coords="275,114,223,154,220,150,272,110"/>
+<area shape="rect" href="PifChannelConfigs_8h.html" title="Contains classes holding the configuration parameter for the different process interface channels." alt="" coords="315,152,467,177"/>
+<area shape="poly" title=" " alt="" coords="326,110,377,150,374,154,322,114"/>
+<area shape="rect" href="AlarmChannel_8h.html" title="Contains an interface representing an alarm channel." alt="" coords="186,299,313,324"/>
+<area shape="poly" title=" " alt="" coords="227,187,247,224,253,265,253,298,248,298,248,265,241,226,222,189"/>
+<area shape="rect" href="AlarmsConfig_8h.html" title="Contains a class encapsulating the configuration of the alarms." alt="" coords="111,225,233,251"/>
+<area shape="poly" title=" " alt="" coords="197,191,180,226,175,224,193,189"/>
+<area shape="poly" title=" " alt="" coords="274,331,319,370,316,374,271,335"/>
+<area shape="poly" title=" " alt="" coords="151,262,109,300,106,296,148,258"/>
+<area shape="rect" href="PifConfig_8h.html" title="Contains a class encapsulating the configuration for the process interface." alt="" coords="345,225,437,251"/>
+<area shape="poly" title=" " alt="" coords="393,191,393,225,388,225,388,191"/>
+<area shape="poly" title=" " alt="" coords="332,256,143,301,142,296,331,251"/>
+<area shape="rect" href="ProcessInterface_8h.html" title="Contains the interface that defines how to interact with process interfaces." alt="" coords="337,299,479,324"/>
+<area shape="poly" title=" " alt="" coords="399,263,408,298,403,299,394,265"/>
+<area shape="poly" title=" " alt="" coords="387,335,345,374,342,370,384,331"/>
 </map>
 </div>
 </div>
@@ -179,8 +164,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptris_1_1MeasurementFieldConfig.html">optris::MeasurementFieldConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsulates the configuration of a measurement field.  <a href="classoptris_1_1MeasurementFieldConfig.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoptris_1_1FieldShapeConfig.html">optris::FieldShapeConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsulates the configuration of a field shape.  <a href="structoptris_1_1FieldShapeConfig.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoptris_1_1MeasurementFieldConfig.html">optris::MeasurementFieldConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsulates the configuration of a measurement field.  <a href="structoptris_1_1MeasurementFieldConfig.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -191,9 +179,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a718d1ff7ac68c8f35f768cc4c10cb8fe" id="r_a718d1ff7ac68c8f35f768cc4c10cb8fe"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#a718d1ff7ac68c8f35f768cc4c10cb8fe">optris::operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classoptris_1_1MeasurementFieldConfig.html">MeasurementFieldConfig</a> &amp;config) noexcept</td></tr>
-<tr class="memdesc:a718d1ff7ac68c8f35f768cc4c10cb8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouput stream operator for measurement field configurations.  <br /></td></tr>
-<tr class="separator:a718d1ff7ac68c8f35f768cc4c10cb8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ec51ea5d1056af92f06349ecfcfcca" id="r_ac0ec51ea5d1056af92f06349ecfcfcca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#ac0ec51ea5d1056af92f06349ecfcfcca">optris::operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="structoptris_1_1FieldShapeConfig.html">FieldShapeConfig</a> &amp;fieldShapeConfig) noexcept</td></tr>
+<tr class="memdesc:ac0ec51ea5d1056af92f06349ecfcfcca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouput stream operator for field shape configurations.  <br /></td></tr>
+<tr class="separator:ac0ec51ea5d1056af92f06349ecfcfcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6369eb74893d3e015a5cb6f0c77a1ca" id="r_aa6369eb74893d3e015a5cb6f0c77a1ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#aa6369eb74893d3e015a5cb6f0c77a1ca">optris::operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="structoptris_1_1MeasurementFieldConfig.html">MeasurementFieldConfig</a> &amp;config) noexcept</td></tr>
+<tr class="memdesc:aa6369eb74893d3e015a5cb6f0c77a1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouput stream operator for measurement field configurations.  <br /></td></tr>
+<tr class="separator:aa6369eb74893d3e015a5cb6f0c77a1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains a class encapsulating the configuration of a measurement field. </p>

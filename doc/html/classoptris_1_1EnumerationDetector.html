@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -121,7 +121,7 @@ Collaboration diagram for optris::EnumerationDetector:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptris_1_1EnumerationDetector__coll__graph.png" border="0" usemap="#aoptris_1_1EnumerationDetector_coll__map" alt="Collaboration graph"/></div>
 <map name="aoptris_1_1EnumerationDetector_coll__map" id="aoptris_1_1EnumerationDetector_coll__map">
-<area shape="rect" title="Common interface for classes detecting available devices." alt="" coords="5,5,179,245"/>
+<area shape="rect" title="Common interface for classes detecting available devices." alt="" coords="5,5,204,191"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -151,23 +151,15 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EnumerationDetector</b> ()=default</td></tr>
 <tr class="memdesc:ab10ee49e3c6ff740b521f2826c0afb65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:ab10ee49e3c6ff740b521f2826c0afb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31134bc31f4a5682cd38be48eb752cf7" id="r_a31134bc31f4a5682cd38be48eb752cf7"><td class="memItemLeft" align="right" valign="top"><a id="a31134bc31f4a5682cd38be48eb752cf7" name="a31134bc31f4a5682cd38be48eb752cf7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()=0</td></tr>
-<tr class="memdesc:a31134bc31f4a5682cd38be48eb752cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts to run the detector (usefull for background activity). <br /></td></tr>
-<tr class="separator:a31134bc31f4a5682cd38be48eb752cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e4a78be02b9b0131b3036b16a61ffce" id="r_a0e4a78be02b9b0131b3036b16a61ffce"><td class="memItemLeft" align="right" valign="top"><a id="a0e4a78be02b9b0131b3036b16a61ffce" name="a0e4a78be02b9b0131b3036b16a61ffce"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</b> ()=0</td></tr>
-<tr class="memdesc:a0e4a78be02b9b0131b3036b16a61ffce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops running the detector. <br /></td></tr>
-<tr class="separator:a0e4a78be02b9b0131b3036b16a61ffce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9084841211d198e1bc6e05c4075d2658" id="r_a9084841211d198e1bc6e05c4075d2658"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9084841211d198e1bc6e05c4075d2658">detectDevices</a> (std::set&lt; <a class="el" href="classoptris_1_1DeviceInfo.html">DeviceInfo</a> &gt; &amp;devices) noexcept=0</td></tr>
-<tr class="memdesc:a9084841211d198e1bc6e05c4075d2658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects available devices.  <br /></td></tr>
-<tr class="separator:a9084841211d198e1bc6e05c4075d2658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45689b3f158f4e8d698cc4130a859a94" id="r_a45689b3f158f4e8d698cc4130a859a94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45689b3f158f4e8d698cc4130a859a94">detectDevices</a> (std::vector&lt; <a class="el" href="classoptris_1_1DeviceInfo.html">DeviceInfo</a> &gt; &amp;devices) noexcept=0</td></tr>
+<tr class="memdesc:a45689b3f158f4e8d698cc4130a859a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects available devices.  <br /></td></tr>
+<tr class="separator:a45689b3f158f4e8d698cc4130a859a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Common interface for classes detecting available devices. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9084841211d198e1bc6e05c4075d2658" name="a9084841211d198e1bc6e05c4075d2658"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9084841211d198e1bc6e05c4075d2658">&#9670;&#160;</a></span>detectDevices()</h2>
+<a id="a45689b3f158f4e8d698cc4130a859a94" name="a45689b3f158f4e8d698cc4130a859a94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45689b3f158f4e8d698cc4130a859a94">&#9670;&#160;</a></span>detectDevices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,7 +170,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
         <tr>
           <td class="memname">virtual void optris::EnumerationDetector::detectDevices </td>
           <td>(</td>
-          <td class="paramtype">std::set&lt; <a class="el" href="classoptris_1_1DeviceInfo.html">DeviceInfo</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>devices</em></span></td><td>)</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classoptris_1_1DeviceInfo.html">DeviceInfo</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>devices</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -192,7 +184,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 <p>Detects available devices. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">devices</td><td>set containing the already detected devices for this detector to add its own detections to it. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">devices</td><td>vector containing the already detected devices for this detector to add its own detections to it. </td></tr>
   </table>
   </dd>
 </dl>

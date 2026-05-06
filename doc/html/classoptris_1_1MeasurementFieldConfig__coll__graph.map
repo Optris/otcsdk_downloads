@@ -1,5 +1,0 @@
-<map id="optris::MeasurementFieldConfig" name="optris::MeasurementFieldConfig">
-<area shape="rect" id="Node000001" title="Encapsulates the configuration of a measurement field." alt="" coords="14,245,191,480"/>
-<area shape="rect" id="Node000002" href="$classoptris_1_1RadiationParameters.html" title="Holds the radiation parameters for a frame or a measurement field." alt="" coords="5,5,199,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,181,105,228,100,228,100,181"/>
-</map>

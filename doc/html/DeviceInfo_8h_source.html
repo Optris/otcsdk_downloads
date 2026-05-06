@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -108,7 +108,7 @@ $(function(){initNavTree('DeviceInfo_8h_source.html',''); initResizable(true); }
   <div class="headertitle"><div class="title">DeviceInfo.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="DeviceInfo_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2008-2025 Optris GmbH &amp; Co. KG</span></div>
+<a href="DeviceInfo_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2008-2026 Optris GmbH &amp; Co. KG</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma once</span></div>
@@ -123,8 +123,7 @@ $(function(){initNavTree('DeviceInfo_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="Port_8h.html">otcsdk/communication/net/Port.h</a>&quot;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespaceoptris.html">   23</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceoptris.html">optris</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceoptris.html">optris</a></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
 <div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
@@ -176,236 +175,226 @@ $(function(){initNavTree('DeviceInfo_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <a class="code hl_define" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a360c95babbea77fc4d67a6c9d76e8768">setMacAddress</a>(const <a class="code hl_class" href="classoptris_1_1MacAddress.html">MacAddress</a>&amp; mac) noexcept;</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span></div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <a class="code hl_define" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> const <a class="code hl_class" href="classoptris_1_1MacAddress.html">MacAddress</a>&amp; <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a5c6e49f828229d308f7b912abb4fe024">getMacAddress</a>() const noexcept;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <a class="code hl_define" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a610624404d994b637693c66e70a2acce">clone</a>() const noexcept;</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="keywordtype">bool</span> operator==(const <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>&amp; rhs) const noexcept;</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  <span class="keywordtype">bool</span> operator!=(const <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>&amp; rhs) const noexcept;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="keywordtype">bool</span> operator&lt;(const <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>&amp; rhs) const noexcept;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="keywordtype">bool</span> operator==(const <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>&amp; rhs) const noexcept;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="keywordtype">bool</span> operator!=(const <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>&amp; rhs) const noexcept;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="keywordtype">bool</span> operator&lt;(const <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>&amp; rhs) const noexcept;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>private:</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  <a class="code hl_enumeration" href="namespaceoptris.html#aafdfe9dc8c434a63aedc67450cb9a0d8">DeviceType</a>  _deviceType;  </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  std::<span class="keywordtype">string</span> _connectionInterface;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  std::<span class="keywordtype">string</span> _connectionInterfaceAddress;</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>private:</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <a class="code hl_enumeration" href="namespaceoptris.html#aafdfe9dc8c434a63aedc67450cb9a0d8">DeviceType</a>  _deviceType;  </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  std::<span class="keywordtype">string</span> _connectionInterface;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  std::<span class="keywordtype">string</span> _connectionInterfaceAddress;</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <a class="code hl_class" href="classoptris_1_1MacAddress.html">MacAddress</a> _deviceMacAddress;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <a class="code hl_class" href="classoptris_1_1IpAddress.html">IpAddress</a>  _deviceIpAddress;</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <a class="code hl_class" href="classoptris_1_1IpAddress.html">IpAddress</a>  _targetIpAddress;</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <a class="code hl_class" href="classoptris_1_1Port.html">Port</a>       _targetPort;</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  _serialNumber;</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> _hardwareRevision;</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> _firmwareRevision;</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="keywordtype">bool</span>           _busy;</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>};</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <a class="code hl_class" href="classoptris_1_1MacAddress.html">MacAddress</a> _deviceMacAddress;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <a class="code hl_class" href="classoptris_1_1IpAddress.html">IpAddress</a>  _deviceIpAddress;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <a class="code hl_class" href="classoptris_1_1IpAddress.html">IpAddress</a>  _targetIpAddress;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <a class="code hl_class" href="classoptris_1_1Port.html">Port</a>       _targetPort;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  _serialNumber;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> _hardwareRevision;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> _firmwareRevision;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="keywordtype">bool</span>           _busy;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>};</div>
 </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">// Inline implementations</span></div>
+<div class="foldopen" id="foldopen00238" data-start="{" data-end="}">
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a2a822bcd6048d37f866debb1fa0a6c34">  238</a></span>inline <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>::<a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a2a822bcd6048d37f866debb1fa0a6c34">setSerialNumber</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> serialNumber) noexcept</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>{</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  _serialNumber = serialNumber;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>}</div>
+</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">// Inline implementations</span></div>
-<div class="foldopen" id="foldopen00244" data-start="{" data-end="}">
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a2a822bcd6048d37f866debb1fa0a6c34">  244</a></span>inline <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>::<a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a2a822bcd6048d37f866debb1fa0a6c34">setSerialNumber</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> serialNumber) noexcept</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>{</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  _serialNumber = serialNumber;</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>}</div>
+<div class="foldopen" id="foldopen00243" data-start="{" data-end="}">
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#ab46bb69595f4a68656f1ed38495be838">  243</a></span><span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#ab46bb69595f4a68656f1ed38495be838">DeviceInfo::getSerialNumber</a>() const noexcept</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>{</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="keywordflow">return</span> _serialNumber;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>}</div>
 </div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
-<div class="foldopen" id="foldopen00249" data-start="{" data-end="}">
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#ab46bb69595f4a68656f1ed38495be838">  249</a></span><span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#ab46bb69595f4a68656f1ed38495be838">DeviceInfo::getSerialNumber</a>() const noexcept</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>{</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  <span class="keywordflow">return</span> _serialNumber;</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>}</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="foldopen" id="foldopen00248" data-start="{" data-end="}">
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a5b1b8ccfbff7a4da2929181adfbe4fbc">  248</a></span><span class="keyword">inline</span> <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a5b1b8ccfbff7a4da2929181adfbe4fbc">DeviceInfo::getConnectionInterface</a>() const noexcept</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>{</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  <span class="keywordflow">return</span> _connectionInterface;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>}</div>
 </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="foldopen" id="foldopen00254" data-start="{" data-end="}">
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a5b1b8ccfbff7a4da2929181adfbe4fbc">  254</a></span><span class="keyword">inline</span> <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a5b1b8ccfbff7a4da2929181adfbe4fbc">DeviceInfo::getConnectionInterface</a>() const noexcept</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>{</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  <span class="keywordflow">return</span> _connectionInterface;</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>}</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="foldopen" id="foldopen00253" data-start="{" data-end="}">
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#aabd7c11f24f8866c9b522971e683623d">  253</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#aabd7c11f24f8866c9b522971e683623d">DeviceInfo::setConnectionInterfaceAddress</a>(<span class="keyword">const</span> std::string&amp; address) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>{</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  _connectionInterfaceAddress = address;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>}</div>
 </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
-<div class="foldopen" id="foldopen00259" data-start="{" data-end="}">
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#aabd7c11f24f8866c9b522971e683623d">  259</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#aabd7c11f24f8866c9b522971e683623d">DeviceInfo::setConnectionInterfaceAddress</a>(<span class="keyword">const</span> std::string&amp; address) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>{</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  _connectionInterfaceAddress = address;</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>}</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="foldopen" id="foldopen00258" data-start="{" data-end="}">
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a2348fa9e54048349637f304c9b3b0432">  258</a></span><span class="keyword">inline</span> <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a2348fa9e54048349637f304c9b3b0432">DeviceInfo::getConnectionInterfaceAddress</a>() const noexcept</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>{</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  <span class="keywordflow">return</span> _connectionInterfaceAddress;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>}</div>
 </div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
-<div class="foldopen" id="foldopen00264" data-start="{" data-end="}">
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a2348fa9e54048349637f304c9b3b0432">  264</a></span><span class="keyword">inline</span> <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a2348fa9e54048349637f304c9b3b0432">DeviceInfo::getConnectionInterfaceAddress</a>() const noexcept</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>{</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keywordflow">return</span> _connectionInterfaceAddress;</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>}</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="foldopen" id="foldopen00263" data-start="{" data-end="}">
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a2e51ad20eedf9c05b45481301847d06a">  263</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a2e51ad20eedf9c05b45481301847d06a">DeviceInfo::setIpAddress</a>(<span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1IpAddress.html">IpAddress</a>&amp; ipAddress) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>{</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  _deviceIpAddress = ipAddress;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>}</div>
 </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
-<div class="foldopen" id="foldopen00269" data-start="{" data-end="}">
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a2e51ad20eedf9c05b45481301847d06a">  269</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a2e51ad20eedf9c05b45481301847d06a">DeviceInfo::setIpAddress</a>(<span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1IpAddress.html">IpAddress</a>&amp; ipAddress) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>{</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  _deviceIpAddress = ipAddress;</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>}</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="foldopen" id="foldopen00268" data-start="{" data-end="}">
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a6be8767d920f1520b592060d967637a0">  268</a></span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1IpAddress.html">IpAddress</a>&amp; <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a6be8767d920f1520b592060d967637a0">DeviceInfo::getIpAddress</a>() const noexcept</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>{</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  <span class="keywordflow">return</span> _deviceIpAddress;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>}</div>
 </div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="foldopen" id="foldopen00274" data-start="{" data-end="}">
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a6be8767d920f1520b592060d967637a0">  274</a></span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1IpAddress.html">IpAddress</a>&amp; <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a6be8767d920f1520b592060d967637a0">DeviceInfo::getIpAddress</a>() const noexcept</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>{</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  <span class="keywordflow">return</span> _deviceIpAddress;</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>}</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
+<div class="foldopen" id="foldopen00273" data-start="{" data-end="}">
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a4a162877699a688f3024e982987e7682">  273</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a4a162877699a688f3024e982987e7682">DeviceInfo::setTargetIpAddress</a>(<span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1IpAddress.html">IpAddress</a>&amp; ipAddress) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>{</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  _targetIpAddress = ipAddress;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>}</div>
 </div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
-<div class="foldopen" id="foldopen00279" data-start="{" data-end="}">
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a4a162877699a688f3024e982987e7682">  279</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a4a162877699a688f3024e982987e7682">DeviceInfo::setTargetIpAddress</a>(<span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1IpAddress.html">IpAddress</a>&amp; ipAddress) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>{</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  _targetIpAddress = ipAddress;</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>}</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="foldopen" id="foldopen00278" data-start="{" data-end="}">
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a1475308ed6807845b51aa649eab2251f">  278</a></span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1IpAddress.html">IpAddress</a>&amp; <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a1475308ed6807845b51aa649eab2251f">DeviceInfo::getTargetIpAddress</a>() const noexcept</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>{</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  <span class="keywordflow">return</span> _targetIpAddress;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>}</div>
 </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
-<div class="foldopen" id="foldopen00284" data-start="{" data-end="}">
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a1475308ed6807845b51aa649eab2251f">  284</a></span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1IpAddress.html">IpAddress</a>&amp; <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a1475308ed6807845b51aa649eab2251f">DeviceInfo::getTargetIpAddress</a>() const noexcept</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>{</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  <span class="keywordflow">return</span> _targetIpAddress;</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>}</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+<div class="foldopen" id="foldopen00283" data-start="{" data-end="}">
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a195089580d35af2cb4fcd7f78735c92f">  283</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a195089580d35af2cb4fcd7f78735c92f">DeviceInfo::setPort</a>(<span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1Port.html">Port</a>&amp; port) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>{</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  _targetPort = port;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>}</div>
 </div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
-<div class="foldopen" id="foldopen00289" data-start="{" data-end="}">
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a195089580d35af2cb4fcd7f78735c92f">  289</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a195089580d35af2cb4fcd7f78735c92f">DeviceInfo::setPort</a>(<span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1Port.html">Port</a>&amp; port) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>{</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  _targetPort = port;</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>}</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="foldopen" id="foldopen00288" data-start="{" data-end="}">
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#ad119051f8b49167be7fe0dd8b39f718d">  288</a></span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1Port.html">Port</a>&amp; <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#ad119051f8b49167be7fe0dd8b39f718d">DeviceInfo::getPort</a>() const noexcept</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>{</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="keywordflow">return</span> _targetPort;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>}</div>
 </div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="foldopen" id="foldopen00294" data-start="{" data-end="}">
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#ad119051f8b49167be7fe0dd8b39f718d">  294</a></span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1Port.html">Port</a>&amp; <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#ad119051f8b49167be7fe0dd8b39f718d">DeviceInfo::getPort</a>() const noexcept</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>{</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <span class="keywordflow">return</span> _targetPort;</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>}</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="foldopen" id="foldopen00293" data-start="{" data-end="}">
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#af32e99b2c57977fabe9355de47f70271">  293</a></span><span class="keyword">inline</span> <a class="code hl_enumeration" href="namespaceoptris.html#aafdfe9dc8c434a63aedc67450cb9a0d8">DeviceType</a> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#af32e99b2c57977fabe9355de47f70271">DeviceInfo::getDeviceType</a>() const noexcept</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>{</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  <span class="keywordflow">return</span> _deviceType;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>}</div>
 </div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
-<div class="foldopen" id="foldopen00299" data-start="{" data-end="}">
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#af32e99b2c57977fabe9355de47f70271">  299</a></span><span class="keyword">inline</span> <a class="code hl_enumeration" href="namespaceoptris.html#aafdfe9dc8c434a63aedc67450cb9a0d8">DeviceType</a> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#af32e99b2c57977fabe9355de47f70271">DeviceInfo::getDeviceType</a>() const noexcept</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>{</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  <span class="keywordflow">return</span> _deviceType;</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>}</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="foldopen" id="foldopen00298" data-start="{" data-end="}">
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#ab60b567f77900d874a56b1a166c2ca37">  298</a></span><span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#ab60b567f77900d874a56b1a166c2ca37">DeviceInfo::getHardwareRevision</a>() const noexcept</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>{</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="keywordflow">return</span> _hardwareRevision;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>}</div>
 </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
-<div class="foldopen" id="foldopen00304" data-start="{" data-end="}">
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#ab60b567f77900d874a56b1a166c2ca37">  304</a></span><span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#ab60b567f77900d874a56b1a166c2ca37">DeviceInfo::getHardwareRevision</a>() const noexcept</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>{</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  <span class="keywordflow">return</span> _hardwareRevision;</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>}</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="foldopen" id="foldopen00303" data-start="{" data-end="}">
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#ad510c7e7c1d0995153f3bb86cbd93e2d">  303</a></span><span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#ad510c7e7c1d0995153f3bb86cbd93e2d">DeviceInfo::getFirmwareRevision</a>() const noexcept</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>{</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  <span class="keywordflow">return</span> _firmwareRevision;</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>}</div>
 </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
-<div class="foldopen" id="foldopen00309" data-start="{" data-end="}">
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#ad510c7e7c1d0995153f3bb86cbd93e2d">  309</a></span><span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#ad510c7e7c1d0995153f3bb86cbd93e2d">DeviceInfo::getFirmwareRevision</a>() const noexcept</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>{</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="keywordflow">return</span> _firmwareRevision;</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>}</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
+<div class="foldopen" id="foldopen00308" data-start="{" data-end="}">
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a0ccca5dd297ef681e7207241a3dd1729">  308</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a0ccca5dd297ef681e7207241a3dd1729">DeviceInfo::setBusy</a>(<span class="keywordtype">bool</span> busy) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>{</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  _busy = busy;</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>}</div>
 </div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
-<div class="foldopen" id="foldopen00314" data-start="{" data-end="}">
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a0ccca5dd297ef681e7207241a3dd1729">  314</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a0ccca5dd297ef681e7207241a3dd1729">DeviceInfo::setBusy</a>(<span class="keywordtype">bool</span> busy) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>{</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  _busy = busy;</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>}</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
+<div class="foldopen" id="foldopen00313" data-start="{" data-end="}">
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a92a5ebae0542d513809451c00986d5ba">  313</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a92a5ebae0542d513809451c00986d5ba">DeviceInfo::isBusy</a>() const noexcept</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>{</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  <span class="keywordflow">return</span> _busy;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>}</div>
 </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
-<div class="foldopen" id="foldopen00319" data-start="{" data-end="}">
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a92a5ebae0542d513809451c00986d5ba">  319</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a92a5ebae0542d513809451c00986d5ba">DeviceInfo::isBusy</a>() const noexcept</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>{</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keywordflow">return</span> _busy;</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>}</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="foldopen" id="foldopen00318" data-start="{" data-end="}">
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a360c95babbea77fc4d67a6c9d76e8768">  318</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a360c95babbea77fc4d67a6c9d76e8768">DeviceInfo::setMacAddress</a>(<span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1MacAddress.html">MacAddress</a>&amp; macAddress) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>{</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  _deviceMacAddress = macAddress;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>}</div>
 </div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
-<div class="foldopen" id="foldopen00324" data-start="{" data-end="}">
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a360c95babbea77fc4d67a6c9d76e8768">  324</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a360c95babbea77fc4d67a6c9d76e8768">DeviceInfo::setMacAddress</a>(<span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1MacAddress.html">MacAddress</a>&amp; macAddress) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>{</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  _deviceMacAddress = macAddress;</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>}</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
+<div class="foldopen" id="foldopen00323" data-start="{" data-end="}">
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a5c6e49f828229d308f7b912abb4fe024">  323</a></span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1MacAddress.html">MacAddress</a>&amp; <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a5c6e49f828229d308f7b912abb4fe024">DeviceInfo::getMacAddress</a>() const noexcept</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>{</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  <span class="keywordflow">return</span> _deviceMacAddress;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>}</div>
 </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
-<div class="foldopen" id="foldopen00329" data-start="{" data-end="}">
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a5c6e49f828229d308f7b912abb4fe024">  329</a></span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="classoptris_1_1MacAddress.html">MacAddress</a>&amp; <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a5c6e49f828229d308f7b912abb4fe024">DeviceInfo::getMacAddress</a>() const noexcept</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>{</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  <span class="keywordflow">return</span> _deviceMacAddress;</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>}</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="foldopen" id="foldopen00328" data-start="{" data-end="}">
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#aa4aba6680d1290a2b0923adc0c0304d9">  328</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#aa4aba6680d1290a2b0923adc0c0304d9">DeviceInfo::operator==</a>(<span class="keyword">const</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>&amp; rhs) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>{</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <span class="keywordflow">return</span> (_deviceType                 == rhs._deviceType                 &amp;&amp;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>          _connectionInterface        == rhs._connectionInterface        &amp;&amp;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>          _connectionInterfaceAddress == rhs._connectionInterfaceAddress &amp;&amp;</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>          _deviceMacAddress           == rhs._deviceMacAddress           &amp;&amp;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>          _deviceIpAddress            == rhs._deviceIpAddress            &amp;&amp;</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>          _targetIpAddress            == rhs._targetIpAddress            &amp;&amp;</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>          _targetPort                 == rhs._targetPort                 &amp;&amp;</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>          _serialNumber               == rhs._serialNumber               &amp;&amp;</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>          _hardwareRevision           == rhs._hardwareRevision           &amp;&amp;</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>          _firmwareRevision           == rhs._firmwareRevision           &amp;&amp;</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>          _busy                       == rhs._busy);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>}</div>
 </div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
-<div class="foldopen" id="foldopen00334" data-start="{" data-end="}">
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a610624404d994b637693c66e70a2acce">  334</a></span><span class="keyword">inline</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a610624404d994b637693c66e70a2acce">DeviceInfo::clone</a>() const noexcept</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>{</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>{*<span class="keyword">this</span>};</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>}</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
+<div class="foldopen" id="foldopen00343" data-start="{" data-end="}">
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a1ec23564e80369e6727fcfdf6f3b6662">  343</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a1ec23564e80369e6727fcfdf6f3b6662">DeviceInfo::operator!=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>&amp; rhs) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>{</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  <span class="keywordflow">return</span> !<a class="code hl_function" href="classoptris_1_1DeviceInfo.html#aa4aba6680d1290a2b0923adc0c0304d9">operator==</a>(rhs);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>}</div>
 </div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
-<div class="foldopen" id="foldopen00339" data-start="{" data-end="}">
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#aa4aba6680d1290a2b0923adc0c0304d9">  339</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#aa4aba6680d1290a2b0923adc0c0304d9">DeviceInfo::operator==</a>(<span class="keyword">const</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>&amp; rhs) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>{</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  <span class="keywordflow">return</span> (_deviceType                 == rhs._deviceType                 &amp;&amp;</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>          _connectionInterface        == rhs._connectionInterface        &amp;&amp;</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>          _connectionInterfaceAddress == rhs._connectionInterfaceAddress &amp;&amp;</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>          _deviceMacAddress           == rhs._deviceMacAddress           &amp;&amp;</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>          _deviceIpAddress            == rhs._deviceIpAddress            &amp;&amp;</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>          _targetIpAddress            == rhs._targetIpAddress            &amp;&amp;</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>          _targetPort                 == rhs._targetPort                 &amp;&amp;</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>          _serialNumber               == rhs._serialNumber               &amp;&amp;</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>          _hardwareRevision           == rhs._hardwareRevision           &amp;&amp;</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>          _firmwareRevision           == rhs._firmwareRevision           &amp;&amp;</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>          _busy                       == rhs._busy);</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>}</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="foldopen" id="foldopen00348" data-start="{" data-end="}">
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#af07fc5958efd98d6be83ca07cfd0d88b">  348</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#af07fc5958efd98d6be83ca07cfd0d88b">DeviceInfo::operator&lt;</a>(<span class="keyword">const</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>&amp; rhs) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>{</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  <span class="keywordflow">return</span> std::tie(_serialNumber, _connectionInterface) &lt; std::tie(rhs._serialNumber, rhs._connectionInterface);</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>}</div>
 </div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
-<div class="foldopen" id="foldopen00354" data-start="{" data-end="}">
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#a1ec23564e80369e6727fcfdf6f3b6662">  354</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a1ec23564e80369e6727fcfdf6f3b6662">DeviceInfo::operator!=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>&amp; rhs) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>{</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  <span class="keywordflow">return</span> !<a class="code hl_function" href="classoptris_1_1DeviceInfo.html#aa4aba6680d1290a2b0923adc0c0304d9">operator==</a>(rhs);</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>}</div>
-</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
-<div class="foldopen" id="foldopen00359" data-start="{" data-end="}">
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno"><a class="line" href="classoptris_1_1DeviceInfo.html#af07fc5958efd98d6be83ca07cfd0d88b">  359</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#af07fc5958efd98d6be83ca07cfd0d88b">DeviceInfo::operator&lt;</a>(<span class="keyword">const</span> <a class="code hl_function" href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">DeviceInfo</a>&amp; rhs) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>{</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  <span class="keywordflow">return</span> std::tie(_serialNumber, _connectionInterface) &lt; std::tie(rhs._serialNumber, rhs._connectionInterface);</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>}</div>
-</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>} <span class="comment">// namespace optris</span></div>
-</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>} <span class="comment">// namespace optris</span></div>
 <div class="ttc" id="aApi_8h_html"><div class="ttname"><a href="Api_8h.html">Api.h</a></div><div class="ttdoc">Contains defines controlling the Windows DLL export and import of symbols.</div></div>
 <div class="ttc" id="aApi_8h_html_a867b24a54c8d92422864d33e54046c8a"><div class="ttname"><a href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a></div><div class="ttdeci">#define OTC_SDK_API</div><div class="ttdoc">Only needed when working with Windows DLLs.</div><div class="ttdef"><b>Definition</b> Api.h:65</div></div>
 <div class="ttc" id="aDeviceType_8h_html"><div class="ttname"><a href="DeviceType_8h.html">DeviceType.h</a></div><div class="ttdoc">Contains an enum representing the different types of Optris thermal cameras.</div></div>
 <div class="ttc" id="aIpAddress_8h_html"><div class="ttname"><a href="IpAddress_8h.html">IpAddress.h</a></div><div class="ttdoc">Contains a class holding IP v4 address.</div></div>
 <div class="ttc" id="aMacAddress_8h_html"><div class="ttname"><a href="MacAddress_8h.html">MacAddress.h</a></div><div class="ttdoc">Contains a class representing a MAC address.</div></div>
 <div class="ttc" id="aPort_8h_html"><div class="ttname"><a href="Port_8h.html">Port.h</a></div><div class="ttdoc">Contains a class representing an network port.</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a0ccca5dd297ef681e7207241a3dd1729"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a0ccca5dd297ef681e7207241a3dd1729">optris::DeviceInfo::setBusy</a></div><div class="ttdeci">OTC_SDK_API void setBusy(bool busy) noexcept</div><div class="ttdoc">Sets the device busy state.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:314</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a1475308ed6807845b51aa649eab2251f"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a1475308ed6807845b51aa649eab2251f">optris::DeviceInfo::getTargetIpAddress</a></div><div class="ttdeci">OTC_SDK_API const IpAddress &amp; getTargetIpAddress() const noexcept</div><div class="ttdoc">Returns the IP address of the streaming target.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:284</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a195089580d35af2cb4fcd7f78735c92f"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a195089580d35af2cb4fcd7f78735c92f">optris::DeviceInfo::setPort</a></div><div class="ttdeci">OTC_SDK_API void setPort(const Port &amp;port) noexcept</div><div class="ttdoc">Sets the port.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:289</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a1ec23564e80369e6727fcfdf6f3b6662"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a1ec23564e80369e6727fcfdf6f3b6662">optris::DeviceInfo::operator!=</a></div><div class="ttdeci">bool operator!=(const DeviceInfo &amp;rhs) const noexcept</div><div class="ttdoc">Unequals operator.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:354</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a2348fa9e54048349637f304c9b3b0432"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a2348fa9e54048349637f304c9b3b0432">optris::DeviceInfo::getConnectionInterfaceAddress</a></div><div class="ttdeci">OTC_SDK_API const std::string &amp; getConnectionInterfaceAddress() const noexcept</div><div class="ttdoc">Returns the address of the local connection interface through which the camera is connected.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:264</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a2a822bcd6048d37f866debb1fa0a6c34"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a2a822bcd6048d37f866debb1fa0a6c34">optris::DeviceInfo::setSerialNumber</a></div><div class="ttdeci">OTC_SDK_API void setSerialNumber(unsigned long serialNumber) noexcept</div><div class="ttdoc">Sets the serial number of the device.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:244</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a2e51ad20eedf9c05b45481301847d06a"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a2e51ad20eedf9c05b45481301847d06a">optris::DeviceInfo::setIpAddress</a></div><div class="ttdeci">OTC_SDK_API void setIpAddress(const IpAddress &amp;ipAddress) noexcept</div><div class="ttdoc">Sets the IP address.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:269</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a360c95babbea77fc4d67a6c9d76e8768"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a360c95babbea77fc4d67a6c9d76e8768">optris::DeviceInfo::setMacAddress</a></div><div class="ttdeci">OTC_SDK_API void setMacAddress(const MacAddress &amp;mac) noexcept</div><div class="ttdoc">Sets the MAC address.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:324</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a0ccca5dd297ef681e7207241a3dd1729"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a0ccca5dd297ef681e7207241a3dd1729">optris::DeviceInfo::setBusy</a></div><div class="ttdeci">OTC_SDK_API void setBusy(bool busy) noexcept</div><div class="ttdoc">Sets the device busy state.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:308</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a1475308ed6807845b51aa649eab2251f"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a1475308ed6807845b51aa649eab2251f">optris::DeviceInfo::getTargetIpAddress</a></div><div class="ttdeci">OTC_SDK_API const IpAddress &amp; getTargetIpAddress() const noexcept</div><div class="ttdoc">Returns the IP address of the streaming target.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:278</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a195089580d35af2cb4fcd7f78735c92f"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a195089580d35af2cb4fcd7f78735c92f">optris::DeviceInfo::setPort</a></div><div class="ttdeci">OTC_SDK_API void setPort(const Port &amp;port) noexcept</div><div class="ttdoc">Sets the port.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:283</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a1ec23564e80369e6727fcfdf6f3b6662"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a1ec23564e80369e6727fcfdf6f3b6662">optris::DeviceInfo::operator!=</a></div><div class="ttdeci">bool operator!=(const DeviceInfo &amp;rhs) const noexcept</div><div class="ttdoc">Unequals operator.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:343</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a2348fa9e54048349637f304c9b3b0432"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a2348fa9e54048349637f304c9b3b0432">optris::DeviceInfo::getConnectionInterfaceAddress</a></div><div class="ttdeci">OTC_SDK_API const std::string &amp; getConnectionInterfaceAddress() const noexcept</div><div class="ttdoc">Returns the address of the local connection interface through which the camera is connected.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:258</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a2a822bcd6048d37f866debb1fa0a6c34"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a2a822bcd6048d37f866debb1fa0a6c34">optris::DeviceInfo::setSerialNumber</a></div><div class="ttdeci">OTC_SDK_API void setSerialNumber(unsigned long serialNumber) noexcept</div><div class="ttdoc">Sets the serial number of the device.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:238</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a2e51ad20eedf9c05b45481301847d06a"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a2e51ad20eedf9c05b45481301847d06a">optris::DeviceInfo::setIpAddress</a></div><div class="ttdeci">OTC_SDK_API void setIpAddress(const IpAddress &amp;ipAddress) noexcept</div><div class="ttdoc">Sets the IP address.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:263</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a360c95babbea77fc4d67a6c9d76e8768"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a360c95babbea77fc4d67a6c9d76e8768">optris::DeviceInfo::setMacAddress</a></div><div class="ttdeci">OTC_SDK_API void setMacAddress(const MacAddress &amp;mac) noexcept</div><div class="ttdoc">Sets the MAC address.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:318</div></div>
 <div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a384af4a6791e742bce1b44e41b7dada6"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a384af4a6791e742bce1b44e41b7dada6">optris::DeviceInfo::setRevisions</a></div><div class="ttdeci">OTC_SDK_API void setRevisions(unsigned short hardware, unsigned short firmware) noexcept</div><div class="ttdoc">Sets the hardware and firmware revisions.</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a4a162877699a688f3024e982987e7682"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a4a162877699a688f3024e982987e7682">optris::DeviceInfo::setTargetIpAddress</a></div><div class="ttdeci">OTC_SDK_API void setTargetIpAddress(const IpAddress &amp;ipAddress) noexcept</div><div class="ttdoc">Sets the IP address of the streaming target.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:279</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a5b1b8ccfbff7a4da2929181adfbe4fbc"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a5b1b8ccfbff7a4da2929181adfbe4fbc">optris::DeviceInfo::getConnectionInterface</a></div><div class="ttdeci">OTC_SDK_API const std::string &amp; getConnectionInterface() const noexcept</div><div class="ttdoc">Returns the connection interface of the device.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:254</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a5c6e49f828229d308f7b912abb4fe024"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a5c6e49f828229d308f7b912abb4fe024">optris::DeviceInfo::getMacAddress</a></div><div class="ttdeci">OTC_SDK_API const MacAddress &amp; getMacAddress() const noexcept</div><div class="ttdoc">Returns the MAC address.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:329</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a610624404d994b637693c66e70a2acce"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a610624404d994b637693c66e70a2acce">optris::DeviceInfo::clone</a></div><div class="ttdeci">OTC_SDK_API DeviceInfo clone() const noexcept</div><div class="ttdoc">Returns a complete copy of this informatin.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:334</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a6be8767d920f1520b592060d967637a0"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a6be8767d920f1520b592060d967637a0">optris::DeviceInfo::getIpAddress</a></div><div class="ttdeci">OTC_SDK_API const IpAddress &amp; getIpAddress() const noexcept</div><div class="ttdoc">Returns the IP address.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:274</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a4a162877699a688f3024e982987e7682"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a4a162877699a688f3024e982987e7682">optris::DeviceInfo::setTargetIpAddress</a></div><div class="ttdeci">OTC_SDK_API void setTargetIpAddress(const IpAddress &amp;ipAddress) noexcept</div><div class="ttdoc">Sets the IP address of the streaming target.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:273</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a5b1b8ccfbff7a4da2929181adfbe4fbc"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a5b1b8ccfbff7a4da2929181adfbe4fbc">optris::DeviceInfo::getConnectionInterface</a></div><div class="ttdeci">OTC_SDK_API const std::string &amp; getConnectionInterface() const noexcept</div><div class="ttdoc">Returns the connection interface of the device.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:248</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a5c6e49f828229d308f7b912abb4fe024"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a5c6e49f828229d308f7b912abb4fe024">optris::DeviceInfo::getMacAddress</a></div><div class="ttdeci">OTC_SDK_API const MacAddress &amp; getMacAddress() const noexcept</div><div class="ttdoc">Returns the MAC address.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:323</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a6be8767d920f1520b592060d967637a0"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a6be8767d920f1520b592060d967637a0">optris::DeviceInfo::getIpAddress</a></div><div class="ttdeci">OTC_SDK_API const IpAddress &amp; getIpAddress() const noexcept</div><div class="ttdoc">Returns the IP address.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:268</div></div>
 <div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a767d112db3deb57d6269c3716fe6af16"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a767d112db3deb57d6269c3716fe6af16">optris::DeviceInfo::determineDeviceType</a></div><div class="ttdeci">static OTC_SDK_API DeviceType determineDeviceType(unsigned short hardwareRevision, unsigned short firmwareRevision) noexcept</div><div class="ttdoc">Determines the device type based on the provided hardware and firmware revisions.</div></div>
 <div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a7dbdbcc46f3bb255eefeb39489c6906c"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c">optris::DeviceInfo::DeviceInfo</a></div><div class="ttdeci">OTC_SDK_API DeviceInfo() noexcept</div><div class="ttdoc">Constructor.</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a92a5ebae0542d513809451c00986d5ba"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a92a5ebae0542d513809451c00986d5ba">optris::DeviceInfo::isBusy</a></div><div class="ttdeci">OTC_SDK_API bool isBusy() const noexcept</div><div class="ttdoc">Returns whether the device is busy.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:319</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_aa4aba6680d1290a2b0923adc0c0304d9"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#aa4aba6680d1290a2b0923adc0c0304d9">optris::DeviceInfo::operator==</a></div><div class="ttdeci">bool operator==(const DeviceInfo &amp;rhs) const noexcept</div><div class="ttdoc">Equals operator.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:339</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_aabd7c11f24f8866c9b522971e683623d"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#aabd7c11f24f8866c9b522971e683623d">optris::DeviceInfo::setConnectionInterfaceAddress</a></div><div class="ttdeci">OTC_SDK_API void setConnectionInterfaceAddress(const std::string &amp;address) noexcept</div><div class="ttdoc">Sets the address of the local connection interface through which the camera is connected.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:259</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_ab46bb69595f4a68656f1ed38495be838"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#ab46bb69595f4a68656f1ed38495be838">optris::DeviceInfo::getSerialNumber</a></div><div class="ttdeci">OTC_SDK_API unsigned long getSerialNumber() const noexcept</div><div class="ttdoc">Returns the serial number of the device.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:249</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_ab60b567f77900d874a56b1a166c2ca37"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#ab60b567f77900d874a56b1a166c2ca37">optris::DeviceInfo::getHardwareRevision</a></div><div class="ttdeci">OTC_SDK_API unsigned short getHardwareRevision() const noexcept</div><div class="ttdoc">Returns the hardware revision.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:304</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_ad119051f8b49167be7fe0dd8b39f718d"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#ad119051f8b49167be7fe0dd8b39f718d">optris::DeviceInfo::getPort</a></div><div class="ttdeci">OTC_SDK_API const Port &amp; getPort() const noexcept</div><div class="ttdoc">Returns the port.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:294</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_ad510c7e7c1d0995153f3bb86cbd93e2d"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#ad510c7e7c1d0995153f3bb86cbd93e2d">optris::DeviceInfo::getFirmwareRevision</a></div><div class="ttdeci">OTC_SDK_API unsigned short getFirmwareRevision() const noexcept</div><div class="ttdoc">Returns the firmware revision.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:309</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_a92a5ebae0542d513809451c00986d5ba"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#a92a5ebae0542d513809451c00986d5ba">optris::DeviceInfo::isBusy</a></div><div class="ttdeci">OTC_SDK_API bool isBusy() const noexcept</div><div class="ttdoc">Returns whether the device is busy.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:313</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_aa4aba6680d1290a2b0923adc0c0304d9"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#aa4aba6680d1290a2b0923adc0c0304d9">optris::DeviceInfo::operator==</a></div><div class="ttdeci">bool operator==(const DeviceInfo &amp;rhs) const noexcept</div><div class="ttdoc">Equals operator.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:328</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_aabd7c11f24f8866c9b522971e683623d"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#aabd7c11f24f8866c9b522971e683623d">optris::DeviceInfo::setConnectionInterfaceAddress</a></div><div class="ttdeci">OTC_SDK_API void setConnectionInterfaceAddress(const std::string &amp;address) noexcept</div><div class="ttdoc">Sets the address of the local connection interface through which the camera is connected.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:253</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_ab46bb69595f4a68656f1ed38495be838"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#ab46bb69595f4a68656f1ed38495be838">optris::DeviceInfo::getSerialNumber</a></div><div class="ttdeci">OTC_SDK_API unsigned long getSerialNumber() const noexcept</div><div class="ttdoc">Returns the serial number of the device.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:243</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_ab60b567f77900d874a56b1a166c2ca37"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#ab60b567f77900d874a56b1a166c2ca37">optris::DeviceInfo::getHardwareRevision</a></div><div class="ttdeci">OTC_SDK_API unsigned short getHardwareRevision() const noexcept</div><div class="ttdoc">Returns the hardware revision.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:298</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_ad119051f8b49167be7fe0dd8b39f718d"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#ad119051f8b49167be7fe0dd8b39f718d">optris::DeviceInfo::getPort</a></div><div class="ttdeci">OTC_SDK_API const Port &amp; getPort() const noexcept</div><div class="ttdoc">Returns the port.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:288</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_ad510c7e7c1d0995153f3bb86cbd93e2d"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#ad510c7e7c1d0995153f3bb86cbd93e2d">optris::DeviceInfo::getFirmwareRevision</a></div><div class="ttdeci">OTC_SDK_API unsigned short getFirmwareRevision() const noexcept</div><div class="ttdoc">Returns the firmware revision.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:303</div></div>
 <div class="ttc" id="aclassoptris_1_1DeviceInfo_html_ae87cd61b54c63bb9959deb33d93c00bf"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#ae87cd61b54c63bb9959deb33d93c00bf">optris::DeviceInfo::setConnectionInterface</a></div><div class="ttdeci">OTC_SDK_API void setConnectionInterface(const std::string &amp;connectionInterface) noexcept</div><div class="ttdoc">Sets the connection interface of the device.</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_af07fc5958efd98d6be83ca07cfd0d88b"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#af07fc5958efd98d6be83ca07cfd0d88b">optris::DeviceInfo::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const DeviceInfo &amp;rhs) const noexcept</div><div class="ttdoc">Less than operator.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:359</div></div>
-<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_af32e99b2c57977fabe9355de47f70271"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#af32e99b2c57977fabe9355de47f70271">optris::DeviceInfo::getDeviceType</a></div><div class="ttdeci">OTC_SDK_API DeviceType getDeviceType() const noexcept</div><div class="ttdoc">Return the device type.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:299</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_af07fc5958efd98d6be83ca07cfd0d88b"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#af07fc5958efd98d6be83ca07cfd0d88b">optris::DeviceInfo::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const DeviceInfo &amp;rhs) const noexcept</div><div class="ttdoc">Less than operator.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:348</div></div>
+<div class="ttc" id="aclassoptris_1_1DeviceInfo_html_af32e99b2c57977fabe9355de47f70271"><div class="ttname"><a href="classoptris_1_1DeviceInfo.html#af32e99b2c57977fabe9355de47f70271">optris::DeviceInfo::getDeviceType</a></div><div class="ttdeci">OTC_SDK_API DeviceType getDeviceType() const noexcept</div><div class="ttdoc">Return the device type.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:293</div></div>
 <div class="ttc" id="aclassoptris_1_1IpAddress_html"><div class="ttname"><a href="classoptris_1_1IpAddress.html">optris::IpAddress</a></div><div class="ttdoc">Encapsulates an IP v4 address.</div><div class="ttdef"><b>Definition</b> IpAddress.h:33</div></div>
 <div class="ttc" id="aclassoptris_1_1MacAddress_html"><div class="ttname"><a href="classoptris_1_1MacAddress.html">optris::MacAddress</a></div><div class="ttdoc">Encapsulates a media access control address (MAC address).</div><div class="ttdef"><b>Definition</b> MacAddress.h:34</div></div>
 <div class="ttc" id="aclassoptris_1_1Port_html"><div class="ttname"><a href="classoptris_1_1Port.html">optris::Port</a></div><div class="ttdoc">Encapsulates a network port number.</div><div class="ttdef"><b>Definition</b> Port.h:34</div></div>
-<div class="ttc" id="anamespaceoptris_html"><div class="ttname"><a href="namespaceoptris.html">optris</a></div><div class="ttdoc">Main SDK namespace.</div><div class="ttdef"><b>Definition</b> DeviceInfo.h:24</div></div>
+<div class="ttc" id="anamespaceoptris_html"><div class="ttname"><a href="namespaceoptris.html">optris</a></div><div class="ttdoc">Main SDK namespace.</div><div class="ttdef"><b>Definition</b> AlarmChannel.h:21</div></div>
 <div class="ttc" id="anamespaceoptris_html_aafdfe9dc8c434a63aedc67450cb9a0d8"><div class="ttname"><a href="namespaceoptris.html#aafdfe9dc8c434a63aedc67450cb9a0d8">optris::DeviceType</a></div><div class="ttdeci">DeviceType</div><div class="ttdoc">Represents the different types of Optris thermal cameras.</div><div class="ttdef"><b>Definition</b> DeviceType.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tchar_0',['Tchar',['../Unicode_8h.html#a872a21321f5cdc87f8d7ee10528bdc75',1,'Unicode.h']]],
-  ['tstring_1',['TString',['../Unicode_8h.html#a6dfec21e189cb3755a756aa17529c757',1,'Unicode.h']]]
+  ['rangef_0',['RangeF',['../namespaceoptris.html#ad8cbcc02f119904c3f42c3e936f0395c',1,'optris']]],
+  ['rangei_1',['RangeI',['../namespaceoptris.html#a5fce772454763d211888e9728e395b61',1,'optris']]]
 ];

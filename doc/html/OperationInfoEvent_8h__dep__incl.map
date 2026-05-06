@@ -1,0 +1,11 @@
+<map id="OperationInfoEvent.h" name="OperationInfoEvent.h">
+<area shape="rect" id="Node000001" title="Contains a class defining an operation info event." alt="" coords="5,5,165,31"/>
+<area shape="rect" id="Node000002" href="$IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="20,79,151,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,44,88,79,83,79,83,44"/>
+<area shape="rect" id="Node000003" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="39,152,131,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,118,88,152,83,152,83,118"/>
+<area shape="rect" id="Node000004" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="15,225,155,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="88,191,88,225,83,225,83,191"/>
+<area shape="rect" id="Node000005" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="16,299,155,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="88,264,88,299,83,299,83,264"/>
+</map>

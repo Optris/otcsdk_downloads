@@ -1,0 +1,32 @@
+<map id="AlarmProperties.h" name="AlarmProperties.h">
+<area shape="rect" id="Node000001" title="Contains enums defining various properties of alarms." alt="" coords="131,5,269,31"/>
+<area shape="rect" id="Node000002" href="$AlarmChannelConfig_8h.html" title="Contains a class defining the configuration of an alarm channel." alt="" coords="35,152,202,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,44,128,153,123,150,184,42"/>
+<area shape="rect" id="Node000010" href="$AlarmChannelStatus_8h.html" title="Contains a class holding the status of an alarm channel." alt="" coords="198,79,365,104"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="225,38,270,76,266,80,222,42"/>
+<area shape="rect" id="Node000003" href="$AlarmChannel_8h.html" title="Contains an interface representing an alarm channel." alt="" coords="189,299,315,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="144,185,185,224,246,297,241,300,181,227,141,189"/>
+<area shape="rect" id="Node000007" href="$AlarmsConfig_8h.html" title="Contains a class encapsulating the configuration of the alarms." alt="" coords="50,225,171,251"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="118,191,115,226,109,225,113,191"/>
+<area shape="rect" id="Node000004" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="209,372,301,397"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="256,338,257,372,252,372,250,338"/>
+<area shape="rect" id="Node000005" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="185,445,325,471"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="257,411,257,445,252,445,252,411"/>
+<area shape="rect" id="Node000006" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="185,519,324,544"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="257,484,257,519,252,519,252,484"/>
+<area shape="rect" id="Node000008" href="$IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="30,299,165,324"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="109,265,102,299,97,298,103,264"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="136,327,230,369,228,374,134,332"/>
+<area shape="rect" id="Node000009" href="$IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="5,372,184,397"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="99,338,98,372,92,372,94,338"/>
+<area shape="rect" id="Node000011" href="$AlarmEvent_8h.html" title="Contains a class defining an alarm event." alt="" coords="226,152,337,177"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="284,118,284,152,279,152,279,118"/>
+<area shape="rect" id="Node000013" href="$CompositeAlarmStatus_8h.html" title="Contains a class holding the status of a composite alarm." alt="" coords="361,152,545,177"/>
+<area shape="poly" id="edge14_Node000010_Node000013" title=" " alt="" coords="322,107,426,149,424,154,320,112"/>
+<area shape="rect" id="Node000012" href="$IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="340,299,471,324"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="292,189,305,219,325,249,354,276,385,296,382,301,351,280,321,252,301,222,287,191"/>
+<area shape="poly" id="edge13_Node000012_Node000004" title=" " alt="" coords="370,332,280,374,278,369,368,327"/>
+<area shape="rect" id="Node000014" href="$CompositeAlarmEvent_8h.html" title="Contains a class defining the composite alarm event." alt="" coords="335,225,515,251"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="446,191,432,226,427,224,441,189"/>
+<area shape="poly" id="edge16_Node000014_Node000012" title=" " alt="" coords="421,265,411,299,406,298,416,263"/>
+</map>

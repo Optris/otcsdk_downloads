@@ -1,7 +1,6 @@
 var classoptris_1_1DeviceInfo =
 [
     [ "DeviceInfo", "classoptris_1_1DeviceInfo.html#a7dbdbcc46f3bb255eefeb39489c6906c", null ],
-    [ "clone", "classoptris_1_1DeviceInfo.html#a610624404d994b637693c66e70a2acce", null ],
     [ "determineDeviceType", "classoptris_1_1DeviceInfo.html#a767d112db3deb57d6269c3716fe6af16", null ],
     [ "getConnectionInterface", "classoptris_1_1DeviceInfo.html#a5b1b8ccfbff7a4da2929181adfbe4fbc", null ],
     [ "getConnectionInterfaceAddress", "classoptris_1_1DeviceInfo.html#a2348fa9e54048349637f304c9b3b0432", null ],

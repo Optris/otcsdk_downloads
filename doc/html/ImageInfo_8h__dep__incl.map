@@ -1,10 +1,7 @@
 <map id="ImageInfo.h" name="ImageInfo.h">
-<area shape="rect" id="Node000001" title="Contains a class holding detail information about the properties of a false color image." alt="" coords="14,5,105,32"/>
-<area shape="rect" id="Node000002" href="$Image_8h.html" title="Contains a class that encapsulates false color images." alt="" coords="25,155,94,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,48,42,80,41,100,45,120,56,154,51,155,40,122,36,101,37,80,46,46"/>
-<area shape="rect" id="Node000004" href="$ImageIterator_8h.html" title="Contains class that realize the iteration over the pixels of false color images." alt="" coords="52,80,161,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="78,44,100,78,96,81,74,47"/>
-<area shape="rect" id="Node000003" href="$ImageBuilder_8h.html" title="Contains a class that converts thermal frames into false color images." alt="" coords="5,229,114,256"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="62,197,62,229,57,229,57,197"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="92,121,70,156,65,153,88,118"/>
+<area shape="rect" id="Node000001" title="Contains a class holding detail information about the properties of a false color image." alt="" coords="15,5,115,31"/>
+<area shape="rect" id="Node000002" href="$Image_8h.html" title="Contains a class that encapsulates false color images." alt="" coords="28,79,103,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,44,68,79,63,79,63,44"/>
+<area shape="rect" id="Node000003" href="$ImageBuilder_8h.html" title="Contains a class that converts thermal frames into false color images." alt="" coords="5,152,125,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="68,118,68,152,63,152,63,118"/>
 </map>

@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -106,6 +106,7 @@ $(function(){initNavTree('FieldProperties_8h.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -113,53 +114,68 @@ $(function(){initNavTree('FieldProperties_8h.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Contains various enums representing properties of fields.  
+<p>Contains various enums and structs representing the properties of fields.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &lt;ostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &quot;<a class="el" href="Api_8h_source.html">otcsdk/Api.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for FieldProperties.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="FieldProperties_8h__incl.png" border="0" usemap="#aFieldProperties_8h" alt=""/></div>
-<map name="aFieldProperties_8h" id="aFieldProperties_8h">
-<area shape="rect" title="Contains various enums representing properties of fields." alt="" coords="58,5,177,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,59,107"/>
-<area shape="poly" title=" " alt="" coords="104,35,60,72,56,68,101,31"/>
-<area shape="rect" title=" " alt="" coords="83,80,152,107"/>
-<area shape="poly" title=" " alt="" coords="120,33,120,64,115,64,115,33"/>
-<area shape="rect" href="Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="176,80,270,107"/>
-<area shape="poly" title=" " alt="" coords="137,30,193,69,190,73,134,35"/>
-</map>
-</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="FieldProperties_8h__dep__incl.png" border="0" usemap="#aFieldProperties_8hdep" alt=""/></div>
 <map name="aFieldProperties_8hdep" id="aFieldProperties_8hdep">
-<area shape="rect" title="Contains various enums representing properties of fields." alt="" coords="122,5,242,32"/>
-<area shape="rect" href="MeasurementFieldConfig_8h.html" title="Contains a class encapsulating the configuration of a measurement field." alt="" coords="93,80,271,107"/>
-<area shape="poly" title=" " alt="" coords="185,48,185,80,179,80,179,48"/>
-<area shape="rect" href="IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="43,155,167,181"/>
-<area shape="poly" title=" " alt="" coords="159,119,120,156,116,152,156,116"/>
-<area shape="rect" href="MeasurementField_8h.html" title="Contains a class encapsulating the properties and data of a rectangular measurement field." alt="" coords="196,155,336,181"/>
-<area shape="poly" title=" " alt="" coords="210,115,253,152,250,156,207,119"/>
-<area shape="rect" href="IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="86,304,172,331"/>
-<area shape="poly" title=" " alt="" coords="59,191,36,204,18,219,9,237,9,245,12,255,27,272,45,286,86,304,84,309,42,290,23,276,8,257,3,246,3,235,14,216,33,200,56,186"/>
-<area shape="rect" href="IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="22,229,188,256"/>
-<area shape="poly" title=" " alt="" coords="107,197,107,229,102,229,102,197"/>
-<area shape="rect" href="IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="64,379,193,405"/>
-<area shape="poly" title=" " alt="" coords="131,346,131,378,126,378,126,346"/>
-<area shape="rect" href="IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="64,453,193,480"/>
-<area shape="poly" title=" " alt="" coords="131,421,131,453,126,453,126,421"/>
-<area shape="rect" href="IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="213,229,333,256"/>
-<area shape="poly" title=" " alt="" coords="271,197,274,229,269,229,266,197"/>
-<area shape="poly" title=" " alt="" coords="235,266,155,306,153,301,233,261"/>
+<area shape="rect" title="Contains various enums and structs representing the properties of fields." alt="" coords="168,5,299,31"/>
+<area shape="rect" href="AlarmChannelConfig_8h.html" title="Contains a class defining the configuration of an alarm channel." alt="" coords="34,225,201,251"/>
+<area shape="poly" title=" " alt="" coords="155,28,127,34,101,45,76,60,57,80,48,98,47,118,51,138,59,158,84,196,108,223,103,227,79,199,55,161,46,140,42,118,43,97,52,77,73,56,98,40,126,29,154,22"/>
+<area shape="rect" href="FieldStatus_8h.html" title="Contains a class that encapsulates status of a processed measurement field." alt="" coords="340,79,447,104"/>
+<area shape="poly" title=" " alt="" coords="272,34,368,76,366,81,270,39"/>
+<area shape="rect" href="MeasurementFieldConfig_8h.html" title="Contains a class encapsulating the configuration of a measurement field." alt="" coords="67,79,263,104"/>
+<area shape="poly" title=" " alt="" coords="215,42,178,80,174,77,211,39"/>
+<area shape="rect" href="PifChannelConfigs_8h.html" title="Contains classes holding the configuration parameter for the different process interface channels." alt="" coords="225,225,377,251"/>
+<area shape="poly" title=" " alt="" coords="254,40,277,78,290,119,298,161,304,225,298,225,293,162,285,120,272,80,250,43"/>
+<area shape="rect" href="AlarmChannel_8h.html" title="Contains an interface representing an alarm channel." alt="" coords="295,299,422,324"/>
+<area shape="poly" title=" " alt="" coords="170,252,320,296,319,301,169,257"/>
+<area shape="rect" href="AlarmsConfig_8h.html" title="Contains a class encapsulating the configuration of the alarms." alt="" coords="34,299,155,324"/>
+<area shape="poly" title=" " alt="" coords="112,265,101,299,96,298,107,263"/>
+<area shape="rect" href="IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="321,445,413,471"/>
+<area shape="poly" title=" " alt="" coords="363,338,369,445,363,445,357,338"/>
+<area shape="rect" href="IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="297,519,437,544"/>
+<area shape="poly" title=" " alt="" coords="369,484,369,519,364,519,364,484"/>
+<area shape="rect" href="IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="297,592,436,617"/>
+<area shape="poly" title=" " alt="" coords="369,558,369,592,364,592,364,558"/>
+<area shape="rect" href="IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="27,372,162,397"/>
+<area shape="poly" title=" " alt="" coords="97,338,97,372,92,372,92,338"/>
+<area shape="poly" title=" " alt="" coords="152,398,323,443,322,448,151,403"/>
+<area shape="rect" href="IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="5,445,184,471"/>
+<area shape="poly" title=" " alt="" coords="97,411,97,445,92,445,92,411"/>
+<area shape="rect" href="FrameEvent_8h.html" title="Contains a class representing a frame event." alt="" coords="423,152,535,177"/>
+<area shape="poly" title=" " alt="" coords="419,110,466,150,463,154,416,115"/>
+<area shape="rect" href="IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="497,372,628,397"/>
+<area shape="poly" title=" " alt="" coords="491,189,561,371,556,373,486,191"/>
+<area shape="poly" title=" " alt="" coords="519,404,400,448,398,443,518,399"/>
+<area shape="poly" title=" " alt="" coords="133,113,104,133,72,159,44,190,24,226,15,253,11,275,14,297,24,323,46,350,73,370,70,374,42,354,19,325,9,298,6,275,10,252,19,224,40,187,69,155,100,128,130,109"/>
+<area shape="rect" href="MeasurementField_8h.html" title="Contains an interface representing a measurement field." alt="" coords="99,152,253,177"/>
+<area shape="poly" title=" " alt="" coords="172,117,177,151,172,152,166,118"/>
+<area shape="poly" title=" " alt="" coords="160,190,129,227,125,224,156,186"/>
+<area shape="poly" title=" " alt="" coords="268,174,331,191,362,205,391,223,416,245,433,267,440,293,437,325,425,361,409,396,377,446,373,444,404,393,420,359,432,323,435,293,428,269,412,248,388,227,360,210,329,196,266,179"/>
+<area shape="poly" title=" " alt="" coords="209,182,282,223,280,227,207,186"/>
+<area shape="rect" href="PifConfig_8h.html" title="Contains a class encapsulating the configuration for the process interface." alt="" coords="179,299,271,324"/>
+<area shape="poly" title=" " alt="" coords="281,262,240,300,236,296,277,258"/>
+<area shape="poly" title=" " alt="" coords="193,333,117,374,115,369,191,328"/>
+<area shape="rect" href="ProcessInterface_8h.html" title="Contains the interface that defines how to interact with process interfaces." alt="" coords="186,372,329,397"/>
+<area shape="poly" title=" " alt="" coords="239,336,255,371,250,373,234,338"/>
+<area shape="poly" title=" " alt="" coords="288,403,350,443,347,447,285,407"/>
 </map>
 </div>
 </div>
 <p><a href="FieldProperties_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoptris_1_1FieldStats.html">optris::FieldStats</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsulates the results of the statistical analysis of a measurement field.  <a href="structoptris_1_1FieldStats.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html">optris</a></td></tr>
@@ -169,33 +185,43 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a1f530c7f3d1b87667e9fa8ced2d56c82" id="r_a1f530c7f3d1b87667e9fa8ced2d56c82"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#a1f530c7f3d1b87667e9fa8ced2d56c82">optris::FieldShape</a> { <a class="el" href="namespaceoptris.html#a1f530c7f3d1b87667e9fa8ced2d56c82ace9291906a4c3b042650b70d7f3b152e">optris::Rectangle</a>
+, <a class="el" href="namespaceoptris.html#a1f530c7f3d1b87667e9fa8ced2d56c82a119518c2134c46108179369f0ce81fa2">optris::Ellipse</a>
+, <a class="el" href="namespaceoptris.html#a1f530c7f3d1b87667e9fa8ced2d56c82a4c0a11247d92f73fb84baa51e37a3263">optris::Polygon</a>
+, <a class="el" href="namespaceoptris.html#a1f530c7f3d1b87667e9fa8ced2d56c82affb64877b6e3fdee861e63421934300d">optris::Splines</a>
  }</td></tr>
-<tr class="memdesc:a1f530c7f3d1b87667e9fa8ced2d56c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the different available shapes of fields.  <a href="namespaceoptris.html#a1f530c7f3d1b87667e9fa8ced2d56c82">More...</a><br /></td></tr>
+<tr class="memdesc:a1f530c7f3d1b87667e9fa8ced2d56c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the different available field shapes.  <a href="namespaceoptris.html#a1f530c7f3d1b87667e9fa8ced2d56c82">More...</a><br /></td></tr>
 <tr class="separator:a1f530c7f3d1b87667e9fa8ced2d56c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4031597a20ac0677d0282550ba383ad3" id="r_a4031597a20ac0677d0282550ba383ad3"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#a4031597a20ac0677d0282550ba383ad3">optris::FieldMode</a> { <a class="el" href="namespaceoptris.html#a4031597a20ac0677d0282550ba383ad3aa1d0ec6d56f8833a078b5a7ac4caf2d4">optris::Minimum</a>
-, <a class="el" href="namespaceoptris.html#a4031597a20ac0677d0282550ba383ad3a8321e79c278ec510f63675c040594892">optris::Maximum</a>
-, <a class="el" href="namespaceoptris.html#a4031597a20ac0677d0282550ba383ad3a3d6c9ac08ada31c184094bbc67afe00d">optris::Mean</a>
+<tr class="memitem:aad51f4ee3e284e581dc27f7ba084ea7a" id="r_aad51f4ee3e284e581dc27f7ba084ea7a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#aad51f4ee3e284e581dc27f7ba084ea7a">optris::FieldStat</a> { <a class="el" href="namespaceoptris.html#aad51f4ee3e284e581dc27f7ba084ea7aaa1d0ec6d56f8833a078b5a7ac4caf2d4">optris::Minimum</a>
+, <a class="el" href="namespaceoptris.html#aad51f4ee3e284e581dc27f7ba084ea7aa8321e79c278ec510f63675c040594892">optris::Maximum</a>
+, <a class="el" href="namespaceoptris.html#aad51f4ee3e284e581dc27f7ba084ea7aa3d6c9ac08ada31c184094bbc67afe00d">optris::Mean</a>
+, <a class="el" href="namespaceoptris.html#aad51f4ee3e284e581dc27f7ba084ea7aa66851a3adec6655a7bd563743e4a55a2">optris::Median</a>
  }</td></tr>
-<tr class="memdesc:a4031597a20ac0677d0282550ba383ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the different field modes that define what data point is calculated.  <a href="namespaceoptris.html#a4031597a20ac0677d0282550ba383ad3">More...</a><br /></td></tr>
-<tr class="separator:a4031597a20ac0677d0282550ba383ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:aad51f4ee3e284e581dc27f7ba084ea7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the different field statistics that can be used by other components (PIF, alarms).  <a href="namespaceoptris.html#aad51f4ee3e284e581dc27f7ba084ea7a">More...</a><br /></td></tr>
+<tr class="separator:aad51f4ee3e284e581dc27f7ba084ea7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a316f3115ada19f363ffdbe75aad94fb7" id="r_a316f3115ada19f363ffdbe75aad94fb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#a316f3115ada19f363ffdbe75aad94fb7">optris::getFieldStat</a> (const <a class="el" href="structoptris_1_1FieldStats.html">FieldStats</a> &amp;stats, <a class="el" href="namespaceoptris.html#aad51f4ee3e284e581dc27f7ba084ea7a">FieldStat</a> stat) noexcept</td></tr>
+<tr class="memdesc:a316f3115ada19f363ffdbe75aad94fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the given field statistic.  <br /></td></tr>
+<tr class="separator:a316f3115ada19f363ffdbe75aad94fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb67cfecda4a46d03428dad08c4bb528" id="r_acb67cfecda4a46d03428dad08c4bb528"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#acb67cfecda4a46d03428dad08c4bb528">optris::toString</a> (<a class="el" href="namespaceoptris.html#a1f530c7f3d1b87667e9fa8ced2d56c82">FieldShape</a> shape) noexcept</td></tr>
 <tr class="memdesc:acb67cfecda4a46d03428dad08c4bb528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the given field shape.  <br /></td></tr>
 <tr class="separator:acb67cfecda4a46d03428dad08c4bb528"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb22e826db6c849edbe14e47d5be9d95" id="r_afb22e826db6c849edbe14e47d5be9d95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#afb22e826db6c849edbe14e47d5be9d95">optris::toString</a> (<a class="el" href="namespaceoptris.html#a4031597a20ac0677d0282550ba383ad3">FieldMode</a> fieldMode) noexcept</td></tr>
-<tr class="memdesc:afb22e826db6c849edbe14e47d5be9d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the given field mode.  <br /></td></tr>
-<tr class="separator:afb22e826db6c849edbe14e47d5be9d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae700e1645c3b17accc385a5b25ee6ab4" id="r_ae700e1645c3b17accc385a5b25ee6ab4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#ae700e1645c3b17accc385a5b25ee6ab4">optris::toString</a> (<a class="el" href="namespaceoptris.html#aad51f4ee3e284e581dc27f7ba084ea7a">FieldStat</a> stat) noexcept</td></tr>
+<tr class="memdesc:ae700e1645c3b17accc385a5b25ee6ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the given field statistic.  <br /></td></tr>
+<tr class="separator:ae700e1645c3b17accc385a5b25ee6ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c08bfccfd31ac4414f39af3475d3a22" id="r_a8c08bfccfd31ac4414f39af3475d3a22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#a8c08bfccfd31ac4414f39af3475d3a22">optris::operator&lt;&lt;</a> (std::ostream &amp;out, <a class="el" href="namespaceoptris.html#a1f530c7f3d1b87667e9fa8ced2d56c82">FieldShape</a> shape) noexcept</td></tr>
 <tr class="memdesc:a8c08bfccfd31ac4414f39af3475d3a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouput stream operator for field shapes.  <br /></td></tr>
 <tr class="separator:a8c08bfccfd31ac4414f39af3475d3a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af859a608d98debc199a6a7bda479f14d" id="r_af859a608d98debc199a6a7bda479f14d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#af859a608d98debc199a6a7bda479f14d">optris::operator&lt;&lt;</a> (std::ostream &amp;out, <a class="el" href="namespaceoptris.html#a4031597a20ac0677d0282550ba383ad3">FieldMode</a> fieldMode) noexcept</td></tr>
-<tr class="memdesc:af859a608d98debc199a6a7bda479f14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouput stream operator for field mode.  <br /></td></tr>
-<tr class="separator:af859a608d98debc199a6a7bda479f14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6e8eabf5538722121a58f718c026c8" id="r_afe6e8eabf5538722121a58f718c026c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#afe6e8eabf5538722121a58f718c026c8">optris::operator&lt;&lt;</a> (std::ostream &amp;out, <a class="el" href="namespaceoptris.html#aad51f4ee3e284e581dc27f7ba084ea7a">FieldStat</a> stat) noexcept</td></tr>
+<tr class="memdesc:afe6e8eabf5538722121a58f718c026c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouput stream operator for field statistics.  <br /></td></tr>
+<tr class="separator:afe6e8eabf5538722121a58f718c026c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fd7fae762e0ac8c8f19c4eecfeb06c" id="r_a44fd7fae762e0ac8c8f19c4eecfeb06c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptris.html#a44fd7fae762e0ac8c8f19c4eecfeb06c">optris::operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="structoptris_1_1FieldStats.html">FieldStats</a> &amp;stats) noexcept</td></tr>
+<tr class="memdesc:a44fd7fae762e0ac8c8f19c4eecfeb06c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouput stream operator for field stats.  <br /></td></tr>
+<tr class="separator:a44fd7fae762e0ac8c8f19c4eecfeb06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains various enums representing properties of fields. </p>
+<div class="textblock"><p>Contains various enums and structs representing the properties of fields. </p>
 <dl class="section author"><dt>Author</dt><dd>Optris GmbH &amp; Co. KG </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2025-07-23 </dd></dl>
 </div></div><!-- contents -->

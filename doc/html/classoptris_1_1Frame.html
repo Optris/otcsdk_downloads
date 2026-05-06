@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -108,7 +108,6 @@ $(function(){initNavTree('classoptris_1_1Frame.html',''); initResizable(true); }
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classoptris_1_1Frame-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">optris::Frame Class Reference</div></div>
 </div><!--header-->
@@ -123,9 +122,9 @@ Inheritance diagram for optris::Frame:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptris_1_1Frame__inherit__graph.png" border="0" usemap="#aoptris_1_1Frame_inherit__map" alt="Inheritance graph"/></div>
 <map name="aoptris_1_1Frame_inherit__map" id="aoptris_1_1Frame_inherit__map">
-<area shape="rect" title="Represents a data frame received from a device." alt="" coords="30,5,156,288"/>
-<area shape="rect" href="classoptris_1_1ThermalFrame.html" title="Encapsulates thermal frame data received from a device." alt="" coords="5,336,181,683"/>
-<area shape="poly" title=" " alt="" coords="96,303,96,337,91,337,91,303"/>
+<area shape="rect" title="Represents a data frame received from a device." alt="" coords="49,5,163,271"/>
+<area shape="rect" href="classoptris_1_1ThermalFrame.html" title="Encapsulates processed thermal frame data." alt="" coords="5,319,207,624"/>
+<area shape="poly" title=" " alt="" coords="109,285,109,319,103,319,103,285"/>
 </map>
 </div>
 <div class="dynheader">
@@ -133,7 +132,7 @@ Collaboration diagram for optris::Frame:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptris_1_1Frame__coll__graph.png" border="0" usemap="#aoptris_1_1Frame_coll__map" alt="Collaboration graph"/></div>
 <map name="aoptris_1_1Frame_coll__map" id="aoptris_1_1Frame_coll__map">
-<area shape="rect" title="Represents a data frame received from a device." alt="" coords="5,5,131,288"/>
+<area shape="rect" title="Represents a data frame received from a device." alt="" coords="5,5,120,271"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -169,9 +168,6 @@ virtual <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_S
 <tr class="memitem:a4ea3007338ae4df349b1a70dab0c3d7e" id="r_a4ea3007338ae4df349b1a70dab0c3d7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ea3007338ae4df349b1a70dab0c3d7e">getValue</a> (int x, int y) const noexcept(false)</td></tr>
 <tr class="memdesc:a4ea3007338ae4df349b1a70dab0c3d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the frame data value at the given coordinates.  <br /></td></tr>
 <tr class="separator:a4ea3007338ae4df349b1a70dab0c3d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a564ddcb495cd0fb42ca928c1a7e2efc1" id="r_a564ddcb495cd0fb42ca928c1a7e2efc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <a class="el" href="classoptris_1_1ConstFrameIterator.html">ConstFrameIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a564ddcb495cd0fb42ca928c1a7e2efc1">getConstIterator</a> () const noexcept</td></tr>
-<tr class="memdesc:a564ddcb495cd0fb42ca928c1a7e2efc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator with read access.  <br /></td></tr>
-<tr class="separator:a564ddcb495cd0fb42ca928c1a7e2efc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3024e9452afd4fd4463bb2c4681acd4" id="r_af3024e9452afd4fd4463bb2c4681acd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3024e9452afd4fd4463bb2c4681acd4">getWidth</a> () const noexcept</td></tr>
 <tr class="memdesc:af3024e9452afd4fd4463bb2c4681acd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width in pixels of the frame.  <br /></td></tr>
 <tr class="separator:af3024e9452afd4fd4463bb2c4681acd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,9 +187,6 @@ virtual <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_S
 <tr class="memitem:aae16b5287552a1417441a45a0864ef3f" id="r_aae16b5287552a1417441a45a0864ef3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae16b5287552a1417441a45a0864ef3f">resize</a> (int width, int height)</td></tr>
 <tr class="memdesc:aae16b5287552a1417441a45a0864ef3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the frame.  <br /></td></tr>
 <tr class="separator:aae16b5287552a1417441a45a0864ef3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade57a081ad72b8cfc52c102a9935d7ab" id="r_ade57a081ad72b8cfc52c102a9935d7ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <a class="el" href="classoptris_1_1Frame.html">Frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade57a081ad72b8cfc52c102a9935d7ab">clone</a> () const noexcept</td></tr>
-<tr class="memdesc:ade57a081ad72b8cfc52c102a9935d7ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a complete copy of this frame.  <br /></td></tr>
-<tr class="separator:ade57a081ad72b8cfc52c102a9935d7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60ed4b0e851dc55fb52b409cca53aea8" id="r_a60ed4b0e851dc55fb52b409cca53aea8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60ed4b0e851dc55fb52b409cca53aea8">setData</a> (const unsigned short *source)</td></tr>
 <tr class="memdesc:a60ed4b0e851dc55fb52b409cca53aea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the frame data values.  <br /></td></tr>
 <tr class="separator:a60ed4b0e851dc55fb52b409cca53aea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,46 +206,12 @@ Protected Attributes</h2></td></tr>
 std::vector&lt; unsigned short &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_values</b></td></tr>
 <tr class="memdesc:a0ccc23818337f5b21b110b620230d0ea"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoptris_1_1Frame.html" title="Represents a data frame received from a device.">Frame</a> data. <br /></td></tr>
 <tr class="separator:a0ccc23818337f5b21b110b620230d0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a7c1b518c67981993e12b4a5ba1d58568" id="r_a7c1b518c67981993e12b4a5ba1d58568"><td class="memItemLeft" align="right" valign="top"><a id="a7c1b518c67981993e12b4a5ba1d58568" name="a7c1b518c67981993e12b4a5ba1d58568"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>ConstFrameIterator</b></td></tr>
-<tr class="separator:a7c1b518c67981993e12b4a5ba1d58568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a data frame received from a device. </p>
-<p>The encapsulated data may represent thermal or energy measurements in an internal format. See the specialized child classes like <a class="el" href="classoptris_1_1ThermalFrame.html" title="Encapsulates thermal frame data received from a device.">ThermalFrame</a> for more details.</p>
+<p>The encapsulated data may represent thermal or energy measurements in an internal format. See the specialized child classes like <a class="el" href="classoptris_1_1ThermalFrame.html" title="Encapsulates processed thermal frame data.">ThermalFrame</a> for more details.</p>
 <p>The origin of coordinates is located in the upper left corner with the x-axis pointing right and the y-axis pointing down. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ade57a081ad72b8cfc52c102a9935d7ab" name="ade57a081ad72b8cfc52c102a9935d7ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade57a081ad72b8cfc52c102a9935d7ab">&#9670;&#160;</a></span>clone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classoptris_1_1Frame.html">Frame</a> optris::Frame::clone </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a complete copy of this frame. </p>
-<dl class="section return"><dt>Returns</dt><dd>a complete copy of this frame. </dd></dl>
-
-</div>
-</div>
 <a id="ad43ea4479f465792c8802e66f96cacc9" name="ad43ea4479f465792c8802e66f96cacc9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad43ea4479f465792c8802e66f96cacc9">&#9670;&#160;</a></span>copyDataTo()</h2>
 
@@ -289,35 +248,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ConstFrameIterator</
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a564ddcb495cd0fb42ca928c1a7e2efc1" name="a564ddcb495cd0fb42ca928c1a7e2efc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a564ddcb495cd0fb42ca928c1a7e2efc1">&#9670;&#160;</a></span>getConstIterator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classoptris_1_1ConstFrameIterator.html">ConstFrameIterator</a> optris::Frame::getConstIterator </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an iterator with read access. </p>
-<p>The iterator traverses the frame in a row major fashion.</p>
-<dl class="section return"><dt>Returns</dt><dd>iterator with read access. </dd></dl>
 
 </div>
 </div>

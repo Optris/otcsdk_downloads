@@ -1,0 +1,5 @@
+<map id="optris::CompositeAlarmEvent" name="optris::CompositeAlarmEvent">
+<area shape="rect" id="Node000001" title="Event containing the status of the composite alarm." alt="" coords="7,233,213,299"/>
+<area shape="rect" id="Node000002" href="$classoptris_1_1CompositeAlarmStatus.html" title="Encapsulates the status of the composite alarm." alt="" coords="5,5,215,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,171,113,217,107,217,107,171"/>
+</map>

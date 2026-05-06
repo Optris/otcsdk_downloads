@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -154,6 +154,10 @@ Overview</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Flag control during runtime   </td><td class="markdownTableBodyNone">✅    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Radial distortion correction   </td><td class="markdownTableBodyNone">✅    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Alarms   </td><td class="markdownTableBodyNone">✅    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Temperature referencing with external probe   </td><td class="markdownTableBodyNone">❌**    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Detect connection loss and timeouts   </td><td class="markdownTableBodyNone">✅    </td></tr>
@@ -175,7 +179,7 @@ Overview</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">❌   </td><td class="markdownTableBodyNone">Not supported    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">*   </td><td class="markdownTableBodyNone">As of Mai 2025    </td></tr>
+<td class="markdownTableBodyNone">*   </td><td class="markdownTableBodyNone">As of May 2026    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">**   </td><td class="markdownTableBodyNone">Work in progress   </td></tr>
 </table>
@@ -189,7 +193,7 @@ Programming Languages</h1>
 <p>Both bindings offer the full feature set of the C++ API.</p>
 <h1><a class="anchor" id="features-supported-cameras"></a>
 Supported Cameras</h1>
-<p>All Optris thermal cameras of the PI and Xi series are supported the SDK. These includes as of Mai 2025 the <b>PI 160</b>, <a href="https://optris.com/products/thermal-cameras/precision-line/pi-400i/"><b>PI 400(i)</b></a>, <a href="https://optris.com/products/thermal-cameras/precision-line/pi-450i/"><b>PI 450i</b></a>, <a href="https://optris.com/products/thermal-cameras/precision-line/pi-640i/"><b>PI 640(i)</b></a>, <a href="https://optris.com/products/thermal-cameras/precision-line/pi-1m/"><b>PI 1M</b></a>, <a href="https://optris.com/products/thermal-cameras/precision-line/pi-05m/"><b>PI 05M</b></a>, <a href="https://optris.com/products/thermal-cameras/precision-line/pi-08m/"><b>PI 08M</b></a>, <a href="https://optris.com/products/thermal-cameras/compact-line/xi-80/"><b>Xi 80</b></a>, <a href="https://optris.com/products/thermal-cameras/compact-line/xi-400/"><b>Xi 400</b></a>, <a href="https://optris.com/products/thermal-cameras/compact-line/xi-410-lt/"><b>Xi 410</b></a>, <b>Xi 440</b>, <a href="https://optris.com/products/thermal-cameras/compact-line/xi-640/"><b>Xi 640</b></a>, <a href="https://optris.com/products/thermal-cameras/compact-line/xi-1m/"><b>Xi 1M</b></a>.</p>
+<p>All Optris thermal cameras of the PI and Xi series are supported by the SDK. These include as of May 2026 the <b>PI 160</b>, <a href="https://optris.com/products/thermal-cameras/precision-line/pi-400i/"><b>PI 400(i)</b></a>, <a href="https://optris.com/products/thermal-cameras/precision-line/pi-450i/"><b>PI 450i</b></a>, <a href="https://optris.com/products/thermal-cameras/precision-line/pi-640i/"><b>PI 640(i)</b></a>, <a href="https://optris.com/products/thermal-cameras/precision-line/pi-1m/"><b>PI 1M</b></a>, <a href="https://optris.com/products/thermal-cameras/precision-line/pi-05m/"><b>PI 05M</b></a>, <a href="https://optris.com/products/thermal-cameras/precision-line/pi-08m/"><b>PI 08M</b></a>, <a href="https://optris.com/products/thermal-cameras/compact-line/xi-80/"><b>Xi 80</b></a>, <a href="https://optris.com/products/thermal-cameras/compact-line/xi-320-mt/"><b>Xi 320 MT</b></a>, <a href="https://optris.com/products/thermal-cameras/compact-line/xi-400/"><b>Xi 400</b></a>, <a href="https://optris.com/products/thermal-cameras/compact-line/xi-410-lt/"><b>Xi 410</b></a>, <b>Xi 440</b>, <a href="https://optris.com/products/thermal-cameras/compact-line/xi-640/"><b>Xi 640</b></a>, <a href="https://optris.com/products/thermal-cameras/compact-line/xi-05m"><b>Xi 05M</b></a>, <a href="https://optris.com/products/thermal-cameras/compact-line/xi-1m/"><b>Xi 1M</b></a>.</p>
 <p>Nearly all of <a href="https://optris.com/products/category/thermal-cameras/">the cameras</a> listed above offer multiple, fixed resolutions and temperature ranges. Their availability depends on the used connection type (USB or Ethernet), available calibrations and on the video formats defined in the <a class="el" href="important-files.html#important-files-format-definitions">formats definition file</a>.</p>
 <p>The following tables lists the different video formats for each camera type that can be set in the <a class="el" href="important-files.html#important-files-configuration">configuration file</a>:</p>
 <h2><a class="anchor" id="autotoc_md2"></a>
@@ -236,7 +240,7 @@ PI 640(i)</h2>
 <p><a href="https://optris.com/products/thermal-cameras/precision-line/pi-640i/">More about the PI 640 on optris.com</a></p>
 <h2><a class="anchor" id="autotoc_md5"></a>
 PI 05M</h2>
-<p><img src="pi_xm.png" alt="" class="inline" title="PI 05M"/>    </p>
+<p><img src="pi_xm.png" alt="" class="inline" title="PI 05M."/>    </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Video Format   </th><th class="markdownTableHeadNone">Temperature Range [°C]   </th><th class="markdownTableHeadNone">Connection Type    </th></tr>
@@ -254,7 +258,7 @@ PI 05M</h2>
 <p><a href="https://optris.com/products/thermal-cameras/precision-line/pi-05m/">More about the PI 05M on optris.com</a></p>
 <h2><a class="anchor" id="autotoc_md6"></a>
 PI 08M</h2>
-<p><img src="pi_xm.png" alt="" class="inline" title="PI 08M"/>    </p>
+<p><img src="pi_xm.png" alt="" class="inline" title="PI 08M."/>    </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Video Format   </th><th class="markdownTableHeadNone">Temperature Range [°C]   </th><th class="markdownTableHeadNone">Connection Type    </th></tr>
@@ -272,7 +276,7 @@ PI 08M</h2>
 <p><a href="https://optris.com/products/thermal-cameras/precision-line/pi-08m/">More about the PI 08M on optris.com</a></p>
 <h2><a class="anchor" id="autotoc_md7"></a>
 PI 1M</h2>
-<p><img src="pi_xm.png" alt="" class="inline" title="PI 1M"/>    </p>
+<p><img src="pi_xm.png" alt="" class="inline" title="PI 1M."/>    </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Video Format   </th><th class="markdownTableHeadNone">Temperature Range [°C]   </th><th class="markdownTableHeadNone">Connection Type    </th></tr>
@@ -300,6 +304,18 @@ Xi 80</h2>
  150 ... 900   </td><td class="markdownTableBodyNone">USB, Ethernet   </td></tr>
 </table>
 <p><a href="https://optris.com/products/thermal-cameras/compact-line/xi-80/">More about the Xi 80 on optris.com</a></p>
+<h2><a class="anchor" id="features-supported-cameras-xi320mt"></a>
+Xi 320 MT</h2>
+<p><img src="xi_410_640.png" alt="" class="inline" title="Xi 320 MT."/>    </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Video Format   </th><th class="markdownTableHeadNone">Temperature Range [°C]   </th><th class="markdownTableHeadNone">Connection Type    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">320x240 @ 5 Hz   </td><td class="markdownTableBodyNone">475 ... 1700   </td><td class="markdownTableBodyNone">USB    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">320x240 @ 30 Hz   </td><td class="markdownTableBodyNone">475 ... 1700   </td><td class="markdownTableBodyNone">Ethernet   </td></tr>
+</table>
+<p><a href="https://optris.com/products/thermal-cameras/compact-line/xi-320-mt/">More about the Xi 320 MT on optris.com</a></p>
 <h2><a class="anchor" id="autotoc_md9"></a>
 Xi 400</h2>
 <p><img src="xi_80_400.png" alt="" class="inline" title="Xi 400."/>    </p>
@@ -316,21 +332,9 @@ Xi 400</h2>
  150 ... 900   </td><td class="markdownTableBodyNone">USB   </td></tr>
 </table>
 <p><a href="https://optris.com/products/thermal-cameras/compact-line/xi-400">More about the Xi 400 on optris.com</a></p>
-<h2><a class="anchor" id="features-supported-cameras-xi320mt"></a>
-Xi 320 MT</h2>
-<p><img src="xi_410_640.png" alt="" class="inline" title="Xi 320 MT"/>    </p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Video Format   </th><th class="markdownTableHeadNone">Temperature Range [°C]   </th><th class="markdownTableHeadNone">Connection Type    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">320x240 @ 5 Hz   </td><td class="markdownTableBodyNone">475 ... 1700   </td><td class="markdownTableBodyNone">USB    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">320x240 @ 30 Hz   </td><td class="markdownTableBodyNone">475 ... 1700   </td><td class="markdownTableBodyNone">Ethernet   </td></tr>
-</table>
-<p><a href="https://optris.com/products/thermal-cameras/compact-line/xi-320-mt/">More about the Xi 320 MT on optris.com</a></p>
 <h2><a class="anchor" id="features-supported-cameras-xi410"></a>
 Xi 410</h2>
-<p><img src="xi_410_640.png" alt="" class="inline" title="Xi 410"/>    </p>
+<p><img src="xi_410_640.png" alt="" class="inline" title="Xi 410."/>    </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Video Format   </th><th class="markdownTableHeadNone">Temperature Range [°C]   </th><th class="markdownTableHeadNone">Connection Type    </th></tr>
@@ -356,7 +360,7 @@ Xi 440</h2>
 </table>
 <h2><a class="anchor" id="autotoc_md11"></a>
 Xi 640</h2>
-<p><img src="xi_410_640.png" alt="" class="inline" title="Xi 410"/>    </p>
+<p><img src="xi_410_640.png" alt="" class="inline" title="Xi 640."/>    </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Video Format   </th><th class="markdownTableHeadNone">Temperature Range [°C]   </th><th class="markdownTableHeadNone">Connection Type    </th></tr>
@@ -367,6 +371,22 @@ Xi 640</h2>
 </table>
 <p><a href="https://optris.com/products/thermal-cameras/compact-line/xi-640">More about the Xi 640 on optris.com</a></p>
 <h2><a class="anchor" id="autotoc_md12"></a>
+Xi 05M</h2>
+<p><img src="xi_1m.png" alt="" class="inline" title="Xi 05M."/>    </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Video Format   </th><th class="markdownTableHeadNone">Temperature Range [°C]   </th><th class="markdownTableHeadNone">Connection Type    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">132x100 @ 20Hz   </td><td class="markdownTableBodyNone">950 ... 2450   </td><td class="markdownTableBodyNone">USB, Ethernet    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">396x300 @ 20Hz   </td><td class="markdownTableBodyNone">950 ... 2450   </td><td class="markdownTableBodyNone">Ethernet    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">396x8 @ 500Hz   </td><td class="markdownTableBodyNone">1050 ... 2450   </td><td class="markdownTableBodyNone">Ethernet    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">396x1 @ 500Hz   </td><td class="markdownTableBodyNone">1050 ... 2450   </td><td class="markdownTableBodyNone">Ethernet   </td></tr>
+</table>
+<p><a href="https://optris.com/products/thermal-cameras/compact-line/xi-05m">More about the Xi 05M on optris.com</a></p>
+<h2><a class="anchor" id="autotoc_md13"></a>
 Xi 1M</h2>
 <p><img src="xi_1m.png" alt="" class="inline" title="Xi 1M"/>    </p>
 <table class="markdownTable">
@@ -385,12 +405,12 @@ Xi 1M</h2>
 <p>*only available for Xi 1M cameras with a firmware revision in the range of [4019, 4199].</p>
 <h1><a class="anchor" id="features-supported-pifs"></a>
 Supported Process Interfaces (PIFs)</h1>
-<h2><a class="anchor" id="autotoc_md13"></a>
-Standard PIF</h2>
+<h2><a class="anchor" id="autotoc_md14"></a>
+Standard</h2>
 <p><img src="standard_pif.png" alt="" class="inline" title="Standard PIF."/>    </p>
 <p>The standard PIF is integrated into a cable that ends in a terminal block from which its various pins can be accessed.</p>
 <p><b>Supported by</b></p>
-<p>all cameras except Xi 80, Xi 410 and Xi 1M.</p>
+<p>all cameras except Xi 80, Xi 320 MT, Xi 410 and Xi 1M.</p>
 <p><b>Channels</b></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -407,12 +427,12 @@ Standard PIF</h2>
 <td class="markdownTableBodyNone">Fail safe   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <p><a href="https://optris.com/products/thermal-cameras/accessories-for-ir-cameras/standard-process-interface-for-pi-xi-400-1-m-cable-right-angle-connector/">More about the Standard Process Interface on optris.com</a></p>
-<h2><a class="anchor" id="autotoc_md14"></a>
+<h2><a class="anchor" id="autotoc_md15"></a>
 Industrial PIF (mA)</h2>
-<p><img src="industrial_pif.png" alt="" class="inline" title="Industrial PIF"/>    </p>
+<p><img src="industrial_pif.png" alt="" class="inline" title="Industrial PIF."/>    </p>
 <p>The industrial PIF comes in its own industrial grade housing and features <em>current</em> based analog outputs.</p>
 <p><b>Supported by</b></p>
-<p>all cameras except PI 160, Xi 80, Xi 410 and Xi 1M.</p>
+<p>all cameras except PI 160, Xi 80, Xi 320 MT, Xi 410 and Xi 1M.</p>
 <p><b>Channels</b></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -429,12 +449,12 @@ Industrial PIF (mA)</h2>
 <td class="markdownTableBodyNone">Fail safe   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <p><a href="https://optris.com/products/thermal-cameras/accessories-for-ir-cameras/industrial-process-interface-for-usb-native-optris-infrared-cameras/">More about the Industrial Process Interface on optris.com</a></p>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md16"></a>
 Industrial PIF (mV)</h2>
-<p><img src="industrial_pif.png" alt="" class="inline" title="Industrial PIF"/>    </p>
+<p><img src="industrial_pif.png" alt="" class="inline" title="Industrial PIF."/>    </p>
 <p>The industrial PIF comes in its own industrial grade housing and features <em>voltage</em> based analog outputs.</p>
 <p><b>Supported by</b></p>
-<p>all cameras except PI 160, Xi 80, Xi 410 and Xi 1M.</p>
+<p>all cameras except PI 160, Xi 80, Xi 320 MT, Xi 410 and Xi 1M.</p>
 <p><b>Channels</b></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -450,12 +470,12 @@ Industrial PIF (mV)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Fail safe   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md16"></a>
+<h2><a class="anchor" id="autotoc_md17"></a>
 Internal PIF</h2>
 <p><img src="internal_pif.png" alt="" class="inline" title="Internal PIF."/>    </p>
 <p>The internal PIF is directly integrated into the camera housing.</p>
 <p><b>Supported by</b></p>
-<p>Xi 80, Xi 410 and Xi 1M.</p>
+<p>Xi 80, Xi 320 MT, Xi 410 and Xi 1M.</p>
 <p><b>Channels</b></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -471,12 +491,12 @@ Internal PIF</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Fail safe   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 Stackable PIF</h2>
-<p><img src="industrial_pif.png" alt="" class="inline" title="Stackable PIF"/>    </p>
-<p>Stackable PIFs feature like their industrial variants their own industrial grade housings. Up to <em>three</em> stackable PIFs can be connected to same camera at once. Thus, providing the most connectivity of all PIFs.</p>
+<p><img src="industrial_pif.png" alt="" class="inline" title="Stackable PIF."/>    </p>
+<p>Stackable PIFs feature like their industrial variants their own industrial grade housings. Up to <em>three</em> stackable PIFs can be connected to same camera at once. Thus, providing the most connectivity of all PIF variants.</p>
 <p><b>Supported by</b></p>
-<p>Xi 80, Xi 410 and Xi 1M.</p>
+<p>Xi 80, Xi 320 MT, Xi 410 and Xi 1M.</p>
 <p><b>Channels</b></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">

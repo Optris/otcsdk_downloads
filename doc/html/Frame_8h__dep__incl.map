@@ -1,16 +1,20 @@
 <map id="Frame.h" name="Frame.h">
-<area shape="rect" id="Node000001" title="Contains a class representing a data frame received from a device." alt="" coords="83,5,153,32"/>
-<area shape="rect" id="Node000002" href="$IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="10,155,130,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,47,98,81,76,155,71,153,93,79,105,46"/>
-<area shape="rect" id="Node000006" href="$ThermalFrame_8h.html" title="Contains a class encapsulating a thermal frame received from a device." alt="" coords="108,80,224,107"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="137,44,160,78,156,81,133,47"/>
-<area shape="rect" id="Node000003" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="27,229,113,256"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,197,73,229,67,229,67,197"/>
-<area shape="rect" id="Node000004" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="5,304,135,331"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="73,272,73,304,67,304,67,272"/>
-<area shape="rect" id="Node000005" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="5,379,135,405"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="73,346,73,378,67,378,67,346"/>
-<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="139,118,88,156,85,152,136,114"/>
-<area shape="rect" id="Node000007" href="$ImageBuilder_8h.html" title="Contains a class that converts thermal frames into false color images." alt="" coords="154,155,263,181"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="183,119,204,153,199,156,179,122"/>
+<area shape="rect" id="Node000001" title="Contains a class representing a data frame received from a device." alt="" coords="117,5,191,31"/>
+<area shape="rect" id="Node000002" href="$RawFrameEvent_8h.html" title="Contains a class representing a raw frame event." alt="" coords="5,79,145,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,42,90,80,86,76,129,38"/>
+<area shape="rect" id="Node000007" href="$ThermalFrame_8h.html" title="Contains a class encapsulating a processed thermal frame." alt="" coords="169,79,299,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="179,38,223,76,219,80,175,42"/>
+<area shape="rect" id="Node000003" href="$IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="57,225,187,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,117,103,176,120,224,115,226,98,178,80,118"/>
+<area shape="rect" id="Node000004" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="76,299,168,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="125,264,125,299,119,299,119,264"/>
+<area shape="rect" id="Node000005" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="52,372,192,397"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="125,338,125,372,119,372,119,338"/>
+<area shape="rect" id="Node000006" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="53,445,191,471"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="125,411,125,445,119,445,119,411"/>
+<area shape="rect" id="Node000008" href="$FrameEvent_8h.html" title="Contains a class representing a frame event." alt="" coords="113,152,225,177"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="216,116,181,154,177,150,212,113"/>
+<area shape="rect" id="Node000009" href="$ImageBuilder_8h.html" title="Contains a class that converts thermal frames into false color images." alt="" coords="249,152,369,177"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="258,111,298,150,295,154,254,115"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="156,190,132,227,127,224,151,187"/>
 </map>

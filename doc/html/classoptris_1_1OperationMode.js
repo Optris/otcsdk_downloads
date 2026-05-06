@@ -1,5 +1,6 @@
 var classoptris_1_1OperationMode =
 [
+    [ "ConstShared", "classoptris_1_1OperationMode.html#aebbef91bcec3bd4f9217214cf138a31c", null ],
     [ "OperationMode", "classoptris_1_1OperationMode.html#a13dfa0bed4c5ae50ce40be5e27ae4bf4", null ],
     [ "OperationMode", "classoptris_1_1OperationMode.html#a1dee44059ec5f3f206842dc0883b9593", null ],
     [ "OperationMode", "classoptris_1_1OperationMode.html#aed935b061c5c15e8653b1cfdfe2b81b9", null ],

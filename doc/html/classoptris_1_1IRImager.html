@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -121,7 +121,7 @@ Collaboration diagram for optris::IRImager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptris_1_1IRImager__coll__graph.png" border="0" usemap="#aoptris_1_1IRImager_coll__map" alt="Collaboration graph"/></div>
 <map name="aoptris_1_1IRImager_coll__map" id="aoptris_1_1IRImager_coll__map">
-<area shape="rect" title="Interface defining the API for interacting with Optris thermal cameras." alt="" coords="5,5,113,288"/>
+<area shape="rect" title="Interface defining the API for interacting with Optris thermal cameras." alt="" coords="5,5,128,271"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -151,7 +151,7 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IRImager</b> ()=default</td></tr>
 <tr class="memdesc:ae7b700f9ed0cefc5351108053917b6b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:ae7b700f9ed0cefc5351108053917b6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7d778918ea3d28cb3bc101f8fc33256" id="r_ae7d778918ea3d28cb3bc101f8fc33256"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7d778918ea3d28cb3bc101f8fc33256">connect</a> (<a class="el" href="classoptris_1_1IRImagerConfig.html">IRImagerConfig</a> config)=0</td></tr>
+<tr class="memitem:ae7d778918ea3d28cb3bc101f8fc33256" id="r_ae7d778918ea3d28cb3bc101f8fc33256"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7d778918ea3d28cb3bc101f8fc33256">connect</a> (<a class="el" href="structoptris_1_1IRImagerConfig.html">IRImagerConfig</a> config)=0</td></tr>
 <tr class="memdesc:ae7d778918ea3d28cb3bc101f8fc33256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects to the device with the given configuration.  <br /></td></tr>
 <tr class="separator:ae7d778918ea3d28cb3bc101f8fc33256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac535e1c181bc99d27d670d9c07ef9eef" id="r_ac535e1c181bc99d27d670d9c07ef9eef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac535e1c181bc99d27d670d9c07ef9eef">connect</a> (const <a class="el" href="classoptris_1_1DeviceInfo.html">DeviceInfo</a> &amp;deviceInfo)=0</td></tr>
@@ -160,22 +160,22 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IRImager</b> ()=d
 <tr class="memitem:a315efa3477f5e07088b06d4756d5c7c4" id="r_a315efa3477f5e07088b06d4756d5c7c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a315efa3477f5e07088b06d4756d5c7c4">connect</a> (unsigned long serialNumber)=0</td></tr>
 <tr class="memdesc:a315efa3477f5e07088b06d4756d5c7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects to the device with the given serial number.  <br /></td></tr>
 <tr class="separator:a315efa3477f5e07088b06d4756d5c7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d0e5e67d39f31d0a212208807693c33" id="r_a1d0e5e67d39f31d0a212208807693c33"><td class="memItemLeft" align="right" valign="top"><a id="a1d0e5e67d39f31d0a212208807693c33" name="a1d0e5e67d39f31d0a212208807693c33"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>disconnect</b> ()=0</td></tr>
-<tr class="memdesc:a1d0e5e67d39f31d0a212208807693c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnects from the current device. <br /></td></tr>
-<tr class="separator:a1d0e5e67d39f31d0a212208807693c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4e3cd9d014085bc28fb78eb275e41b" id="r_abe4e3cd9d014085bc28fb78eb275e41b"><td class="memItemLeft" align="right" valign="top"><a id="abe4e3cd9d014085bc28fb78eb275e41b" name="abe4e3cd9d014085bc28fb78eb275e41b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>disconnect</b> () noexcept=0</td></tr>
+<tr class="memdesc:abe4e3cd9d014085bc28fb78eb275e41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnects from the current device. <br /></td></tr>
+<tr class="separator:abe4e3cd9d014085bc28fb78eb275e41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75b7daf17aba4bb6c869fa58eb052212" id="r_a75b7daf17aba4bb6c869fa58eb052212"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75b7daf17aba4bb6c869fa58eb052212">isConnected</a> () const noexcept=0</td></tr>
 <tr class="memdesc:a75b7daf17aba4bb6c869fa58eb052212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a connection is established.  <br /></td></tr>
 <tr class="separator:a75b7daf17aba4bb6c869fa58eb052212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf82489c34f22243a8562cbd8bf46d64" id="r_aaf82489c34f22243a8562cbd8bf46d64"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf82489c34f22243a8562cbd8bf46d64">addClient</a> (<a class="el" href="classoptris_1_1IRImagerClient.html">IRImagerClient</a> *client)=0</td></tr>
-<tr class="memdesc:aaf82489c34f22243a8562cbd8bf46d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an observer/client that will be updated when new data arrives.  <br /></td></tr>
-<tr class="separator:aaf82489c34f22243a8562cbd8bf46d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae91c3689f8d4fc049af4ed250da7b0ff" id="r_ae91c3689f8d4fc049af4ed250da7b0ff"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae91c3689f8d4fc049af4ed250da7b0ff">removeClient</a> (<a class="el" href="classoptris_1_1IRImagerClient.html">IRImagerClient</a> *client)=0</td></tr>
-<tr class="memdesc:ae91c3689f8d4fc049af4ed250da7b0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the given observer/client.  <br /></td></tr>
-<tr class="separator:ae91c3689f8d4fc049af4ed250da7b0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbba9723c519f8a542efeaee13695eb7" id="r_abbba9723c519f8a542efeaee13695eb7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbba9723c519f8a542efeaee13695eb7">run</a> ()=0</td></tr>
-<tr class="memdesc:abbba9723c519f8a542efeaee13695eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the processing loop continuously.  <br /></td></tr>
-<tr class="separator:abbba9723c519f8a542efeaee13695eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8ecdcaa62373165a2a562aca0583c6" id="r_ade8ecdcaa62373165a2a562aca0583c6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade8ecdcaa62373165a2a562aca0583c6">addClient</a> (<a class="el" href="classoptris_1_1IRImagerClient.html">IRImagerClient</a> *client) noexcept=0</td></tr>
+<tr class="memdesc:ade8ecdcaa62373165a2a562aca0583c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an observer/client that will be updated when new data arrives.  <br /></td></tr>
+<tr class="separator:ade8ecdcaa62373165a2a562aca0583c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9794cf9661eb350a42fa495e44356c5f" id="r_a9794cf9661eb350a42fa495e44356c5f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9794cf9661eb350a42fa495e44356c5f">removeClient</a> (<a class="el" href="classoptris_1_1IRImagerClient.html">IRImagerClient</a> *client) noexcept=0</td></tr>
+<tr class="memdesc:a9794cf9661eb350a42fa495e44356c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the given observer/client.  <br /></td></tr>
+<tr class="separator:a9794cf9661eb350a42fa495e44356c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852ed91e40cf5fc90a0ff722c8d47f70" id="r_a852ed91e40cf5fc90a0ff722c8d47f70"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a852ed91e40cf5fc90a0ff722c8d47f70">run</a> ()=0</td></tr>
+<tr class="memdesc:a852ed91e40cf5fc90a0ff722c8d47f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the processing loop continuously.  <br /></td></tr>
+<tr class="separator:a852ed91e40cf5fc90a0ff722c8d47f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45a471b95ad4f1925d7dd9518b598d12" id="r_a45a471b95ad4f1925d7dd9518b598d12"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45a471b95ad4f1925d7dd9518b598d12">runAsync</a> ()=0</td></tr>
 <tr class="memdesc:a45a471b95ad4f1925d7dd9518b598d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the processing loop continuously in a dedicated thread.  <br /></td></tr>
 <tr class="separator:a45a471b95ad4f1925d7dd9518b598d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +186,21 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 <tr class="memitem:a05c58fd2a9252e53edd785a9866251b3" id="r_a05c58fd2a9252e53edd785a9866251b3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05c58fd2a9252e53edd785a9866251b3">isRunning</a> () const noexcept=0</td></tr>
 <tr class="memdesc:a05c58fd2a9252e53edd785a9866251b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the processing loop is currently running.  <br /></td></tr>
 <tr class="separator:a05c58fd2a9252e53edd785a9866251b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a4e7919667a6758d0814fe856bf765" id="r_ad7a4e7919667a6758d0814fe856bf765"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7a4e7919667a6758d0814fe856bf765">skipStartupCalibration</a> () noexcept=0</td></tr>
+<tr class="memdesc:ad7a4e7919667a6758d0814fe856bf765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips an active startup (re)calibration that is performed every time the processing loop is run.  <br /></td></tr>
+<tr class="separator:ad7a4e7919667a6758d0814fe856bf765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa28a3d2062775fa33164b8b8c73a49e6" id="r_aa28a3d2062775fa33164b8b8c73a49e6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa28a3d2062775fa33164b8b8c73a49e6">setProcessingOutputs</a> (const <a class="el" href="structoptris_1_1ProcessingOutputConfig.html">ProcessingOutputConfig</a> &amp;outputs)=0</td></tr>
+<tr class="memdesc:aa28a3d2062775fa33164b8b8c73a49e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets which outputs should be computed and provided by the SDK.  <br /></td></tr>
+<tr class="separator:aa28a3d2062775fa33164b8b8c73a49e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fc8f8c778693b8d619e9b3887e7acc" id="r_a84fc8f8c778693b8d619e9b3887e7acc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structoptris_1_1ProcessingOutputConfig.html">ProcessingOutputConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84fc8f8c778693b8d619e9b3887e7acc">getProcessingOutputs</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a84fc8f8c778693b8d619e9b3887e7acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns which outputs are currently configured to be computed and provided by the SDK.  <br /></td></tr>
+<tr class="separator:a84fc8f8c778693b8d619e9b3887e7acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d3adbe0d62ca21c087aa43957de547" id="r_a87d3adbe0d62ca21c087aa43957de547"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87d3adbe0d62ca21c087aa43957de547">setProcessingMaxResultPoolSize</a> (unsigned int maxPoolSize)=0</td></tr>
+<tr class="memdesc:a87d3adbe0d62ca21c087aa43957de547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum number of processing results that are pooled for reuse to avoid unnecessary allocations.  <br /></td></tr>
+<tr class="separator:a87d3adbe0d62ca21c087aa43957de547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7cee014e7e88ee9c86d2bdc6c15a509" id="r_ad7cee014e7e88ee9c86d2bdc6c15a509"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7cee014e7e88ee9c86d2bdc6c15a509">getProcessingMaxResultPoolSize</a> () const noexcept=0</td></tr>
+<tr class="memdesc:ad7cee014e7e88ee9c86d2bdc6c15a509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum number of processing results that are pooled for reuse to avoid unnecessary allocations.  <br /></td></tr>
+<tr class="separator:ad7cee014e7e88ee9c86d2bdc6c15a509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a034b7c93581e80a819c983858ab1eb74" id="r_a034b7c93581e80a819c983858ab1eb74"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceoptris.html#aafdfe9dc8c434a63aedc67450cb9a0d8">DeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a034b7c93581e80a819c983858ab1eb74">getDeviceType</a> () const =0</td></tr>
 <tr class="memdesc:a034b7c93581e80a819c983858ab1eb74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of device the <a class="el" href="classoptris_1_1IRImager.html" title="Interface defining the API for interacting with Optris thermal cameras.">IRImager</a> is connected to.  <br /></td></tr>
 <tr class="separator:a034b7c93581e80a819c983858ab1eb74"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +213,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 <tr class="memitem:aa689ea2b45f8cb1a0da82912d432c807" id="r_aa689ea2b45f8cb1a0da82912d432c807"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa689ea2b45f8cb1a0da82912d432c807">getFirmwareRevision</a> () const =0</td></tr>
 <tr class="memdesc:aa689ea2b45f8cb1a0da82912d432c807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the firmware revision of the connected device.  <br /></td></tr>
 <tr class="separator:aa689ea2b45f8cb1a0da82912d432c807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a81e63f5d07ed4979ccfc9bcbeb49d" id="r_a48a81e63f5d07ed4979ccfc9bcbeb49d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structoptris_1_1IRImagerConfig.html">IRImagerConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48a81e63f5d07ed4979ccfc9bcbeb49d">getConfig</a> ()=0</td></tr>
+<tr class="memdesc:a48a81e63f5d07ed4979ccfc9bcbeb49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current configuration.  <br /></td></tr>
+<tr class="separator:a48a81e63f5d07ed4979ccfc9bcbeb49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac270e1f8fd46f96fb1e650d11318bbed" id="r_ac270e1f8fd46f96fb1e650d11318bbed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac270e1f8fd46f96fb1e650d11318bbed">saveConfig</a> ()=0</td></tr>
+<tr class="memdesc:ac270e1f8fd46f96fb1e650d11318bbed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current configuration.  <br /></td></tr>
+<tr class="separator:ac270e1f8fd46f96fb1e650d11318bbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece7d344b9474d7995a0664e7c3fbea5" id="r_aece7d344b9474d7995a0664e7c3fbea5"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aece7d344b9474d7995a0664e7c3fbea5">getConnectionInterface</a> () const noexcept=0</td></tr>
 <tr class="memdesc:aece7d344b9474d7995a0664e7c3fbea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the connection interface used to communication with the device.  <br /></td></tr>
 <tr class="separator:aece7d344b9474d7995a0664e7c3fbea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,24 +228,30 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 <tr class="memitem:a74302e854484640483bf54943e18e67e" id="r_a74302e854484640483bf54943e18e67e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classoptris_1_1Port.html">Port</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74302e854484640483bf54943e18e67e">getPort</a> () const noexcept=0</td></tr>
 <tr class="memdesc:a74302e854484640483bf54943e18e67e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of the port on which the device data is received.  <br /></td></tr>
 <tr class="separator:a74302e854484640483bf54943e18e67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa17a54afe78c1a1a90db31b56b10babc" id="r_aa17a54afe78c1a1a90db31b56b10babc"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::shared_ptr&lt; <a class="el" href="classoptris_1_1OperationMode.html">OperationMode</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa17a54afe78c1a1a90db31b56b10babc">getOperationModes</a> ()=0</td></tr>
-<tr class="memdesc:aa17a54afe78c1a1a90db31b56b10babc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the operation modes for the currently connected device.  <br /></td></tr>
-<tr class="separator:aa17a54afe78c1a1a90db31b56b10babc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2a225d1c7eacf12454df3d327448712" id="r_ad2a225d1c7eacf12454df3d327448712"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2a225d1c7eacf12454df3d327448712">setActiveOperationMode</a> (const std::shared_ptr&lt; <a class="el" href="classoptris_1_1OperationMode.html">OperationMode</a> &gt; &amp;mode)=0</td></tr>
-<tr class="memdesc:ad2a225d1c7eacf12454df3d327448712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the active operation mode for the currently connected device.  <br /></td></tr>
-<tr class="separator:ad2a225d1c7eacf12454df3d327448712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace356e4c3e722dccef89e080faef0c26" id="r_ace356e4c3e722dccef89e080faef0c26"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classoptris_1_1OperationMode.html#aebbef91bcec3bd4f9217214cf138a31c">OperationMode::ConstShared</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace356e4c3e722dccef89e080faef0c26">getOperationModes</a> ()=0</td></tr>
+<tr class="memdesc:ace356e4c3e722dccef89e080faef0c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the operation modes for the currently connected device.  <br /></td></tr>
+<tr class="separator:ace356e4c3e722dccef89e080faef0c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942dbde479727fe5eeb39a82d03d996a" id="r_a942dbde479727fe5eeb39a82d03d996a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a942dbde479727fe5eeb39a82d03d996a">setActiveOperationMode</a> (const <a class="el" href="classoptris_1_1OperationMode.html#aebbef91bcec3bd4f9217214cf138a31c">OperationMode::ConstShared</a> &amp;mode)=0</td></tr>
+<tr class="memdesc:a942dbde479727fe5eeb39a82d03d996a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the active operation mode for the currently connected device.  <br /></td></tr>
+<tr class="separator:a942dbde479727fe5eeb39a82d03d996a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcaf10459bac1ed22bb82bc74f78a017" id="r_abcaf10459bac1ed22bb82bc74f78a017"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcaf10459bac1ed22bb82bc74f78a017">setActiveOperationMode</a> (int opticsFieldOfView, const std::string &amp;opticsText, float temperatureLowerLimit, float temperatureUpperLimit, int width, int height, int framerate)=0</td></tr>
 <tr class="memdesc:abcaf10459bac1ed22bb82bc74f78a017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the active operation mode for the currently connected device.  <br /></td></tr>
 <tr class="separator:abcaf10459bac1ed22bb82bc74f78a017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0bab830f67cd898cde78c911f788c67" id="r_ad0bab830f67cd898cde78c911f788c67"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classoptris_1_1OperationMode.html">OperationMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0bab830f67cd898cde78c911f788c67">getActiveOperationMode</a> ()=0</td></tr>
-<tr class="memdesc:ad0bab830f67cd898cde78c911f788c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the active operation mode for the currently connected device.  <br /></td></tr>
-<tr class="separator:ad0bab830f67cd898cde78c911f788c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c03209c94a6d34bdf2a6224ea7c9f9" id="r_a59c03209c94a6d34bdf2a6224ea7c9f9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classoptris_1_1OperationMode.html#aebbef91bcec3bd4f9217214cf138a31c">OperationMode::ConstShared</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59c03209c94a6d34bdf2a6224ea7c9f9">getActiveOperationMode</a> ()=0</td></tr>
+<tr class="memdesc:a59c03209c94a6d34bdf2a6224ea7c9f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the active operation mode for the currently connected device.  <br /></td></tr>
+<tr class="separator:a59c03209c94a6d34bdf2a6224ea7c9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa22d40ddc34c089479e6025692ce612c" id="r_aa22d40ddc34c089479e6025692ce612c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa22d40ddc34c089479e6025692ce612c">setSoSCorrectionEnabled</a> (bool enable)=0</td></tr>
 <tr class="memdesc:aa22d40ddc34c089479e6025692ce612c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the Size of Source Correction.  <br /></td></tr>
 <tr class="separator:aa22d40ddc34c089479e6025692ce612c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30fd95a2b53e540470c2ca69e0a51403" id="r_a30fd95a2b53e540470c2ca69e0a51403"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30fd95a2b53e540470c2ca69e0a51403">isSoSCorrectionEnabled</a> () const =0</td></tr>
-<tr class="memdesc:a30fd95a2b53e540470c2ca69e0a51403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the Size of Source Correction is enabled.  <br /></td></tr>
-<tr class="separator:a30fd95a2b53e540470c2ca69e0a51403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ea4efec3033943f0b3b76560e5d7a4" id="r_a26ea4efec3033943f0b3b76560e5d7a4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26ea4efec3033943f0b3b76560e5d7a4">isSoSCorrectionEnabled</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a26ea4efec3033943f0b3b76560e5d7a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the Size of Source Correction is enabled.  <br /></td></tr>
+<tr class="separator:a26ea4efec3033943f0b3b76560e5d7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f74a17f405c6806e88770283594fb52" id="r_a1f74a17f405c6806e88770283594fb52"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f74a17f405c6806e88770283594fb52">setRdcMode</a> (<a class="el" href="namespaceoptris.html#a72d2d3eb7894087743a0dfcdd0b66762">RdcMode</a> rdcMode)=0</td></tr>
+<tr class="memdesc:a1f74a17f405c6806e88770283594fb52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the mode of radial distortion correction (RDC).  <br /></td></tr>
+<tr class="separator:a1f74a17f405c6806e88770283594fb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43732d1b32969c23a0dddec2ba58114a" id="r_a43732d1b32969c23a0dddec2ba58114a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceoptris.html#a72d2d3eb7894087743a0dfcdd0b66762">RdcMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43732d1b32969c23a0dddec2ba58114a">getRdcMode</a> () const =0</td></tr>
+<tr class="memdesc:a43732d1b32969c23a0dddec2ba58114a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mode of radial distortion correction (RDC).  <br /></td></tr>
+<tr class="separator:a43732d1b32969c23a0dddec2ba58114a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0059073b66752ec9929ac3edd1e75b6" id="r_aa0059073b66752ec9929ac3edd1e75b6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0059073b66752ec9929ac3edd1e75b6">setTemperatureRangeExtensionEnabled</a> (bool enabled)=0</td></tr>
 <tr class="memdesc:aa0059073b66752ec9929ac3edd1e75b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die-/Enables temperature range extension.  <br /></td></tr>
 <tr class="separator:aa0059073b66752ec9929ac3edd1e75b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,63 +264,99 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 <tr class="memitem:a12044267e37883b418a58a673c6a8c31" id="r_a12044267e37883b418a58a673c6a8c31"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12044267e37883b418a58a673c6a8c31">isTemperatureHighPrecisionEnabled</a> () const noexcept=0</td></tr>
 <tr class="memdesc:a12044267e37883b418a58a673c6a8c31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether high precision temperature measurements are enabled.  <br /></td></tr>
 <tr class="separator:a12044267e37883b418a58a673c6a8c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a284c54ab6030de0de7dd37696cfef2a7" id="r_a284c54ab6030de0de7dd37696cfef2a7"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a284c54ab6030de0de7dd37696cfef2a7">getWidth</a> () const =0</td></tr>
-<tr class="memdesc:a284c54ab6030de0de7dd37696cfef2a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width in pixels of the thermal frame.  <br /></td></tr>
-<tr class="separator:a284c54ab6030de0de7dd37696cfef2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56bebe8b3c84fbaf1d8f00a8d94de69b" id="r_a56bebe8b3c84fbaf1d8f00a8d94de69b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56bebe8b3c84fbaf1d8f00a8d94de69b">getHeight</a> () const =0</td></tr>
-<tr class="memdesc:a56bebe8b3c84fbaf1d8f00a8d94de69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the height in pixels of thermal frame.  <br /></td></tr>
-<tr class="separator:a56bebe8b3c84fbaf1d8f00a8d94de69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70feecae8d08fe26720d85958817e031" id="r_a70feecae8d08fe26720d85958817e031"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70feecae8d08fe26720d85958817e031">addMeasurementField</a> (const <a class="el" href="classoptris_1_1MeasurementFieldConfig.html">MeasurementFieldConfig</a> &amp;config)=0</td></tr>
-<tr class="memdesc:a70feecae8d08fe26720d85958817e031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a measurement field that is processed for every new thermal frame.  <br /></td></tr>
-<tr class="separator:a70feecae8d08fe26720d85958817e031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98b9c6373262f8d8a86e366643b5810" id="r_ab98b9c6373262f8d8a86e366643b5810"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab98b9c6373262f8d8a86e366643b5810">getWidth</a> () const noexcept=0</td></tr>
+<tr class="memdesc:ab98b9c6373262f8d8a86e366643b5810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width in pixels of the thermal frame.  <br /></td></tr>
+<tr class="separator:ab98b9c6373262f8d8a86e366643b5810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd851f07104a80dda3d3cdf19d214566" id="r_abd851f07104a80dda3d3cdf19d214566"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd851f07104a80dda3d3cdf19d214566">getHeight</a> () const noexcept=0</td></tr>
+<tr class="memdesc:abd851f07104a80dda3d3cdf19d214566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the height in pixels of thermal frame.  <br /></td></tr>
+<tr class="separator:abd851f07104a80dda3d3cdf19d214566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2864680a9b3ad58c7f9505a211db591a" id="r_a2864680a9b3ad58c7f9505a211db591a"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2864680a9b3ad58c7f9505a211db591a">getSubsampledFramerate</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a2864680a9b3ad58c7f9505a211db591a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the subsampled framerate.  <br /></td></tr>
+<tr class="separator:a2864680a9b3ad58c7f9505a211db591a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca8695df70edc6f5dce84a5df7db083" id="r_a1ca8695df70edc6f5dce84a5df7db083"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ca8695df70edc6f5dce84a5df7db083">setSubsampledFramerate</a> (float subsampledFramerate)=0</td></tr>
+<tr class="memdesc:a1ca8695df70edc6f5dce84a5df7db083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsampled framerate.  <br /></td></tr>
+<tr class="separator:a1ca8695df70edc6f5dce84a5df7db083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478095343f7f1601a8c1ea18d32ef972" id="r_a478095343f7f1601a8c1ea18d32ef972"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classoptris_1_1MeasurementField.html#a6dcb142b2c9d11aba25a29c6951a61c8">MeasurementField::ConstShared</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a478095343f7f1601a8c1ea18d32ef972">addMeasurementField</a> (const <a class="el" href="structoptris_1_1MeasurementFieldConfig.html">MeasurementFieldConfig</a> &amp;config)=0</td></tr>
+<tr class="memdesc:a478095343f7f1601a8c1ea18d32ef972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a measurement field that is processed for every new thermal frame.  <br /></td></tr>
+<tr class="separator:a478095343f7f1601a8c1ea18d32ef972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45768271f46fc2e8ef0bd8948539a957" id="r_a45768271f46fc2e8ef0bd8948539a957"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45768271f46fc2e8ef0bd8948539a957">removeMeasurementField</a> (const <a class="el" href="classoptris_1_1MeasurementField.html#a6dcb142b2c9d11aba25a29c6951a61c8">MeasurementField::ConstShared</a> &amp;field)=0</td></tr>
+<tr class="memdesc:a45768271f46fc2e8ef0bd8948539a957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the given measurement field.  <br /></td></tr>
+<tr class="separator:a45768271f46fc2e8ef0bd8948539a957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd536974913e506c12697afde7a0bef" id="r_abcd536974913e506c12697afde7a0bef"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classoptris_1_1MeasurementField.html#a6dcb142b2c9d11aba25a29c6951a61c8">MeasurementField::ConstShared</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcd536974913e506c12697afde7a0bef">getMeasurementFields</a> () const noexcept=0</td></tr>
+<tr class="memdesc:abcd536974913e506c12697afde7a0bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all active measurement fields ordered by their index.  <br /></td></tr>
+<tr class="separator:abcd536974913e506c12697afde7a0bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46f695859e70b4caae6ca938d43f43a8" id="r_a46f695859e70b4caae6ca938d43f43a8"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46f695859e70b4caae6ca938d43f43a8">getMeasurementFieldCount</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a46f695859e70b4caae6ca938d43f43a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of active measurement fields.  <br /></td></tr>
+<tr class="separator:a46f695859e70b4caae6ca938d43f43a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af94dc9467c8a44b2d43278c018c1a7d8" id="r_af94dc9467c8a44b2d43278c018c1a7d8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af94dc9467c8a44b2d43278c018c1a7d8">updateMeasurementField</a> (const <a class="el" href="classoptris_1_1MeasurementField.html#a6dcb142b2c9d11aba25a29c6951a61c8">MeasurementField::ConstShared</a> &amp;field, const <a class="el" href="structoptris_1_1MeasurementFieldConfig.html">MeasurementFieldConfig</a> &amp;config)=0</td></tr>
+<tr class="memdesc:af94dc9467c8a44b2d43278c018c1a7d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updated the configuration of a measurement field.  <br /></td></tr>
+<tr class="separator:af94dc9467c8a44b2d43278c018c1a7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb482138d5a2db57e64c9c3fe183702" id="r_acdb482138d5a2db57e64c9c3fe183702"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdb482138d5a2db57e64c9c3fe183702">swapMeasurementFieldIndices</a> (std::uint32_t index1, std::uint32_t index2)=0</td></tr>
+<tr class="memdesc:acdb482138d5a2db57e64c9c3fe183702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps the indices of two measurement fields.  <br /></td></tr>
+<tr class="separator:acdb482138d5a2db57e64c9c3fe183702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c8d0f0df7fa3d9d2ec5842c6dd06a5" id="r_af3c8d0f0df7fa3d9d2ec5842c6dd06a5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classoptris_1_1AlarmChannel.html#a2ad17f7b99252664c83dd556b12c1aea">AlarmChannel::ConstShared</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3c8d0f0df7fa3d9d2ec5842c6dd06a5">addAlarmChannel</a> (const <a class="el" href="structoptris_1_1AlarmChannelConfig.html">AlarmChannelConfig</a> &amp;config)=0</td></tr>
+<tr class="memdesc:af3c8d0f0df7fa3d9d2ec5842c6dd06a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new alarm channel.  <br /></td></tr>
+<tr class="separator:af3c8d0f0df7fa3d9d2ec5842c6dd06a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3669ec79efe067525ce69682e1d37eaf" id="r_a3669ec79efe067525ce69682e1d37eaf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3669ec79efe067525ce69682e1d37eaf">removeAlarmChannel</a> (const <a class="el" href="classoptris_1_1AlarmChannel.html#a2ad17f7b99252664c83dd556b12c1aea">AlarmChannel::ConstShared</a> &amp;channel)=0</td></tr>
+<tr class="memdesc:a3669ec79efe067525ce69682e1d37eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the given alarm channel.  <br /></td></tr>
+<tr class="separator:a3669ec79efe067525ce69682e1d37eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5202fa9ac622ae135cf4e0bb111666df" id="r_a5202fa9ac622ae135cf4e0bb111666df"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classoptris_1_1AlarmChannel.html#a2ad17f7b99252664c83dd556b12c1aea">AlarmChannel::ConstShared</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5202fa9ac622ae135cf4e0bb111666df">getAlarmChannels</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a5202fa9ac622ae135cf4e0bb111666df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all current alarm channels.  <br /></td></tr>
+<tr class="separator:a5202fa9ac622ae135cf4e0bb111666df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6916129ee3a3d625660f9bf033ca8c" id="r_a4c6916129ee3a3d625660f9bf033ca8c"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classoptris_1_1AlarmChannelStatus.html">AlarmChannelStatus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c6916129ee3a3d625660f9bf033ca8c">getAlarmChannelStatuses</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a4c6916129ee3a3d625660f9bf033ca8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the status of all current alarm channels.  <br /></td></tr>
+<tr class="separator:a4c6916129ee3a3d625660f9bf033ca8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f45940fd51486385304116c0140c768" id="r_a3f45940fd51486385304116c0140c768"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f45940fd51486385304116c0140c768">getAlarmChannelCount</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a3f45940fd51486385304116c0140c768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the count of all current alarm channels.  <br /></td></tr>
+<tr class="separator:a3f45940fd51486385304116c0140c768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa9aec5536d2fcf7ddf27f084969d77" id="r_a9aa9aec5536d2fcf7ddf27f084969d77"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aa9aec5536d2fcf7ddf27f084969d77">updateAlarmChannel</a> (const <a class="el" href="classoptris_1_1AlarmChannel.html#a2ad17f7b99252664c83dd556b12c1aea">AlarmChannel::ConstShared</a> &amp;channel, const <a class="el" href="structoptris_1_1AlarmChannelConfig.html">AlarmChannelConfig</a> &amp;config)=0</td></tr>
+<tr class="memdesc:a9aa9aec5536d2fcf7ddf27f084969d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the configuration of an alarm channel.  <br /></td></tr>
+<tr class="separator:a9aa9aec5536d2fcf7ddf27f084969d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae28fd411d80e6bbf25dd50972476cb09" id="r_ae28fd411d80e6bbf25dd50972476cb09"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae28fd411d80e6bbf25dd50972476cb09">setAutoFlagEnabled</a> (bool enable)=0</td></tr>
 <tr class="memdesc:ae28fd411d80e6bbf25dd50972476cb09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the automatic triggering of flag cycles en-/disabled.  <br /></td></tr>
 <tr class="separator:ae28fd411d80e6bbf25dd50972476cb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8058cdabdb363fe085381bc8303fb8de" id="r_a8058cdabdb363fe085381bc8303fb8de"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8058cdabdb363fe085381bc8303fb8de">isAutoFlagEnabled</a> () const =0</td></tr>
-<tr class="memdesc:a8058cdabdb363fe085381bc8303fb8de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether flag cycles are triggered automatically.  <br /></td></tr>
-<tr class="separator:a8058cdabdb363fe085381bc8303fb8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f87b790e4c82a90bbaad9728de0c349" id="r_a2f87b790e4c82a90bbaad9728de0c349"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f87b790e4c82a90bbaad9728de0c349">isAutoFlagEnabled</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a2f87b790e4c82a90bbaad9728de0c349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether flag cycles are triggered automatically.  <br /></td></tr>
+<tr class="separator:a2f87b790e4c82a90bbaad9728de0c349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afec0246c98bb32ccd8bfb26893657077" id="r_afec0246c98bb32ccd8bfb26893657077"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afec0246c98bb32ccd8bfb26893657077">setFlagInterval</a> (float minInterval, float maxInterval)=0</td></tr>
 <tr class="memdesc:afec0246c98bb32ccd8bfb26893657077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the minimum and maximum flag intervals in seconds.  <br /></td></tr>
 <tr class="separator:afec0246c98bb32ccd8bfb26893657077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94f5b52a110d3e9086cbc5ad69ff2ce4" id="r_a94f5b52a110d3e9086cbc5ad69ff2ce4"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94f5b52a110d3e9086cbc5ad69ff2ce4">getFlagMinInterval</a> () const =0</td></tr>
-<tr class="memdesc:a94f5b52a110d3e9086cbc5ad69ff2ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum flag interval in seconds.  <br /></td></tr>
-<tr class="separator:a94f5b52a110d3e9086cbc5ad69ff2ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa165d9ebdf2755e93a612cb65d832c8d" id="r_aa165d9ebdf2755e93a612cb65d832c8d"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa165d9ebdf2755e93a612cb65d832c8d">getFlagMaxInterval</a> () const =0</td></tr>
-<tr class="memdesc:aa165d9ebdf2755e93a612cb65d832c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum flag interval in seconds.  <br /></td></tr>
-<tr class="separator:aa165d9ebdf2755e93a612cb65d832c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac221d4f28f80365172d55f67aa400c80" id="r_ac221d4f28f80365172d55f67aa400c80"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac221d4f28f80365172d55f67aa400c80">getFlagMinInterval</a> () const noexcept=0</td></tr>
+<tr class="memdesc:ac221d4f28f80365172d55f67aa400c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum flag interval in seconds.  <br /></td></tr>
+<tr class="separator:ac221d4f28f80365172d55f67aa400c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af818337dacfdf2f0b9faae88ab0a6316" id="r_af818337dacfdf2f0b9faae88ab0a6316"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af818337dacfdf2f0b9faae88ab0a6316">getFlagMaxInterval</a> () const noexcept=0</td></tr>
+<tr class="memdesc:af818337dacfdf2f0b9faae88ab0a6316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum flag interval in seconds.  <br /></td></tr>
+<tr class="separator:af818337dacfdf2f0b9faae88ab0a6316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec7f118538a3958129163499dfaf4621" id="r_aec7f118538a3958129163499dfaf4621"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec7f118538a3958129163499dfaf4621">forceFlagEvent</a> (float time=0.F)=0</td></tr>
 <tr class="memdesc:aec7f118538a3958129163499dfaf4621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force a flag cycle manually.  <br /></td></tr>
 <tr class="separator:aec7f118538a3958129163499dfaf4621"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c523e25aee56ee81af50a49563e26ec" id="r_a1c523e25aee56ee81af50a49563e26ec"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c523e25aee56ee81af50a49563e26ec">isFlagOpen</a> () const =0</td></tr>
-<tr class="memdesc:a1c523e25aee56ee81af50a49563e26ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the shutter flag is open.  <br /></td></tr>
-<tr class="separator:a1c523e25aee56ee81af50a49563e26ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e22c02e79b3648445fa8a51d031751b" id="r_a2e22c02e79b3648445fa8a51d031751b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e22c02e79b3648445fa8a51d031751b">isFlagOpen</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a2e22c02e79b3648445fa8a51d031751b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the shutter flag is open.  <br /></td></tr>
+<tr class="separator:a2e22c02e79b3648445fa8a51d031751b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1270fcd22f662ecd3481f2e567718f9b" id="r_a1270fcd22f662ecd3481f2e567718f9b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1270fcd22f662ecd3481f2e567718f9b">setFlagForecastEnabled</a> (bool enable)=0</td></tr>
 <tr class="memdesc:a1270fcd22f662ecd3481f2e567718f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the shutter flag forecast en-/disabled.  <br /></td></tr>
 <tr class="separator:a1270fcd22f662ecd3481f2e567718f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab181b0601007a10bd162398da2cacd9c" id="r_ab181b0601007a10bd162398da2cacd9c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab181b0601007a10bd162398da2cacd9c">isFlagForecastEnabled</a> () const =0</td></tr>
-<tr class="memdesc:ab181b0601007a10bd162398da2cacd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the shutter flag forecast is en-/disabled.  <br /></td></tr>
-<tr class="separator:ab181b0601007a10bd162398da2cacd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42e1a256ccb4c88a651ea376571751b6" id="r_a42e1a256ccb4c88a651ea376571751b6"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42e1a256ccb4c88a651ea376571751b6">getTemperatureFlag</a> () const =0</td></tr>
-<tr class="memdesc:a42e1a256ccb4c88a651ea376571751b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the temperature of the shutter flag in °C.  <br /></td></tr>
-<tr class="separator:a42e1a256ccb4c88a651ea376571751b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae575f975338b6a59e1e9b290f0c2650e" id="r_ae575f975338b6a59e1e9b290f0c2650e"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae575f975338b6a59e1e9b290f0c2650e">getTemperatureBox</a> () const =0</td></tr>
-<tr class="memdesc:ae575f975338b6a59e1e9b290f0c2650e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the temperature of the device housing in °C.  <br /></td></tr>
-<tr class="separator:ae575f975338b6a59e1e9b290f0c2650e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2870416126e5e35576adfc1c13bbeeab" id="r_a2870416126e5e35576adfc1c13bbeeab"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2870416126e5e35576adfc1c13bbeeab">getTemperatureChip</a> () const =0</td></tr>
-<tr class="memdesc:a2870416126e5e35576adfc1c13bbeeab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the temperature of the sensor chip.  <br /></td></tr>
-<tr class="separator:a2870416126e5e35576adfc1c13bbeeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6e85ec89716324d1e77900d81d87c04" id="r_ac6e85ec89716324d1e77900d81d87c04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6e85ec89716324d1e77900d81d87c04">setChipHeatingEnabled</a> (bool enable)=0</td></tr>
-<tr class="memdesc:ac6e85ec89716324d1e77900d81d87c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the heating of the sensor chip.  <br /></td></tr>
-<tr class="separator:ac6e85ec89716324d1e77900d81d87c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23c563866a6e8f74fc080d31a49e3a4f" id="r_a23c563866a6e8f74fc080d31a49e3a4f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23c563866a6e8f74fc080d31a49e3a4f">isChipHeatingEnabled</a> () const =0</td></tr>
-<tr class="memdesc:a23c563866a6e8f74fc080d31a49e3a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the sensor chip heating is enabled.  <br /></td></tr>
-<tr class="separator:a23c563866a6e8f74fc080d31a49e3a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8860de4fb7876f174f3e5b17a9072db" id="r_ae8860de4fb7876f174f3e5b17a9072db"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8860de4fb7876f174f3e5b17a9072db">setTemperatureChipReference</a> (float temperature)=0</td></tr>
-<tr class="memdesc:ae8860de4fb7876f174f3e5b17a9072db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the reference temperature in °C for the sensor chip heating.  <br /></td></tr>
-<tr class="separator:ae8860de4fb7876f174f3e5b17a9072db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5b4f4381713cddff60aac81300713d0" id="r_ac5b4f4381713cddff60aac81300713d0"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5b4f4381713cddff60aac81300713d0">getTemperatureChipReference</a> () const =0</td></tr>
-<tr class="memdesc:ac5b4f4381713cddff60aac81300713d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reference temperature in °C of the sensor chip heating.  <br /></td></tr>
-<tr class="separator:ac5b4f4381713cddff60aac81300713d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493509a80af6f077079bf605ccf37e22" id="r_a493509a80af6f077079bf605ccf37e22"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a493509a80af6f077079bf605ccf37e22">isFlagForecastEnabled</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a493509a80af6f077079bf605ccf37e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the shutter flag forecast is en-/disabled.  <br /></td></tr>
+<tr class="separator:a493509a80af6f077079bf605ccf37e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3644aaef5b6a5b3c1eda449b87df46" id="r_a3e3644aaef5b6a5b3c1eda449b87df46"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e3644aaef5b6a5b3c1eda449b87df46">getTemperatureFlag</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a3e3644aaef5b6a5b3c1eda449b87df46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the temperature of the shutter flag in °C.  <br /></td></tr>
+<tr class="separator:a3e3644aaef5b6a5b3c1eda449b87df46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab791472f806d93d6594afe323bff51b9" id="r_ab791472f806d93d6594afe323bff51b9"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab791472f806d93d6594afe323bff51b9">getTemperatureBox</a> () const noexcept=0</td></tr>
+<tr class="memdesc:ab791472f806d93d6594afe323bff51b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the temperature of the device housing in °C.  <br /></td></tr>
+<tr class="separator:ab791472f806d93d6594afe323bff51b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a01be4df05cefc1e035b4077190bf9" id="r_ad8a01be4df05cefc1e035b4077190bf9"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8a01be4df05cefc1e035b4077190bf9">getTemperatureChip</a> () const noexcept=0</td></tr>
+<tr class="memdesc:ad8a01be4df05cefc1e035b4077190bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the temperature of the sensor chip.  <br /></td></tr>
+<tr class="separator:ad8a01be4df05cefc1e035b4077190bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f37c08ac8ad32c8cf6d74a039618994" id="r_a8f37c08ac8ad32c8cf6d74a039618994"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f37c08ac8ad32c8cf6d74a039618994">setChipHeatingMode</a> (<a class="el" href="namespaceoptris.html#a7d0f766dc37bdb39712f36147350e9ef">ChipHeatingMode</a> mode, float temperature=40.F)=0</td></tr>
+<tr class="memdesc:a8f37c08ac8ad32c8cf6d74a039618994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the provide mode for heating the sensor chip.  <br /></td></tr>
+<tr class="separator:a8f37c08ac8ad32c8cf6d74a039618994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc29671d12d59e90f0cb867ccbe96e8" id="r_acfc29671d12d59e90f0cb867ccbe96e8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceoptris.html#a7d0f766dc37bdb39712f36147350e9ef">ChipHeatingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfc29671d12d59e90f0cb867ccbe96e8">getChipHeatingMode</a> () const noexcept=0</td></tr>
+<tr class="memdesc:acfc29671d12d59e90f0cb867ccbe96e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current sensor chip heating mode.  <br /></td></tr>
+<tr class="separator:acfc29671d12d59e90f0cb867ccbe96e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ac40dab0570cd8faee4b993677aebe" id="r_ad1ac40dab0570cd8faee4b993677aebe"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1ac40dab0570cd8faee4b993677aebe">getChipHeatingTemperature</a> () const noexcept=0</td></tr>
+<tr class="memdesc:ad1ac40dab0570cd8faee4b993677aebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the the target temperature in °C for the sensor chip heating.  <br /></td></tr>
+<tr class="separator:ad1ac40dab0570cd8faee4b993677aebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a428e5368a4bf5615a91a543ef8d229c6" id="r_a428e5368a4bf5615a91a543ef8d229c6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceoptris.html#a13d369b3aa1ce7f0ad98c27f77f58e28">RadiationParameterSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a428e5368a4bf5615a91a543ef8d229c6">getEmissivitySource</a> () const noexcept=0</td></tr>
 <tr class="memdesc:a428e5368a4bf5615a91a543ef8d229c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source that currently defines the emissivity for the thermal frame.  <br /></td></tr>
 <tr class="separator:a428e5368a4bf5615a91a543ef8d229c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,12 +366,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 <tr class="memitem:acca3028868c10d4406f17f958370dc98" id="r_acca3028868c10d4406f17f958370dc98"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceoptris.html#a13d369b3aa1ce7f0ad98c27f77f58e28">RadiationParameterSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acca3028868c10d4406f17f958370dc98">getAmbientTemperatureSource</a> () const noexcept=0</td></tr>
 <tr class="memdesc:acca3028868c10d4406f17f958370dc98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source that currently defines the ambient temperature for the thermal frame.  <br /></td></tr>
 <tr class="separator:acca3028868c10d4406f17f958370dc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a282874cfc488aa80b9254d3515a993e6" id="r_a282874cfc488aa80b9254d3515a993e6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a282874cfc488aa80b9254d3515a993e6">setRadiationParameters</a> (const <a class="el" href="classoptris_1_1RadiationParameters.html">RadiationParameters</a> &amp;radiation)=0</td></tr>
+<tr class="memitem:a282874cfc488aa80b9254d3515a993e6" id="r_a282874cfc488aa80b9254d3515a993e6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a282874cfc488aa80b9254d3515a993e6">setRadiationParameters</a> (const <a class="el" href="structoptris_1_1RadiationParameters.html">RadiationParameters</a> &amp;radiation)=0</td></tr>
 <tr class="memdesc:a282874cfc488aa80b9254d3515a993e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the radiation parameters (emissivity, transmissivity and ambient temperature).  <br /></td></tr>
 <tr class="separator:a282874cfc488aa80b9254d3515a993e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a265f05d8e2b248637c9bf7fd5b3867cb" id="r_a265f05d8e2b248637c9bf7fd5b3867cb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classoptris_1_1RadiationParameters.html">RadiationParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a265f05d8e2b248637c9bf7fd5b3867cb">getRadiationParameters</a> () const =0</td></tr>
-<tr class="memdesc:a265f05d8e2b248637c9bf7fd5b3867cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the set/configured radiation parameters.  <br /></td></tr>
-<tr class="separator:a265f05d8e2b248637c9bf7fd5b3867cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae865c8ca970e27f985fe8616f56f9702" id="r_ae865c8ca970e27f985fe8616f56f9702"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structoptris_1_1RadiationParameters.html">RadiationParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae865c8ca970e27f985fe8616f56f9702">getRadiationParameters</a> () const noexcept=0</td></tr>
+<tr class="memdesc:ae865c8ca970e27f985fe8616f56f9702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the set/configured radiation parameters.  <br /></td></tr>
+<tr class="separator:ae865c8ca970e27f985fe8616f56f9702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a15ee78796798203bee165f76c15390" id="r_a6a15ee78796798203bee165f76c15390"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a15ee78796798203bee165f76c15390">setFocusMotorPosition</a> (float position)=0</td></tr>
 <tr class="memdesc:a6a15ee78796798203bee165f76c15390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position of the focus motor.  <br /></td></tr>
 <tr class="separator:a6a15ee78796798203bee165f76c15390"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -321,9 +384,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 <tr class="memitem:afc1299540ad01613a5b01b9a9c5d8553" id="r_afc1299540ad01613a5b01b9a9c5d8553"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc1299540ad01613a5b01b9a9c5d8553">resetReferenceTemperature</a> ()=0</td></tr>
 <tr class="memdesc:afc1299540ad01613a5b01b9a9c5d8553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets a previously set reference temperature.  <br /></td></tr>
 <tr class="separator:afc1299540ad01613a5b01b9a9c5d8553"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a633033a8e5bcb34d248ec71fc446f572" id="r_a633033a8e5bcb34d248ec71fc446f572"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a633033a8e5bcb34d248ec71fc446f572">setDeviceNetworkConfig</a> (const <a class="el" href="classoptris_1_1DeviceNetworkConfig.html">DeviceNetworkConfig</a> &amp;networkConfig)=0</td></tr>
-<tr class="memdesc:a633033a8e5bcb34d248ec71fc446f572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the network configuration of the device.  <br /></td></tr>
-<tr class="separator:a633033a8e5bcb34d248ec71fc446f572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee5de29595bfe27d87b4832d9437162" id="r_afee5de29595bfe27d87b4832d9437162"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afee5de29595bfe27d87b4832d9437162">setDeviceNetworkConfig</a> (const <a class="el" href="classoptris_1_1DeviceNetworkConfig.html">DeviceNetworkConfig</a> &amp;networkConfig)=0</td></tr>
+<tr class="memdesc:afee5de29595bfe27d87b4832d9437162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the network configuration of the device.  <br /></td></tr>
+<tr class="separator:afee5de29595bfe27d87b4832d9437162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fc307f44453f666013d52770007f682" id="r_a2fc307f44453f666013d52770007f682"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classoptris_1_1DeviceNetworkConfig.html">DeviceNetworkConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fc307f44453f666013d52770007f682">getDeviceNetworkConfig</a> ()=0</td></tr>
 <tr class="memdesc:a2fc307f44453f666013d52770007f682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the network configuration of the device.  <br /></td></tr>
 <tr class="separator:a2fc307f44453f666013d52770007f682"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -336,12 +399,15 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 <tr class="memitem:add819bc25c4bacedfdfb9701343d21ed" id="r_add819bc25c4bacedfdfb9701343d21ed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add819bc25c4bacedfdfb9701343d21ed">interruptFailSafe</a> (bool active, const std::string &amp;reason)=0</td></tr>
 <tr class="memdesc:add819bc25c4bacedfdfb9701343d21ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrups the all clear fail safe signal.  <br /></td></tr>
 <tr class="separator:add819bc25c4bacedfdfb9701343d21ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cd9ff31843632baeaf10132447ceac" id="r_a38cd9ff31843632baeaf10132447ceac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38cd9ff31843632baeaf10132447ceac">configureOperationInfo</a> (int interval, int x, int y)=0</td></tr>
+<tr class="memdesc:a38cd9ff31843632baeaf10132447ceac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the tracing of the operation modules that comprise the processing pipeline.  <br /></td></tr>
+<tr class="separator:a38cd9ff31843632baeaf10132447ceac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface defining the API for interacting with Optris thermal cameras. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aaf82489c34f22243a8562cbd8bf46d64" name="aaf82489c34f22243a8562cbd8bf46d64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf82489c34f22243a8562cbd8bf46d64">&#9670;&#160;</a></span>addClient()</h2>
+<a id="af3c8d0f0df7fa3d9d2ec5842c6dd06a5" name="af3c8d0f0df7fa3d9d2ec5842c6dd06a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3c8d0f0df7fa3d9d2ec5842c6dd06a5">&#9670;&#160;</a></span>addAlarmChannel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,9 +416,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void optris::IRImager::addClient </td>
+          <td class="memname">virtual <a class="el" href="classoptris_1_1AlarmChannel.html#a2ad17f7b99252664c83dd556b12c1aea">AlarmChannel::ConstShared</a> optris::IRImager::addAlarmChannel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classoptris_1_1IRImagerClient.html">IRImagerClient</a> *</td>          <td class="paramname"><span class="paramname"><em>client</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1AlarmChannelConfig.html">AlarmChannelConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -363,18 +429,25 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 </table>
 </div><div class="memdoc">
 
-<p>Adds an observer/client that will be updated when new data arrives. </p>
+<p>Adds a new alarm channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>callback client. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>of the new alarm channel to add.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>smart pointer to the added alarm channel.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected or if adding the channel failed. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a70feecae8d08fe26720d85958817e031" name="a70feecae8d08fe26720d85958817e031"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70feecae8d08fe26720d85958817e031">&#9670;&#160;</a></span>addMeasurementField()</h2>
+<a id="ade8ecdcaa62373165a2a562aca0583c6" name="ade8ecdcaa62373165a2a562aca0583c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade8ecdcaa62373165a2a562aca0583c6">&#9670;&#160;</a></span>addClient()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,9 +456,43 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int optris::IRImager::addMeasurementField </td>
+          <td class="memname">virtual bool optris::IRImager::addClient </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classoptris_1_1MeasurementFieldConfig.html">MeasurementFieldConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classoptris_1_1IRImagerClient.html">IRImagerClient</a> *</td>          <td class="paramname"><span class="paramname"><em>client</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds an observer/client that will be updated when new data arrives. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>callback client.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true, if the client was added. False otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a478095343f7f1601a8c1ea18d32ef972" name="a478095343f7f1601a8c1ea18d32ef972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a478095343f7f1601a8c1ea18d32ef972">&#9670;&#160;</a></span>addMeasurementField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classoptris_1_1MeasurementField.html#a6dcb142b2c9d11aba25a29c6951a61c8">MeasurementField::ConstShared</a> optris::IRImager::addMeasurementField </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1MeasurementFieldConfig.html">MeasurementFieldConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -397,20 +504,71 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 </div><div class="memdoc">
 
 <p>Adds a measurement field that is processed for every new thermal frame. </p>
-<p>The resulting data can be accessed via the <a class="el" href="classoptris_1_1IRImagerClient.html#a6b4e4741dee9de7aa4ae7415471c6e3a" title="Callback method for measurement fields. The method is called when the calculation has finished.">IRImagerClient::onMeasurementField()</a> callback.</p>
+<p>The newly added measurement field will always be drawn on top of the already existing measurement fields. The thermal frame will remain in the background. IRImagerClient::onMeasurementFieldAdded() is called when the field was updated with new thermal data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>of the measurement field to add.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the index of the added measurement field.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>smart pointer to the added measurement field.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected or if the measurement field is not completely within the thermal frame or if adding it failed. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a38cd9ff31843632baeaf10132447ceac" name="a38cd9ff31843632baeaf10132447ceac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cd9ff31843632baeaf10132447ceac">&#9670;&#160;</a></span>configureOperationInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void optris::IRImager::configureOperationInfo </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>interval</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configure the tracing of the operation modules that comprise the processing pipeline. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval</td><td>desired time in ms between subsequent updates. Set to 0 to deactivate tracing. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>coordinate of a pixel whose value should be traced through processing. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>coordinate of a pixel whose value should be traced through processing.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected or if the pixel coordinates lie outside the frame.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classoptris_1_1IRImagerClient.html#a483754caa524707a34ac2c96423fbc17" title="Called when a new set of operation module tracing information is available.">IRImagerClient::onOperationInfo()</a> </dd></dl>
 
 </div>
 </div>
@@ -466,7 +624,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
         <tr>
           <td class="memname">virtual void optris::IRImager::connect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classoptris_1_1IRImagerConfig.html">IRImagerConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structoptris_1_1IRImagerConfig.html">IRImagerConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -478,7 +636,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 </div><div class="memdoc">
 
 <p>Connects to the device with the given configuration. </p>
-<dl class="section note"><dt>Note</dt><dd>If the serial number in <a class="el" href="classoptris_1_1IRImagerConfig.html" title="Holds the SDK settings found in the configuration file.">IRImagerConfig</a> is set to 0, the SDK will use the <code><a class="el" href="classoptris_1_1EnumerationManager.html" title="Detects and monitors available devices.">EnumerationManager</a></code> to find a device to connect to. Its remaining data points will be ignored and the SDK will generate a default configuration for the detected device but without saving it.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the serial number in <a class="el" href="structoptris_1_1IRImagerConfig.html" title="Holds the SDK settings found in the configuration file.">IRImagerConfig</a> is set to 0, the SDK will use the <code><a class="el" href="classoptris_1_1EnumerationManager.html" title="Detects and monitors available devices.">EnumerationManager</a></code> to find a device to connect to. Its remaining data points will be ignored and the SDK will generate a default configuration for the detected device but without saving it.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>configuration.</td></tr>
@@ -573,8 +731,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="ad0bab830f67cd898cde78c911f788c67" name="ad0bab830f67cd898cde78c911f788c67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0bab830f67cd898cde78c911f788c67">&#9670;&#160;</a></span>getActiveOperationMode()</h2>
+<a id="a59c03209c94a6d34bdf2a6224ea7c9f9" name="a59c03209c94a6d34bdf2a6224ea7c9f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c03209c94a6d34bdf2a6224ea7c9f9">&#9670;&#160;</a></span>getActiveOperationMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -583,7 +741,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::shared_ptr&lt; <a class="el" href="classoptris_1_1OperationMode.html">OperationMode</a> &gt; optris::IRImager::getActiveOperationMode </td>
+          <td class="memname">virtual <a class="el" href="classoptris_1_1OperationMode.html#aebbef91bcec3bd4f9217214cf138a31c">OperationMode::ConstShared</a> optris::IRImager::getActiveOperationMode </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -605,6 +763,92 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a3f45940fd51486385304116c0140c768" name="a3f45940fd51486385304116c0140c768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f45940fd51486385304116c0140c768">&#9670;&#160;</a></span>getAlarmChannelCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int optris::IRImager::getAlarmChannelCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the count of all current alarm channels. </p>
+<dl class="section return"><dt>Returns</dt><dd>count of all current alarm channels. </dd></dl>
+
+</div>
+</div>
+<a id="a5202fa9ac622ae135cf4e0bb111666df" name="a5202fa9ac622ae135cf4e0bb111666df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5202fa9ac622ae135cf4e0bb111666df">&#9670;&#160;</a></span>getAlarmChannels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="classoptris_1_1AlarmChannel.html#a2ad17f7b99252664c83dd556b12c1aea">AlarmChannel::ConstShared</a> &gt; optris::IRImager::getAlarmChannels </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns all current alarm channels. </p>
+<p>They are sorted based on their IDs.</p>
+<dl class="section return"><dt>Returns</dt><dd>all current alarm channels or an empty container if not connected. </dd></dl>
+
+</div>
+</div>
+<a id="a4c6916129ee3a3d625660f9bf033ca8c" name="a4c6916129ee3a3d625660f9bf033ca8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c6916129ee3a3d625660f9bf033ca8c">&#9670;&#160;</a></span>getAlarmChannelStatuses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="classoptris_1_1AlarmChannelStatus.html">AlarmChannelStatus</a> &gt; optris::IRImager::getAlarmChannelStatuses </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the status of all current alarm channels. </p>
+<p>They are sorted based on the ID of the corresponding alarm channel.</p>
+<dl class="section return"><dt>Returns</dt><dd>status of all current alarm channels or an empty container if not connected. </dd></dl>
 
 </div>
 </div>
@@ -633,6 +877,97 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 <p>Returns the source that currently defines the ambient temperature for the thermal frame. </p>
 <dl class="section return"><dt>Returns</dt><dd>source that currently defines the ambient temperature for the thermal frame or <a class="el" href="namespaceoptris.html#a13d369b3aa1ce7f0ad98c27f77f58e28a3f1ece70fc5fb7b42d41b326d99d2183" title="The radiation parameter are/can be set via the SDK.">RadiationParameterSource::Sdk</a> if not connected. </dd></dl>
+
+</div>
+</div>
+<a id="acfc29671d12d59e90f0cb867ccbe96e8" name="acfc29671d12d59e90f0cb867ccbe96e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc29671d12d59e90f0cb867ccbe96e8">&#9670;&#160;</a></span>getChipHeatingMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceoptris.html#a7d0f766dc37bdb39712f36147350e9ef">ChipHeatingMode</a> optris::IRImager::getChipHeatingMode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current sensor chip heating mode. </p>
+<dl class="section return"><dt>Returns</dt><dd>current sensor chip heating mode or <a class="el" href="namespaceoptris.html#a7d0f766dc37bdb39712f36147350e9efac8df43648942ec3a9aec140f07f47b7c" title="The sensor chip will not be heated.">ChipHeatingMode::Floating</a> if not connected. </dd></dl>
+
+</div>
+</div>
+<a id="ad1ac40dab0570cd8faee4b993677aebe" name="ad1ac40dab0570cd8faee4b993677aebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1ac40dab0570cd8faee4b993677aebe">&#9670;&#160;</a></span>getChipHeatingTemperature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float optris::IRImager::getChipHeatingTemperature </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the the target temperature in °C for the sensor chip heating. </p>
+<dl class="section note"><dt>Note</dt><dd>The actual sensor chip temperature can be accessed with <a class="el" href="#ad8a01be4df05cefc1e035b4077190bf9" title="Returns the temperature of the sensor chip.">IRImager::getTemperatureChip()</a>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>target temperature in °C for the sensor chip heating or INVALID_TEMPERATURE if not connected or if the heating mode is not fixed. </dd></dl>
+
+</div>
+</div>
+<a id="a48a81e63f5d07ed4979ccfc9bcbeb49d" name="a48a81e63f5d07ed4979ccfc9bcbeb49d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a81e63f5d07ed4979ccfc9bcbeb49d">&#9670;&#160;</a></span>getConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structoptris_1_1IRImagerConfig.html">IRImagerConfig</a> optris::IRImager::getConfig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current configuration. </p>
+<dl class="section return"><dt>Returns</dt><dd>current configuration.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -691,7 +1026,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 <dl class="section return"><dt>Returns</dt><dd>network configuration of the device.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connect via USB or if device does not support Ethernet or if getting the device network configuration failed. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected of if the device does not support Ethernet or if getting the device network configuration failed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -782,8 +1117,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="aa165d9ebdf2755e93a612cb65d832c8d" name="aa165d9ebdf2755e93a612cb65d832c8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa165d9ebdf2755e93a612cb65d832c8d">&#9670;&#160;</a></span>getFlagMaxInterval()</h2>
+<a id="af818337dacfdf2f0b9faae88ab0a6316" name="af818337dacfdf2f0b9faae88ab0a6316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af818337dacfdf2f0b9faae88ab0a6316">&#9670;&#160;</a></span>getFlagMaxInterval()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -800,7 +1135,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -811,8 +1146,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="a94f5b52a110d3e9086cbc5ad69ff2ce4" name="a94f5b52a110d3e9086cbc5ad69ff2ce4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94f5b52a110d3e9086cbc5ad69ff2ce4">&#9670;&#160;</a></span>getFlagMinInterval()</h2>
+<a id="ac221d4f28f80365172d55f67aa400c80" name="ac221d4f28f80365172d55f67aa400c80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac221d4f28f80365172d55f67aa400c80">&#9670;&#160;</a></span>getFlagMinInterval()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -829,7 +1164,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -896,8 +1231,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="a56bebe8b3c84fbaf1d8f00a8d94de69b" name="a56bebe8b3c84fbaf1d8f00a8d94de69b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56bebe8b3c84fbaf1d8f00a8d94de69b">&#9670;&#160;</a></span>getHeight()</h2>
+<a id="abd851f07104a80dda3d3cdf19d214566" name="abd851f07104a80dda3d3cdf19d214566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd851f07104a80dda3d3cdf19d214566">&#9670;&#160;</a></span>getHeight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -914,7 +1249,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -953,8 +1288,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="aa17a54afe78c1a1a90db31b56b10babc" name="aa17a54afe78c1a1a90db31b56b10babc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa17a54afe78c1a1a90db31b56b10babc">&#9670;&#160;</a></span>getOperationModes()</h2>
+<a id="a46f695859e70b4caae6ca938d43f43a8" name="a46f695859e70b4caae6ca938d43f43a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46f695859e70b4caae6ca938d43f43a8">&#9670;&#160;</a></span>getMeasurementFieldCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -963,7 +1298,64 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::vector&lt; std::shared_ptr&lt; <a class="el" href="classoptris_1_1OperationMode.html">OperationMode</a> &gt; &gt; optris::IRImager::getOperationModes </td>
+          <td class="memname">virtual int optris::IRImager::getMeasurementFieldCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of active measurement fields. </p>
+<dl class="section return"><dt>Returns</dt><dd>number of active measurement fields or 0 if not connected. </dd></dl>
+
+</div>
+</div>
+<a id="abcd536974913e506c12697afde7a0bef" name="abcd536974913e506c12697afde7a0bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd536974913e506c12697afde7a0bef">&#9670;&#160;</a></span>getMeasurementFields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="classoptris_1_1MeasurementField.html#a6dcb142b2c9d11aba25a29c6951a61c8">MeasurementField::ConstShared</a> &gt; optris::IRImager::getMeasurementFields </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns all active measurement fields ordered by their index. </p>
+<p>The measurement fields are ordered by their render tier. Fields with a higher index are drawn on top of fields with a lower index.</p>
+<dl class="section return"><dt>Returns</dt><dd>All active measurement fields ordered by their index or an empty container if not connected. </dd></dl>
+
+</div>
+</div>
+<a id="ace356e4c3e722dccef89e080faef0c26" name="ace356e4c3e722dccef89e080faef0c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace356e4c3e722dccef89e080faef0c26">&#9670;&#160;</a></span>getOperationModes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="classoptris_1_1OperationMode.html#aebbef91bcec3bd4f9217214cf138a31c">OperationMode::ConstShared</a> &gt; optris::IRImager::getOperationModes </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -1090,8 +1482,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="a265f05d8e2b248637c9bf7fd5b3867cb" name="a265f05d8e2b248637c9bf7fd5b3867cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a265f05d8e2b248637c9bf7fd5b3867cb">&#9670;&#160;</a></span>getRadiationParameters()</h2>
+<a id="ad7cee014e7e88ee9c86d2bdc6c15a509" name="ad7cee014e7e88ee9c86d2bdc6c15a509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7cee014e7e88ee9c86d2bdc6c15a509">&#9670;&#160;</a></span>getProcessingMaxResultPoolSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1100,7 +1492,94 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classoptris_1_1RadiationParameters.html">RadiationParameters</a> optris::IRImager::getRadiationParameters </td>
+          <td class="memname">virtual unsigned int optris::IRImager::getProcessingMaxResultPoolSize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the maximum number of processing results that are pooled for reuse to avoid unnecessary allocations. </p>
+<p>This only returns the maximum pool size but not the actual number of currently pooled processing results.</p>
+<dl class="section return"><dt>Returns</dt><dd>maximum number of processing results that are pooled for reuse. </dd></dl>
+
+</div>
+</div>
+<a id="a84fc8f8c778693b8d619e9b3887e7acc" name="a84fc8f8c778693b8d619e9b3887e7acc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84fc8f8c778693b8d619e9b3887e7acc">&#9670;&#160;</a></span>getProcessingOutputs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structoptris_1_1ProcessingOutputConfig.html">ProcessingOutputConfig</a> optris::IRImager::getProcessingOutputs </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns which outputs are currently configured to be computed and provided by the SDK. </p>
+<dl class="section return"><dt>Returns</dt><dd>configuration specifying which outputs are currently configured to be computed and provided by the SDK or a default configuration if not connected. </dd></dl>
+
+</div>
+</div>
+<a id="ae865c8ca970e27f985fe8616f56f9702" name="ae865c8ca970e27f985fe8616f56f9702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae865c8ca970e27f985fe8616f56f9702">&#9670;&#160;</a></span>getRadiationParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structoptris_1_1RadiationParameters.html">RadiationParameters</a> optris::IRImager::getRadiationParameters </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the set/configured radiation parameters. </p>
+<dl class="section attention"><dt>Attention</dt><dd>The radiation parameters may be modified via the process interface (PIF) and through automated ambient temperature estimations. This method return the parameters set in the configuration or vis <a class="el" href="#a282874cfc488aa80b9254d3515a993e6" title="Sets the radiation parameters (emissivity, transmissivity and ambient temperature).">IRImager::setRadiationParameters()</a>.</dd></dl>
+<p>To get the actually applied parameters see the <a class="el" href="classoptris_1_1FrameMetadata.html#a1fd7008930f2130f88c777b61a7e2397" title="Returns the standard radiation parameters.">FrameMetadata::getRadiationParameters()</a> for the thermal frame and the MeasurementField::getRadiationParameters() for measurement fields.</p>
+<dl class="section return"><dt>Returns</dt><dd>the set/configured radiation parameters or their default values if not connected. </dd></dl>
+
+</div>
+</div>
+<a id="a43732d1b32969c23a0dddec2ba58114a" name="a43732d1b32969c23a0dddec2ba58114a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43732d1b32969c23a0dddec2ba58114a">&#9670;&#160;</a></span>getRdcMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceoptris.html#a72d2d3eb7894087743a0dfcdd0b66762">RdcMode</a> optris::IRImager::getRdcMode </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -1113,10 +1592,15 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 </table>
 </div><div class="memdoc">
 
-<p>Returns the set/configured radiation parameters. </p>
-<dl class="section attention"><dt>Attention</dt><dd>The radiation parameters may be modified via the process interface (PIF) and through automated ambient temperature estimations. This method return the parameters set in the configuration or vis <a class="el" href="#a282874cfc488aa80b9254d3515a993e6" title="Sets the radiation parameters (emissivity, transmissivity and ambient temperature).">IRImager::setRadiationParameters()</a>.</dd></dl>
-<p>To get the actually applied parameters see the <a class="el" href="classoptris_1_1FrameMetadata.html#a1fd7008930f2130f88c777b61a7e2397" title="Grants read access to the radiation parameters use to process the thermal frame.">FrameMetadata::getRadiationParameters()</a> for the thermal frame and the <a class="el" href="classoptris_1_1MeasurementField.html#a7722f521931ca37ae652c9e3882e8edd" title="Grants read access to the radiation parameters used to process the measurement field.">MeasurementField::getRadiationParameters()</a> for measurement fields.</p>
-<dl class="section return"><dt>Returns</dt><dd>the set/configured radiation parameters or their default values if not connected. </dd></dl>
+<p>Returns the mode of radial distortion correction (RDC). </p>
+<dl class="section note"><dt>Note</dt><dd>This method is only relevant for devices and operation modes that feature a significant radial distortion and support RDC.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the current RDC mode.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected or if retrieving the RDC mode fails. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1148,8 +1632,36 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="ae575f975338b6a59e1e9b290f0c2650e" name="ae575f975338b6a59e1e9b290f0c2650e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae575f975338b6a59e1e9b290f0c2650e">&#9670;&#160;</a></span>getTemperatureBox()</h2>
+<a id="a2864680a9b3ad58c7f9505a211db591a" name="a2864680a9b3ad58c7f9505a211db591a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2864680a9b3ad58c7f9505a211db591a">&#9670;&#160;</a></span>getSubsampledFramerate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float optris::IRImager::getSubsampledFramerate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the subsampled framerate. </p>
+<dl class="section return"><dt>Returns</dt><dd>the subsampled framerate or a value &lt;= 0 if not connected or if no subsampling is performed. </dd></dl>
+
+</div>
+</div>
+<a id="ab791472f806d93d6594afe323bff51b9" name="ab791472f806d93d6594afe323bff51b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab791472f806d93d6594afe323bff51b9">&#9670;&#160;</a></span>getTemperatureBox()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1166,18 +1678,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Returns the temperature of the device housing in °C. </p>
-<dl class="section return"><dt>Returns</dt><dd>temperature of the device housing in °C or INVALID_TEMPERATURE if not connected or 35.0 °C if connected but processing has not yet started (s. <a class="el" href="#abbba9723c519f8a542efeaee13695eb7" title="Runs the processing loop continuously.">run()</a> and <a class="el" href="#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">runAsync()</a>). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>temperature of the device housing in °C or INVALID_TEMPERATURE if not connected or 35.0 °C if connected but processing has not yet started (s. <a class="el" href="#a852ed91e40cf5fc90a0ff722c8d47f70" title="Runs the processing loop continuously.">run()</a> and <a class="el" href="#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">runAsync()</a>). </dd></dl>
 
 </div>
 </div>
-<a id="a2870416126e5e35576adfc1c13bbeeab" name="a2870416126e5e35576adfc1c13bbeeab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2870416126e5e35576adfc1c13bbeeab">&#9670;&#160;</a></span>getTemperatureChip()</h2>
+<a id="ad8a01be4df05cefc1e035b4077190bf9" name="ad8a01be4df05cefc1e035b4077190bf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a01be4df05cefc1e035b4077190bf9">&#9670;&#160;</a></span>getTemperatureChip()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1194,46 +1706,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Returns the temperature of the sensor chip. </p>
-<dl class="section return"><dt>Returns</dt><dd>temperature of the sensor chip in °C or INVALID_TEMPERATURE if not connected or 35.0 °C if connected but processing has not yet started (s. <a class="el" href="#abbba9723c519f8a542efeaee13695eb7" title="Runs the processing loop continuously.">run()</a> and <a class="el" href="#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">runAsync()</a>). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>temperature of the sensor chip in °C or INVALID_TEMPERATURE if not connected or 35.0 °C if connected but processing has not yet started (s. <a class="el" href="#a852ed91e40cf5fc90a0ff722c8d47f70" title="Runs the processing loop continuously.">run()</a> and <a class="el" href="#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">runAsync()</a>). </dd></dl>
 
 </div>
 </div>
-<a id="ac5b4f4381713cddff60aac81300713d0" name="ac5b4f4381713cddff60aac81300713d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5b4f4381713cddff60aac81300713d0">&#9670;&#160;</a></span>getTemperatureChipReference()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual float optris::IRImager::getTemperatureChipReference </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the reference temperature in °C of the sensor chip heating. </p>
-<dl class="section return"><dt>Returns</dt><dd>temperature of the sensor chip in °C or INVALID_TEMPERATURE if not connected. </dd></dl>
-
-</div>
-</div>
-<a id="a42e1a256ccb4c88a651ea376571751b6" name="a42e1a256ccb4c88a651ea376571751b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42e1a256ccb4c88a651ea376571751b6">&#9670;&#160;</a></span>getTemperatureFlag()</h2>
+<a id="a3e3644aaef5b6a5b3c1eda449b87df46" name="a3e3644aaef5b6a5b3c1eda449b87df46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e3644aaef5b6a5b3c1eda449b87df46">&#9670;&#160;</a></span>getTemperatureFlag()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1250,13 +1734,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Returns the temperature of the shutter flag in °C. </p>
-<dl class="section return"><dt>Returns</dt><dd>temperature of the shutter flag in °C or INVALID_TEMPERATURE if not connected or 35.0 °C if connected but processing has not yet started (s. <a class="el" href="#abbba9723c519f8a542efeaee13695eb7" title="Runs the processing loop continuously.">run()</a> and <a class="el" href="#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">runAsync()</a>). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>temperature of the shutter flag in °C or INVALID_TEMPERATURE if not connected or 35.0 °C if connected but processing has not yet started (s. <a class="el" href="#a852ed91e40cf5fc90a0ff722c8d47f70" title="Runs the processing loop continuously.">run()</a> and <a class="el" href="#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">runAsync()</a>). </dd></dl>
 
 </div>
 </div>
@@ -1288,8 +1772,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="a284c54ab6030de0de7dd37696cfef2a7" name="a284c54ab6030de0de7dd37696cfef2a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a284c54ab6030de0de7dd37696cfef2a7">&#9670;&#160;</a></span>getWidth()</h2>
+<a id="ab98b9c6373262f8d8a86e366643b5810" name="ab98b9c6373262f8d8a86e366643b5810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98b9c6373262f8d8a86e366643b5810">&#9670;&#160;</a></span>getWidth()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1306,7 +1790,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1361,8 +1845,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="a8058cdabdb363fe085381bc8303fb8de" name="a8058cdabdb363fe085381bc8303fb8de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8058cdabdb363fe085381bc8303fb8de">&#9670;&#160;</a></span>isAutoFlagEnabled()</h2>
+<a id="a2f87b790e4c82a90bbaad9728de0c349" name="a2f87b790e4c82a90bbaad9728de0c349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f87b790e4c82a90bbaad9728de0c349">&#9670;&#160;</a></span>isAutoFlagEnabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1379,41 +1863,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Returns whether flag cycles are triggered automatically. </p>
 <dl class="section return"><dt>Returns</dt><dd>true, if flag cycles are triggered automatically. False is automatic triggering is diabled or if not connected. </dd></dl>
-
-</div>
-</div>
-<a id="a23c563866a6e8f74fc080d31a49e3a4f" name="a23c563866a6e8f74fc080d31a49e3a4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23c563866a6e8f74fc080d31a49e3a4f">&#9670;&#160;</a></span>isChipHeatingEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool optris::IRImager::isChipHeatingEnabled </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return whether the sensor chip heating is enabled. </p>
-<dl class="section return"><dt>Returns</dt><dd>true, if the sensor chip heating is enabled. False if heating is disabled of if not connected. </dd></dl>
 
 </div>
 </div>
@@ -1445,8 +1901,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="ab181b0601007a10bd162398da2cacd9c" name="ab181b0601007a10bd162398da2cacd9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab181b0601007a10bd162398da2cacd9c">&#9670;&#160;</a></span>isFlagForecastEnabled()</h2>
+<a id="a493509a80af6f077079bf605ccf37e22" name="a493509a80af6f077079bf605ccf37e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493509a80af6f077079bf605ccf37e22">&#9670;&#160;</a></span>isFlagForecastEnabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1463,7 +1919,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1473,8 +1929,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="a1c523e25aee56ee81af50a49563e26ec" name="a1c523e25aee56ee81af50a49563e26ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c523e25aee56ee81af50a49563e26ec">&#9670;&#160;</a></span>isFlagOpen()</h2>
+<a id="a2e22c02e79b3648445fa8a51d031751b" name="a2e22c02e79b3648445fa8a51d031751b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e22c02e79b3648445fa8a51d031751b">&#9670;&#160;</a></span>isFlagOpen()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1491,7 +1947,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1529,8 +1985,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="a30fd95a2b53e540470c2ca69e0a51403" name="a30fd95a2b53e540470c2ca69e0a51403"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30fd95a2b53e540470c2ca69e0a51403">&#9670;&#160;</a></span>isSoSCorrectionEnabled()</h2>
+<a id="a26ea4efec3033943f0b3b76560e5d7a4" name="a26ea4efec3033943f0b3b76560e5d7a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26ea4efec3033943f0b3b76560e5d7a4">&#9670;&#160;</a></span>isSoSCorrectionEnabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1547,19 +2003,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Checks if the Size of Source Correction is enabled. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if the Size of Source Correction is enabled, false otherwise.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected. </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the Size of Source Correction is enabled. False if disabled or if not connected. </dd></dl>
 
 </div>
 </div>
@@ -1623,8 +2073,49 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="ae91c3689f8d4fc049af4ed250da7b0ff" name="ae91c3689f8d4fc049af4ed250da7b0ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae91c3689f8d4fc049af4ed250da7b0ff">&#9670;&#160;</a></span>removeClient()</h2>
+<a id="a3669ec79efe067525ce69682e1d37eaf" name="a3669ec79efe067525ce69682e1d37eaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3669ec79efe067525ce69682e1d37eaf">&#9670;&#160;</a></span>removeAlarmChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void optris::IRImager::removeAlarmChannel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classoptris_1_1AlarmChannel.html#a2ad17f7b99252664c83dd556b12c1aea">AlarmChannel::ConstShared</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>channel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes the given alarm channel. </p>
+<p>The alarm channel instance is only destroyed when the smart pointer alarm is released.</p>
+<p>The ID of the removed alarm channel is set to the invalid value of <code>-1</code> to indicate its successful removal.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>to remove.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected or if the given alarm channel does not exist for this imager instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9794cf9661eb350a42fa495e44356c5f" name="a9794cf9661eb350a42fa495e44356c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9794cf9661eb350a42fa495e44356c5f">&#9670;&#160;</a></span>removeClient()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1641,7 +2132,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1654,6 +2145,52 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true, if the client was removed. False otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a45768271f46fc2e8ef0bd8948539a957" name="a45768271f46fc2e8ef0bd8948539a957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45768271f46fc2e8ef0bd8948539a957">&#9670;&#160;</a></span>removeMeasurementField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void optris::IRImager::removeMeasurementField </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classoptris_1_1MeasurementField.html#a6dcb142b2c9d11aba25a29c6951a61c8">MeasurementField::ConstShared</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>field</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes the given measurement field. </p>
+<p>The measurement field instance is only destroyed when the smart pointer field is released.</p>
+<p>The ID of the removed measurement field is set to the invalid value of <code>-1</code> to indicate its successful removal.</p>
+<dl class="section attention"><dt>Attention</dt><dd>Removing a measurement field can have the following consequences:<ul>
+<li>PIF analog output channels using the field turn themselves off automatically.</li>
+<li>Alarm channel using the field turn orphaned and are subsequently removed.</li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">field</td><td>to remove.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected or if the measurement field does not exist for this imager instance. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1690,8 +2227,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="abbba9723c519f8a542efeaee13695eb7" name="abbba9723c519f8a542efeaee13695eb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbba9723c519f8a542efeaee13695eb7">&#9670;&#160;</a></span>run()</h2>
+<a id="a852ed91e40cf5fc90a0ff722c8d47f70" name="a852ed91e40cf5fc90a0ff722c8d47f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a852ed91e40cf5fc90a0ff722c8d47f70">&#9670;&#160;</a></span>run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1700,7 +2237,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void optris::IRImager::run </td>
+          <td class="memname">virtual bool optris::IRImager::run </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -1714,8 +2251,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 </div><div class="memdoc">
 
 <p>Runs the processing loop continuously. </p>
-<p>Blocks until <a class="el" href="#a9b4c98828248e1849631ca3571c7cb5a" title="Stops the continuously running processing loop.">stopRunning()</a> or <a class="el" href="#a1d0e5e67d39f31d0a212208807693c33" title="Disconnects from the current device.">disconnect()</a> is called from another thread or until the application terminates.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a9b4c98828248e1849631ca3571c7cb5a" title="Stops the continuously running processing loop.">stopRunning()</a>, <a class="el" href="#a1d0e5e67d39f31d0a212208807693c33" title="Disconnects from the current device.">disconnect()</a> </dd></dl>
+<p>Blocks until <a class="el" href="#a9b4c98828248e1849631ca3571c7cb5a" title="Stops the continuously running processing loop.">stopRunning()</a> or <a class="el" href="#abe4e3cd9d014085bc28fb78eb275e41b" title="Disconnects from the current device.">disconnect()</a> is called from another thread or until the <a class="el" href="classoptris_1_1IRImager.html" title="Interface defining the API for interacting with Optris thermal cameras.">IRImager</a> instance is destroyed.</p>
+<dl class="section note"><dt>Note</dt><dd>After invoking <a class="el" href="#a852ed91e40cf5fc90a0ff722c8d47f70" title="Runs the processing loop continuously.">run()</a> it can take a very brief amount of time until <a class="el" href="#a05c58fd2a9252e53edd785a9866251b3" title="Returns whether the processing loop is currently running.">isRunning()</a> changes to true.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, if the processing loop ran successfully. False, if the processing loop is already running (e.g. in another thread) or if not connected.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a9b4c98828248e1849631ca3571c7cb5a" title="Stops the continuously running processing loop.">stopRunning()</a>, <a class="el" href="#abe4e3cd9d014085bc28fb78eb275e41b" title="Disconnects from the current device.">disconnect()</a>, <a class="el" href="#a05c58fd2a9252e53edd785a9866251b3" title="Returns whether the processing loop is currently running.">isRunning()</a> </dd></dl>
 
 </div>
 </div>
@@ -1743,15 +2282,49 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 </div><div class="memdoc">
 
 <p>Runs the processing loop continuously in a dedicated thread. </p>
-<p>Runs until <a class="el" href="#a9b4c98828248e1849631ca3571c7cb5a" title="Stops the continuously running processing loop.">stopRunning()</a> or <a class="el" href="#a1d0e5e67d39f31d0a212208807693c33" title="Disconnects from the current device.">disconnect()</a> is called from another thread or until the application terminates.</p>
+<p>Runs until <a class="el" href="#a9b4c98828248e1849631ca3571c7cb5a" title="Stops the continuously running processing loop.">stopRunning()</a> or <a class="el" href="#abe4e3cd9d014085bc28fb78eb275e41b" title="Disconnects from the current device.">disconnect()</a> is called from another thread or until the <a class="el" href="classoptris_1_1IRImager.html" title="Interface defining the API for interacting with Optris thermal cameras.">IRImager</a> instance is destroyed.</p>
 <dl class="section note"><dt>Note</dt><dd>All callback methods of a registered client now are called from this processing thread.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the thread started within a second. False otherwise.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a9b4c98828248e1849631ca3571c7cb5a" title="Stops the continuously running processing loop.">stopRunning()</a>, <a class="el" href="#a1d0e5e67d39f31d0a212208807693c33" title="Disconnects from the current device.">disconnect()</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, if the thread started within five seconds. False, if the thread did not start in time or if the processing loop is already running or if not connected.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a9b4c98828248e1849631ca3571c7cb5a" title="Stops the continuously running processing loop.">stopRunning()</a>, <a class="el" href="#abe4e3cd9d014085bc28fb78eb275e41b" title="Disconnects from the current device.">disconnect()</a>, <a class="el" href="#a05c58fd2a9252e53edd785a9866251b3" title="Returns whether the processing loop is currently running.">isRunning()</a> </dd></dl>
 
 </div>
 </div>
-<a id="ad2a225d1c7eacf12454df3d327448712" name="ad2a225d1c7eacf12454df3d327448712"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2a225d1c7eacf12454df3d327448712">&#9670;&#160;</a></span>setActiveOperationMode() <span class="overload">[1/2]</span></h2>
+<a id="ac270e1f8fd46f96fb1e650d11318bbed" name="ac270e1f8fd46f96fb1e650d11318bbed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac270e1f8fd46f96fb1e650d11318bbed">&#9670;&#160;</a></span>saveConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void optris::IRImager::saveConfig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saves the current configuration. </p>
+<p>The configuration is saved to the default location on the filesystem.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected or if saving the configuration fails. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a942dbde479727fe5eeb39a82d03d996a" name="a942dbde479727fe5eeb39a82d03d996a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a942dbde479727fe5eeb39a82d03d996a">&#9670;&#160;</a></span>setActiveOperationMode() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1762,7 +2335,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
         <tr>
           <td class="memname">virtual void optris::IRImager::setActiveOperationMode </td>
           <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classoptris_1_1OperationMode.html">OperationMode</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoptris_1_1OperationMode.html#aebbef91bcec3bd4f9217214cf138a31c">OperationMode::ConstShared</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1897,40 +2470,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 <p>Sets the automatic triggering of flag cycles en-/disabled. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>or disable automatic triggering of flag cycles. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac6e85ec89716324d1e77900d81d87c04" name="ac6e85ec89716324d1e77900d81d87c04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6e85ec89716324d1e77900d81d87c04">&#9670;&#160;</a></span>setChipHeatingEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void optris::IRImager::setChipHeatingEnabled </td>
-          <td>(</td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Enables the heating of the sensor chip. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>indicates whether to enable heating.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>or disable automatic triggering of flag cycles.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1943,8 +2483,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="a633033a8e5bcb34d248ec71fc446f572" name="a633033a8e5bcb34d248ec71fc446f572"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a633033a8e5bcb34d248ec71fc446f572">&#9670;&#160;</a></span>setDeviceNetworkConfig()</h2>
+<a id="a8f37c08ac8ad32c8cf6d74a039618994" name="a8f37c08ac8ad32c8cf6d74a039618994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f37c08ac8ad32c8cf6d74a039618994">&#9670;&#160;</a></span>setChipHeatingMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1953,7 +2493,51 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void optris::IRImager::setDeviceNetworkConfig </td>
+          <td class="memname">virtual void optris::IRImager::setChipHeatingMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceoptris.html#a7d0f766dc37bdb39712f36147350e9ef">ChipHeatingMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>temperature</em></span><span class="paramdefsep"> = </span><span class="paramdefval">40.F</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the provide mode for heating the sensor chip. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>indicating the heating mode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">temperature</td><td>target temperature for fixed mode in °C. Its value is automatically clamped to [20., 55.] °C.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afee5de29595bfe27d87b4832d9437162" name="afee5de29595bfe27d87b4832d9437162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afee5de29595bfe27d87b4832d9437162">&#9670;&#160;</a></span>setDeviceNetworkConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool optris::IRImager::setDeviceNetworkConfig </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classoptris_1_1DeviceNetworkConfig.html">DeviceNetworkConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>networkConfig</em></span></td><td>)</td>
           <td></td>
@@ -1967,6 +2551,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 </div><div class="memdoc">
 
 <p>Sets the network configuration of the device. </p>
+<p>The SDK tries to retain an active Ethernet connection. This, however, is only possible if the following settings were changed:</p>
+<ul>
+<li>device IP address</li>
+<li>destination port</li>
+</ul>
+<p>In any other case the SDK considers the connection lost and triggers the IRImagerClient::onConnectionLost() callback which a client should use to call <a class="el" href="#abe4e3cd9d014085bc28fb78eb275e41b" title="Disconnects from the current device.">disconnect()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">networkConfig</td><td>to set.</td></tr>
@@ -1975,10 +2565,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connect via USB or if device does not support Ethernet or if setting the device network configuration failed. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected of if the device does not support Ethernet or if setting the device network configuration failed.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>true, if the device connection was retained. False otherwise.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>IRImagerClient::onConnectionLost() </dd></dl>
 
 </div>
 </div>
@@ -2058,7 +2650,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if provided intervals are negative. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if provided intervals are negative or not connected. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2105,6 +2697,85 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
+<a id="a87d3adbe0d62ca21c087aa43957de547" name="a87d3adbe0d62ca21c087aa43957de547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d3adbe0d62ca21c087aa43957de547">&#9670;&#160;</a></span>setProcessingMaxResultPoolSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void optris::IRImager::setProcessingMaxResultPoolSize </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>maxPoolSize</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the maximum number of processing results that are pooled for reuse to avoid unnecessary allocations. </p>
+<p>Buffers for processing results are added as needed but will not exceed the specified maximum pool size. An insufficient pool size may lead to overriding of already existing results or to waits that will slow down processing. Keep your callback implementations concise and fast to avoid such situation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPoolSize</td><td>maximum number of processing results that are pooled for reuse. If set to 0, the pool size will be set to 1.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa28a3d2062775fa33164b8b8c73a49e6" name="aa28a3d2062775fa33164b8b8c73a49e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa28a3d2062775fa33164b8b8c73a49e6">&#9670;&#160;</a></span>setProcessingOutputs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void optris::IRImager::setProcessingOutputs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1ProcessingOutputConfig.html">ProcessingOutputConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>outputs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets which outputs should be computed and provided by the SDK. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">outputs</td><td>configuration specifying which outputs should be computed and provided.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a282874cfc488aa80b9254d3515a993e6" name="a282874cfc488aa80b9254d3515a993e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a282874cfc488aa80b9254d3515a993e6">&#9670;&#160;</a></span>setRadiationParameters()</h2>
 
@@ -2117,7 +2788,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
         <tr>
           <td class="memname">virtual void optris::IRImager::setRadiationParameters </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classoptris_1_1RadiationParameters.html">RadiationParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>radiation</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1RadiationParameters.html">RadiationParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>radiation</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2138,6 +2809,46 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected or if parameters are invalid or if setting the parameters fails. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1f74a17f405c6806e88770283594fb52" name="a1f74a17f405c6806e88770283594fb52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f74a17f405c6806e88770283594fb52">&#9670;&#160;</a></span>setRdcMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void optris::IRImager::setRdcMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceoptris.html#a72d2d3eb7894087743a0dfcdd0b66762">RdcMode</a></td>          <td class="paramname"><span class="paramname"><em>rdcMode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the mode of radial distortion correction (RDC). </p>
+<dl class="section note"><dt>Note</dt><dd>This method is only relevant for devices and operation modes that feature a significant radial distortion and support RDC.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rdcMode</td><td>the RDC mode to set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected or if setting the RDC mode fails. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2233,8 +2944,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 
 </div>
 </div>
-<a id="ae8860de4fb7876f174f3e5b17a9072db" name="ae8860de4fb7876f174f3e5b17a9072db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8860de4fb7876f174f3e5b17a9072db">&#9670;&#160;</a></span>setTemperatureChipReference()</h2>
+<a id="a1ca8695df70edc6f5dce84a5df7db083" name="a1ca8695df70edc6f5dce84a5df7db083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ca8695df70edc6f5dce84a5df7db083">&#9670;&#160;</a></span>setSubsampledFramerate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2243,9 +2954,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void optris::IRImager::setTemperatureChipReference </td>
+          <td class="memname">virtual void optris::IRImager::setSubsampledFramerate </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>temperature</em></span></td><td>)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>subsampledFramerate</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2256,11 +2967,11 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 </table>
 </div><div class="memdoc">
 
-<p>Sets the reference temperature in °C for the sensor chip heating. </p>
-<p>The specified temperature should be in [20, 55] °C. If not, the temperature will automatically be clipped. The current chip temperature can be monitored with <a class="el" href="#a2870416126e5e35576adfc1c13bbeeab" title="Returns the temperature of the sensor chip.">getTemperatureChip()</a>.</p>
+<p>Sets the subsampled framerate. </p>
+<dl class="section note"><dt>Note</dt><dd>The subsampling is performed by the SDK. The subsampled framerate has no effect on the framerate with which the devices send frame data.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">temperature</td><td>to set in °C.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subsampledFramerate</td><td>to set. Provide a value less or equal to 0 to deactivate subsampling. If the value is higher than the framerate of the currently active operation mode, no subsampling will occur.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2341,7 +3052,170 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 <dl class="section note"><dt>Note</dt><dd>Not all temperature ranges can be extended.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enabled</td><td>if true temperature range extension is enabled. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enabled</td><td>if true temperature range extension is enabled.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if setting enabled failed or if not connected. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7a4e7919667a6758d0814fe856bf765" name="ad7a4e7919667a6758d0814fe856bf765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a4e7919667a6758d0814fe856bf765">&#9670;&#160;</a></span>skipStartupCalibration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool optris::IRImager::skipStartupCalibration </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Skips an active startup (re)calibration that is performed every time the processing loop is run. </p>
+<p>Will have not effect if a startup (re)calibration is not active.</p>
+<dl class="section attention"><dt>Attention</dt><dd>Skipping the startup calibration may lead to inaccurate temperature measurements and should only be used for testing and debugging purposes.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if a startup (re)calibration was skipped. False otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="acdb482138d5a2db57e64c9c3fe183702" name="acdb482138d5a2db57e64c9c3fe183702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb482138d5a2db57e64c9c3fe183702">&#9670;&#160;</a></span>swapMeasurementFieldIndices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void optris::IRImager::swapMeasurementFieldIndices </td>
+          <td>(</td>
+          <td class="paramtype">std::uint32_t</td>          <td class="paramname"><span class="paramname"><em>index1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint32_t</td>          <td class="paramname"><span class="paramname"><em>index2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Swaps the indices of two measurement fields. </p>
+<p>The measurement field indices determine the render tier of the measurement fields. Fields with a higher index are drawn on top of fields with a lower index. The thermal frame is always in the background.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index1</td><td>first index to swap. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index2</td><td>second index to swap.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected, if the indices do not exist or if the provided indices are identical. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9aa9aec5536d2fcf7ddf27f084969d77" name="a9aa9aec5536d2fcf7ddf27f084969d77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa9aec5536d2fcf7ddf27f084969d77">&#9670;&#160;</a></span>updateAlarmChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void optris::IRImager::updateAlarmChannel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classoptris_1_1AlarmChannel.html#a2ad17f7b99252664c83dd556b12c1aea">AlarmChannel::ConstShared</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1AlarmChannelConfig.html">AlarmChannelConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the configuration of an alarm channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>to update. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>to update the alarm channel with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af94dc9467c8a44b2d43278c018c1a7d8" name="af94dc9467c8a44b2d43278c018c1a7d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af94dc9467c8a44b2d43278c018c1a7d8">&#9670;&#160;</a></span>updateMeasurementField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void optris::IRImager::updateMeasurementField </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classoptris_1_1MeasurementField.html#a6dcb142b2c9d11aba25a29c6951a61c8">MeasurementField::ConstShared</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>field</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1MeasurementFieldConfig.html">MeasurementFieldConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updated the configuration of a measurement field. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">field</td><td>to update. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>to update the measurement field with.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected, if the measurement field does not exist for this imager or the configuration cannot be applied. </td></tr>
   </table>
   </dd>
 </dl>

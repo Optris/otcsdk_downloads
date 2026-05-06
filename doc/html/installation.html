@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -109,7 +109,7 @@ $(function(){initNavTree('installation.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_pages_202__installation"></a></p>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Contents</h1>
 <ul>
 <li><a class="el" href="#installation-download">Download</a></li>
@@ -142,7 +142,7 @@ Installation directory.</div></div>
 <img src="win_installer_components.png" alt=""/>
 <div class="caption">
 Component selection.</div></div>
-    <p>Only the <code>SDK</code> components <code>Core</code> and <code>Development</code> are mandatory because they include all the necessary libraries, C++ headers and CMake configuration files to use the SDK. The <code>Bindings</code> components provide the resources you need to use the SDK in the listed programming language. The <code>Documentation</code> component includes the offline documentation of the SDK primarily comprised out of this HTML based API documentation. The <code>Examples</code> component provides source code examples for each of the supported programming languages.</p>
+    <p>Only the <code>SDK</code> components <code>Core</code> and <code>Development</code> are mandatory because they include all the necessary libraries, C++ headers and CMake configuration files to use the SDK. The <code>Bindings</code> components provide the resources you need to use the SDK in the listed programming languages. The <code>Documentation</code> component includes the offline documentation of the SDK primarily comprised out of this HTML based API documentation. The <code>Examples</code> component provides source code examples for each of the supported programming languages.</p>
 <p>After the installation is complete you can find all the files comprising the SDK in your chosen installation directory. Besides this the installer has, depending on your component choices,</p>
 <ul>
 <li>created shortcuts in your start menu to<ul>
@@ -154,18 +154,18 @@ Component selection.</div></div>
 <li>copied the source code of the provided examples to your <code>Documents</code> folder</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>The start menu entries may not appear right away after the installation. In this case log out of your account and they should appear once you logged in again.</dd></dl>
-<p>You can try out the installed SDK by connecting an Optris thermal camera to your computer via USB and by starting the Simple View example application from the start menu.</p>
+<p>You can try out the installed SDK by connecting an Optris thermal camera to your computer and by starting the Simple View example application from the start menu.</p>
 <div class="image">
 <img src="win_start_menu_entries.png" alt=""/>
 <div class="caption">
 Start menu entries (all components selected).</div></div>
-    <dl class="section note"><dt>Note</dt><dd>The SDK requires internet access to download the calibration files from the Optris servers.</dd></dl>
-<p>If everything works fine, you should see a window with a live false color image stream looking something like this:</p>
+    <dl class="section note"><dt>Note</dt><dd>For most cameras the SDK requires internet access to download the calibration files from the Optris servers. In some cases like the Xi 80, Xi 320 MT and Xi 410 these can be downloaded directly from the device.</dd></dl>
+<p>The example can automatically detect devices connected via USB and on the local network <code>192.168.0.0/24</code>. The Ethernet based devices, however, need a corresponding on-device network configuration must a specific firmware revision (s. <a class="el" href="device-enumeration.html">Device Enumeration</a> for more details). If everything works fine, you should see a window with a live false color image stream looking something like this:</p>
 <div class="image">
 <img src="simple_view_small_1.jpg" alt=""/>
 <div class="caption">
-Simple View with a cup ot tea.</div></div>
-    <p>If the example fails to start, you may have to download and the <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version">C++ redistributable v14</a> for the <code>amd64</code>/<code>X64</code> architecture from Microsoft.</p>
+Simple View with a cup of tea.</div></div>
+    <p>If the example fails to start, you may have to download the <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version">C++ redistributable v14</a> for the <code>amd64</code>/<code>X64</code> architecture from Microsoft.</p>
 <p>To uninstall the SDK navigate to the <code>Apps</code> section of the Windows <code>Settings</code> application. Choose <code>Installed apps</code> and click on the three dots of the entry <code>Optris Thermal Camera SDK</code> and select the <code>Uninstall</code> option. This runs the uninstaller that will remove the SDK from your system.</p>
 <div class="image">
 <img src="win_unistall.png" alt=""/>
@@ -186,9 +186,9 @@ Linux (Ubuntu LTS)</h1>
 <img src="linux_desktop_menu_entries.png" alt=""/>
 <div class="caption">
 Desktop menu entries.</div></div>
-    <p>You can test the installation by attaching a camera to your computer via USB and by starting the Simple View example.</p>
-<dl class="section note"><dt>Note</dt><dd>The SDK requires internet access to download the calibration files from Optris servers.</dd></dl>
-<p>If everything works fine, a window displaying a live stream of false color images will appear.</p>
+    <p>You can test the installation by attaching a camera to your computer and by starting the Simple View example.</p>
+<dl class="section note"><dt>Note</dt><dd>For most cameras the SDK requires internet access to download the calibration files from the Optris servers. In some cases like the Xi 80 and Xi 410 these can be downloaded directly from the device.</dd></dl>
+<p>The example can automatically detect devices connected via USB and on the local network <code>192.168.0.0/24</code>. The Ethernet based devices, however, need a corresponding on-device network configuration must a specific firmware revision (s. <a class="el" href="device-enumeration.html">Device Enumeration</a> for more details). If everything works fine, a window displaying a live stream of false color images will appear.</p>
 <div class="image">
 <img src="simple_view_small_1.jpg" alt=""/>
 <div class="caption">

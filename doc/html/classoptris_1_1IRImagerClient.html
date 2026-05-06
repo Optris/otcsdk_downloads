@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -121,7 +121,7 @@ Collaboration diagram for optris::IRImagerClient:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptris_1_1IRImagerClient__coll__graph.png" border="0" usemap="#aoptris_1_1IRImagerClient_coll__map" alt="Collaboration graph"/></div>
 <map name="aoptris_1_1IRImagerClient_coll__map" id="aoptris_1_1IRImagerClient_coll__map">
-<area shape="rect" title="Base class for clients observing an IRImager." alt="" coords="5,5,177,373"/>
+<area shape="rect" title="Base class for clients observing an IRImager." alt="" coords="5,5,203,331"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -151,41 +151,37 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IRImagerClient</b> ()=default</td></tr>
 <tr class="memdesc:a2a42b82f83d31e45a32a20e8185125f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a2a42b82f83d31e45a32a20e8185125f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73041548b2e8b7f2fb73018868a6458e" id="r_a73041548b2e8b7f2fb73018868a6458e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73041548b2e8b7f2fb73018868a6458e">onThermalFrame</a> (const <a class="el" href="classoptris_1_1ThermalFrame.html">ThermalFrame</a> &amp;thermal, const <a class="el" href="classoptris_1_1FrameMetadata.html">FrameMetadata</a> &amp;meta)</td></tr>
-<tr class="memdesc:a73041548b2e8b7f2fb73018868a6458e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback method for thermal frames.  <br /></td></tr>
-<tr class="separator:a73041548b2e8b7f2fb73018868a6458e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c4165ebc0aa09664496c0b356d687dc" id="r_a6c4165ebc0aa09664496c0b356d687dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c4165ebc0aa09664496c0b356d687dc">onThermalFrameEvent</a> (const <a class="el" href="classoptris_1_1ThermalFrame.html">ThermalFrame</a> &amp;thermal, const <a class="el" href="classoptris_1_1Frame.html">Frame</a> &amp;energy, const <a class="el" href="classoptris_1_1FrameMetadata.html">FrameMetadata</a> &amp;meta, const std::vector&lt; <a class="el" href="structoptris_1_1SnapshotEvent.html">SnapshotEvent</a> &gt; &amp;events)</td></tr>
-<tr class="memdesc:a6c4165ebc0aa09664496c0b356d687dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback method for thermal frames triggered with a raising edge event on PIF digital input or software trigger.  <br /></td></tr>
-<tr class="separator:a6c4165ebc0aa09664496c0b356d687dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa219cc5f7914f6207c17083a3f6abda6" id="r_aa219cc5f7914f6207c17083a3f6abda6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa219cc5f7914f6207c17083a3f6abda6">onFlagStateChange</a> (<a class="el" href="namespaceoptris.html#a23ddb213a1599a8ca715eab2198833f8">FlagState</a> flagState)</td></tr>
-<tr class="memdesc:aa219cc5f7914f6207c17083a3f6abda6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback method for flag state events. The method is called when the flag state changes.  <br /></td></tr>
-<tr class="separator:aa219cc5f7914f6207c17083a3f6abda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4e4741dee9de7aa4ae7415471c6e3a" id="r_a6b4e4741dee9de7aa4ae7415471c6e3a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b4e4741dee9de7aa4ae7415471c6e3a">onMeasurementField</a> (const <a class="el" href="classoptris_1_1MeasurementField.html">MeasurementField</a> &amp;field)</td></tr>
-<tr class="memdesc:a6b4e4741dee9de7aa4ae7415471c6e3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback method for measurement fields. The method is called when the calculation has finished.  <br /></td></tr>
-<tr class="separator:a6b4e4741dee9de7aa4ae7415471c6e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b1daf5596828fa50768fa6f40f2b460" id="r_a5b1daf5596828fa50768fa6f40f2b460"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b1daf5596828fa50768fa6f40f2b460">onPifUncommittedValue</a> (const std::string &amp;name, const std::string &amp;unit, float value)</td></tr>
-<tr class="memdesc:a5b1daf5596828fa50768fa6f40f2b460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an updated uncommitted value is available.  <br /></td></tr>
-<tr class="separator:a5b1daf5596828fa50768fa6f40f2b460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8455226727db052433cc75f387b9de3a" id="r_a8455226727db052433cc75f387b9de3a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8455226727db052433cc75f387b9de3a">onVideoFormatChanged</a> (int width, int height, float framerate, int bitCount)</td></tr>
-<tr class="memdesc:a8455226727db052433cc75f387b9de3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the video format changed.  <br /></td></tr>
-<tr class="separator:a8455226727db052433cc75f387b9de3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a958ecc98821c7dbad41d4d2383448438" id="r_a958ecc98821c7dbad41d4d2383448438"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a958ecc98821c7dbad41d4d2383448438">onConnectionLost</a> ()</td></tr>
-<tr class="memdesc:a958ecc98821c7dbad41d4d2383448438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a connection loss is detected.  <br /></td></tr>
-<tr class="separator:a958ecc98821c7dbad41d4d2383448438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdc9bf145618a1fa931d3a5b33479434" id="r_acdc9bf145618a1fa931d3a5b33479434"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdc9bf145618a1fa931d3a5b33479434">onConnectionTimeout</a> ()</td></tr>
-<tr class="memdesc:acdc9bf145618a1fa931d3a5b33479434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a connection timeout is detected.  <br /></td></tr>
-<tr class="separator:acdc9bf145618a1fa931d3a5b33479434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef74db5e2dc33eb87df2d6ca9e08f53b" id="r_aef74db5e2dc33eb87df2d6ca9e08f53b"><td class="memItemLeft" align="right" valign="top"><a id="aef74db5e2dc33eb87df2d6ca9e08f53b" name="aef74db5e2dc33eb87df2d6ca9e08f53b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onProcessExit</b> ()</td></tr>
-<tr class="memdesc:aef74db5e2dc33eb87df2d6ca9e08f53b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback method for synchronizing data. This is the very last method to be called for each raw data set. <br /></td></tr>
-<tr class="separator:aef74db5e2dc33eb87df2d6ca9e08f53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67963096419082ed50c43289415aea2e" id="r_a67963096419082ed50c43289415aea2e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67963096419082ed50c43289415aea2e">onConnection</a> (<a class="el" href="structoptris_1_1ConnectionEvent.html">ConnectionEvent</a> &amp;evt) noexcept</td></tr>
+<tr class="memdesc:a67963096419082ed50c43289415aea2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the connection state has changed.  <br /></td></tr>
+<tr class="separator:a67963096419082ed50c43289415aea2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeabb1b8a6c30bdec33db580172d64efb" id="r_aeabb1b8a6c30bdec33db580172d64efb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeabb1b8a6c30bdec33db580172d64efb">onFrame</a> (const <a class="el" href="structoptris_1_1FrameEvent.html">FrameEvent</a> &amp;evt) noexcept</td></tr>
+<tr class="memdesc:aeabb1b8a6c30bdec33db580172d64efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when the processing of a frame is complete.  <br /></td></tr>
+<tr class="separator:aeabb1b8a6c30bdec33db580172d64efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3918b46198e7b0f9f7fb890f8b5b3498" id="r_a3918b46198e7b0f9f7fb890f8b5b3498"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3918b46198e7b0f9f7fb890f8b5b3498">onRawFrame</a> (const <a class="el" href="structoptris_1_1RawFrameEvent.html">RawFrameEvent</a> &amp;evt) noexcept</td></tr>
+<tr class="memdesc:a3918b46198e7b0f9f7fb890f8b5b3498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when a new raw frames is available.  <br /></td></tr>
+<tr class="separator:a3918b46198e7b0f9f7fb890f8b5b3498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4703a612c784a9f38a722768dccb9498" id="r_a4703a612c784a9f38a722768dccb9498"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4703a612c784a9f38a722768dccb9498">onVideoFormatChanged</a> (const <a class="el" href="structoptris_1_1VideoFormatEvent.html">VideoFormatEvent</a> &amp;evt) noexcept</td></tr>
+<tr class="memdesc:a4703a612c784a9f38a722768dccb9498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the video format changed.  <br /></td></tr>
+<tr class="separator:a4703a612c784a9f38a722768dccb9498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c2b24e8603d1c4a4bed7436867459c5" id="r_a2c2b24e8603d1c4a4bed7436867459c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c2b24e8603d1c4a4bed7436867459c5">onCompositeAlarm</a> (const <a class="el" href="structoptris_1_1CompositeAlarmEvent.html">CompositeAlarmEvent</a> &amp;evt) noexcept</td></tr>
+<tr class="memdesc:a2c2b24e8603d1c4a4bed7436867459c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the state of the composite alarm changes.  <br /></td></tr>
+<tr class="separator:a2c2b24e8603d1c4a4bed7436867459c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa012f798adb35ab86115bb6a4bd813cc" id="r_aa012f798adb35ab86115bb6a4bd813cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa012f798adb35ab86115bb6a4bd813cc">onAlarm</a> (const <a class="el" href="structoptris_1_1AlarmEvent.html">AlarmEvent</a> &amp;evt) noexcept</td></tr>
+<tr class="memdesc:aa012f798adb35ab86115bb6a4bd813cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the state of an alarm channel changes.  <br /></td></tr>
+<tr class="separator:aa012f798adb35ab86115bb6a4bd813cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f57cb7baa8202ff1077073d1f37cb0" id="r_a86f57cb7baa8202ff1077073d1f37cb0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86f57cb7baa8202ff1077073d1f37cb0">onPifUncommittedValue</a> (const <a class="el" href="structoptris_1_1UncommittedValueEvent.html">UncommittedValueEvent</a> &amp;evt) noexcept</td></tr>
+<tr class="memdesc:a86f57cb7baa8202ff1077073d1f37cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an updated uncommitted value is available.  <br /></td></tr>
+<tr class="separator:a86f57cb7baa8202ff1077073d1f37cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483754caa524707a34ac2c96423fbc17" id="r_a483754caa524707a34ac2c96423fbc17"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a483754caa524707a34ac2c96423fbc17">onOperationInfo</a> (const <a class="el" href="structoptris_1_1OperationInfoEvent.html">OperationInfoEvent</a> &amp;evt) noexcept</td></tr>
+<tr class="memdesc:a483754caa524707a34ac2c96423fbc17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new set of operation module tracing information is available.  <br /></td></tr>
+<tr class="separator:a483754caa524707a34ac2c96423fbc17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for clients observing an <a class="el" href="classoptris_1_1IRImager.html" title="Interface defining the API for interacting with Optris thermal cameras.">IRImager</a>. </p>
-<p>The architecture is following the Observer design pattern. To receive data like thermal frames from your device derive your own class from it and implement the callback methods. After creating an instance of you need to register it with an <a class="el" href="classoptris_1_1IRImager.html" title="Interface defining the API for interacting with Optris thermal cameras.">IRImager</a> object by calling its <a class="el" href="classoptris_1_1IRImager.html#aaf82489c34f22243a8562cbd8bf46d64" title="Adds an observer/client that will be updated when new data arrives.">IRImager::addClient()</a> method. </p>
+<p>The architecture is following the Observer design pattern. To receive data like thermal frames from your device derive your own class from it and implement the callback methods. After creating an instance of you need to register it with an <a class="el" href="classoptris_1_1IRImager.html" title="Interface defining the API for interacting with Optris thermal cameras.">IRImager</a> object by calling its <a class="el" href="classoptris_1_1IRImager.html#ade8ecdcaa62373165a2a562aca0583c6" title="Adds an observer/client that will be updated when new data arrives.">IRImager::addClient()</a> method. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a958ecc98821c7dbad41d4d2383448438" name="a958ecc98821c7dbad41d4d2383448438"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a958ecc98821c7dbad41d4d2383448438">&#9670;&#160;</a></span>onConnectionLost()</h2>
+<a id="aa012f798adb35ab86115bb6a4bd813cc" name="aa012f798adb35ab86115bb6a4bd813cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa012f798adb35ab86115bb6a4bd813cc">&#9670;&#160;</a></span>onAlarm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,93 +190,107 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onProcessExit
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void optris::IRImagerClient::onConnectionLost </td>
+          <td class="memname">virtual void optris::IRImagerClient::onAlarm </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1AlarmEvent.html">AlarmEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>evt</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called when a connection loss is detected. </p>
-<p>A connection loss can not be recovered. This happens, for example, if the USB connection is interrupted by pulling the plug.</p>
-<dl class="section warning"><dt>Warning</dt><dd>When <a class="el" href="classoptris_1_1IRImager.html#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">IRImager::runAsync()</a> was used to start the processing loop do not call <a class="el" href="classoptris_1_1IRImager.html#a1d0e5e67d39f31d0a212208807693c33" title="Disconnects from the current device.">IRImager::disconnect()</a> here but defer the call to a different thread.</dd></dl>
-<p>This callback is called by the thread that executes the <a class="el" href="classoptris_1_1IRImager.html#abbba9723c519f8a542efeaee13695eb7" title="Runs the processing loop continuously.">IRImager::run()</a> method. In case of <a class="el" href="classoptris_1_1IRImager.html#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">IRImager::runAsync()</a> this will be an internal thread managed by the SDK. </p>
-
-</div>
-</div>
-<a id="acdc9bf145618a1fa931d3a5b33479434" name="acdc9bf145618a1fa931d3a5b33479434"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdc9bf145618a1fa931d3a5b33479434">&#9670;&#160;</a></span>onConnectionTimeout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void optris::IRImagerClient::onConnectionTimeout </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called when a connection timeout is detected. </p>
-<p>Unlike with connection losses you may recover from a timeout.</p>
-<p>Connection timeouts are the only way to detect connection losses with Ethernet devices. This is due to the fact that these devices continuously send UDP packages once they are powered. Besides receiving these packages the SDK has no way of knowing whether the connection is lost.</p>
-<dl class="section warning"><dt>Warning</dt><dd>When <a class="el" href="classoptris_1_1IRImager.html#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">IRImager::runAsync()</a> was used to start the processing loop do not call <a class="el" href="classoptris_1_1IRImager.html#a1d0e5e67d39f31d0a212208807693c33" title="Disconnects from the current device.">IRImager::disconnect()</a> here but defer the call to a different thread.</dd></dl>
-<p>This callback is called by the thread that executes the <a class="el" href="classoptris_1_1IRImager.html#abbba9723c519f8a542efeaee13695eb7" title="Runs the processing loop continuously.">IRImager::run()</a> method. In case of <a class="el" href="classoptris_1_1IRImager.html#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">IRImager::runAsync()</a> this will be an internal thread managed by the SDK. </p>
-
-</div>
-</div>
-<a id="aa219cc5f7914f6207c17083a3f6abda6" name="aa219cc5f7914f6207c17083a3f6abda6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa219cc5f7914f6207c17083a3f6abda6">&#9670;&#160;</a></span>onFlagStateChange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void optris::IRImagerClient::onFlagStateChange </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceoptris.html#a23ddb213a1599a8ca715eab2198833f8">FlagState</a></td>          <td class="paramname"><span class="paramname"><em>flagState</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Callback method for flag state events. The method is called when the flag state changes. </p>
-<p>This callback is triggered by the thread that executes the <a class="el" href="classoptris_1_1IRImager.html#abbba9723c519f8a542efeaee13695eb7" title="Runs the processing loop continuously.">IRImager::run()</a> method. In case of <a class="el" href="classoptris_1_1IRImager.html#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">IRImager::runAsync()</a> this will be an internal thread managed by the SDK.</p>
+<p>Called when the state of an alarm channel changes. </p>
+<dl class="section attention"><dt>Attention</dt><dd>The memory referenced by the provided event is only valid during the callback. If you wish to use it outside of the callback make an explict copy with a simple assignment (C++) or the clone() method (all other languages).</dd></dl>
+<p>This callback is triggered by a dedicated thread that does not block the processing loop. Slow processing in this callback will, however, block subsequent callbacks.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flagState</td><td>current flag state. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">evt</td><td>event containing the alarm information.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structoptris_1_1AlarmEvent.html" title="Event containing the status of an alarm channel.">AlarmEvent</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2c2b24e8603d1c4a4bed7436867459c5" name="a2c2b24e8603d1c4a4bed7436867459c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c2b24e8603d1c4a4bed7436867459c5">&#9670;&#160;</a></span>onCompositeAlarm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void optris::IRImagerClient::onCompositeAlarm </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1CompositeAlarmEvent.html">CompositeAlarmEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>evt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the state of the composite alarm changes. </p>
+<dl class="section attention"><dt>Attention</dt><dd>The memory referenced by the provided event is only valid during the callback. If you wish to use it outside of the callback make an explict copy with a simple assignment (C++) or the clone() method (all other languages).</dd></dl>
+<p>The callback will not be triggered, if none of the active alarm channels is configured to be part of the composite alarm.</p>
+<p>This callback is triggered by a dedicated thread that does not block the processing loop. Slow processing in this callback will, however, block subsequent callbacks.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">evt</td><td>event containing the composite alarm information.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structoptris_1_1CompositeAlarmEvent.html" title="Event containing the status of the composite alarm.">CompositeAlarmEvent</a> </dd></dl>
+
+</div>
+</div>
+<a id="a67963096419082ed50c43289415aea2e" name="a67963096419082ed50c43289415aea2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67963096419082ed50c43289415aea2e">&#9670;&#160;</a></span>onConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void optris::IRImagerClient::onConnection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoptris_1_1ConnectionEvent.html">ConnectionEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>evt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the connection state has changed. </p>
+<p>The <a class="el" href="namespaceoptris.html#abaa62bcdf0e6fc019d653762ce829363" title="Represents the current connection state.">ConnectionState</a> also models the process of acquiring missing calibration files.</p>
+<dl class="section attention"><dt>Attention</dt><dd>The memory referenced by the provided event is only valid during the callback. If you wish to use it outside of the callback make an explict copy (C++) or use the clone() method (all other languages).</dd></dl>
+<p>This callback is triggered by a dedicated thread that does not block the processing loop. Slow processing in this callback will, however, block subsequent callbacks.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">evt</td><td>event containing the updated connection state. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a6b4e4741dee9de7aa4ae7415471c6e3a" name="a6b4e4741dee9de7aa4ae7415471c6e3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b4e4741dee9de7aa4ae7415471c6e3a">&#9670;&#160;</a></span>onMeasurementField()</h2>
+<a id="aeabb1b8a6c30bdec33db580172d64efb" name="aeabb1b8a6c30bdec33db580172d64efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeabb1b8a6c30bdec33db580172d64efb">&#9670;&#160;</a></span>onFrame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,34 +299,77 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onProcessExit
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void optris::IRImagerClient::onMeasurementField </td>
+          <td class="memname">virtual void optris::IRImagerClient::onFrame </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classoptris_1_1MeasurementField.html">MeasurementField</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>field</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1FrameEvent.html">FrameEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>evt</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Callback method for measurement fields. The method is called when the calculation has finished. </p>
-<p>The provided reference will remain valid outside the callback but the data that it is pointing to will be overwritten. Make a copy (C++) or use the clone() method (other languages) if you want to use it outside of the callback.</p>
-<p>The reference is const. Thus, you have only read access to the object it is referring to. Attempts to manipulate its content will cause issues.</p>
-<p>This callback is called by the thread that executes the <a class="el" href="classoptris_1_1IRImager.html#abbba9723c519f8a542efeaee13695eb7" title="Runs the processing loop continuously.">IRImager::run()</a> method. In case of <a class="el" href="classoptris_1_1IRImager.html#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">IRImager::runAsync()</a> this will be an internal thread managed by the SDK.</p>
+<p>Triggered when the processing of a frame is complete. </p>
+<dl class="section attention"><dt>Attention</dt><dd>The memory referenced by the provided event is only valid during the callback. If you wish to use it outside of the callback make an explict copy (C++) or use the clone() method (all other languages).</dd></dl>
+<p>The SDK has an internal pool of buffers that it uses to store the processing results. The buffers are resused for subsequent frames. Since this callback is now triggered by a dedicated thread it will no longer block the processing loop. But slow processing in this callback can clog the internal buffer pool and will cause the SDK to drop old processing results.</p>
+<p>The maximum possible frequency of this callback is determined by two configuration parameters:</p><ul>
+<li>The set frame rate of the device. This is the upper limit for the callback frequency.</li>
+<li>The set subsampled frame rate that internally limits the device frame rate.</li>
+</ul>
+<p>Depending on the set <a class="el" href="structoptris_1_1ProcessingOutputConfig.html" title="Specifies which outputs should be computed and provided by the SDK.">ProcessingOutputConfig</a> the provided event may contain an empty thermal frame or no measurement field data.</p>
+<p>This callback will also be triggered during the initial startup calibration phase following a successful device connection. During this time the thermal data is unreliable. You can detect this phase by checking whether the flag state stored in the meta data is set to Initializing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">field</td><td>measurement field. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">evt</td><td>event containing metadata, thermal frame data and measurement field data.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structoptris_1_1FrameEvent.html" title="Event containing the results of the successful processing of a frame.">FrameEvent</a> </dd></dl>
 
 </div>
 </div>
-<a id="a5b1daf5596828fa50768fa6f40f2b460" name="a5b1daf5596828fa50768fa6f40f2b460"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b1daf5596828fa50768fa6f40f2b460">&#9670;&#160;</a></span>onPifUncommittedValue()</h2>
+<a id="a483754caa524707a34ac2c96423fbc17" name="a483754caa524707a34ac2c96423fbc17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483754caa524707a34ac2c96423fbc17">&#9670;&#160;</a></span>onOperationInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void optris::IRImagerClient::onOperationInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1OperationInfoEvent.html">OperationInfoEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>evt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when a new set of operation module tracing information is available. </p>
+<dl class="section attention"><dt>Attention</dt><dd>The memory referenced by the provided event is only valid during the callback. If you wish to use it outside of the callback make an explict copy with a simple assignment (C++) or the clone() method (all other languages).</dd></dl>
+<p>The SDK has an internal pool of buffers that it uses to store the processing results. The buffers are resused for subsequent frames. Since this callback is now triggered by a dedicated thread it will no longer block the processing loop. But slow processing in this callback can clog the internal buffer pool and will cause the SDK to drop old processing results.</p>
+<p>The maximum possible frequency of this callback is determined by the interval time provided when configuring the operation info tracing via <a class="el" href="classoptris_1_1IRImager.html#a38cd9ff31843632baeaf10132447ceac" title="Configure the tracing of the operation modules that comprise the processing pipeline.">IRImager::configureOperationInfo()</a>. If the interval is set to 0, this callback will not be triggered at all.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">evt</td><td>event containing the updated operation mode tracing information.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structoptris_1_1OperationInfoEvent.html" title="Event containing trace information about the operation modules of the processing pipeline.">OperationInfoEvent</a>, <a class="el" href="classoptris_1_1IRImager.html#a38cd9ff31843632baeaf10132447ceac" title="Configure the tracing of the operation modules that comprise the processing pipeline.">IRImager::configureOperationInfo()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a86f57cb7baa8202ff1077073d1f37cb0" name="a86f57cb7baa8202ff1077073d1f37cb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86f57cb7baa8202ff1077073d1f37cb0">&#9670;&#160;</a></span>onPifUncommittedValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,42 +380,33 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onProcessExit
         <tr>
           <td class="memname">virtual void optris::IRImagerClient::onPifUncommittedValue </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1UncommittedValueEvent.html">UncommittedValueEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>evt</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>unit</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Called when an updated uncommitted value is available. </p>
 <p>The callback is only triggered when the corresponding PIF analog input signal has changed.</p>
-<p>This callback is triggered by the thread that executes the <a class="el" href="classoptris_1_1IRImager.html#abbba9723c519f8a542efeaee13695eb7" title="Runs the processing loop continuously.">IRImager::run()</a> method. In case of <a class="el" href="classoptris_1_1IRImager.html#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">IRImager::runAsync()</a> this will be an internal thread managed by the SDK.</p>
+<dl class="section attention"><dt>Attention</dt><dd>The memory referenced by the provided event is only valid during the callback. If you wish to use it outside of the callback make an explict copy with a simple assignment (C++) or the clone() method (all other languages).</dd></dl>
+<p>This callback is triggered by a dedicated thread that does not block the processing loop. Slow processing in this callback will, however, block subsequent callbacks.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>of the uncommitted value as specified in the configuration. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unit</td><td>of the uncommitted value as specified in the con </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>calculated from the PIF analog input signal based on the configured gain and offset. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">evt</td><td>event containing the updated uncommitted value.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structoptris_1_1UncommittedValueEvent.html" title="Event containing the uncommitted value generated from a PIF analog input.">UncommittedValueEvent</a> </dd></dl>
 
 </div>
 </div>
-<a id="a73041548b2e8b7f2fb73018868a6458e" name="a73041548b2e8b7f2fb73018868a6458e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73041548b2e8b7f2fb73018868a6458e">&#9670;&#160;</a></span>onThermalFrame()</h2>
+<a id="a3918b46198e7b0f9f7fb890f8b5b3498" name="a3918b46198e7b0f9f7fb890f8b5b3498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3918b46198e7b0f9f7fb890f8b5b3498">&#9670;&#160;</a></span>onRawFrame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -371,96 +415,36 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onProcessExit
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void optris::IRImagerClient::onThermalFrame </td>
+          <td class="memname">virtual void optris::IRImagerClient::onRawFrame </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classoptris_1_1ThermalFrame.html">ThermalFrame</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>thermal</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1RawFrameEvent.html">RawFrameEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>evt</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classoptris_1_1FrameMetadata.html">FrameMetadata</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>meta</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Callback method for thermal frames. </p>
-<p>The provided references will remain valid outside the callback but the data that they are pointing to will be overwritten. Make a copy (C++) or use the clone() method (other languages) if you want to use them outside of <br  />
- the callback.</p>
-<p>The references are const. Thus, you have only read access to the objects they are referring to. Attempts to manipulate their content will cause issues.</p>
-<p>This callback will also be triggered during the initial startup calibration phase following a successful device connection. During this time the thermal data is unreliable. You can detect this phase by checking whether the flag state stored in the meta data (<a class="el" href="classoptris_1_1FrameMetadata.html#a8148fd4a4c1bc9e48f6494e4c6831eb2" title="Returns the state of the shutter flag at frame capturing time.">FrameMetadata::getFlagState()</a>) is set to Initializing.</p>
-<p>This callback is triggered by the thread that executes the <a class="el" href="classoptris_1_1IRImager.html#abbba9723c519f8a542efeaee13695eb7" title="Runs the processing loop continuously.">IRImager::run()</a> method. In case of <a class="el" href="classoptris_1_1IRImager.html#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">IRImager::runAsync()</a> this will be an internal thread managed by the SDK.</p>
+<p>Triggered when a new raw frames is available. </p>
+<dl class="section attention"><dt>Attention</dt><dd>The memory referenced by the provided event is only valid during the callback. If you wish to use it outside of the callback make an explict copy (C++) or use the clone() method (all other languages).</dd></dl>
+<p>The SDK has an internal pool of buffers that it uses to store the processing results. The buffers are resused for subsequent frames. Since this callback is now triggered by a dedicated thread it will no longer block the processing loop. But slow processing in this callback can clog the internal buffer pool and will cause the SDK to drop old processing results.</p>
+<p>The maximum possible frequency of this callback is determined by the set frame rate of the device. It is unaffected by the set subsampled frame rate.</p>
+<p>The callback will not be triggered if <a class="el" href="structoptris_1_1ProcessingOutputConfig.html#acb8469c3ac6d960ccd376c629be8a67b" title="Specifies whether raw unprocessed frames are provided via the IRImager::onRawFrame callback.">ProcessingOutputConfig::rawFrames</a> is set to false.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">thermal</td><td>frame. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">meta</td><td>additional meta data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">evt</td><td>event containing metadata and raw frame data.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structoptris_1_1RawFrameEvent.html" title="Event containing the raw unprocessed frame data and metadata.">RawFrameEvent</a> </dd></dl>
 
 </div>
 </div>
-<a id="a6c4165ebc0aa09664496c0b356d687dc" name="a6c4165ebc0aa09664496c0b356d687dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c4165ebc0aa09664496c0b356d687dc">&#9670;&#160;</a></span>onThermalFrameEvent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void optris::IRImagerClient::onThermalFrameEvent </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classoptris_1_1ThermalFrame.html">ThermalFrame</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>thermal</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classoptris_1_1Frame.html">Frame</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>energy</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classoptris_1_1FrameMetadata.html">FrameMetadata</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>meta</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structoptris_1_1SnapshotEvent.html">SnapshotEvent</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>events</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Callback method for thermal frames triggered with a raising edge event on PIF digital input or software trigger. </p>
-<p>The provided references will remain valid outside the callback but the data that they are pointing to will be overwritten. Make a copy (C++) or use the clone() method (other languages) if you want to use them outside of <br  />
- the callback.</p>
-<p>The references are const. Thus, you have only read access to the objects they are referring to. Attempts to manipulate their content will cause issues.</p>
-<p>This callback is triggered by the thread that executes the <a class="el" href="classoptris_1_1IRImager.html#abbba9723c519f8a542efeaee13695eb7" title="Runs the processing loop continuously.">IRImager::run()</a> method. In case of <a class="el" href="classoptris_1_1IRImager.html#a45a471b95ad4f1925d7dd9518b598d12" title="Runs the processing loop continuously in a dedicated thread.">IRImager::runAsync()</a> this will be an internal thread managed by the SDK.</p>
-<p>For future use.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">thermal</td><td>frame. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">energy</td><td>frame. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">meta</td><td>additional meta data for both frames. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">events</td><td>snapshot events. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8455226727db052433cc75f387b9de3a" name="a8455226727db052433cc75f387b9de3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8455226727db052433cc75f387b9de3a">&#9670;&#160;</a></span>onVideoFormatChanged()</h2>
+<a id="a4703a612c784a9f38a722768dccb9498" name="a4703a612c784a9f38a722768dccb9498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4703a612c784a9f38a722768dccb9498">&#9670;&#160;</a></span>onVideoFormatChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,42 +455,27 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onProcessExit
         <tr>
           <td class="memname">virtual void optris::IRImagerClient::onVideoFormatChanged </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="structoptris_1_1VideoFormatEvent.html">VideoFormatEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>evt</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>framerate</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>bitCount</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Called when the video format changed. </p>
-<p>This callback is triggered by the thread that called <a class="el" href="classoptris_1_1IRImager.html#ae7d778918ea3d28cb3bc101f8fc33256" title="Connects to the device with the given configuration.">IRImager::connect()</a> or <a class="el" href="classoptris_1_1IRImager.html#ad2a225d1c7eacf12454df3d327448712" title="Sets the active operation mode for the currently connected device.">IRImager::setActiveOperationMode()</a>.</p>
+<dl class="section attention"><dt>Attention</dt><dd>The memory referenced by the provided event is only valid during the callback. If you wish to use it outside of the callback make an explict copy (C++) or use the clone() method (all other languages).</dd></dl>
+<p>This callback is triggered by a dedicated thread that does not block the processing loop. Slow processing in this callback will, however, block subsequent callbacks.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>of the frame in pixels. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>of the frame in pixels. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">framerate</td><td>from the device in Hz (not subsampled). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bitCount</td><td>defines the size of the data point for an individual pixel in bits. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">evt</td><td>event containing the updated video format information.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structoptris_1_1VideoFormatEvent.html" title="Event containing information about the current video format.">VideoFormatEvent</a> </dd></dl>
 
 </div>
 </div>

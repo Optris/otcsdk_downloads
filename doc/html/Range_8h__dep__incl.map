@@ -1,0 +1,20 @@
+<map id="Range.h" name="Range.h">
+<area shape="rect" id="Node000001" title="Contains a class for generic ranges." alt="" coords="115,5,190,31"/>
+<area shape="rect" id="Node000002" href="$AlarmChannelConfig_8h.html" title="Contains a class defining the configuration of an alarm channel." alt="" coords="69,79,236,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,44,155,79,150,79,150,44"/>
+<area shape="rect" id="Node000003" href="$AlarmChannel_8h.html" title="Contains an interface representing an alarm channel." alt="" coords="12,225,139,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,118,84,226,79,224,138,115"/>
+<area shape="rect" id="Node000007" href="$AlarmsConfig_8h.html" title="Contains a class encapsulating the configuration of the alarms." alt="" coords="155,152,276,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="174,113,207,150,203,154,170,116"/>
+<area shape="rect" id="Node000004" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="29,299,121,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="78,264,78,299,73,299,73,264"/>
+<area shape="rect" id="Node000005" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="5,372,145,397"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="78,338,78,372,73,372,73,338"/>
+<area shape="rect" id="Node000006" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="6,445,145,471"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="78,411,78,445,73,445,73,411"/>
+<area shape="rect" id="Node000008" href="$IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="163,225,297,251"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="223,190,230,225,225,226,218,191"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="194,259,102,301,100,296,192,254"/>
+<area shape="rect" id="Node000009" href="$IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="146,299,325,324"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="235,264,237,298,232,299,229,265"/>
+</map>

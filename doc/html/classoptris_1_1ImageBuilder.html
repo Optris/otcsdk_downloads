@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -122,7 +122,7 @@ Collaboration diagram for optris::ImageBuilder:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptris_1_1ImageBuilder__coll__graph.png" border="0" usemap="#aoptris_1_1ImageBuilder_coll__map" alt="Collaboration graph"/></div>
 <map name="aoptris_1_1ImageBuilder_coll__map" id="aoptris_1_1ImageBuilder_coll__map">
-<area shape="rect" title="Creates false color images from thermal frames." alt="" coords="5,5,211,288"/>
+<area shape="rect" title="Creates false color images from thermal frames." alt="" coords="5,5,240,271"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -162,27 +162,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2578badd5bc4647d2516d508ed61af8" id="r_ae2578badd5bc4647d2516d508ed61af8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2578badd5bc4647d2516d508ed61af8">getMinMaxRegions</a> (int radius, <a class="el" href="structoptris_1_1TemperatureRegion.html">TemperatureRegion</a> &amp;minRegion, <a class="el" href="structoptris_1_1TemperatureRegion.html">TemperatureRegion</a> &amp;maxRegion)</td></tr>
 <tr class="memdesc:ae2578badd5bc4647d2516d508ed61af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the region of minimum/maximum temperature in °C with the given radius.  <br /></td></tr>
 <tr class="separator:ae2578badd5bc4647d2516d508ed61af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a6e5fd9f4d9c88c4c37be8330962b83" id="r_a5a6e5fd9f4d9c88c4c37be8330962b83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a6e5fd9f4d9c88c4c37be8330962b83">setManualTemperatureRange</a> (float min, float max)</td></tr>
-<tr class="memdesc:a5a6e5fd9f4d9c88c4c37be8330962b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the temperature range for the manual scaling method.  <br /></td></tr>
-<tr class="separator:a5a6e5fd9f4d9c88c4c37be8330962b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0f3975180607e8dc2449666b5f523e0" id="r_ab0f3975180607e8dc2449666b5f523e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0f3975180607e8dc2449666b5f523e0">getIsothermalMin</a> () const noexcept</td></tr>
-<tr class="memdesc:ab0f3975180607e8dc2449666b5f523e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum temperature used to scale the image.  <br /></td></tr>
-<tr class="separator:ab0f3975180607e8dc2449666b5f523e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a478245b4c03c1469f885f5afbed0f6dc" id="r_a478245b4c03c1469f885f5afbed0f6dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a478245b4c03c1469f885f5afbed0f6dc">getIsothermalMax</a> () const noexcept</td></tr>
-<tr class="memdesc:a478245b4c03c1469f885f5afbed0f6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum temperature used to scale the image.  <br /></td></tr>
-<tr class="separator:a478245b4c03c1469f885f5afbed0f6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f3513058fc0c5c1526163c88ab52dde" id="r_a8f3513058fc0c5c1526163c88ab52dde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f3513058fc0c5c1526163c88ab52dde">setPaletteScalingMethod</a> (<a class="el" href="namespaceoptris.html#aa3b38d1c0a53c8154b1ffe64c0e3e4f4">PaletteScalingMethod</a> method) noexcept</td></tr>
-<tr class="memdesc:a8f3513058fc0c5c1526163c88ab52dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scaling method for the false color conversion.  <br /></td></tr>
-<tr class="separator:a8f3513058fc0c5c1526163c88ab52dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95151ccd4d69d42afcb5b0240ba57ced" id="r_a95151ccd4d69d42afcb5b0240ba57ced"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoptris.html#aa3b38d1c0a53c8154b1ffe64c0e3e4f4">PaletteScalingMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95151ccd4d69d42afcb5b0240ba57ced">getPaletteScalingMethod</a> () const noexcept</td></tr>
-<tr class="memdesc:a95151ccd4d69d42afcb5b0240ba57ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current scaling method for the false color conversion.  <br /></td></tr>
-<tr class="separator:a95151ccd4d69d42afcb5b0240ba57ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a505b64b4a2c643cf5a5f9a82d2d3e285" id="r_a505b64b4a2c643cf5a5f9a82d2d3e285"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a505b64b4a2c643cf5a5f9a82d2d3e285">setPalette</a> (<a class="el" href="namespaceoptris.html#a742464998770cc0985ebe451cc8e0f89">ColoringPalette</a> palette) noexcept</td></tr>
-<tr class="memdesc:a505b64b4a2c643cf5a5f9a82d2d3e285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the palette for the false color conversion.  <br /></td></tr>
-<tr class="separator:a505b64b4a2c643cf5a5f9a82d2d3e285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44f56d8a903aeb6c8778f6d8a9b24e98" id="r_a44f56d8a903aeb6c8778f6d8a9b24e98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <a class="el" href="namespaceoptris.html#a742464998770cc0985ebe451cc8e0f89">ColoringPalette</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44f56d8a903aeb6c8778f6d8a9b24e98">getPalette</a> () const noexcept</td></tr>
-<tr class="memdesc:a44f56d8a903aeb6c8778f6d8a9b24e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the palette for the false color conversion.  <br /></td></tr>
-<tr class="separator:a44f56d8a903aeb6c8778f6d8a9b24e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02fd13cacd7731de5af002e970199bc5" id="r_a02fd13cacd7731de5af002e970199bc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02fd13cacd7731de5af002e970199bc5">setTemperatureScaling</a> (float min, float max)</td></tr>
+<tr class="memdesc:a02fd13cacd7731de5af002e970199bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the temperature range for the manual scaling mode.  <br /></td></tr>
+<tr class="separator:a02fd13cacd7731de5af002e970199bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb7d03526162e21c3189870c2784b9c" id="r_aafb7d03526162e21c3189870c2784b9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafb7d03526162e21c3189870c2784b9c">getTemperatureScalingMin</a> () const noexcept</td></tr>
+<tr class="memdesc:aafb7d03526162e21c3189870c2784b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum temperature used to scale the image.  <br /></td></tr>
+<tr class="separator:aafb7d03526162e21c3189870c2784b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8310e625e67ec1233dc49cd991df338c" id="r_a8310e625e67ec1233dc49cd991df338c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8310e625e67ec1233dc49cd991df338c">getTemperatureScalingMax</a> () const noexcept</td></tr>
+<tr class="memdesc:a8310e625e67ec1233dc49cd991df338c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum temperature used to scale the image.  <br /></td></tr>
+<tr class="separator:a8310e625e67ec1233dc49cd991df338c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76971e55d320567621f8e7e0e7486f2a" id="r_a76971e55d320567621f8e7e0e7486f2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76971e55d320567621f8e7e0e7486f2a">getTemperatureScalingMinFiltered</a> () const noexcept</td></tr>
+<tr class="memdesc:a76971e55d320567621f8e7e0e7486f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the filtered minimum temperature actually used by the most recent frame's palette rendering.  <br /></td></tr>
+<tr class="separator:a76971e55d320567621f8e7e0e7486f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e5df1fec56fd063639c2c2f0273398" id="r_a88e5df1fec56fd063639c2c2f0273398"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88e5df1fec56fd063639c2c2f0273398">getTemperatureScalingMaxFiltered</a> () const noexcept</td></tr>
+<tr class="memdesc:a88e5df1fec56fd063639c2c2f0273398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the filtered maximum temperature actually used by the most recent frame's palette rendering. See <a class="el" href="#a76971e55d320567621f8e7e0e7486f2a" title="Returns the filtered minimum temperature actually used by the most recent frame&#39;s palette rendering.">getTemperatureScalingMinFiltered()</a>.  <br /></td></tr>
+<tr class="separator:a88e5df1fec56fd063639c2c2f0273398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85acea8ad2387cef82ec1ef1ff85a2b" id="r_ac85acea8ad2387cef82ec1ef1ff85a2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac85acea8ad2387cef82ec1ef1ff85a2b">setTemperatureScalingFilterFactor</a> (float filterFactor)</td></tr>
+<tr class="memdesc:ac85acea8ad2387cef82ec1ef1ff85a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the low pass filter factor for the temperature scaling for smooth transitions.  <br /></td></tr>
+<tr class="separator:ac85acea8ad2387cef82ec1ef1ff85a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5798abc73e4d2d84011b58f2a8c2d2b5" id="r_a5798abc73e4d2d84011b58f2a8c2d2b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5798abc73e4d2d84011b58f2a8c2d2b5">getTemperatureScalingFilterFactor</a> () const noexcept</td></tr>
+<tr class="memdesc:a5798abc73e4d2d84011b58f2a8c2d2b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the low pass filter factor for the temperature scaling method.  <br /></td></tr>
+<tr class="separator:a5798abc73e4d2d84011b58f2a8c2d2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d1716105f99287b49ebfc7627fb374" id="r_a59d1716105f99287b49ebfc7627fb374"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59d1716105f99287b49ebfc7627fb374">setTemperatureScalingMode</a> (<a class="el" href="namespaceoptris.html#aa03a3998d959b5204dd213145ceaad78">TemperatureScalingMode</a> mode) noexcept</td></tr>
+<tr class="memdesc:a59d1716105f99287b49ebfc7627fb374"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the temperature scaling mode for the false color conversion.  <br /></td></tr>
+<tr class="separator:a59d1716105f99287b49ebfc7627fb374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270319b5b05fbf5807037009561e7144" id="r_a270319b5b05fbf5807037009561e7144"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoptris.html#aa03a3998d959b5204dd213145ceaad78">TemperatureScalingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a270319b5b05fbf5807037009561e7144">getTemperatureScalingMode</a> () const noexcept</td></tr>
+<tr class="memdesc:a270319b5b05fbf5807037009561e7144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current temperate scaling mode for the false color conversion.  <br /></td></tr>
+<tr class="separator:a270319b5b05fbf5807037009561e7144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a101a597a4611d893dbe4a8f02b739c64" id="r_a101a597a4611d893dbe4a8f02b739c64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a101a597a4611d893dbe4a8f02b739c64">setPalette</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a101a597a4611d893dbe4a8f02b739c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the palette for the false color conversion by name.  <br /></td></tr>
+<tr class="separator:a101a597a4611d893dbe4a8f02b739c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ec210ef221639bb4b2282e8c3d36a8" id="r_a07ec210ef221639bb4b2282e8c3d36a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07ec210ef221639bb4b2282e8c3d36a8">getPaletteName</a> () const noexcept</td></tr>
+<tr class="memdesc:a07ec210ef221639bb4b2282e8c3d36a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the currently active palette.  <br /></td></tr>
+<tr class="separator:a07ec210ef221639bb4b2282e8c3d36a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a00cefadc77361c62823e99eda115c6" id="r_a0a00cefadc77361c62823e99eda115c6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoptris_1_1Image.html">Image</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a00cefadc77361c62823e99eda115c6">getImage</a> () noexcept</td></tr>
 <tr class="memdesc:a0a00cefadc77361c62823e99eda115c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grants read access to the generated false color image.  <br /></td></tr>
 <tr class="separator:a0a00cefadc77361c62823e99eda115c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,7 +208,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6258561c3b6ab493ebdd6da702dafefb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the false color image data to the given destination array.  <br /></td></tr>
 <tr class="separator:a6258561c3b6ab493ebdd6da702dafefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6201ec6ae16c1972d6648ffe67c23628" id="r_a6201ec6ae16c1972d6648ffe67c23628"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <a class="el" href="#a51f87bd4e00f7706baf9dca0aa51216b">LookupTable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6201ec6ae16c1972d6648ffe67c23628">createLookupTable</a> ()</td></tr>
-<tr class="memdesc:a6201ec6ae16c1972d6648ffe67c23628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a lookup table for the false color conversion..  <br /></td></tr>
+<tr class="memdesc:a6201ec6ae16c1972d6648ffe67c23628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a lookup table for the false color conversion.  <br /></td></tr>
 <tr class="separator:a6201ec6ae16c1972d6648ffe67c23628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5903b216c29b82c67faa41c4f9e173f4" id="r_a5903b216c29b82c67faa41c4f9e173f4"><td class="memItemLeft" align="right" valign="top"><a id="a5903b216c29b82c67faa41c4f9e173f4" name="a5903b216c29b82c67faa41c4f9e173f4"></a>
 <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><b>convertTemperatureToPaletteImage</b> ()</td></tr>
@@ -205,6 +217,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aff3b0ca7f0f5a395e4265fadc08d4b29" id="r_aff3b0ca7f0f5a395e4265fadc08d4b29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff3b0ca7f0f5a395e4265fadc08d4b29">convertTemperatureToPaletteImage</a> (const <a class="el" href="#a51f87bd4e00f7706baf9dca0aa51216b">LookupTable</a> &amp;lut)</td></tr>
 <tr class="memdesc:aff3b0ca7f0f5a395e4265fadc08d4b29"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoptris_1_1Image.html" title="Encapsulates false color images with 8-bit color depth.">Image</a> conversion to RBG with lookup table. This method is efficient, but works only with fixed temperature ranges (manual mode).  <br /></td></tr>
 <tr class="separator:aff3b0ca7f0f5a395e4265fadc08d4b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa47055e7b12813162bc1f15363eaf84c" id="r_aa47055e7b12813162bc1f15363eaf84c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa47055e7b12813162bc1f15363eaf84c">convertTemperatureToPaletteImage</a> (void *destination, int size)</td></tr>
+<tr class="memdesc:aa47055e7b12813162bc1f15363eaf84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts thermal data to a false color image, writing output to an external buffer.  <br /></td></tr>
+<tr class="separator:aa47055e7b12813162bc1f15363eaf84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Creates false color images from thermal frames. </p>
@@ -242,7 +257,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aff3b0ca7f0f5a395e4265fadc08d4b29" name="aff3b0ca7f0f5a395e4265fadc08d4b29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff3b0ca7f0f5a395e4265fadc08d4b29">&#9670;&#160;</a></span>convertTemperatureToPaletteImage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aff3b0ca7f0f5a395e4265fadc08d4b29">&#9670;&#160;</a></span>convertTemperatureToPaletteImage() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,6 +275,37 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">lut</td><td>lookup table. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa47055e7b12813162bc1f15363eaf84c" name="aa47055e7b12813162bc1f15363eaf84c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa47055e7b12813162bc1f15363eaf84c">&#9670;&#160;</a></span>convertTemperatureToPaletteImage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::ImageBuilder::convertTemperatureToPaletteImage </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>destination</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts thermal data to a false color image, writing output to an external buffer. </p>
+<p>The external buffer must be at least <a class="el" href="#a57098cbb2371ae2add656c82e7193a39" title="Returns the image size in bytes including potential width padding.">getImageSizeInBytes()</a> bytes and have the same stride as <a class="el" href="#a42ab47e197a94cd4bbffd4317c84e27c" title="Returns the image stride in bytes.">getImageStride()</a>. The internal <a class="el" href="classoptris_1_1Image.html" title="Encapsulates false color images with 8-bit color depth.">Image</a> member is NOT updated or allocated.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">destination</td><td>pointer to the output buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>buffer size in bytes (must be &gt;= <a class="el" href="#a57098cbb2371ae2add656c82e7193a39" title="Returns the image size in bytes including potential width padding.">getImageSizeInBytes()</a>). </td></tr>
   </table>
   </dd>
 </dl>
@@ -319,7 +365,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a lookup table for the false color conversion.. </p>
+<p>Creates a lookup table for the false color conversion. </p>
 <dl class="section return"><dt>Returns</dt><dd>lookup table. </dd></dl>
 
 </div>
@@ -437,62 +483,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a478245b4c03c1469f885f5afbed0f6dc" name="a478245b4c03c1469f885f5afbed0f6dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a478245b4c03c1469f885f5afbed0f6dc">&#9670;&#160;</a></span>getIsothermalMax()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float optris::ImageBuilder::getIsothermalMax </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the maximum temperature used to scale the image. </p>
-<dl class="section return"><dt>Returns</dt><dd>Temperature in °C </dd></dl>
-
-</div>
-</div>
-<a id="ab0f3975180607e8dc2449666b5f523e0" name="ab0f3975180607e8dc2449666b5f523e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0f3975180607e8dc2449666b5f523e0">&#9670;&#160;</a></span>getIsothermalMin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float optris::ImageBuilder::getIsothermalMin </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the minimum temperature used to scale the image. </p>
-<dl class="section return"><dt>Returns</dt><dd>temperature in °C. </dd></dl>
-
-</div>
-</div>
 <a id="a57edf2f6e9c79dd87f3bca0d15bea08a" name="a57edf2f6e9c79dd87f3bca0d15bea08a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57edf2f6e9c79dd87f3bca0d15bea08a">&#9670;&#160;</a></span>getMeanTemperatureInRegion()</h2>
 
@@ -558,8 +548,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a44f56d8a903aeb6c8778f6d8a9b24e98" name="a44f56d8a903aeb6c8778f6d8a9b24e98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44f56d8a903aeb6c8778f6d8a9b24e98">&#9670;&#160;</a></span>getPalette()</h2>
+<a id="a07ec210ef221639bb4b2282e8c3d36a8" name="a07ec210ef221639bb4b2282e8c3d36a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ec210ef221639bb4b2282e8c3d36a8">&#9670;&#160;</a></span>getPaletteName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -568,7 +558,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceoptris.html#a742464998770cc0985ebe451cc8e0f89">ColoringPalette</a> optris::ImageBuilder::getPalette </td>
+          <td class="memname">std::string optris::ImageBuilder::getPaletteName </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -581,36 +571,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the palette for the false color conversion. </p>
-<dl class="section return"><dt>Returns</dt><dd>used coloring palette. </dd></dl>
-
-</div>
-</div>
-<a id="a95151ccd4d69d42afcb5b0240ba57ced" name="a95151ccd4d69d42afcb5b0240ba57ced"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95151ccd4d69d42afcb5b0240ba57ced">&#9670;&#160;</a></span>getPaletteScalingMethod()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceoptris.html#aa3b38d1c0a53c8154b1ffe64c0e3e4f4">PaletteScalingMethod</a> optris::ImageBuilder::getPaletteScalingMethod </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the current scaling method for the false color conversion. </p>
-<dl class="section return"><dt>Returns</dt><dd>scaling method. </dd></dl>
+<p>Returns the name of the currently active palette. </p>
+<dl class="section return"><dt>Returns</dt><dd>palette name string. </dd></dl>
 
 </div>
 </div>
@@ -684,6 +646,175 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a5798abc73e4d2d84011b58f2a8c2d2b5" name="a5798abc73e4d2d84011b58f2a8c2d2b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5798abc73e4d2d84011b58f2a8c2d2b5">&#9670;&#160;</a></span>getTemperatureScalingFilterFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float optris::ImageBuilder::getTemperatureScalingFilterFactor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the low pass filter factor for the temperature scaling method. </p>
+<dl class="section return"><dt>Returns</dt><dd>low pass filter factor. </dd></dl>
+
+</div>
+</div>
+<a id="a8310e625e67ec1233dc49cd991df338c" name="a8310e625e67ec1233dc49cd991df338c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8310e625e67ec1233dc49cd991df338c">&#9670;&#160;</a></span>getTemperatureScalingMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float optris::ImageBuilder::getTemperatureScalingMax </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the maximum temperature used to scale the image. </p>
+<dl class="section return"><dt>Returns</dt><dd>temperature in °C. </dd></dl>
+
+</div>
+</div>
+<a id="a88e5df1fec56fd063639c2c2f0273398" name="a88e5df1fec56fd063639c2c2f0273398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e5df1fec56fd063639c2c2f0273398">&#9670;&#160;</a></span>getTemperatureScalingMaxFiltered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float optris::ImageBuilder::getTemperatureScalingMaxFiltered </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the filtered maximum temperature actually used by the most recent frame's palette rendering. See <a class="el" href="#a76971e55d320567621f8e7e0e7486f2a" title="Returns the filtered minimum temperature actually used by the most recent frame&#39;s palette rendering.">getTemperatureScalingMinFiltered()</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>temperature in °C. </dd></dl>
+
+</div>
+</div>
+<a id="aafb7d03526162e21c3189870c2784b9c" name="aafb7d03526162e21c3189870c2784b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb7d03526162e21c3189870c2784b9c">&#9670;&#160;</a></span>getTemperatureScalingMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float optris::ImageBuilder::getTemperatureScalingMin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the minimum temperature used to scale the image. </p>
+<dl class="section return"><dt>Returns</dt><dd>temperature in °C. </dd></dl>
+
+</div>
+</div>
+<a id="a76971e55d320567621f8e7e0e7486f2a" name="a76971e55d320567621f8e7e0e7486f2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76971e55d320567621f8e7e0e7486f2a">&#9670;&#160;</a></span>getTemperatureScalingMinFiltered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> float optris::ImageBuilder::getTemperatureScalingMinFiltered </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the filtered minimum temperature actually used by the most recent frame's palette rendering. </p>
+<p>For the auto-scaling modes this lags <a class="el" href="#aafb7d03526162e21c3189870c2784b9c" title="Returns the minimum temperature used to scale the image.">getTemperatureScalingMin()</a> by the hysteresis filter (see <a class="el" href="#ac85acea8ad2387cef82ec1ef1ff85a2b" title="Sets the low pass filter factor for the temperature scaling for smooth transitions.">setTemperatureScalingFilterFactor</a>); in Manual mode both return the same value because <a class="el" href="#a02fd13cacd7731de5af002e970199bc5" title="Sets the temperature range for the manual scaling mode.">setTemperatureScaling</a> resets the filter.</p>
+<dl class="section return"><dt>Returns</dt><dd>temperature in °C. </dd></dl>
+
+</div>
+</div>
+<a id="a270319b5b05fbf5807037009561e7144" name="a270319b5b05fbf5807037009561e7144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270319b5b05fbf5807037009561e7144">&#9670;&#160;</a></span>getTemperatureScalingMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceoptris.html#aa03a3998d959b5204dd213145ceaad78">TemperatureScalingMode</a> optris::ImageBuilder::getTemperatureScalingMode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current temperate scaling mode for the false color conversion. </p>
+<dl class="section return"><dt>Returns</dt><dd>temperature scaling mode. </dd></dl>
+
+</div>
+</div>
 <a id="a141f6cd762f5d1e2452340fb0da4dae4" name="a141f6cd762f5d1e2452340fb0da4dae4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a141f6cd762f5d1e2452340fb0da4dae4">&#9670;&#160;</a></span>getThermalFrame()</h2>
 
@@ -740,14 +871,46 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5a6e5fd9f4d9c88c4c37be8330962b83" name="a5a6e5fd9f4d9c88c4c37be8330962b83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a6e5fd9f4d9c88c4c37be8330962b83">&#9670;&#160;</a></span>setManualTemperatureRange()</h2>
+<a id="a101a597a4611d893dbe4a8f02b739c64" name="a101a597a4611d893dbe4a8f02b739c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a101a597a4611d893dbe4a8f02b739c64">&#9670;&#160;</a></span>setPalette()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::ImageBuilder::setManualTemperatureRange </td>
+          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::ImageBuilder::setPalette </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the palette for the false color conversion by name. </p>
+<p>If palettes have not been loaded yet, this triggers <a class="el" href="classoptris_1_1Sdk.html#aacb2023851c1634f8297bd12b4d307e4" title="Loads palettes from the SDK and user palette directories.">Sdk::loadPalettes()</a> automatically. The palette data is copied into the <a class="el" href="classoptris_1_1ImageBuilder.html" title="Creates false color images from thermal frames.">ImageBuilder</a> — subsequent registry changes do not affect an already constructed <a class="el" href="classoptris_1_1ImageBuilder.html" title="Creates false color images from thermal frames.">ImageBuilder</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>palette name (case-sensitive, e.g. "Iron").</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if the named palette cannot be found even after auto-loading. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a02fd13cacd7731de5af002e970199bc5" name="a02fd13cacd7731de5af002e970199bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02fd13cacd7731de5af002e970199bc5">&#9670;&#160;</a></span>setTemperatureScaling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::ImageBuilder::setTemperatureScaling </td>
           <td>(</td>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>min</em></span>, </td>
         </tr>
@@ -759,19 +922,58 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the temperature range for the manual scaling method. </p>
+<p>Sets the temperature range for the manual scaling mode. </p>
+<dl class="section attention"><dt>Attention</dt><dd>If the scaling mode is not set to manual the set values will be overriden once the next image conversion is triggered.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">min</td><td>lower limit in °C. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">max</td><td>upper limit in °C. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max</td><td>upper limit in °C.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if the provided temperatures are invalid or if max is not at least 1°C higher than min. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a505b64b4a2c643cf5a5f9a82d2d3e285" name="a505b64b4a2c643cf5a5f9a82d2d3e285"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a505b64b4a2c643cf5a5f9a82d2d3e285">&#9670;&#160;</a></span>setPalette()</h2>
+<a id="ac85acea8ad2387cef82ec1ef1ff85a2b" name="ac85acea8ad2387cef82ec1ef1ff85a2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac85acea8ad2387cef82ec1ef1ff85a2b">&#9670;&#160;</a></span>setTemperatureScalingFilterFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::ImageBuilder::setTemperatureScalingFilterFactor </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>filterFactor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the low pass filter factor for the temperature scaling for smooth transitions. </p>
+<dl class="section attention"><dt>Attention</dt><dd>The filtering only affects decreasing maximum values and increasing minimum values. Increasing maximum values and decreasing minimum values are instantly updated to prevent saturation.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filterFactor</td><td>low pass filter factor in the interval [0.0, 1.0]. The default value is 0.96 and the value 0.0 disables the filter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if the provided filter factor is out of bounds. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a59d1716105f99287b49ebfc7627fb374" name="a59d1716105f99287b49ebfc7627fb374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59d1716105f99287b49ebfc7627fb374">&#9670;&#160;</a></span>setTemperatureScalingMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -780,9 +982,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void optris::ImageBuilder::setPalette </td>
+          <td class="memname">void optris::ImageBuilder::setTemperatureScalingMode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceoptris.html#a742464998770cc0985ebe451cc8e0f89">ColoringPalette</a></td>          <td class="paramname"><span class="paramname"><em>palette</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespaceoptris.html#aa03a3998d959b5204dd213145ceaad78">TemperatureScalingMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -793,43 +995,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the palette for the false color conversion. </p>
+<p>Sets the temperature scaling mode for the false color conversion. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">palette</td><td>coloring palette to set. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8f3513058fc0c5c1526163c88ab52dde" name="a8f3513058fc0c5c1526163c88ab52dde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f3513058fc0c5c1526163c88ab52dde">&#9670;&#160;</a></span>setPaletteScalingMethod()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void optris::ImageBuilder::setPaletteScalingMethod </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceoptris.html#aa3b38d1c0a53c8154b1ffe64c0e3e4f4">PaletteScalingMethod</a></td>          <td class="paramname"><span class="paramname"><em>method</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the scaling method for the false color conversion. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">method</td><td>scaling method. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>temperature scaling mode. </td></tr>
   </table>
   </dd>
 </dl>

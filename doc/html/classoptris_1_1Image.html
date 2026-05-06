@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -107,7 +107,6 @@ $(function(){initNavTree('classoptris_1_1Image.html',''); initResizable(true); }
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classoptris_1_1Image-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">optris::Image Class Reference</div></div>
 </div><!--header-->
@@ -122,7 +121,7 @@ Collaboration diagram for optris::Image:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptris_1_1Image__coll__graph.png" border="0" usemap="#aoptris_1_1Image_coll__map" alt="Collaboration graph"/></div>
 <map name="aoptris_1_1Image_coll__map" id="aoptris_1_1Image_coll__map">
-<area shape="rect" title="Encapsulates false color images with 8&#45;bit color depth." alt="" coords="5,5,131,288"/>
+<area shape="rect" title="Encapsulates false color images with 8&#45;bit color depth." alt="" coords="5,5,141,271"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -143,12 +142,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3e3d9ac3a72c6653a345e8f8c46b89a" id="r_aa3e3d9ac3a72c6653a345e8f8c46b89a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3e3d9ac3a72c6653a345e8f8c46b89a">setPixel</a> (int x, int y, const <a class="el" href="classoptris_1_1Pixel.html">Pixel</a> &amp;pixel)</td></tr>
 <tr class="memdesc:aa3e3d9ac3a72c6653a345e8f8c46b89a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pixel at the given coordinates.  <br /></td></tr>
 <tr class="separator:aa3e3d9ac3a72c6653a345e8f8c46b89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66c65d9895b302335a0c4d5febb1351c" id="r_a66c65d9895b302335a0c4d5febb1351c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <a class="el" href="classoptris_1_1ImageIterator.html">ImageIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66c65d9895b302335a0c4d5febb1351c">getIterator</a> () noexcept</td></tr>
-<tr class="memdesc:a66c65d9895b302335a0c4d5febb1351c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator with read and write access.  <br /></td></tr>
-<tr class="separator:a66c65d9895b302335a0c4d5febb1351c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6db1b6bb93638296ff9b56a7fa9675e" id="r_ad6db1b6bb93638296ff9b56a7fa9675e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <a class="el" href="classoptris_1_1ConstImageIterator.html">ConstImageIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6db1b6bb93638296ff9b56a7fa9675e">getConstIterator</a> () const noexcept</td></tr>
-<tr class="memdesc:ad6db1b6bb93638296ff9b56a7fa9675e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator with read access.  <br /></td></tr>
-<tr class="separator:ad6db1b6bb93638296ff9b56a7fa9675e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abada447156b1769dd2731a63316576be" id="r_abada447156b1769dd2731a63316576be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abada447156b1769dd2731a63316576be">getWidth</a> () const noexcept</td></tr>
 <tr class="memdesc:abada447156b1769dd2731a63316576be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width of the image in pixels.  <br /></td></tr>
 <tr class="separator:abada447156b1769dd2731a63316576be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,24 +173,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa91321d91095dc4459a697e74d02645b" id="r_aa91321d91095dc4459a697e74d02645b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <a class="el" href="namespaceoptris.html#acd74ce0a25f41cfb780c481217479e66">WidthAlignment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa91321d91095dc4459a697e74d02645b">getWidthAlignment</a> () const noexcept</td></tr>
 <tr class="memdesc:aa91321d91095dc4459a697e74d02645b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width alignment.  <br /></td></tr>
 <tr class="separator:aa91321d91095dc4459a697e74d02645b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58dfc05b075162ec087bf7854f8d3e54" id="r_a58dfc05b075162ec087bf7854f8d3e54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <a class="el" href="classoptris_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58dfc05b075162ec087bf7854f8d3e54">clone</a> () const noexcept</td></tr>
-<tr class="memdesc:a58dfc05b075162ec087bf7854f8d3e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a complete copy of this image.  <br /></td></tr>
-<tr class="separator:a58dfc05b075162ec087bf7854f8d3e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5abcd5697bb2834d4c9ce13c18bdada3" id="r_a5abcd5697bb2834d4c9ce13c18bdada3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5abcd5697bb2834d4c9ce13c18bdada3">copyDataTo</a> (unsigned char *destination, int size) const noexcept</td></tr>
 <tr class="memdesc:a5abcd5697bb2834d4c9ce13c18bdada3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the internally stored pixel values to the given array.  <br /></td></tr>
 <tr class="separator:a5abcd5697bb2834d4c9ce13c18bdada3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af35b9d539a2098250d2fad9ecf4f58e5" id="r_af35b9d539a2098250d2fad9ecf4f58e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> const unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af35b9d539a2098250d2fad9ecf4f58e5">getData</a> () const noexcept</td></tr>
 <tr class="memdesc:af35b9d539a2098250d2fad9ecf4f58e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the first element of the internal array.  <br /></td></tr>
 <tr class="separator:af35b9d539a2098250d2fad9ecf4f58e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a211774c8c6ee08a86920e01ec319d410" id="r_a211774c8c6ee08a86920e01ec319d410"><td class="memItemLeft" align="right" valign="top"><a id="a211774c8c6ee08a86920e01ec319d410" name="a211774c8c6ee08a86920e01ec319d410"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>ImageIterator</b></td></tr>
-<tr class="separator:a211774c8c6ee08a86920e01ec319d410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adda947bcfb65ab81232b5b4a27ca1353" id="r_adda947bcfb65ab81232b5b4a27ca1353"><td class="memItemLeft" align="right" valign="top"><a id="adda947bcfb65ab81232b5b4a27ca1353" name="adda947bcfb65ab81232b5b4a27ca1353"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>ConstImageIterator</b></td></tr>
-<tr class="separator:adda947bcfb65ab81232b5b4a27ca1353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa45116e9feaa3368c22425ff5e788e1" id="r_afa45116e9feaa3368c22425ff5e788e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa45116e9feaa3368c22425ff5e788e1">getData</a> () noexcept</td></tr>
+<tr class="memdesc:afa45116e9feaa3368c22425ff5e788e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the first element of the internal array.  <br /></td></tr>
+<tr class="separator:afa45116e9feaa3368c22425ff5e788e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulates false color images with 8-bit color depth. </p>
@@ -244,34 +228,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ConstImageIterator</
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a58dfc05b075162ec087bf7854f8d3e54" name="a58dfc05b075162ec087bf7854f8d3e54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58dfc05b075162ec087bf7854f8d3e54">&#9670;&#160;</a></span>clone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classoptris_1_1Image.html">Image</a> optris::Image::clone </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a complete copy of this image. </p>
-<dl class="section return"><dt>Returns</dt><dd>complete copy of this image. </dd></dl>
-
-</div>
-</div>
 <a id="a5abcd5697bb2834d4c9ce13c18bdada3" name="a5abcd5697bb2834d4c9ce13c18bdada3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5abcd5697bb2834d4c9ce13c18bdada3">&#9670;&#160;</a></span>copyDataTo()</h2>
 
@@ -341,37 +297,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ConstImageIterator</
 
 </div>
 </div>
-<a id="ad6db1b6bb93638296ff9b56a7fa9675e" name="ad6db1b6bb93638296ff9b56a7fa9675e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6db1b6bb93638296ff9b56a7fa9675e">&#9670;&#160;</a></span>getConstIterator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classoptris_1_1ConstImageIterator.html">ConstImageIterator</a> optris::Image::getConstIterator </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an iterator with read access. </p>
-<p>The iterator traverses the image in a row major fashion and skips potential width padding.</p>
-<dl class="section return"><dt>Returns</dt><dd>iterator with read access. </dd></dl>
-
-</div>
-</div>
 <a id="af35b9d539a2098250d2fad9ecf4f58e5" name="af35b9d539a2098250d2fad9ecf4f58e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af35b9d539a2098250d2fad9ecf4f58e5">&#9670;&#160;</a></span>getData()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af35b9d539a2098250d2fad9ecf4f58e5">&#9670;&#160;</a></span>getData() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -384,6 +311,36 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ConstImageIterator</
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the first element of the internal array. </p>
+<p>The size of the array can be acquired via the <a class="el" href="#a72b2b0576a649fa4a63b44c9f11d1ab7" title="Returns the size of the internal storage in bytes.">getSizeInBytes()</a> function.</p>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the first element of the internal array.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a72b2b0576a649fa4a63b44c9f11d1ab7" title="Returns the size of the internal storage in bytes.">getSizeInBytes()</a> </dd></dl>
+
+</div>
+</div>
+<a id="afa45116e9feaa3368c22425ff5e788e1" name="afa45116e9feaa3368c22425ff5e788e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa45116e9feaa3368c22425ff5e788e1">&#9670;&#160;</a></span>getData() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char * optris::Image::getData </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -425,35 +382,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ConstImageIterator</
 
 <p>Returns the height of the image in pixels. </p>
 <dl class="section return"><dt>Returns</dt><dd>image height in pixels. </dd></dl>
-
-</div>
-</div>
-<a id="a66c65d9895b302335a0c4d5febb1351c" name="a66c65d9895b302335a0c4d5febb1351c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66c65d9895b302335a0c4d5febb1351c">&#9670;&#160;</a></span>getIterator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classoptris_1_1ImageIterator.html">ImageIterator</a> optris::Image::getIterator </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an iterator with read and write access. </p>
-<p>The iterator traverses the image in a row major fashion and skips potential width padding.</p>
-<dl class="section return"><dt>Returns</dt><dd>iterator with read and write access. </dd></dl>
 
 </div>
 </div>

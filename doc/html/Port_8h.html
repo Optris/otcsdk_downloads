@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -121,53 +121,30 @@ $(function(){initNavTree('Port_8h.html',''); initResizable(true); });
 <code>#include &quot;<a class="el" href="Api_8h_source.html">otcsdk/Api.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Exceptions_8h_source.html">otcsdk/Exceptions.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for Port.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="Port_8h__incl.png" border="0" usemap="#aPort_8h" alt=""/></div>
-<map name="aPort_8h" id="aPort_8h">
-<area shape="rect" title="Contains a class representing an network port." alt="" coords="147,5,204,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,66,107"/>
-<area shape="poly" title=" " alt="" coords="152,35,75,75,72,70,150,30"/>
-<area shape="rect" title=" " alt="" coords="192,155,245,181"/>
-<area shape="poly" title=" " alt="" coords="162,34,148,49,135,67,128,86,131,106,152,130,179,148,176,153,148,134,126,108,123,86,130,65,144,46,159,30"/>
-<area shape="rect" title=" " alt="" coords="141,80,210,107"/>
-<area shape="poly" title=" " alt="" coords="178,33,178,64,173,64,173,33"/>
-<area shape="rect" href="Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="234,80,328,107"/>
-<area shape="poly" title=" " alt="" coords="195,30,251,69,248,73,192,35"/>
-<area shape="rect" href="Exceptions_8h.html" title="Contains the exceptions raised by the SDK." alt="" coords="352,80,492,107"/>
-<area shape="poly" title=" " alt="" coords="205,26,366,73,364,78,204,31"/>
-<area shape="poly" title=" " alt="" coords="388,110,261,154,259,149,386,105"/>
-<area shape="rect" title=" " alt="" coords="338,155,416,181"/>
-<area shape="poly" title=" " alt="" coords="417,109,395,143,391,140,412,106"/>
-<area shape="rect" title=" " alt="" coords="440,155,492,181"/>
-<area shape="poly" title=" " alt="" coords="432,106,453,140,448,143,428,109"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Port_8h__dep__incl.png" border="0" usemap="#aPort_8hdep" alt=""/></div>
 <map name="aPort_8hdep" id="aPort_8hdep">
-<area shape="rect" title="Contains a class representing an network port." alt="" coords="338,5,394,32"/>
-<area shape="rect" href="DeviceInfo_8h.html" title="Contains a class encapsulating important information about devices." alt="" coords="242,80,337,107"/>
-<area shape="poly" title=" " alt="" coords="343,45,305,82,301,78,340,41"/>
-<area shape="rect" href="DeviceNetworkConfig_8h.html" title="Contains a class encapsulating the on device network configuration." alt="" coords="362,80,522,107"/>
-<area shape="poly" title=" " alt="" coords="392,41,430,78,427,82,388,45"/>
-<area shape="rect" href="EnumerationClient_8h.html" title="Contains the interface definition for classes that wish to be updated about the detection of availabl..." alt="" coords="5,155,145,181"/>
-<area shape="poly" title=" " alt="" coords="239,114,114,157,112,151,237,109"/>
-<area shape="rect" href="EnumerationManager_8h.html" title="Contains a class that monitors available devices." alt="" coords="104,229,259,256"/>
-<area shape="poly" title=" " alt="" coords="253,117,229,134,209,156,199,175,192,195,185,230,180,229,187,193,194,172,205,153,226,131,250,113"/>
-<area shape="rect" href="EnumerationDetector_8h.html" title="Contains the interface definition for classes detecting available devices." alt="" coords="219,155,374,181"/>
-<area shape="poly" title=" " alt="" coords="295,122,298,154,293,155,290,123"/>
-<area shape="rect" href="IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="398,155,485,181"/>
-<area shape="poly" title=" " alt="" coords="331,111,416,152,414,156,329,116"/>
-<area shape="poly" title=" " alt="" coords="108,188,164,226,161,231,105,193"/>
-<area shape="poly" title=" " alt="" coords="265,192,203,231,200,226,262,188"/>
-<area shape="rect" href="IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="377,229,506,256"/>
-<area shape="poly" title=" " alt="" coords="444,197,444,229,439,229,439,197"/>
-<area shape="rect" href="IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="377,304,506,331"/>
-<area shape="poly" title=" " alt="" coords="444,272,444,304,439,304,439,272"/>
-<area shape="poly" title=" " alt="" coords="444,122,444,154,439,154,439,122"/>
+<area shape="rect" title="Contains a class representing an network port." alt="" coords="365,5,425,31"/>
+<area shape="rect" href="DeviceInfo_8h.html" title="Contains a class encapsulating important information about devices." alt="" coords="261,79,365,104"/>
+<area shape="poly" title=" " alt="" coords="373,42,328,80,325,76,370,38"/>
+<area shape="rect" href="DeviceNetworkConfig_8h.html" title="Contains a class encapsulating the on device network configuration." alt="" coords="390,79,565,104"/>
+<area shape="poly" title=" " alt="" coords="420,38,466,76,462,80,417,42"/>
+<area shape="rect" href="EnumerationClient_8h.html" title="Contains the base class for all clients observing the EnumerationManager." alt="" coords="5,152,160,177"/>
+<area shape="poly" title=" " alt="" coords="264,111,121,154,119,149,262,106"/>
+<area shape="rect" href="EnumerationManager_8h.html" title="Contains a class that monitors available devices." alt="" coords="111,225,284,251"/>
+<area shape="poly" title=" " alt="" coords="276,113,248,130,225,154,215,172,208,191,201,226,196,225,202,190,210,169,221,150,245,126,273,108"/>
+<area shape="rect" href="EnumerationDetector_8h.html" title="Contains the interface definition for classes detecting available devices." alt="" coords="235,152,407,177"/>
+<area shape="poly" title=" " alt="" coords="319,117,323,152,317,152,314,118"/>
+<area shape="rect" href="IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="431,152,523,177"/>
+<area shape="poly" title=" " alt="" coords="353,107,452,149,449,154,351,112"/>
+<area shape="poly" title=" " alt="" coords="114,182,180,223,177,227,111,187"/>
+<area shape="poly" title=" " alt="" coords="291,186,219,227,216,223,288,182"/>
+<area shape="rect" href="IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="407,225,547,251"/>
+<area shape="poly" title=" " alt="" coords="480,191,480,225,475,225,475,191"/>
+<area shape="rect" href="IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="408,299,547,324"/>
+<area shape="poly" title=" " alt="" coords="480,264,480,299,475,299,475,264"/>
+<area shape="poly" title=" " alt="" coords="480,118,480,152,475,152,475,118"/>
 </map>
 </div>
 </div>

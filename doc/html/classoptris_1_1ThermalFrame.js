@@ -4,7 +4,6 @@ var classoptris_1_1ThermalFrame =
     [ "ThermalFrame", "classoptris_1_1ThermalFrame.html#a7bb9e61a1d8eb05da32f108bd43a20a6", null ],
     [ "ThermalFrame", "classoptris_1_1ThermalFrame.html#a829b26389f8b9b2240489ccf1b4f77bd", null ],
     [ "~ThermalFrame", "classoptris_1_1ThermalFrame.html#a82de2d4461ddb9f418d576219e215da0", null ],
-    [ "clone", "classoptris_1_1ThermalFrame.html#a2c46f032aab18751558dcb58637530e1", null ],
     [ "copyTemperaturesTo", "classoptris_1_1ThermalFrame.html#abe8f01bdc47a5b5d3a11a5f540fcfdc7", null ],
     [ "getConverter", "classoptris_1_1ThermalFrame.html#acf2981fdcbee86c0ab2cfb7d71aafb92", null ],
     [ "getTemperature", "classoptris_1_1ThermalFrame.html#a548a38c77fd3111ca02ee118edbe64aa", null ],

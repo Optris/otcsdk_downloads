@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -108,26 +108,207 @@ $(function(){initNavTree('changelog.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Changelog</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_pages_212__changelog"></a></p>
-<h1><a class="anchor" id="autotoc_md141"></a>
+<div class="textblock"><p><a class="anchor" id="md_pages_208__changelog"></a></p>
+<h1><a class="anchor" id="autotoc_md138"></a>
 Contents</h1>
 <ul>
+<li><a class="el" href="#changelog_versions_11">Versions 11.x</a></li>
 <li><a class="el" href="#changelog_versions_10">Versions 10.x</a></li>
+</ul>
+<h1><a class="anchor" id="changelog_versions_11"></a>
+Versions 11.x</h1>
+<h2><a class="anchor" id="autotoc_md139"></a>
+Version 11.3.0</h2>
+<p>This update contains API breaking changes. Please read the log carefully.</p>
+<h3><a class="anchor" id="autotoc_md140"></a>
+Features</h3>
+<ul>
+<li><a class="el" href="measurement-fields.html">Measurement Fields</a>: Add, remove and manipulate measurement fields in the shape of rectangles, ellipses, polygons and splines with enhanced statistical evaluation.</li>
+<li><a class="el" href="alarms.html">Alarms</a>: Add, remove and manipulate alarms. Route their signals to PIF output channels.</li>
+<li><a class="el" href="important-files.html#important-files-configuration-optics-rdc-mode">Radial distortion correction</a> for all cameras that support it.</li>
+<li><a class="el" href="calibration-file-acquisition.html">Download the calibration from device</a> for Xi 80s and Xi 410s.</li>
+<li><a class="el" href="important-files.html#important-files-overview">Custom user data directory</a>: Define a custom directory where the SDK should store configurations, calibrations, logs and more.</li>
+<li><a class="el" href="color-palettes.html">Improved color palettes</a>: Color palettes for false color conversion are now defined in simple <code>CSV</code> files. You can now add your own palettes via <code>CSV</code> files or programmatically.</li>
+<li><a class="el" href="public-api.html#public-api-thermal-data">Enhanced callbacks</a>: All <code>IRImagerClient</code> callbacks now use event classes to bundle the callback data. Several previous callbacks were compounded into a single <code>onFrame()</code> callback that is triggered on a per frame basis. The callbacks are now executed by dedicated threads and no longer block the processing pipeline.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md141"></a>
+Changes</h3>
+<ul>
+<li>Bindings<ul>
+<li>C#<ul>
+<li>The SDK namespace was changed from <code>Optris.OtcSDK</code> to <code>Optris.OtcSdk</code>.</li>
+</ul>
+</li>
+<li>Python<ul>
+<li>It is now required to remove <code>IRImagerClient</code>s from the <code>IRImager</code> before they are destroyed to ensure destroyed clients can no longer be accessed.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Configuration file<ul>
+<li>Incremented version to 3.</li>
+<li>Added sections to accommodate new features:<ul>
+<li>Alarms</li>
+<li>Processing<ul>
+<li><code>output</code> defines which outputs (raw frames, thermal frames or measurement fields) should be generated.</li>
+<li><code>max_result_pool_size</code> sets the maximum number of buffers used to store processing results.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Added <code>rdc_mode</code> to <code>optics</code> section to specifying the mode of radial distortion correction (RDC).</li>
+<li>Reworked the <code>measurement_field</code> section to accommodate the new shapes and features.</li>
+<li>Amended the <code>pif</code> section<ul>
+<li>The <code>analog_outputs</code> and <code>digital_outputs</code> <code>channel</code> have a new <code>mode</code> option <code>alarm</code>.</li>
+<li>A <code>channel</code> in the <code>analog_outputs</code> using the <code>measurement_field</code> <code>mode</code> now has to specify which statistical value of the field should be output via the <code>stat</code> setting.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Added a low pass filter for the automatic temperature scaling in the <code>ImageBuilder</code> resulting in smoother transitions.</li>
+<li>You can now specify which processing outputs (raw frames, thermal frames and measurement fields) should be provided by the SDK.</li>
+<li>The startup (re-)calibrations can now be skipped by calling <code>IRImager::skipStartupCalibration()</code>.</li>
+<li>On-device network settings can now be manipulated on an active <code>IRImager</code> Ethernet connection. Depending on the changes the SDK will try to retain the active connection. If they are too severe, the SDK will consider the active connection lost and will trigger the corresponding callbacks.</li>
+<li>Framerate sub-sampling can now be set at runtime.</li>
+<li>The SDK now uses an internal pool of reusable buffers to store the results of the processing pipeline. The pool size can be configured and manipulated at runtime.</li>
+<li><code>ImageBuilder</code> can now render the false color images to an external buffer.</li>
+<li>The current version of the <code>Formats.def</code> can now be accessed via the <code>Sdk</code> class.</li>
+<li>The <code>IRImager</code> now establishes a device connection even if the calibration files are missing. Refer to this <a class="el" href="calibration-file-acquisition.html#calibration-file-acquisition-overview">section</a> in the documentation on the resulting limitations.</li>
+<li>Performance improvements in the processing pipeline and the false color image generation.</li>
+<li>Updated API used to download files on Windows.</li>
+<li>Improved thread safety.</li>
+<li>Improved device enumeration.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md142"></a>
+API changes</h2>
+<ul>
+<li>C#<ul>
+<li>The SDK namespace was changed from <code>Optris.OtcSDK</code> to <code>Optris.OtcSdk</code>.</li>
+</ul>
+</li>
+<li>New classes<ul>
+<li>Event classes for all the callbacks defined in <code>IRImager</code> client.</li>
+<li>Classes facilitating the implementation of alarms and measurement fields.</li>
+<li><code>ProcessingOutputConfig</code> struct defining what processing outputs should be provided by the SDK.</li>
+<li>Dedicated <code>Version</code> class to represent a version.</li>
+<li><code>OperationInfo</code> class holding debug and performance information of the processing pipeline.</li>
+<li><code>UncommittedValueStatus</code> class bundling the status of an uncommitted value generated by a PIF analog input.</li>
+<li><code>RangeF</code> and <code>RangeI</code> structs defining <code>float</code> and <code>integer</code> ranges.</li>
+<li><code>Vector2f</code> and <code>Vector2i</code> structs defining two-dimensional <code>float</code> and <code>integer</code> vectors.</li>
+<li><code>PifIndex</code> struct encapsulating the device and pin indices of a PIF channel.</li>
+</ul>
+</li>
+<li>Removed classes<ul>
+<li>The iterator classes for <code>Frame</code>s, <code>MeasurementField</code>s and <code>Image</code>s were removed due to poor performance.</li>
+</ul>
+</li>
+<li>DeviceInfo<ul>
+<li>Added method <code>hasFocusMotor()</code>.</li>
+</ul>
+</li>
+<li>IRImager<ul>
+<li>Added getter and setter for sub-sampled frame rate.</li>
+<li>Added getter for the <code>IRImagerConfiguration</code>.</li>
+<li>Added method to save the current <code>IRImagerConfiguration</code> configuration.</li>
+<li><code>run()</code> now returns a <code>bool</code> indicating, if the processing loop started correctly.</li>
+<li>Added getter and setter for the <code>ProcessingOutputConfig</code> setting.</li>
+<li>Added getter and setter for the maximum size of the processing result buffer pool.</li>
+<li>Added method to skip startup (re-)calibration.</li>
+<li>Added getter and setter for the radial distortion correction mode (RDC).</li>
+<li>Added and updated methods to add, remove and manipulate measurement fields.</li>
+<li>Added methods to add, remove, query and manipulate alarms.</li>
+<li>Added method to configure <code>OperationInfo</code> retrieval.</li>
+<li>The method <code>setDeviceNetworkConfig()</code> now returns a boolean indicating whether an active connection could be retained.</li>
+</ul>
+</li>
+<li>IRImagerClient<ul>
+<li>All callbacks feature event classes encapsulating all relevant data as argument.</li>
+<li><code>onThermalFrame()</code>, <code>onMeasurementField()</code> and <code>onFlagStateChange()</code> were compounded into the <code>onFrame()</code> callback that is triggered once per processed frame (subject to sub-sampling).</li>
+<li><code>onConnectionLost()</code> and <code>onConnectionTimeout()</code> were subsumed into the <code>onConnection()</code> callback that offers additional functionality (e.g. calibration file acquisition).</li>
+<li>Added callback <code>onRawFrame()</code> providing raw unprocessed frame data.</li>
+<li>Added callback <code>onOperationInfo()</code> for receiving debug and performance information about the processing pipeline.</li>
+<li>Removed dead callback <code>onThermalEvent()</code>.</li>
+<li>Removed callback <code>onProcessExit()</code>.</li>
+</ul>
+</li>
+<li>ImageBuilder<ul>
+<li>Added methods to query and adjust the low pass filter for the automatic temperature scaling modes.</li>
+<li>Added getters for the filtered minimum and maximum scaling temperatures.</li>
+<li>Added a variant of the <code>convertTemperatureToPaletteImage()</code> method that renders the false color image to an external buffer.</li>
+<li>Renamed enum <code>PaletteScalingMethod</code> to <code>TemperatureScalingMode</code>.</li>
+<li>Renamed methods:<ul>
+<li><code>setManualTemperatureRange()</code> to <code>setTemperatureScaling()</code></li>
+<li><code>getIsothermalMin()</code> to <code>getTemperatureScalingMin()</code></li>
+<li><code>getIsothermalMax()</code> to <code>getTemperatureScalingMax()</code></li>
+<li><code>setPaletteScalingMethod()</code> to <code>setTemperatureScalingMode()</code></li>
+<li><code>getPaletteScalingMethod()</code> to <code>getTemperatureScalingMode()</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ProcessInterface<ul>
+<li>Added method to get the supported PIF device types by the current camera.</li>
+</ul>
+</li>
+<li>PifXXChannelConfig<ul>
+<li>Added a simple struct <code>PifIndex</code> to hold the device and pin indices in the configuration structs.</li>
+</ul>
+</li>
+<li>VersionInfo<ul>
+<li>Added getter for the Sdk and <code>Formats.def</code> versions.</li>
+<li>Removed redundant methods that implemented the functionality of the new <code>Version</code> class.</li>
+</ul>
+</li>
+<li>Sdk<ul>
+<li>Added methods to set, get and clear a custom user data directory.</li>
+<li>Added methods for managing color palettes.</li>
+<li>Added method to set a callback that receives all the log message generated by the SDK.</li>
+</ul>
+</li>
+<li>TemperatureConverter<ul>
+<li>Added method to convert an internal value in float to degree Celsius.</li>
+</ul>
+</li>
+<li>The heating mode of the sensor chip is now represented by the enum <code>ChipHeatingMode</code> instead of an string.</li>
+<li>All classes holding configurations are now plain structs without constructors.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md143"></a>
+Bugs</h3>
+<ul>
+<li>Fixed an issue that crashed the SDK while searching for required files when used on Windows without an installation.</li>
+<li>Fixed an issue that caused the SDK to get stuck when calling <code>IRImager::disconnect()</code> from a callback.</li>
+<li>Fixed Python 3 and C# enumeration examples.</li>
+<li>Fixed bindings access to <code>IRImager::getPif()</code>.</li>
+<li>Fixed the handling of invalid temperature in the <code>ImageBuilder</code>.<ul>
+<li>Pixels with invalid temperatures are now converted to black in false color images.</li>
+<li>Pixels with invalid temperatures are now longer considered in<ul>
+<li>the automatic temperature scaling methods.</li>
+<li>the calculation of mean, min and max regions.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Fixed the conversion of invalid temperatures in the <code>TemperatureConverter</code>.</li>
+<li>Fixed an issue where dead pixels could lead to a faulty auto skim calibration resulting in seemingly overexposed false color images.</li>
+<li>Fixes to the USB subsystems to improve stability and the reliability of device enumeration.</li>
+<li>Fixes and improvements to the TCP subsystem to better detect and propagate errors to the client and to improve stability.</li>
+<li>Various corrections in the documentation.</li>
+<li>Miscellaneous minor fixes and improvements.</li>
 </ul>
 <h1><a class="anchor" id="changelog_versions_10"></a>
 Versions 10.x</h1>
-<h2><a class="anchor" id="autotoc_md142"></a>
+<h2><a class="anchor" id="autotoc_md144"></a>
 Version 10.1.1</h2>
-<h3><a class="anchor" id="autotoc_md143"></a>
+<h3><a class="anchor" id="autotoc_md145"></a>
 Features</h3>
 <ul>
-<li><a class="el" href="public-api.html#public-api-device-enumeration">Enumeration of Ethernet devices</a> on the network.</li>
-<li><a class="el" href="public-api.html#public-api-operation-modes">Setting of the active operation mode</a> (optics, temperate range and video format) at runtime.</li>
+<li><a class="el" href="device-enumeration.html">Enumeration of Ethernet devices</a> on the network.</li>
+<li><a class="el" href="operation-modes.html">Setting of the active operation mode</a> (optics, temperate range and video format) at runtime.</li>
 <li><a class="el" href="features.html#features-supported-cameras-xi320mt">Xi 320 MT</a> support.</li>
 <li>Support for size of source correction.</li>
 <li>Improved handling of radiation parameters.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md144"></a>
+<h3><a class="anchor" id="autotoc_md146"></a>
 Changes</h3>
 <ul>
 <li>Configuration file<ul>
@@ -208,21 +389,21 @@ Changes</h3>
 </li>
 <li>Various internal improvements to the core library and bindings for better performance and thread safety.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md145"></a>
+<h3><a class="anchor" id="autotoc_md147"></a>
 Bugs</h3>
 <ul>
 <li>Fixed static linking with MSVC on Windows.</li>
 <li>Fixed debug builds with MSVC on Windows.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md146"></a>
+<h2><a class="anchor" id="autotoc_md148"></a>
 Version 10.1.0</h2>
-<h3><a class="anchor" id="autotoc_md147"></a>
+<h3><a class="anchor" id="autotoc_md149"></a>
 Features</h3>
 <ul>
 <li><a class="el" href="pif.html">Process interface (PIF)</a> support.</li>
 <li><a class="el" href="fail-safe.html">Fail safe</a>.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md148"></a>
+<h3><a class="anchor" id="autotoc_md150"></a>
 Changes</h3>
 <ul>
 <li>Configuration file<ul>
@@ -264,7 +445,7 @@ Changes</h3>
 </ul>
 </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md149"></a>
+<h3><a class="anchor" id="autotoc_md151"></a>
 Bugs</h3>
 <ul>
 <li>Fixed issues that prevented the SDK from correctly parsing and probing all available download sites for calibration data.</li>
@@ -274,24 +455,25 @@ Bugs</h3>
 <li>Fixed an issue that caused memory access violations in multi-threaded environments with USB cameras while disconnecting.</li>
 <li>Other minor bug fixes and improvements.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md150"></a>
+<h2><a class="anchor" id="autotoc_md152"></a>
 Version 10.0.1</h2>
-<h3><a class="anchor" id="autotoc_md151"></a>
+<h3><a class="anchor" id="autotoc_md153"></a>
 Features</h3>
 <ul>
 <li>Extended and enhanced the documentation.</li>
 <li>Improved Python 3 bindings downwards compatibility on Windows to Python 3.9 and NumPy 2.0.0.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md152"></a>
+<h3><a class="anchor" id="autotoc_md154"></a>
 Bugs</h3>
 <ul>
 <li>Fixed an issue that caused the installation of the Debian packages to fail on headless systems.</li>
 <li>The method <code>EnumerationManger::getDetectedDevices()</code> will no longer block indefinitely, if its argument is set to <code>0</code>.</li>
 <li>The Simple View terminal windows will no longer close immediately upon an error.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md153"></a>
+<h2><a class="anchor" id="autotoc_md155"></a>
 Version 10.0.0</h2>
-<p>Redesigned the SDK based on the feature set of the IR Direct SDK version 8.9.0 with the following additional features</p><ul>
+<p>Redesigned the SDK based on the feature set of the IR Direct SDK version 8.9.0 with the following additional features</p>
+<ul>
 <li>Updated modern C++ API</li>
 <li>Multi camera support</li>
 <li>Xi1M support</li>

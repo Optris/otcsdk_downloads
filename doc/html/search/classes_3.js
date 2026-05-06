@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['frame_0',['Frame',['../classoptris_1_1Frame.html',1,'optris']]],
-  ['framemetadata_1',['FrameMetadata',['../classoptris_1_1FrameMetadata.html',1,'optris']]],
-  ['frameratecounter_2',['FramerateCounter',['../classoptris_1_1FramerateCounter.html',1,'optris']]]
+  ['enumerationclient_0',['EnumerationClient',['../classoptris_1_1EnumerationClient.html',1,'optris']]],
+  ['enumerationdetector_1',['EnumerationDetector',['../classoptris_1_1EnumerationDetector.html',1,'optris']]],
+  ['enumerationmanager_2',['EnumerationManager',['../classoptris_1_1EnumerationManager.html',1,'optris']]]
 ];

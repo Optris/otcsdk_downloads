@@ -1,0 +1,3 @@
+<map id="optris::ProcessingOutputConfig" name="optris::ProcessingOutputConfig">
+<area shape="rect" id="Node000001" title="Specifies which outputs should be computed and provided by the SDK." alt="" coords="5,5,179,125"/>
+</map>

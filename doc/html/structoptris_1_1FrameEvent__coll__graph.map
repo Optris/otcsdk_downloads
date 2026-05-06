@@ -1,0 +1,9 @@
+<map id="optris::FrameEvent" name="optris::FrameEvent">
+<area shape="rect" id="Node000001" title="Event containing the results of the successful processing of a frame." alt="" coords="105,688,243,753"/>
+<area shape="rect" id="Node000002" href="$classoptris_1_1FrameMetadata.html" title="Encapsulates the metadata of frames provided by the devices." alt="" coords="5,340,193,605"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,605,162,671,157,673,137,606"/>
+<area shape="rect" id="Node000003" href="$classoptris_1_1ThermalFrame.html" title="Encapsulates processed thermal frame data." alt="" coords="217,320,419,625"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,627,212,665,206,676,201,673,208,663,231,624"/>
+<area shape="rect" id="Node000004" href="$classoptris_1_1Frame.html" title="Represents a data frame received from a device." alt="" coords="261,5,375,271"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="321,285,321,320,315,320,315,285"/>
+</map>

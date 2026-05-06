@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -121,7 +121,7 @@ Collaboration diagram for optris::TemperatureConverter:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptris_1_1TemperatureConverter__coll__graph.png" border="0" usemap="#aoptris_1_1TemperatureConverter_coll__map" alt="Collaboration graph"/></div>
 <map name="aoptris_1_1TemperatureConverter_coll__map" id="aoptris_1_1TemperatureConverter_coll__map">
-<area shape="rect" title="Converts temperatures in °C to and from their internal SDK representation." alt="" coords="5,5,185,224"/>
+<area shape="rect" title="Converts temperatures in °C to and from their internal SDK representation." alt="" coords="5,5,211,271"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -140,8 +140,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6dcf04cbb0280892f9c3a466789cea0e" id="r_a6dcf04cbb0280892f9c3a466789cea0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoptris.html#a8f8f0dbacc90e3b4301aae65478382d4">TemperaturePrecision</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dcf04cbb0280892f9c3a466789cea0e">getPrecision</a> () const noexcept</td></tr>
 <tr class="memdesc:a6dcf04cbb0280892f9c3a466789cea0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the temperature precision.  <br /></td></tr>
 <tr class="separator:a6dcf04cbb0280892f9c3a466789cea0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4cb405fc7fce5aed03a8bbd1a861f76" id="r_ad4cb405fc7fce5aed03a8bbd1a861f76"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4cb405fc7fce5aed03a8bbd1a861f76">toTemperature</a> (unsigned short value) const noexcept</td></tr>
+<tr class="memdesc:ad4cb405fc7fce5aed03a8bbd1a861f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an internal value to a temperature in °C.  <br /></td></tr>
+<tr class="separator:ad4cb405fc7fce5aed03a8bbd1a861f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5959761efe5feef57058e94d2c6cd164" id="r_a5959761efe5feef57058e94d2c6cd164"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5959761efe5feef57058e94d2c6cd164">toTemperature</a> (float value) const noexcept</td></tr>
-<tr class="memdesc:a5959761efe5feef57058e94d2c6cd164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an internal value to a temperature in °C.  <br /></td></tr>
+<tr class="memdesc:a5959761efe5feef57058e94d2c6cd164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a sub-integer internal value to a temperature in °C.  <br /></td></tr>
 <tr class="separator:a5959761efe5feef57058e94d2c6cd164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70b7897f4d4f085892554126dac63ce5" id="r_a70b7897f4d4f085892554126dac63ce5"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70b7897f4d4f085892554126dac63ce5">toValue</a> (float temperature) const noexcept</td></tr>
 <tr class="memdesc:a70b7897f4d4f085892554126dac63ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a temperature in °C to an internal value.  <br /></td></tr>
@@ -152,6 +155,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e42e07100fe0b1f0d66849ffa658596" id="r_a0e42e07100fe0b1f0d66849ffa658596"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e42e07100fe0b1f0d66849ffa658596">isValueValid</a> (unsigned short value) noexcept</td></tr>
 <tr class="memdesc:a0e42e07100fe0b1f0d66849ffa658596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an internal value is valid.  <br /></td></tr>
 <tr class="separator:a0e42e07100fe0b1f0d66849ffa658596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d82ec2407eb1ff77034ba50fba61b88" id="r_a9d82ec2407eb1ff77034ba50fba61b88"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d82ec2407eb1ff77034ba50fba61b88">getInvalidTemperature</a> () const noexcept</td></tr>
+<tr class="memdesc:a9d82ec2407eb1ff77034ba50fba61b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value signifying an invalid temperature.  <br /></td></tr>
+<tr class="separator:a9d82ec2407eb1ff77034ba50fba61b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c1efc505aaabcdc86db0aaac195f5b" id="r_a99c1efc505aaabcdc86db0aaac195f5b"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99c1efc505aaabcdc86db0aaac195f5b">getInvalidValue</a> () const noexcept</td></tr>
+<tr class="memdesc:a99c1efc505aaabcdc86db0aaac195f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value signifying an invalid internal value.  <br /></td></tr>
+<tr class="separator:a99c1efc505aaabcdc86db0aaac195f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Converts temperatures in °C to and from their internal SDK representation. </p>
@@ -190,6 +199,62 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9d82ec2407eb1ff77034ba50fba61b88" name="a9d82ec2407eb1ff77034ba50fba61b88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d82ec2407eb1ff77034ba50fba61b88">&#9670;&#160;</a></span>getInvalidTemperature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float optris::TemperatureConverter::getInvalidTemperature </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the value signifying an invalid temperature. </p>
+<dl class="section return"><dt>Returns</dt><dd>value signifying an invalid temperature. </dd></dl>
+
+</div>
+</div>
+<a id="a99c1efc505aaabcdc86db0aaac195f5b" name="a99c1efc505aaabcdc86db0aaac195f5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c1efc505aaabcdc86db0aaac195f5b">&#9670;&#160;</a></span>getInvalidValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short optris::TemperatureConverter::getInvalidValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the value signifying an invalid internal value. </p>
+<dl class="section return"><dt>Returns</dt><dd>value signifying an invalid internal value. </dd></dl>
+
+</div>
+</div>
 <a id="a6dcf04cbb0280892f9c3a466789cea0e" name="a6dcf04cbb0280892f9c3a466789cea0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6dcf04cbb0280892f9c3a466789cea0e">&#9670;&#160;</a></span>getPrecision()</h2>
 
@@ -320,7 +385,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5959761efe5feef57058e94d2c6cd164" name="a5959761efe5feef57058e94d2c6cd164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5959761efe5feef57058e94d2c6cd164">&#9670;&#160;</a></span>toTemperature()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5959761efe5feef57058e94d2c6cd164">&#9670;&#160;</a></span>toTemperature() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,6 +397,41 @@ Public Member Functions</h2></td></tr>
           <td class="memname">float optris::TemperatureConverter::toTemperature </td>
           <td>(</td>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a sub-integer internal value to a temperature in °C. </p>
+<p>For callers that hold scaling-range state at sub-integer precision (see <a class="el" href="classoptris_1_1ImageBuilder.html" title="Creates false color images from thermal frames.">ImageBuilder</a>'s hysteresis filter and the Sigma scaling modes).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>sub-integer internal value to convert.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>temperature in °C. </dd></dl>
+
+</div>
+</div>
+<a id="ad4cb405fc7fce5aed03a8bbd1a861f76" name="ad4cb405fc7fce5aed03a8bbd1a861f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4cb405fc7fce5aed03a8bbd1a861f76">&#9670;&#160;</a></span>toTemperature() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float optris::TemperatureConverter::toTemperature </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>

@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -106,6 +106,7 @@ $(function(){initNavTree('classoptris_1_1Sdk.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classoptris_1_1Sdk-members.html">List of all members</a>  </div>
@@ -122,10 +123,16 @@ Collaboration diagram for optris::Sdk:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptris_1_1Sdk__coll__graph.png" border="0" usemap="#aoptris_1_1Sdk_coll__map" alt="Collaboration graph"/></div>
 <map name="aoptris_1_1Sdk_coll__map" id="aoptris_1_1Sdk_coll__map">
-<area shape="rect" title="Static class granting access to SDK wide configuration and utility functions." alt="" coords="5,5,186,197"/>
+<area shape="rect" title="Static class granting access to SDK wide configuration and utility functions." alt="" coords="5,5,217,400"/>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aaa4c886613209e5e4644a7cf2b83dd15" id="r_aaa4c886613209e5e4644a7cf2b83dd15"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa4c886613209e5e4644a7cf2b83dd15">LogCallback</a> = void(<a class="el" href="Api_8h.html#ac24d6851c0bceaf194189e0e4ce7719a">OTC_SDK_C_CALL</a>*)(int verbosityLevel, const char* message)</td></tr>
+<tr class="memdesc:aaa4c886613209e5e4644a7cf2b83dd15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function type for receiving SDK log messages.  <br /></td></tr>
+<tr class="separator:aaa4c886613209e5e4644a7cf2b83dd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae72b219d175c7ce72d640f6fd5ab1fd4" id="r_ae72b219d175c7ce72d640f6fd5ab1fd4"><td class="memItemLeft" align="right" valign="top"><a id="ae72b219d175c7ce72d640f6fd5ab1fd4" name="ae72b219d175c7ce72d640f6fd5ab1fd4"></a>
@@ -135,25 +142,144 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a44292a4ca4f7ffea77cc357a24d77279" id="r_a44292a4ca4f7ffea77cc357a24d77279"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44292a4ca4f7ffea77cc357a24d77279">init</a> (<a class="el" href="namespaceoptris.html#a4965aa8dec3ddb7f234d001077702588">Verbosity</a> logScreen, <a class="el" href="namespaceoptris.html#a4965aa8dec3ddb7f234d001077702588">Verbosity</a> logFile, std::string logFilenamePrefix=&quot;&quot;)</td></tr>
-<tr class="memdesc:a44292a4ca4f7ffea77cc357a24d77279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the SDK.  <br /></td></tr>
-<tr class="separator:a44292a4ca4f7ffea77cc357a24d77279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0465394a0e83cbdd796ef9b313e2bea0" id="r_a0465394a0e83cbdd796ef9b313e2bea0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0465394a0e83cbdd796ef9b313e2bea0">init</a> (<a class="el" href="namespaceoptris.html#a4965aa8dec3ddb7f234d001077702588">Verbosity</a> logScreen, <a class="el" href="namespaceoptris.html#a4965aa8dec3ddb7f234d001077702588">Verbosity</a> logFile, std::string logFilenamePrefix=&quot;&quot;, std::string customDataDirectory=&quot;&quot;)</td></tr>
+<tr class="memdesc:a0465394a0e83cbdd796ef9b313e2bea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the SDK.  <br /></td></tr>
+<tr class="separator:a0465394a0e83cbdd796ef9b313e2bea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80a330df5cbdc3542887c6080b9c1a9a" id="r_a80a330df5cbdc3542887c6080b9c1a9a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80a330df5cbdc3542887c6080b9c1a9a">configureLogger</a> (<a class="el" href="namespaceoptris.html#a4965aa8dec3ddb7f234d001077702588">Verbosity</a> logScreen, <a class="el" href="namespaceoptris.html#a4965aa8dec3ddb7f234d001077702588">Verbosity</a> logFile, std::string logFilenamePrefix=&quot;&quot;)</td></tr>
 <tr class="memdesc:a80a330df5cbdc3542887c6080b9c1a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the SDK internal logger.  <br /></td></tr>
 <tr class="separator:a80a330df5cbdc3542887c6080b9c1a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab0fa9b07954819a3586f38e9634554" id="r_a3ab0fa9b07954819a3586f38e9634554"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ab0fa9b07954819a3586f38e9634554">setLogCallback</a> (<a class="el" href="#aaa4c886613209e5e4644a7cf2b83dd15">LogCallback</a> callback, bool exclusive=false)</td></tr>
+<tr class="memdesc:a3ab0fa9b07954819a3586f38e9634554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a callback that receives SDK log messages.  <br /></td></tr>
+<tr class="separator:a3ab0fa9b07954819a3586f38e9634554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450b03a2296f9b5b313360acdadcf486" id="r_a450b03a2296f9b5b313360acdadcf486"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a450b03a2296f9b5b313360acdadcf486">setCustomDataDirectory</a> (const std::string &amp;customDataDirectory)</td></tr>
+<tr class="memdesc:a450b03a2296f9b5b313360acdadcf486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a custom data directory for the SDK to use.  <br /></td></tr>
+<tr class="separator:a450b03a2296f9b5b313360acdadcf486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eefe919adf3a4726706a76e236ce027" id="r_a9eefe919adf3a4726706a76e236ce027"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eefe919adf3a4726706a76e236ce027">clearCustomDataDirectory</a> ()</td></tr>
+<tr class="memdesc:a9eefe919adf3a4726706a76e236ce027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears a previously set custom data directory for the SDK.  <br /></td></tr>
+<tr class="separator:a9eefe919adf3a4726706a76e236ce027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af36addd5b2f300022221455186886e8c" id="r_af36addd5b2f300022221455186886e8c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af36addd5b2f300022221455186886e8c">setCalibrationFileSources</a> (<a class="el" href="namespaceoptris.html#a066621759e93f49769234f4dbfa71485">CalibrationFileSource</a> first, <a class="el" href="namespaceoptris.html#a066621759e93f49769234f4dbfa71485">CalibrationFileSource</a> second, <a class="el" href="namespaceoptris.html#a066621759e93f49769234f4dbfa71485">CalibrationFileSource</a> third)</td></tr>
 <tr class="memdesc:af36addd5b2f300022221455186886e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the priority of the calibration file sources.  <br /></td></tr>
 <tr class="separator:af36addd5b2f300022221455186886e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abac62b9b72d32f1e63eb69951c1bd1fa" id="r_abac62b9b72d32f1e63eb69951c1bd1fa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abac62b9b72d32f1e63eb69951c1bd1fa">setCalibrationFileSourceDirectory</a> (const std::string &amp;sourceDirectoryPath)</td></tr>
-<tr class="memdesc:abac62b9b72d32f1e63eb69951c1bd1fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the source directory from which calibration files can be copied.  <br /></td></tr>
-<tr class="separator:abac62b9b72d32f1e63eb69951c1bd1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4b628e124a0c3fd687a11f764a165c" id="r_a1f4b628e124a0c3fd687a11f764a165c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f4b628e124a0c3fd687a11f764a165c">setCalibrationFileSourceDirectory</a> (const std::string &amp;sourceDirectory)</td></tr>
+<tr class="memdesc:a1f4b628e124a0c3fd687a11f764a165c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the source directory from which calibration files can be copied.  <br /></td></tr>
+<tr class="separator:a1f4b628e124a0c3fd687a11f764a165c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0332561b4f300c2bf0d8c733a0adca" id="r_a4c0332561b4f300c2bf0d8c733a0adca"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c0332561b4f300c2bf0d8c733a0adca">clearCalibrationFileSourceDirectory</a> ()</td></tr>
+<tr class="memdesc:a4c0332561b4f300c2bf0d8c733a0adca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears a previously set source directory for calibration files.  <br /></td></tr>
+<tr class="separator:a4c0332561b4f300c2bf0d8c733a0adca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6400e1e525f63d4032e86313018f097" id="r_af6400e1e525f63d4032e86313018f097"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> <a class="el" href="classoptris_1_1VersionInfo.html">VersionInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6400e1e525f63d4032e86313018f097">getVersionInfo</a> ()</td></tr>
 <tr class="memdesc:af6400e1e525f63d4032e86313018f097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an object holding version and build information about the SDK.  <br /></td></tr>
 <tr class="separator:af6400e1e525f63d4032e86313018f097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb2023851c1634f8297bd12b4d307e4" id="r_aacb2023851c1634f8297bd12b4d307e4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacb2023851c1634f8297bd12b4d307e4">loadPalettes</a> ()</td></tr>
+<tr class="memdesc:aacb2023851c1634f8297bd12b4d307e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads palettes from the SDK and user palette directories.  <br /></td></tr>
+<tr class="separator:aacb2023851c1634f8297bd12b4d307e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d5af8d7bd33921cb40ad67f8762424" id="r_ac5d5af8d7bd33921cb40ad67f8762424"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5d5af8d7bd33921cb40ad67f8762424">loadPalettes</a> (const std::string &amp;directory)</td></tr>
+<tr class="memdesc:ac5d5af8d7bd33921cb40ad67f8762424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads palettes from a custom directory.  <br /></td></tr>
+<tr class="separator:ac5d5af8d7bd33921cb40ad67f8762424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f6e9b06a9ae9be9990daa5d54f2954" id="r_aa4f6e9b06a9ae9be9990daa5d54f2954"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4f6e9b06a9ae9be9990daa5d54f2954">getPaletteNames</a> ()</td></tr>
+<tr class="memdesc:aa4f6e9b06a9ae9be9990daa5d54f2954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the names of all currently loaded palettes in sorted order.  <br /></td></tr>
+<tr class="separator:aa4f6e9b06a9ae9be9990daa5d54f2954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62819b275905ea436ed8bc007102cd1b" id="r_a62819b275905ea436ed8bc007102cd1b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::vector&lt; std::array&lt; uint8_t, 3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62819b275905ea436ed8bc007102cd1b">getPaletteColors</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a62819b275905ea436ed8bc007102cd1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 240 RGB color entries of the named palette.  <br /></td></tr>
+<tr class="separator:a62819b275905ea436ed8bc007102cd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73ac872a1b8181ea5653f4655272e00" id="r_ad73ac872a1b8181ea5653f4655272e00"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad73ac872a1b8181ea5653f4655272e00">registerPalette</a> (const std::string &amp;name, const std::vector&lt; std::array&lt; uint8_t, 3 &gt; &gt; &amp;colors)</td></tr>
+<tr class="memdesc:ad73ac872a1b8181ea5653f4655272e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a palette at runtime without persisting it to disk.  <br /></td></tr>
+<tr class="separator:ad73ac872a1b8181ea5653f4655272e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b48c94bfa91384b7947278c8fd509d9" id="r_a1b48c94bfa91384b7947278c8fd509d9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b48c94bfa91384b7947278c8fd509d9">savePalette</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a1b48c94bfa91384b7947278c8fd509d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves a registered palette as a CSV file in the user palette directory.  <br /></td></tr>
+<tr class="separator:a1b48c94bfa91384b7947278c8fd509d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Static class granting access to SDK wide configuration and utility functions. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aaa4c886613209e5e4644a7cf2b83dd15" name="aaa4c886613209e5e4644a7cf2b83dd15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa4c886613209e5e4644a7cf2b83dd15">&#9670;&#160;</a></span>LogCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aaa4c886613209e5e4644a7cf2b83dd15">optris::Sdk::LogCallback</a> = void(<a class="el" href="Api_8h.html#ac24d6851c0bceaf194189e0e4ce7719a">OTC_SDK_C_CALL</a>*)(int verbosityLevel, const char* message)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function type for receiving SDK log messages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">verbosityLevel</td><td>0=Error, 1=Warning, 2=Info, 3=Debug, 4=Trace. </td></tr>
+    <tr><td class="paramname">message</td><td>the log message text. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4c0332561b4f300c2bf0d8c733a0adca" name="a4c0332561b4f300c2bf0d8c733a0adca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c0332561b4f300c2bf0d8c733a0adca">&#9670;&#160;</a></span>clearCalibrationFileSourceDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::Sdk::clearCalibrationFileSourceDirectory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears a previously set source directory for calibration files. </p>
+<p>When cleared, the SDK will skip the <a class="el" href="namespaceoptris.html#a066621759e93f49769234f4dbfa71485aac52cf637478f3656a1fdee5c02324fd" title="The calibration files are copied from a local filesystem directory.">CalibrationFileSource::Filesystem</a> option when acquiring calibration files. </p>
+
+</div>
+</div>
+<a id="a9eefe919adf3a4726706a76e236ce027" name="a9eefe919adf3a4726706a76e236ce027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eefe919adf3a4726706a76e236ce027">&#9670;&#160;</a></span>clearCustomDataDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::Sdk::clearCustomDataDirectory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears a previously set custom data directory for the SDK. </p>
+<p>Once cleared the SDK reverts to the default user data directory:</p><ul>
+<li><b>Linux</b> <code>~/.config/optris/</code></li>
+<li><b>Windows</b> <code>&lt;User AppData&gt;/Roaming/Imager/</code></li>
+</ul>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if there is an active device connection or if the default user data directory path could not be determined. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a80a330df5cbdc3542887c6080b9c1a9a" name="a80a330df5cbdc3542887c6080b9c1a9a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80a330df5cbdc3542887c6080b9c1a9a">&#9670;&#160;</a></span>configureLogger()</h2>
 
@@ -187,15 +313,84 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Configures the SDK internal logger. </p>
-<p>If you change the logFilenamePrefix from the one used in <a class="el" href="#a44292a4ca4f7ffea77cc357a24d77279" title="Initializes the SDK.">Sdk::init()</a> or in a previous call to Sdk::configure(), the current log file will be closed and new one will be created.</p>
+<p>If you change the logFilenamePrefix from the one used in <a class="el" href="#a0465394a0e83cbdd796ef9b313e2bea0" title="Initializes the SDK.">Sdk::init()</a> or in a previous call to Sdk::configure(), the current log file will be closed and new one will be created.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">logScreen</td><td>defines the minimum verbosity level of log messages displayed on the standard output and error. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">logFile</td><td>defines the minimum verbosity level of log messages out to the logfile. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">logFilenamePrefix</td><td>for the log file (logFilenamePrefix_YYYY_MM_DD-hh-mm-ss.log). If empty, it defaults to "OtcSDK". </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">logFilenamePrefix</td><td>for the log file <code>&lt;logFilenamePrefix&gt;_&lt;YYYY_MM_DDThh-mm-ss&gt;.log</code>. If empty, it defaults to "OtcSDK". </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a62819b275905ea436ed8bc007102cd1b" name="a62819b275905ea436ed8bc007102cd1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62819b275905ea436ed8bc007102cd1b">&#9670;&#160;</a></span>getPaletteColors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::vector&lt; std::array&lt; uint8_t, 3 &gt; &gt; optris::Sdk::getPaletteColors </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the 240 RGB color entries of the named palette. </p>
+<p>Each entry is an array of three bytes: <code>{ R, G, B }</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>palette name (case-sensitive).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>vector of 240 RGB triples.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if the palette is not found. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa4f6e9b06a9ae9be9990daa5d54f2954" name="aa4f6e9b06a9ae9be9990daa5d54f2954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f6e9b06a9ae9be9990daa5d54f2954">&#9670;&#160;</a></span>getPaletteNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> std::vector&lt; std::string &gt; optris::Sdk::getPaletteNames </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the names of all currently loaded palettes in sorted order. </p>
+<dl class="section return"><dt>Returns</dt><dd>sorted list of palette name strings. </dd></dl>
 
 </div>
 </div>
@@ -227,8 +422,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a44292a4ca4f7ffea77cc357a24d77279" name="a44292a4ca4f7ffea77cc357a24d77279"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44292a4ca4f7ffea77cc357a24d77279">&#9670;&#160;</a></span>init()</h2>
+<a id="a0465394a0e83cbdd796ef9b313e2bea0" name="a0465394a0e83cbdd796ef9b313e2bea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0465394a0e83cbdd796ef9b313e2bea0">&#9670;&#160;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,7 +444,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>logFilenamePrefix</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>&#160;)</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>logFilenamePrefix</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>customDataDirectory</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -260,20 +460,21 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the SDK. </p>
-<p>It sets the verbosity levels of the internal logger of the SDK and starts the <a class="el" href="classoptris_1_1EnumerationManager.html" title="Detects and monitors available devices.">EnumerationManager</a> in a dedicated thread to monitor the availability of devices.</p>
+<p>It sets the verbosity levels of the internal logger of the SDK, starts the <a class="el" href="classoptris_1_1EnumerationManager.html" title="Detects and monitors available devices.">EnumerationManager</a> in a dedicated thread to monitor the availability of devices, and loads color palettes from the SDK, working, and user palette directories.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">logScreen</td><td>defines the minimum verbosity level of log messages displayed on the standard output and error. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">logFile</td><td>defines the minimum verbosity level of log messages out to the logfile. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">logFilenamePrefix</td><td>for the log file (logFilenamePrefix_YYYY_MM_DD-hh-mm-ss.log). If empty, it defaults to "OtcSDK". </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">logFilenamePrefix</td><td>for the log file <code>&lt;logFilenamePrefix&gt;_&lt;YYYY_MM_DDThh-mm-ss&gt;.log</code>. If empty, it defaults to "OtcSDK". </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">customDataDirectory</td><td>for the SDK to use. An empty string will have no effect. The SDK requires read and write access to this directory. For detail on how specify it see <a class="el" href="#a450b03a2296f9b5b313360acdadcf486" title="Sets a custom data directory for the SDK to use.">Sdk::setCustomDataDirectory()</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="abac62b9b72d32f1e63eb69951c1bd1fa" name="abac62b9b72d32f1e63eb69951c1bd1fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abac62b9b72d32f1e63eb69951c1bd1fa">&#9670;&#160;</a></span>setCalibrationFileSourceDirectory()</h2>
+<a id="aacb2023851c1634f8297bd12b4d307e4" name="aacb2023851c1634f8297bd12b4d307e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb2023851c1634f8297bd12b4d307e4">&#9670;&#160;</a></span>loadPalettes() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,9 +483,168 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> bool optris::Sdk::setCalibrationFileSourceDirectory </td>
+          <td class="memname">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::Sdk::loadPalettes </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sourceDirectoryPath</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads palettes from the SDK and user palette directories. </p>
+<p>Scans the SDK data directory first, then the user data directory so that user-supplied palettes with the same name override the built-in ones. Missing directories are silently skipped.</p>
+<p>This method is idempotent — calling it more than once reloads all palettes from disk, replacing any previously registered entries. </p>
+
+</div>
+</div>
+<a id="ac5d5af8d7bd33921cb40ad67f8762424" name="ac5d5af8d7bd33921cb40ad67f8762424"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5d5af8d7bd33921cb40ad67f8762424">&#9670;&#160;</a></span>loadPalettes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::Sdk::loadPalettes </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>directory</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads palettes from a custom directory. </p>
+<p>Adds or overwrites palette entries in the registry without clearing previously loaded palettes.</p>
+<p>When specifying the directory path the following symbols/variables are supported:</p><ul>
+<li><code>~</code>, <code>%USERPROFILE%</code> refer to <code>~/</code> on <b>Linux</b> and <code>&lt;User Home&gt;/</code> on <b>Windows</b>.</li>
+<li><code>%APPDATA%</code> refers to <code>~/.config/</code> on <b>Linux</b> and <code>&lt;User AppData&gt;/Roaming/</code> on <b>Windows</b>.</li>
+</ul>
+<p>Relative paths are not supported. You can either use <code>/</code> as system independet directory separator or utilize system dependent ones like <code>/</code> for <b>Linux</b> and <code>\</code> on <b>Windows</b>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">directory</td><td>path to scan for <code>.csv</code> palette files.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if <code class="param">directory</code> does not exist or is not a directory. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad73ac872a1b8181ea5653f4655272e00" name="ad73ac872a1b8181ea5653f4655272e00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad73ac872a1b8181ea5653f4655272e00">&#9670;&#160;</a></span>registerPalette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::Sdk::registerPalette </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::array&lt; uint8_t, 3 &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>colors</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a palette at runtime without persisting it to disk. </p>
+<p>An existing palette with the same name is overwritten.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>unique palette name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colors</td><td>exactly 240 RGB triples <code>{ R, G, B }</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if <code class="param">colors</code> does not contain exactly 240 entries. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1b48c94bfa91384b7947278c8fd509d9" name="a1b48c94bfa91384b7947278c8fd509d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b48c94bfa91384b7947278c8fd509d9">&#9670;&#160;</a></span>savePalette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::Sdk::savePalette </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saves a registered palette as a CSV file in the user palette directory. </p>
+<p>The output filename is <code>&lt;name&gt;.csv</code>. The user palette directory is created automatically if it does not exist.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>palette name to save (case-sensitive).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if the palette is not found or the file cannot be written. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1f4b628e124a0c3fd687a11f764a165c" name="a1f4b628e124a0c3fd687a11f764a165c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f4b628e124a0c3fd687a11f764a165c">&#9670;&#160;</a></span>setCalibrationFileSourceDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::Sdk::setCalibrationFileSourceDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sourceDirectory</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -296,14 +656,23 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the source directory from which calibration files can be copied. </p>
-<p>If set to an empty string, the SDK will skip this option of acquiring calibration files.</p>
+<p>When specifying the directory path the following symbols/variables are supported:</p><ul>
+<li><code>~</code>, <code>%USERPROFILE%</code> refer to <code>~/</code> on <b>Linux</b> and <code>&lt;User Home&gt;/</code> on <b>Windows</b>.</li>
+<li><code>%APPDATA%</code> refers to <code>~/.config/</code> on <b>Linux</b> and <code>&lt;User AppData&gt;/Roaming/</code> on <b>Windows</b>.</li>
+</ul>
+<p>Relative paths are not supported. You can either use <code>/</code> as system independet directory separator or utilize system dependent ones like <code>/</code> for <b>Linux</b> and <code>\</code> on <b>Windows</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sourceDirectoryPath</td><td>from which calibration files can be copied.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sourceDirectory</td><td>from which calibration files can be copied. An empty string will have no effect.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, if the source directory was set successfully. False, otherwise. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if the given path does not exist or is not a directory. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -343,7 +712,7 @@ Static Public Member Functions</h2></td></tr>
 <p>The priority of the sources needs to be set prior to connecting to a device. If you want to use less than three potential calibration file source, set the one you do not require to Empty. The different sources have individual requirements for them to work:</p>
 <ul>
 <li>Device. Not all types of Optris cameras have their calibration files stored on-device.</li>
-<li>Filesystem. The source directory should be accessible and the SDK should have the rights to copy the calibration files from it to their target destination. The source directory needs to be specified via the <a class="el" href="#abac62b9b72d32f1e63eb69951c1bd1fa" title="Sets the source directory from which calibration files can be copied.">Sdk::setCalibrationFileSourceDirectory()</a> method.</li>
+<li>Filesystem. The source directory should be accessible and the SDK should have the rights to copy the calibration files from it to their target destination. The source directory needs to be specified via the <a class="el" href="#a1f4b628e124a0c3fd687a11f764a165c" title="Sets the source directory from which calibration files can be copied.">Sdk::setCalibrationFileSourceDirectory()</a> method.</li>
 <li>Internet. Access to the internet is required.</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>The SDK does not yet feature the ability to download the calibration from the device.</dd></dl>
@@ -356,6 +725,96 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true, if priority was successfully set. False, otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a450b03a2296f9b5b313360acdadcf486" name="a450b03a2296f9b5b313360acdadcf486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450b03a2296f9b5b313360acdadcf486">&#9670;&#160;</a></span>setCustomDataDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::Sdk::setCustomDataDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>customDataDirectory</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets a custom data directory for the SDK to use. </p>
+<dl class="section attention"><dt>Attention</dt><dd>A custom data directory can only be set when there are no active device connections.</dd></dl>
+<p>If the given directory does not exist, the SDK will try to create it (recursively).</p>
+<p>When specifying the directory path the following symbols/variables are supported:</p><ul>
+<li><code>~</code>, <code>%USERPROFILE%</code> refer to <code>~/</code> on <b>Linux</b> and <code>&lt;User Home&gt;/</code> on <b>Windows</b>.</li>
+<li><code>%APPDATA%</code> refers to <code>~/.config/</code> on <b>Linux</b> and <code>&lt;User AppData&gt;/Roaming/</code> on <b>Windows</b>.</li>
+</ul>
+<p>Relative paths are not supported. You can either use <code>/</code> as system independet directory separator or utilize system dependent ones like <code>/</code> for <b>Linux</b> and <code>\</code> on <b>Windows</b>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">customDataDirectory</td><td>for the SDK to use. An empty string will have no effect. The SDK requires read and write permission to this directory.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if<ul>
+<li>there is an active device connection.</li>
+<li>the given path is not a directory.</li>
+<li>the SDK can not access the directory</li>
+<li>the SDK failed to create the directory. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3ab0fa9b07954819a3586f38e9634554" name="a3ab0fa9b07954819a3586f38e9634554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ab0fa9b07954819a3586f38e9634554">&#9670;&#160;</a></span>setLogCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="Api_8h.html#a867b24a54c8d92422864d33e54046c8a">OTC_SDK_API</a> void optris::Sdk::setLogCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aaa4c886613209e5e4644a7cf2b83dd15">LogCallback</a></td>          <td class="paramname"><span class="paramname"><em>callback</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>exclusive</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets a callback that receives SDK log messages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>function pointer to invoke on each log message, or nullptr to remove. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exclusive</td><td>when true, disables file and screen output while the callback is active. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

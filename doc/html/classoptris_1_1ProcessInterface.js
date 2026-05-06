@@ -28,6 +28,7 @@ var classoptris_1_1ProcessInterface =
     [ "getDoConfig", "classoptris_1_1ProcessInterface.html#ae5e9b88ea188a3c0231514154c02da7f", null ],
     [ "getDoCountPerDevice", "classoptris_1_1ProcessInterface.html#aefb3b5484f0f3906c0752e122651418b", null ],
     [ "getFsConfig", "classoptris_1_1ProcessInterface.html#a47746e01d47ec405cb62745acecdea7c", null ],
+    [ "getSupportedDeviceTypes", "classoptris_1_1ProcessInterface.html#a89d84e11cd0415b85c98b3aa72179e4a", null ],
     [ "hasFs", "classoptris_1_1ProcessInterface.html#a6258b1937664168a26f918b2e68dea0c", null ],
     [ "isActualConnected", "classoptris_1_1ProcessInterface.html#a9ed59070a95de5c986102d0866a6a16e", null ],
     [ "operator=", "classoptris_1_1ProcessInterface.html#a650aa0786fb6bb98c71a37e535b9c25f", null ],

@@ -1,16 +1,16 @@
 <map id="PifConfig.h" name="PifConfig.h">
-<area shape="rect" id="Node000001" title="Contains a class that encapsulates the the configuration for the process interface." alt="" coords="104,5,190,32"/>
-<area shape="rect" id="Node000002" href="$IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="161,80,285,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,41,212,78,208,82,169,45"/>
-<area shape="rect" id="Node000007" href="$ProcessInterface_8h.html" title="Contains the interface that defines how to interact with process interfaces." alt="" coords="5,80,137,107"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="125,45,86,82,82,78,121,41"/>
-<area shape="rect" id="Node000003" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="29,155,116,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="184,116,100,156,98,152,182,111"/>
-<area shape="rect" id="Node000006" href="$IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="140,155,306,181"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="226,122,226,154,220,154,220,122"/>
-<area shape="rect" id="Node000004" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="8,229,137,256"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="75,197,75,229,70,229,70,197"/>
-<area shape="rect" id="Node000005" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="8,304,137,331"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="75,272,75,304,70,304,70,272"/>
-<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="74,122,75,154,69,154,69,123"/>
+<area shape="rect" id="Node000001" title="Contains a class encapsulating the configuration for the process interface." alt="" coords="112,5,204,31"/>
+<area shape="rect" id="Node000002" href="$IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="172,79,307,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,38,228,76,224,80,180,42"/>
+<area shape="rect" id="Node000007" href="$ProcessInterface_8h.html" title="Contains the interface that defines how to interact with process interfaces." alt="" coords="5,79,148,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="136,42,92,80,88,76,133,38"/>
+<area shape="rect" id="Node000003" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="32,152,124,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="202,112,105,154,103,149,200,107"/>
+<area shape="rect" id="Node000006" href="$IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="150,152,329,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="242,118,242,152,237,152,237,118"/>
+<area shape="rect" id="Node000004" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="8,225,148,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="81,191,81,225,75,225,75,191"/>
+<area shape="rect" id="Node000005" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="9,299,147,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="81,264,81,299,75,299,75,264"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="80,118,80,152,75,152,74,118"/>
 </map>

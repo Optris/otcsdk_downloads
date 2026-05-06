@@ -1,0 +1,13 @@
+<map id="UncommittedValueStatus.h" name="UncommittedValueStatus.h">
+<area shape="rect" id="Node000001" title="Contains a class holding the status of an uncommitted value." alt="" coords="5,5,205,31"/>
+<area shape="rect" id="Node000002" href="$UncommittedValueEvent_8h.html" title="Contains a class defining an uncommitted value event." alt="" coords="7,79,203,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,44,108,79,103,79,103,44"/>
+<area shape="rect" id="Node000003" href="$IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="40,152,171,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,118,108,152,103,152,103,118"/>
+<area shape="rect" id="Node000004" href="$IRImager_8h.html" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="59,225,151,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="108,191,108,225,103,225,103,191"/>
+<area shape="rect" id="Node000005" href="$IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="35,299,175,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="108,264,108,299,103,299,103,264"/>
+<area shape="rect" id="Node000006" href="$IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="36,372,175,397"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="108,338,108,372,103,372,103,338"/>
+</map>

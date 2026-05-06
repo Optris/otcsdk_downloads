@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['constframeiterator_0',['ConstFrameIterator',['../classoptris_1_1ConstFrameIterator.html',1,'optris']]],
-  ['constimageiterator_1',['ConstImageIterator',['../classoptris_1_1ConstImageIterator.html',1,'optris']]],
-  ['constmeasurementfielditerator_2',['ConstMeasurementFieldIterator',['../classoptris_1_1ConstMeasurementFieldIterator.html',1,'optris']]]
+  ['alarmchannel_0',['AlarmChannel',['../classoptris_1_1AlarmChannel.html',1,'optris']]],
+  ['alarmchannelconfig_1',['AlarmChannelConfig',['../structoptris_1_1AlarmChannelConfig.html',1,'optris']]],
+  ['alarmchannelstatus_2',['AlarmChannelStatus',['../classoptris_1_1AlarmChannelStatus.html',1,'optris']]],
+  ['alarmevent_3',['AlarmEvent',['../structoptris_1_1AlarmEvent.html',1,'optris']]],
+  ['alarmsconfig_4',['AlarmsConfig',['../structoptris_1_1AlarmsConfig.html',1,'optris']]]
 ];

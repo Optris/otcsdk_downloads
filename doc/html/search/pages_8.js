@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['pif_0',['Process Interface (PIF)',['../pif.html',1,'']]],
-  ['process_20interface_20pif_1',['Process Interface (PIF)',['../pif.html',1,'']]],
-  ['public_20api_2',['Public API',['../public-api.html',1,'']]]
+  ['operation_20modes_0',['Operation Modes',['../operation-modes.html',1,'']]],
+  ['overview_1',['Overview',['../index.html',1,'']]]
 ];

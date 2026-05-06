@@ -1,5 +1,5 @@
 <map id="Unicode.h" name="Unicode.h">
-<area shape="rect" id="Node000001" title="Contains defines handling unicode characters." alt="" coords="48,5,129,32"/>
-<area shape="rect" id="Node000002" href="$IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="5,80,172,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,48,91,80,86,80,86,48"/>
+<area shape="rect" id="Node000001" title="Contains defines handling unicode characters." alt="" coords="51,5,138,31"/>
+<area shape="rect" id="Node000002" href="$IRImagerConfigReader_8h.html" title="Contains a static class that reads the SDK configuration XML files." alt="" coords="5,79,184,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,44,97,79,92,79,92,44"/>
 </map>

@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -108,8 +108,8 @@ $(function(){initNavTree('device-communication.html',''); initResizable(true); }
   <div class="headertitle"><div class="title">Device Communication</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_pages_208__device__communication"></a></p>
-<h1><a class="anchor" id="autotoc_md51"></a>
+<div class="textblock"><p><a class="anchor" id="md_pages_211d__device__communication"></a></p>
+<h1><a class="anchor" id="autotoc_md171"></a>
 Contents</h1>
 <ul>
 <li><a class="el" href="#device-communication-overview">Overview</a></li>
@@ -157,14 +157,14 @@ Data stream from a PI640.</div></div>
 <li>The frame dimensions (width and height) are slightly larger than those specified in the <a class="el" href="features.html#features-supported-cameras">Supported Cameras</a> section in the <a class="el" href="features.html">Features</a> chapter. These additional rows or columns contain the frame metadata that also requires decoding by the SDK.</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>You can use the frame dimensions from above to estimate the USB bandwidth required by the device with the chosen video format: <br  />
- <code>bandwidth in bytes per second = (width x height x 2) / framerate</code></dd></dl>
+ <code>bandwidth in bytes per second = (width x height x 2) x framerate</code></dd></dl>
 <p>As an alternative, you can take a look at the <a class="el" href="important-files.html#important-files-format-definitions">format definitions file</a>. It is a text file that contains all the available video formats for the different device types. It specifies the output formats <code>Out</code> with their corresponding input formats <code>In</code> as a tuple of in the form of <code>width height framerate</code>.</p>
 <p>The devices use two different USB transfer methods to stream the thermal data:</p>
 <ul>
-<li>The Xi 80, Xi 410 and the Xi 1M use the <b>USB bulk transfer mode</b></li>
+<li>The Xi 80, Xi 320 MT, Xi 410 and the Xi 1M use the <b>USB bulk transfer mode</b></li>
 <li>while all other devices use the <b>USB isochronous transfer mode</b>.</li>
 </ul>
-<p>This has no implications on Windows since the used <b>Direct Show</b> layer seamlessly supports both transfer modes. On Linux, however, the default <b>Video for Linux v2</b> (V4L2) kernel driver for such applications just supports isochronous USB data transfer. Because of this the SKD accesses the data stream of the bulk transfer devices through the lower level <b>USB</b> kernel driver instead of <b>V4L2</b>. This is also the reason why you are not able to open their data streams with programs like the VLC player.</p>
+<p>This has no implications on Windows since the used <b>Direct Show</b> layer seamlessly supports both transfer modes. On Linux, however, the default <b>Video for Linux v2</b> (V4L2) kernel driver for such applications just supports isochronous USB data transfer. Because of this the SDK accesses the data stream of the bulk transfer devices through the lower level <b>USB</b> kernel driver instead of <b>V4L2</b>. This is also the reason why you are not able to open their data streams with programs like the VLC player.</p>
 <div class="image">
 <img src="linux_usb_video_layers.png" alt=""/>
 <div class="caption">
@@ -191,11 +191,12 @@ Control</h2>
 <p>In order to send commands to your device and to retrieve small bits of information the SDK establishes a TCP to the <b>device IP address</b> specified in the <a class="el" href="important-files.html#important-files-configuration">configuration file</a>. It will always address the port <code>2000</code> on the device. <br  />
 </p>
 <dl class="section note"><dt>Note</dt><dd>The port <code>2000</code> is required by the firmware and can not be changed by the SDK.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avoid establishing Ethernet connections to the same device from multiple clients at the same time. If one client disconnects, the control TCP connection will be closed for all other clients by the firmware. As a result, the SDK can no longer send commands to the device. This impacts, for example, the automatic triggering of flag cycles that ensure the thermal data does not drift over time.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Prior to the firmware revisions mentioned in the <a class="el" href="device-enumeration.html#device-enumeration-prerequisites">prerequisites</a> section of the <a class="el" href="device-enumeration.html">device enumeration</a> it was possible to <b>hijack</b> an active TCP connection with an <code>IRImager</code> instance or the PixConnect. In this case the device silently dropped the previous TCP connection. The affected clients (SDK/PixConnect) did not detect the dropped connection and continued to use it for sending commands. The SDK froze and the PixConnect ignored the failed sent commands. <br  />
+ With the new firmware the device only accepts <b>one TCP connection at a time</b>. It refuses any other communication until the active connection is closed or reset. If no graceful shutdown occurs the device may be stuck with the old connection. The SDK can repair such a connection in some circumstances but if it fails a power cycle is required.</dd></dl>
 <h2><a class="anchor" id="device-communication-ethernet-streaming"></a>
 Streaming</h2>
-<p>Once the device is powered and its firmware is running it tries to locate the configured <b>destination IP address</b>. On success it starts sending the thermal data via UDP datagrams to the set destination socket (<b>destination IP address</b> + <b>destination port</b>). Typically, a thermal frame is comprised out of multiple datagrams that are pieced together by the SDK.</p>
-<dl class="section note"><dt>Note</dt><dd>The SDK has no means to influence this behavior nor can it reset the firmware, if it stops to send UDP datagrams.</dd></dl>
+<p>Once the device is powered and its firmware is running it tries to locate the configured <b>destination IP address</b>. On success it starts sending the thermal data via UDP packages to the set destination socket (<b>destination IP address</b> + <b>destination port</b>). Typically, a thermal frame is comprised out of multiple packages that are pieced together by the SDK.</p>
+<dl class="section note"><dt>Note</dt><dd>The SDK has no means to influence this behavior nor can it reset the firmware, if it stops to send UDP packages.</dd></dl>
 <p>As mentioned before the data stream is uncompressed and thus poses some demands on the network hardware. To clarify those Optris released technical notes detailing the <a href="https://optris.com/wp-content/uploads/2025/04/TN_Network-Requirements_2025-03-A.pdf">Network Requirements for Optris Imager in Industrial Applications</a>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

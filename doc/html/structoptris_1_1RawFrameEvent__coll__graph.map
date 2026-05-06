@@ -1,0 +1,7 @@
+<map id="optris::RawFrameEvent" name="optris::RawFrameEvent">
+<area shape="rect" id="Node000001" title="Event containing the raw unprocessed frame data and metadata." alt="" coords="105,333,270,399"/>
+<area shape="rect" id="Node000002" href="$classoptris_1_1FrameMetadata.html" title="Encapsulates the metadata of frames provided by the devices." alt="" coords="5,5,193,271"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,270,172,317,167,319,148,272"/>
+<area shape="rect" id="Node000003" href="$classoptris_1_1Frame.html" title="Represents a data frame received from a device." alt="" coords="218,5,333,271"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,272,222,310,217,320,212,318,217,308,233,270"/>
+</map>

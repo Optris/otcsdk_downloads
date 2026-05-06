@@ -1,8 +1,6 @@
 var classoptris_1_1FrameMetadata =
 [
     [ "FrameMetadata", "classoptris_1_1FrameMetadata.html#a0f3d5f4758a80361bd3d165357eb3bb5", null ],
-    [ "clone", "classoptris_1_1FrameMetadata.html#a11bd29458b85d5d14fd87eb992d46026", null ],
-    [ "fromRawMetadata", "classoptris_1_1FrameMetadata.html#aabd7faa685855f18a8a1500f663e489e", null ],
     [ "getAmbientTemperatureSource", "classoptris_1_1FrameMetadata.html#a39f302e71217119eba6851d657690c22", null ],
     [ "getCounter", "classoptris_1_1FrameMetadata.html#a3d14cdb7213f0a5bdfdb59ae7a04dc48", null ],
     [ "getCounterHardware", "classoptris_1_1FrameMetadata.html#af6cfccc1255a5d843d3115d412020c68", null ],
@@ -15,21 +13,14 @@ var classoptris_1_1FrameMetadata =
     [ "getPifDiCountPerDevice", "classoptris_1_1FrameMetadata.html#aa60854333f557c033e6eb22c2cfbd735", null ],
     [ "getPifDiValue", "classoptris_1_1FrameMetadata.html#af4584d1c06bd5d799a6acb1f0ce1f2af", null ],
     [ "getRadiationParameters", "classoptris_1_1FrameMetadata.html#a1fd7008930f2130f88c777b61a7e2397", null ],
-    [ "getSize", "classoptris_1_1FrameMetadata.html#adfd94f4f7c8cfaabb9342079069db045", null ],
     [ "getTemperatureBox", "classoptris_1_1FrameMetadata.html#a70dccd288d7e82906547495035dc5666", null ],
     [ "getTemperatureChip", "classoptris_1_1FrameMetadata.html#a0ab486af687fbeb38090e19fee90bfc6", null ],
     [ "getTemperatureFlag", "classoptris_1_1FrameMetadata.html#afa42a49355b0a55b29adc2ae584feec2", null ],
     [ "getTimestamp", "classoptris_1_1FrameMetadata.html#afae037ee0d57cb94abb19492f978d6c1", null ],
     [ "getTimestampMedia", "classoptris_1_1FrameMetadata.html#abe6c312aa98ff26f1e79fb4e7622f961", null ],
     [ "getTransmissivitySource", "classoptris_1_1FrameMetadata.html#a90fd75af1e28f77675bfb9acc76ce45a", null ],
-    [ "isFrameDataReliable", "classoptris_1_1FrameMetadata.html#afc43c3b1a6d05da6f70c80794557fb0f", null ],
-    [ "setCounters", "classoptris_1_1FrameMetadata.html#a4771a2d62a491c95bd729214ebe82cc0", null ],
+    [ "isThermalDataReliable", "classoptris_1_1FrameMetadata.html#a581e52313389c285fb97000f6246fb5a", null ],
     [ "setFlagState", "classoptris_1_1FrameMetadata.html#abb491b2d8f0de300d4503426e5114209", null ],
-    [ "setPifAiValue", "classoptris_1_1FrameMetadata.html#a99a8df7488bbee9a32708b0bc044e5b1", null ],
-    [ "setPifCounts", "classoptris_1_1FrameMetadata.html#ae2b51a6a69c14a6b2511451b3222faa8", null ],
-    [ "setPifDiValue", "classoptris_1_1FrameMetadata.html#a013267eb7f5ef718bdc5de8a950d3eba", null ],
-    [ "setProbeTemperatures", "classoptris_1_1FrameMetadata.html#a02cd63afef7caf92e668d0adb85c2559", null ],
-    [ "setRadiationParameterSources", "classoptris_1_1FrameMetadata.html#a57b05c959ba42e836a2df9332a36aa29", null ],
-    [ "setSize", "classoptris_1_1FrameMetadata.html#a8d1c77a420e882e580c4cd2b25cccc00", null ],
-    [ "setTimestamps", "classoptris_1_1FrameMetadata.html#a7a56f389e402f8701bdad9ef577311cf", null ]
+    [ "setFrom", "classoptris_1_1FrameMetadata.html#a2c38b8a7a6fe5451779c02386034ff4c", null ],
+    [ "setRadiationParameters", "classoptris_1_1FrameMetadata.html#ac107cfcd10ea36368f827b2914f64856", null ]
 ];

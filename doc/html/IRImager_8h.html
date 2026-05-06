@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -120,188 +120,25 @@ $(function(){initNavTree('IRImager_8h.html',''); initResizable(true); });
 <code>#include &quot;<a class="el" href="ProcessInterface_8h_source.html">otcsdk/ProcessInterface.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IRImagerClient_8h_source.html">otcsdk/IRImagerClient.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IRImagerConfig_8h_source.html">otcsdk/IRImagerConfig.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="AlarmChannel_8h_source.html">otcsdk/alarms/AlarmChannel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DeviceType_8h_source.html">otcsdk/common/DeviceType.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DeviceInfo_8h_source.html">otcsdk/common/DeviceInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OperationMode_8h_source.html">otcsdk/common/OperationMode.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="RadiationParameters_8h_source.html">otcsdk/common/RadiationParameters.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TemperaturePrecision_8h_source.html">otcsdk/common/TemperaturePrecision.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="RdcMode_8h_source.html">otcsdk/common/RdcMode.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DeviceNetworkConfig_8h_source.html">otcsdk/communication/net/DeviceNetworkConfig.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for IRImager.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="IRImager_8h__incl.png" border="0" usemap="#aIRImager_8h" alt=""/></div>
-<map name="aIRImager_8h" id="aIRImager_8h">
-<area shape="rect" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="2560,5,2647,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,74,107"/>
-<area shape="poly" title=" " alt="" coords="2560,23,2123,23,1407,29,1019,36,650,47,332,62,93,83,90,83,89,78,93,77,332,57,650,42,1018,31,1406,24,2123,18,2560,17"/>
-<area shape="rect" title=" " alt="" coords="356,427,414,453"/>
-<area shape="poly" title=" " alt="" coords="2560,22,2177,22,1887,26,1565,35,1236,51,927,75,787,91,662,110,554,132,467,157,419,173,381,188,349,210,318,247,297,281,286,311,287,342,300,377,319,401,344,418,341,422,316,405,296,380,282,343,281,310,292,278,313,244,346,206,379,183,417,168,465,152,553,127,661,105,787,86,927,70,1236,46,1564,30,1886,21,2177,17,2560,17"/>
-<area shape="rect" href="Exceptions_8h.html" title="Contains the exceptions raised by the SDK." alt="" coords="3951,427,4091,453"/>
-<area shape="poly" title=" " alt="" coords="2647,19,3016,35,3568,67,3840,89,4071,114,4162,127,4231,142,4276,157,4288,165,4293,174,4293,268,4288,300,4275,328,4254,352,4228,373,4168,405,4105,425,4104,420,4166,400,4226,369,4250,349,4270,325,4283,299,4288,268,4288,175,4284,169,4273,161,4230,147,4161,132,4070,119,3840,94,3568,73,3016,41,2647,24"/>
-<area shape="rect" href="ProcessInterface_8h.html" title="Contains the interface that defines how to interact with process interfaces." alt="" coords="2358,80,2532,107"/>
-<area shape="poly" title=" " alt="" coords="2577,35,2488,75,2485,71,2575,30"/>
-<area shape="rect" href="IRImagerClient_8h.html" title="Contains the base class for all clients observing an IRImager." alt="" coords="1018,80,1181,107"/>
-<area shape="poly" title=" " alt="" coords="2560,23,2015,38,1614,55,1200,83,1196,83,1196,78,1199,77,1613,50,2015,32,2560,18"/>
-<area shape="rect" href="RadiationParameters_8h.html" title="Contains a class holding the individual radiation parameters." alt="" coords="2943,344,3194,371"/>
-<area shape="poly" title=" " alt="" coords="2622,30,3041,333,3038,337,2619,35"/>
-<area shape="rect" href="TemperaturePrecision_8h.html" title="Contains an enum representing the different temperature precisions and constants denoting invalid tem..." alt="" coords="1039,336,1229,379"/>
-<area shape="poly" title=" " alt="" coords="2560,25,2277,39,1861,67,1651,85,1466,107,1324,131,1275,144,1245,157,1225,173,1207,192,1178,236,1158,282,1145,322,1140,321,1153,280,1173,234,1203,189,1221,169,1242,152,1273,138,1323,125,1465,101,1651,80,1861,61,2277,34,2560,19"/>
-<area shape="rect" href="IRImagerConfig_8h.html" title="Contains a class holding the SDK settings found in the configuration file." alt="" coords="2985,80,3152,107"/>
-<area shape="poly" title=" " alt="" coords="2648,24,2973,74,2972,80,2647,29"/>
-<area shape="rect" href="DeviceType_8h.html" title="Contains an enum representing the different types of Optris thermal cameras." alt="" coords="1919,344,2117,371"/>
-<area shape="poly" title=" " alt="" coords="2560,27,2460,44,2402,60,2347,82,2298,110,2250,142,2162,213,2090,282,2041,334,2037,331,2086,278,2159,209,2247,138,2295,106,2345,78,2401,55,2459,38,2560,21"/>
-<area shape="rect" href="DeviceInfo_8h.html" title="Contains a class encapsulating important information about devices." alt="" coords="3430,253,3622,280"/>
-<area shape="poly" title=" " alt="" coords="2647,18,2742,22,2871,31,3018,49,3165,77,3220,92,3262,108,3353,152,3433,199,3498,242,3495,247,3430,203,3350,157,3260,113,3219,98,3164,83,3017,54,2871,36,2742,27,2647,23"/>
-<area shape="rect" href="OperationMode_8h.html" title="Contains the interface definition for classes specifying valid sets of configuration settings." alt="" coords="4328,163,4546,189"/>
-<area shape="poly" title=" " alt="" coords="2647,17,2990,19,3512,26,3779,34,4017,44,4202,59,4267,67,4310,77,4341,92,4371,111,4417,150,4413,154,4367,115,4339,97,4308,83,4266,73,4201,64,4016,50,3778,39,3512,32,2990,24,2647,23"/>
-<area shape="rect" href="DeviceNetworkConfig_8h.html" title="Contains a class encapsulating the on device network configuration." alt="" coords="3830,245,4017,288"/>
-<area shape="poly" title=" " alt="" coords="2647,19,2895,35,3060,53,3228,77,3403,114,3575,158,3847,238,3845,243,3574,163,3402,119,3227,83,3060,58,2894,41,2647,24"/>
-<area shape="rect" title=" " alt="" coords="3937,501,4014,528"/>
-<area shape="poly" title=" " alt="" coords="4015,455,3994,489,3989,487,4011,452"/>
-<area shape="rect" title=" " alt="" coords="3149,501,3202,528"/>
-<area shape="poly" title=" " alt="" coords="3951,451,3902,456,3218,513,3217,507,3902,451,3950,446"/>
-<area shape="rect" title=" " alt="" coords="4039,501,4091,528"/>
-<area shape="poly" title=" " alt="" coords="4031,452,4052,487,4047,489,4026,455"/>
-<area shape="rect" href="PifConfig_8h.html" title="Contains a class that encapsulates the the configuration for the process interface." alt="" coords="2274,163,2421,189"/>
-<area shape="poly" title=" " alt="" coords="2431,109,2375,155,2372,151,2428,105"/>
-<area shape="poly" title=" " alt="" coords="2274,185,1944,211,1514,248,1126,291,1013,296,867,301,723,313,663,323,617,338,603,347,595,358,587,370,573,381,537,399,499,414,429,433,428,428,497,409,535,395,570,376,583,366,591,355,600,344,614,334,662,318,723,307,867,296,1013,291,1126,285,1514,243,1944,205,2273,180"/>
-<area shape="rect" title=" " alt="" coords="2625,427,2694,453"/>
-<area shape="poly" title=" " alt="" coords="2381,187,2430,209,2491,242,2554,283,2611,334,2637,373,2654,411,2649,413,2632,375,2607,338,2551,288,2488,246,2428,214,2379,192"/>
-<area shape="rect" href="Api_8h.html" title="Contains defines controlling the Windows DLL export and import of symbols." alt="" coords="1632,427,1727,453"/>
-<area shape="poly" title=" " alt="" coords="2274,188,2133,208,1965,240,1884,260,1811,283,1753,309,1713,338,1701,355,1693,374,1684,412,1679,411,1688,372,1697,352,1710,334,1750,305,1810,278,1883,255,1964,235,2132,203,2273,183"/>
-<area shape="rect" href="PifChannelConfigs_8h.html" title="Contains classes holding the configuration parameter for the different process interface channels." alt="" coords="2198,253,2401,280"/>
-<area shape="poly" title=" " alt="" coords="2343,191,2316,241,2311,238,2338,189"/>
-<area shape="poly" title=" " alt="" coords="2257,283,2215,304,2196,319,2182,337,2174,358,2176,367,2181,377,2199,390,2231,403,2329,427,2460,449,2611,467,2916,494,3133,508,3133,514,2916,499,2610,472,2459,454,2328,433,2230,408,2197,395,2178,380,2171,369,2169,358,2177,335,2193,315,2212,299,2254,278"/>
-<area shape="poly" title=" " alt="" coords="2315,279,2375,335,2424,376,2471,397,2520,413,2610,431,2609,436,2519,418,2469,402,2421,381,2372,339,2311,283"/>
-<area shape="poly" title=" " alt="" coords="2198,279,1985,302,1885,319,1814,338,1764,372,1707,418,1703,414,1761,368,1812,334,1884,314,1985,297,2198,273"/>
-<area shape="rect" href="Slope_8h.html" title="Contains a class holding the parameters for a linear transformation." alt="" coords="2434,344,2597,371"/>
-<area shape="poly" title=" " alt="" coords="2331,278,2472,335,2470,340,2329,283"/>
-<area shape="rect" href="PifProperties_8h.html" title="Contains enums defining various properties of process interfaces." alt="" coords="2191,344,2360,371"/>
-<area shape="poly" title=" " alt="" coords="2299,281,2285,330,2280,328,2293,280"/>
-<area shape="poly" title=" " alt="" coords="2539,369,2625,417,2623,421,2537,373"/>
-<area shape="poly" title=" " alt="" coords="2313,369,2445,409,2528,432,2613,451,2762,475,2910,492,3134,509,3133,514,2910,497,2762,480,2612,456,2527,437,2443,415,2312,374"/>
-<area shape="poly" title=" " alt="" coords="2336,369,2611,426,2610,431,2335,374"/>
-<area shape="poly" title=" " alt="" coords="2191,373,2129,381,1742,433,1741,428,2128,376,2191,368"/>
-<area shape="poly" title=" " alt="" coords="1018,105,858,123,665,152,570,172,485,194,415,219,365,247,333,277,313,307,308,322,306,339,309,357,317,377,331,399,351,416,347,420,327,402,312,380,304,359,301,339,303,321,308,304,329,273,362,243,412,214,483,189,569,166,664,147,857,118,1017,99"/>
-<area shape="poly" title=" " alt="" coords="1111,105,1228,246,1303,326,1336,357,1363,376,1427,404,1495,421,1560,431,1617,436,1616,441,1559,437,1494,427,1425,409,1361,381,1333,361,1299,330,1224,250,1107,109"/>
-<area shape="rect" href="FlagState_8h.html" title="Contains an enum representing the different states of the shutter flag." alt="" coords="1406,344,1591,371"/>
-<area shape="poly" title=" " alt="" coords="1182,93,1267,98,1357,107,1437,125,1467,137,1488,153,1496,166,1501,185,1506,233,1503,329,1498,329,1501,233,1496,186,1491,168,1484,156,1465,142,1435,130,1357,113,1266,103,1182,98"/>
-<area shape="rect" href="Frame_8h.html" title="Contains a class representing a data frame received from a device." alt="" coords="606,253,772,280"/>
-<area shape="poly" title=" " alt="" coords="1017,98,931,103,837,113,755,130,725,142,704,157,692,174,687,195,686,238,681,238,681,195,688,172,700,153,722,137,754,125,836,107,930,98,1017,93"/>
-<area shape="rect" href="FrameMetadata_8h.html" title="Contains a class encapsulating the metadata associated with each frame." alt="" coords="1527,253,1747,280"/>
-<area shape="poly" title=" " alt="" coords="1182,97,1374,116,1466,132,1503,141,1531,152,1560,171,1585,193,1622,239,1618,242,1581,197,1556,175,1529,157,1502,146,1465,137,1374,121,1181,102"/>
-<area shape="rect" href="SnapshotEvent_8h.html" title="Contains a class holding all the information about a snapshot event." alt="" coords="1256,163,1474,189"/>
-<area shape="poly" title=" " alt="" coords="1142,105,1310,155,1308,160,1140,110"/>
-<area shape="rect" href="ThermalFrame_8h.html" title="Contains a class encapsulating a thermal frame received from a device." alt="" coords="714,163,928,189"/>
-<area shape="poly" title=" " alt="" coords="1057,110,880,161,878,155,1055,105"/>
-<area shape="rect" href="MeasurementField_8h.html" title="Contains a class encapsulating the properties and data of a rectangular measurement field." alt="" coords="952,155,1130,197"/>
-<area shape="poly" title=" " alt="" coords="1092,109,1067,144,1062,141,1088,106"/>
-<area shape="poly" title=" " alt="" coords="1511,369,1556,412,1587,434,1622,451,1660,460,1718,468,1886,482,2101,493,2343,500,2818,508,3133,511,3133,516,2818,514,2343,505,2101,498,1885,488,1718,474,1659,465,1620,456,1585,438,1553,416,1507,373"/>
-<area shape="poly" title=" " alt="" coords="1591,362,2610,433,2610,438,1591,368"/>
-<area shape="poly" title=" " alt="" coords="1528,369,1639,418,1637,423,1525,374"/>
-<area shape="poly" title=" " alt="" coords="605,275,530,282,451,294,383,313,358,324,342,338,335,355,338,375,349,395,363,413,359,417,344,398,333,377,329,355,337,334,355,320,381,308,449,289,529,277,605,270"/>
-<area shape="poly" title=" " alt="" coords="772,274,913,285,2471,289,3026,294,3513,302,3864,315,3968,323,3998,328,4013,334,4025,351,4031,372,4030,412,4025,411,4026,372,4021,354,4010,338,3997,333,3967,329,3864,320,3513,307,3026,299,2471,294,913,291,772,280"/>
-<area shape="poly" title=" " alt="" coords="735,278,803,301,877,334,894,345,905,357,917,367,934,376,992,392,1071,405,1263,422,1461,432,1617,435,1617,441,1461,437,1263,428,1070,410,991,397,932,381,914,372,902,361,890,350,874,338,801,306,734,283"/>
-<area shape="rect" href="FrameIterator_8h.html" title="Contains a class that realizes the iteration over Frames." alt="" coords="352,344,559,371"/>
-<area shape="poly" title=" " alt="" coords="656,283,504,341,502,336,654,278"/>
-<area shape="poly" title=" " alt="" coords="446,373,407,417,403,414,442,369"/>
-<area shape="poly" title=" " alt="" coords="560,366,673,376,1220,412,1617,433,1617,438,1219,417,673,381,559,372"/>
-<area shape="poly" title=" " alt="" coords="1527,275,1041,300,806,318,723,328,674,339,657,348,646,358,634,370,617,381,568,401,518,416,430,435,429,430,517,411,566,396,614,376,631,366,642,354,654,343,672,333,722,323,806,313,1040,294,1526,270"/>
-<area shape="poly" title=" " alt="" coords="1747,270,2186,285,3127,296,3756,310,3967,321,4030,327,4057,334,4067,354,4065,375,4056,397,4043,416,4039,413,4051,394,4060,374,4062,355,4054,338,4029,332,3967,326,3755,316,3127,301,2186,291,1747,275"/>
-<area shape="poly" title=" " alt="" coords="1642,280,1663,378,1673,411,1668,413,1658,379,1637,281"/>
-<area shape="poly" title=" " alt="" coords="1618,283,1532,337,1529,333,1616,278"/>
-<area shape="poly" title=" " alt="" coords="1748,270,2355,297,2688,315,2932,333,2976,339,2976,344,2931,339,2688,321,2355,303,1747,275"/>
-<area shape="poly" title=" " alt="" coords="3195,367,3935,429,3935,434,3195,372"/>
-<area shape="poly" title=" " alt="" coords="3080,370,3161,487,3156,490,3075,373"/>
-<area shape="poly" title=" " alt="" coords="3005,374,2709,432,2708,426,3004,369"/>
-<area shape="poly" title=" " alt="" coords="2992,374,2932,381,2580,409,2235,426,1742,440,1742,435,2235,421,2579,403,2931,376,2991,369"/>
-<area shape="poly" title=" " alt="" coords="1365,190,1360,227,1359,277,1368,331,1379,355,1395,377,1409,388,1431,397,1489,413,1555,424,1617,431,1617,437,1554,429,1487,418,1429,402,1407,392,1391,381,1374,358,1363,332,1354,277,1355,226,1360,189"/>
-<area shape="poly" title=" " alt="" coords="830,189,853,228,892,281,944,335,973,358,1006,376,1057,393,1126,406,1297,424,1475,433,1617,436,1617,441,1475,438,1296,429,1125,412,1055,398,1004,381,971,362,940,339,888,284,849,231,825,191"/>
-<area shape="poly" title=" " alt="" coords="803,192,722,247,719,242,800,188"/>
-<area shape="rect" href="TemperatureConverter_8h.html" title="Contains a class that converts between temperatures in the internal SDK format and in °C." alt="" coords="924,245,1115,288"/>
-<area shape="poly" title=" " alt="" coords="850,188,960,236,958,241,848,192"/>
-<area shape="poly" title=" " alt="" coords="1017,289,1013,334,1017,357,1029,377,1059,390,1115,402,1280,420,1465,430,1617,435,1617,440,1465,435,1279,425,1115,408,1057,396,1026,381,1012,359,1007,334,1011,288"/>
-<area shape="poly" title=" " alt="" coords="1048,286,1097,324,1094,328,1044,291"/>
-<area shape="poly" title=" " alt="" coords="1210,377,1373,416,1470,435,1568,451,1717,465,1915,476,2386,494,3134,510,3133,515,2386,500,1914,482,1716,470,1567,456,1469,441,1372,421,1208,382"/>
-<area shape="poly" title=" " alt="" coords="1230,364,1393,376,2115,414,2610,434,2609,439,2115,419,1393,381,1230,369"/>
-<area shape="poly" title=" " alt="" coords="1230,373,1248,376,1618,428,1617,433,1247,381,1230,378"/>
-<area shape="poly" title=" " alt="" coords="952,198,940,200,841,210,750,209,591,202,520,207,486,215,453,227,421,245,390,269,359,299,329,337,322,357,328,377,342,397,359,414,355,418,337,400,323,379,317,357,324,335,355,296,386,265,418,241,451,223,484,210,519,202,591,196,750,204,841,205,939,195,951,193"/>
-<area shape="poly" title=" " alt="" coords="1131,185,1244,195,2640,205,3577,219,3893,229,3988,236,4030,243,4065,270,4085,301,4091,338,4081,380,4068,401,4052,418,4048,415,4064,398,4076,378,4085,338,4080,303,4061,274,4028,248,3987,241,3893,235,3577,224,2640,211,1243,200,1130,190"/>
-<area shape="poly" title=" " alt="" coords="952,198,940,200,883,204,811,205,644,204,560,207,481,213,415,226,387,236,365,248,339,269,319,293,305,320,298,349,298,377,306,404,321,430,345,451,381,458,467,465,756,477,1631,495,2560,506,3134,510,3134,516,2560,511,1631,501,756,483,466,470,381,463,342,456,317,433,301,407,293,378,293,348,300,319,315,290,335,265,362,243,385,231,413,221,481,208,559,201,644,199,811,200,883,199,939,195,951,193"/>
-<area shape="poly" title=" " alt="" coords="1068,196,1299,376,1359,393,1444,409,1617,430,1617,435,1443,414,1358,399,1297,381,1065,200"/>
-<area shape="poly" title=" " alt="" coords="1038,198,1031,231,1025,230,1033,197"/>
-<area shape="rect" href="MeasurementFieldConfig_8h.html" title="Contains a class encapsulating the configuration of a measurement field." alt="" coords="2672,245,2850,288"/>
-<area shape="poly" title=" " alt="" coords="1131,185,1244,195,1572,214,1828,223,2084,229,2413,243,2656,256,2656,262,2413,248,2084,235,1828,228,1572,219,1243,200,1130,190"/>
-<area shape="rect" href="MeasurementFieldIterator_8h.html" title="Contains a class realizing the iteration over measurement field data." alt="" coords="685,336,863,379"/>
-<area shape="poly" title=" " alt="" coords="999,200,914,248,858,288,810,328,807,324,855,284,911,243,996,195"/>
-<area shape="poly" title=" " alt="" coords="2851,266,2949,270,3056,281,3105,290,3149,301,3184,316,3208,334,3219,352,3225,372,3223,414,3210,455,3194,489,3189,486,3205,453,3218,413,3220,373,3215,354,3204,338,3181,321,3147,306,3104,295,3055,286,2949,275,2850,271"/>
-<area shape="poly" title=" " alt="" coords="2746,290,2712,337,2673,414,2668,411,2708,335,2742,287"/>
-<area shape="poly" title=" " alt="" coords="2671,276,2199,308,1975,325,1864,339,1846,347,1833,357,1802,381,1723,422,1720,417,1799,376,1830,353,1843,343,1863,333,1974,320,2199,302,2671,271"/>
-<area shape="poly" title=" " alt="" coords="2834,286,3011,337,3010,342,2832,291"/>
-<area shape="rect" href="FieldProperties_8h.html" title="Contains various enums representing properties of fields." alt="" coords="2722,344,2920,371"/>
-<area shape="poly" title=" " alt="" coords="2777,287,2806,330,2802,333,2773,290"/>
-<area shape="poly" title=" " alt="" coords="2851,369,3136,493,3134,498,2849,374"/>
-<area shape="poly" title=" " alt="" coords="2797,374,2699,422,2697,417,2794,369"/>
-<area shape="poly" title=" " alt="" coords="2722,371,2609,381,2109,416,1742,438,1742,433,2109,411,2609,376,2721,366"/>
-<area shape="poly" title=" " alt="" coords="685,380,430,432,429,427,684,375"/>
-<area shape="poly" title=" " alt="" coords="864,373,883,376,1093,399,1301,416,1617,434,1616,439,1301,421,1092,404,882,381,863,379"/>
-<area shape="poly" title=" " alt="" coords="3153,94,3368,103,3501,113,3640,127,3776,146,3899,172,4001,203,4041,222,4072,243,4101,273,4117,306,4118,341,4105,380,4087,403,4064,421,4061,416,4083,399,4100,377,4113,340,4111,307,4097,276,4068,247,4038,227,3999,208,3898,177,3775,152,3640,132,3501,118,3367,109,3153,99"/>
-<area shape="poly" title=" " alt="" coords="3136,105,3200,124,3233,139,3265,156,3293,177,3315,202,3330,232,3335,265,3335,359,3332,383,3324,405,3310,426,3294,444,3256,475,3218,497,3215,493,3253,471,3290,440,3306,423,3319,403,3327,382,3330,358,3330,266,3325,233,3311,205,3289,181,3262,161,3231,143,3198,129,3134,110"/>
-<area shape="poly" title=" " alt="" coords="2985,107,2437,167,2436,162,2984,101"/>
-<area shape="poly" title=" " alt="" coords="3086,105,3137,153,3167,187,3196,224,3218,264,3230,305,3231,325,3228,344,3221,363,3208,381,3182,394,3133,405,2994,422,2837,434,2709,440,2709,434,2836,428,2993,417,3132,400,3180,389,3204,377,3216,360,3223,343,3226,324,3225,306,3213,266,3191,227,3163,190,3133,157,3082,109"/>
-<area shape="poly" title=" " alt="" coords="2990,110,2286,228,1927,294,1807,320,1750,338,1724,370,1696,415,1691,412,1719,367,1747,334,1805,315,1925,289,2285,223,2989,105"/>
-<area shape="poly" title=" " alt="" coords="3072,107,3072,328,3066,328,3066,107"/>
-<area shape="poly" title=" " alt="" coords="3047,110,2812,240,2810,235,3045,105"/>
-<area shape="rect" href="IpAddress_8h.html" title="Contains a class holding IP v4 address." alt="" coords="3671,336,3824,379"/>
-<area shape="poly" title=" " alt="" coords="3154,100,3256,115,3380,142,3446,160,3511,183,3575,211,3636,243,3685,281,3724,322,3720,326,3681,285,3633,248,3573,216,3509,188,3444,166,3379,147,3255,120,3153,105"/>
-<area shape="poly" title=" " alt="" coords="3819,377,3964,419,3963,424,3817,382"/>
-<area shape="poly" title=" " alt="" coords="3726,381,3676,420,3644,440,3610,456,3557,474,3502,488,3392,506,3293,514,3217,516,3217,511,3293,509,3391,500,3501,482,3555,468,3608,451,3641,435,3673,416,3723,377"/>
-<area shape="poly" title=" " alt="" coords="3671,379,3660,381,3521,399,3379,412,3104,430,2869,439,2710,441,2709,436,2869,433,3104,425,3379,407,3521,393,3659,376,3670,374"/>
-<area shape="poly" title=" " alt="" coords="3671,380,3660,381,3535,391,3323,400,2747,418,1742,440,1742,435,2747,412,3323,395,3534,385,3659,376,3670,374"/>
-<area shape="rect" title=" " alt="" coords="3546,427,3597,453"/>
-<area shape="poly" title=" " alt="" coords="3703,382,3612,423,3610,418,3701,377"/>
-<area shape="rect" title=" " alt="" coords="3732,427,3792,453"/>
-<area shape="poly" title=" " alt="" coords="3754,379,3760,411,3755,412,3749,380"/>
-<area shape="poly" title=" " alt="" coords="2030,369,2074,412,2103,434,2136,451,2198,463,2306,475,2601,492,3134,510,3133,515,2601,498,2305,480,2198,469,2135,456,2101,438,2070,416,2027,373"/>
-<area shape="poly" title=" " alt="" coords="2118,368,2610,430,2610,435,2117,374"/>
-<area shape="poly" title=" " alt="" coords="1965,374,1742,427,1741,421,1964,369"/>
-<area shape="poly" title=" " alt="" coords="3495,283,3452,305,3411,338,3399,353,3392,368,3384,397,3376,426,3367,441,3353,455,3321,477,3286,493,3218,511,3217,506,3284,488,3319,473,3350,451,3363,437,3371,424,3379,395,3387,366,3395,350,3407,334,3449,301,3493,278"/>
-<area shape="poly" title=" " alt="" coords="3430,274,2554,306,2112,325,1908,339,1892,347,1881,358,1869,369,1853,381,1797,406,1742,425,1741,420,1795,401,1850,376,1866,365,1877,354,1889,343,1907,333,2112,319,2553,301,3430,269"/>
-<area shape="poly" title=" " alt="" coords="3559,278,3683,327,3681,332,3557,283"/>
-<area shape="poly" title=" " alt="" coords="3430,273,2897,293,2541,312,2180,339,2126,344,2125,339,2179,333,2541,307,2897,288,3430,268"/>
-<area shape="rect" title=" " alt="" coords="3598,344,3647,371"/>
-<area shape="poly" title=" " alt="" coords="3542,279,3599,331,3596,335,3538,283"/>
-<area shape="rect" href="MacAddress_8h.html" title="Contains a class representing a MAC address." alt="" coords="3421,336,3573,379"/>
-<area shape="poly" title=" " alt="" coords="3524,281,3511,322,3506,321,3519,280"/>
-<area shape="rect" href="Port_8h.html" title="Contains a class representing an network port." alt="" coords="3847,336,4000,379"/>
-<area shape="poly" title=" " alt="" coords="3585,278,3833,333,3832,338,3584,283"/>
-<area shape="poly" title=" " alt="" coords="3574,374,3587,376,3773,405,3936,426,3935,432,3773,411,3586,381,3573,379"/>
-<area shape="poly" title=" " alt="" coords="3484,381,3450,419,3428,439,3403,456,3356,478,3306,494,3218,511,3217,506,3305,489,3354,473,3401,451,3425,435,3446,415,3480,377"/>
-<area shape="poly" title=" " alt="" coords="3421,369,2709,437,2709,431,3420,363"/>
-<area shape="poly" title=" " alt="" coords="3421,367,3206,381,2767,403,2340,420,1742,440,1742,434,2339,414,2767,397,3206,376,3420,362"/>
-<area shape="poly" title=" " alt="" coords="3518,377,3552,413,3548,417,3514,381"/>
-<area shape="poly" title=" " alt="" coords="3566,377,3718,423,3717,428,3564,382"/>
-<area shape="poly" title=" " alt="" coords="3950,377,3996,415,3992,419,3947,381"/>
-<area shape="poly" title=" " alt="" coords="3907,381,3864,421,3836,440,3806,456,3755,471,3686,483,3518,501,3347,511,3218,515,3218,510,3346,505,3517,495,3685,478,3753,466,3804,451,3833,436,3861,416,3903,377"/>
-<area shape="poly" title=" " alt="" coords="3847,380,3836,381,3670,401,3500,416,3170,434,2892,441,2709,442,2709,437,2892,436,3170,429,3499,411,3669,396,3835,376,3846,374"/>
-<area shape="poly" title=" " alt="" coords="3847,380,3836,381,3698,391,3466,401,2834,419,1742,440,1742,435,2834,413,3465,396,3698,386,3835,376,3846,374"/>
-<area shape="poly" title=" " alt="" coords="3883,382,3802,422,3800,417,3881,377"/>
-<area shape="poly" title=" " alt="" coords="4435,191,4419,227,4393,278,4357,333,4335,358,4310,381,4259,416,4214,434,4104,456,4023,469,3915,480,3655,497,3218,515,3218,510,3655,492,3914,475,4022,463,4103,451,4213,429,4257,411,4307,377,4331,355,4353,330,4389,276,4414,225,4430,189"/>
-<area shape="poly" title=" " alt="" coords="3883,291,3803,331,3801,326,3881,286"/>
-<area shape="poly" title=" " alt="" coords="3961,286,3987,305,4010,328,4021,354,4020,367,4014,380,4000,392,3979,402,3925,418,3864,430,3808,437,3807,432,3863,424,3924,413,3977,397,3997,388,4009,377,4015,366,4016,355,4005,331,3983,309,3958,291"/>
-<area shape="poly" title=" " alt="" coords="3926,288,3926,321,3921,321,3921,288"/>
-</map>
-</div>
+<code>#include &quot;<a class="el" href="MeasurementField_8h_source.html">otcsdk/fields/MeasurementField.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="IRImager_8h__dep__incl.png" border="0" usemap="#aIRImager_8hdep" alt=""/></div>
 <map name="aIRImager_8hdep" id="aIRImager_8hdep">
-<area shape="rect" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="27,5,113,32"/>
-<area shape="rect" href="IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="5,80,135,107"/>
-<area shape="poly" title=" " alt="" coords="73,48,73,80,67,80,67,48"/>
-<area shape="rect" href="IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="5,155,135,181"/>
-<area shape="poly" title=" " alt="" coords="73,122,73,154,67,154,67,122"/>
+<area shape="rect" title="Contains the interface for all classes representing Optris thermal cameras." alt="" coords="29,5,121,31"/>
+<area shape="rect" href="IRImagerCreator_8h.html" title="Contains the interface definition for classes instantiating IRImager implementations." alt="" coords="5,79,145,104"/>
+<area shape="poly" title=" " alt="" coords="78,44,78,79,73,79,73,44"/>
+<area shape="rect" href="IRImagerFactory_8h.html" title="Contains a factory that instantiates IRImager implementations." alt="" coords="6,152,145,177"/>
+<area shape="poly" title=" " alt="" coords="78,118,78,152,73,152,73,118"/>
 </map>
 </div>
 </div>

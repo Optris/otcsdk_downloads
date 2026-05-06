@@ -1,5 +1,5 @@
 <map id="optris::ThermalFrame" name="optris::ThermalFrame">
-<area shape="rect" id="Node000001" title="Encapsulates thermal frame data received from a device." alt="" coords="5,336,181,683"/>
-<area shape="rect" id="Node000002" href="$classoptris_1_1Frame.html" title="Represents a data frame received from a device." alt="" coords="30,5,156,288"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,303,96,337,91,337,91,303"/>
+<area shape="rect" id="Node000001" title="Encapsulates processed thermal frame data." alt="" coords="5,319,207,624"/>
+<area shape="rect" id="Node000002" href="$classoptris_1_1Frame.html" title="Represents a data frame received from a device." alt="" coords="49,5,163,271"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,285,109,319,103,319,103,285"/>
 </map>

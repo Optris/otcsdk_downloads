@@ -1,8 +1,8 @@
 var classoptris_1_1EnumerationManager =
 [
-    [ "EnumerationManager", "classoptris_1_1EnumerationManager.html#aa8b75d447c1c52b1b14af39ece15399f", null ],
-    [ "EnumerationManager", "classoptris_1_1EnumerationManager.html#aeaad767792d602f58c6ced98189fe0ae", null ],
-    [ "~EnumerationManager", "classoptris_1_1EnumerationManager.html#a36e4ae2f1667a3846998abf1ed3a2dc9", null ],
+    [ "EnumerationManager", "classoptris_1_1EnumerationManager.html#aaf82cf42b821aaa3c24eea14e0d57a09", null ],
+    [ "EnumerationManager", "classoptris_1_1EnumerationManager.html#a85cffabce7ef18a680fe10f5fa1cdea6", null ],
+    [ "~EnumerationManager", "classoptris_1_1EnumerationManager.html#a3e44dbbe045e5d2378da143a6592a70d", null ],
     [ "addClient", "classoptris_1_1EnumerationManager.html#a4d169eff883506646cbe8aed7a96c165", null ],
     [ "addDetector", "classoptris_1_1EnumerationManager.html#a273875bebc2dde157b8e438ec5dde40a", null ],
     [ "addEthernetDetector", "classoptris_1_1EnumerationManager.html#afdfdd98b24c9ccccb88288de15426264", null ],
@@ -15,8 +15,8 @@ var classoptris_1_1EnumerationManager =
     [ "getDetectorNames", "classoptris_1_1EnumerationManager.html#a01671d07e724c06465b9af06a5a13980", null ],
     [ "getInstance", "classoptris_1_1EnumerationManager.html#adccc8e065311c9cac7f725acee2a2d17", null ],
     [ "isRunning", "classoptris_1_1EnumerationManager.html#ae94ebfe3c1acce2452847272c72e9568", null ],
-    [ "operator=", "classoptris_1_1EnumerationManager.html#a32b97066501b9878150dd7cd1b60df52", null ],
-    [ "operator=", "classoptris_1_1EnumerationManager.html#a16128e9047f742687e877a94d86c1c1a", null ],
+    [ "operator=", "classoptris_1_1EnumerationManager.html#a90a8e344a8269ffc188063187ddc0ada", null ],
+    [ "operator=", "classoptris_1_1EnumerationManager.html#a5437b057ea823d3020d84bf9f6d3c2aa", null ],
     [ "removeClient", "classoptris_1_1EnumerationManager.html#a1fccdf6367f144e12ecb0ab8c49ce9c0", null ],
     [ "removeDetector", "classoptris_1_1EnumerationManager.html#a5ca642ebc20ef1ac7e09d15279f6402e", null ],
     [ "removeEthernetDetector", "classoptris_1_1EnumerationManager.html#a2cfe998f372fdece75f9ddea68541834", null ],

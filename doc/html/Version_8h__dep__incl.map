@@ -1,0 +1,7 @@
+<map id="Version.h" name="Version.h">
+<area shape="rect" id="Node000001" title="Contains a class encapsulating version information." alt="" coords="17,5,100,31"/>
+<area shape="rect" id="Node000002" href="$VersionInfo_8h.html" title="Contains a class encapsulating version and build information about the SDK." alt="" coords="5,79,112,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,44,61,79,56,79,56,44"/>
+<area shape="rect" id="Node000003" href="$Sdk_8h.html" title="Contains a static class that allows for the basic configuration of the SDK and for retrieving basic i..." alt="" coords="29,152,88,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="61,118,61,152,56,152,56,118"/>
+</map>

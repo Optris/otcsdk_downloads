@@ -1,0 +1,5 @@
+<map id="optris::UncommittedValueEvent" name="optris::UncommittedValueEvent">
+<area shape="rect" id="Node000001" title="Event containing the uncommitted value generated from a PIF analog input." alt="" coords="16,248,200,328"/>
+<area shape="rect" id="Node000002" href="$classoptris_1_1UncommittedValueStatus.html" title="Holds the status of an uncommitted value derived from a PIF analog input." alt="" coords="5,5,211,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,186,111,232,105,232,105,186"/>
+</map>

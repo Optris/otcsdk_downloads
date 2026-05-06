@@ -1,12 +1,18 @@
 var searchData=
 [
-  ['pifaiconfig_0',['PifAiConfig',['../classoptris_1_1PifAiConfig.html#a0f64f858551acf96eacb17111eeb83e8',1,'optris::PifAiConfig']]],
-  ['pifaoconfig_1',['PifAoConfig',['../classoptris_1_1PifAoConfig.html#a06859c939e9890d6b2b2baf0da599495',1,'optris::PifAoConfig']]],
-  ['pifconfig_2',['PifConfig',['../classoptris_1_1PifConfig.html#aa60de426d40f7c1fbd8e479b9a6e945a',1,'optris::PifConfig']]],
-  ['pifdiconfig_3',['PifDiConfig',['../classoptris_1_1PifDiConfig.html#ac23a96ea0ef26cd8e3df3740656d864b',1,'optris::PifDiConfig']]],
-  ['pifdoconfig_4',['PifDoConfig',['../classoptris_1_1PifDoConfig.html#aaf58536f53ead4fb0acb70fa1cdcb56d',1,'optris::PifDoConfig']]],
-  ['piffsconfig_5',['PifFsConfig',['../classoptris_1_1PifFsConfig.html#a8ba724f064af5d3a38845c082e0d9710',1,'optris::PifFsConfig']]],
-  ['pixel_6',['Pixel',['../classoptris_1_1Pixel.html#a445e33040a2ce61d5142779573fb13e4',1,'optris::Pixel::Pixel() noexcept'],['../classoptris_1_1Pixel.html#ae66ea057e2ea4c033d4f847054f99a49',1,'optris::Pixel::Pixel(unsigned char red, unsigned char green, unsigned char blue) noexcept']]],
-  ['port_7',['Port',['../classoptris_1_1Port.html#a26d9d3b71bb30803f73e271cc839c9fa',1,'optris::Port::Port() noexcept'],['../classoptris_1_1Port.html#a083cefafe539ce7213998b62266caf02',1,'optris::Port::Port(Number number) noexcept'],['../classoptris_1_1Port.html#af97fc8642d04f807ba5afd29aef9bb6c',1,'optris::Port::Port(const std::string &amp;port)']]],
-  ['processinterface_8',['ProcessInterface',['../classoptris_1_1ProcessInterface.html#a9b7a3b0237f97225e7b4c9885a664cc0',1,'optris::ProcessInterface::ProcessInterface()=default'],['../classoptris_1_1ProcessInterface.html#ac87b6df050bcd0c8406d8c6a1c210b1d',1,'optris::ProcessInterface::ProcessInterface(const ProcessInterface &amp;)=delete'],['../classoptris_1_1ProcessInterface.html#a0bd560d7e418397c5f34379cbec1e9b3',1,'optris::ProcessInterface::ProcessInterface(ProcessInterface &amp;&amp;)=delete']]]
+  ['read_0',['read',['../classoptris_1_1IRImagerConfigReader.html#a31c2c2ae947d3943a778262373902516',1,'optris::IRImagerConfigReader']]],
+  ['readt_1',['readT',['../classoptris_1_1IRImagerConfigReader.html#a1c968b45678a5eb5201d64702d577054',1,'optris::IRImagerConfigReader']]],
+  ['registercreator_2',['registerCreator',['../classoptris_1_1IRImagerFactory.html#a7788e223641bd72bda042ad40662b5f6',1,'optris::IRImagerFactory']]],
+  ['registerpalette_3',['registerPalette',['../classoptris_1_1Sdk.html#ad73ac872a1b8181ea5653f4655272e00',1,'optris::Sdk']]],
+  ['removealarmchannel_4',['removeAlarmChannel',['../classoptris_1_1IRImager.html#a3669ec79efe067525ce69682e1d37eaf',1,'optris::IRImager']]],
+  ['removeclient_5',['removeClient',['../classoptris_1_1EnumerationManager.html#a1fccdf6367f144e12ecb0ab8c49ce9c0',1,'optris::EnumerationManager::removeClient()'],['../classoptris_1_1IRImager.html#a9794cf9661eb350a42fa495e44356c5f',1,'optris::IRImager::removeClient()']]],
+  ['removedetector_6',['removeDetector',['../classoptris_1_1EnumerationManager.html#a5ca642ebc20ef1ac7e09d15279f6402e',1,'optris::EnumerationManager']]],
+  ['removeethernetdetector_7',['removeEthernetDetector',['../classoptris_1_1EnumerationManager.html#a44c4f47a93f7ead3dc3aac008fc1f3cd',1,'optris::EnumerationManager::removeEthernetDetector(const std::string &amp;networkAddress)'],['../classoptris_1_1EnumerationManager.html#a2cfe998f372fdece75f9ddea68541834',1,'optris::EnumerationManager::removeEthernetDetector(const IpAddress &amp;networkAddress, int cidr)']]],
+  ['removemeasurementfield_8',['removeMeasurementField',['../classoptris_1_1IRImager.html#a45768271f46fc2e8ef0bd8948539a957',1,'optris::IRImager']]],
+  ['removeusbdetector_9',['removeUsbDetector',['../classoptris_1_1EnumerationManager.html#ad3dc440d4d3373b94770b45fbe0953d3',1,'optris::EnumerationManager']]],
+  ['reset_10',['reset',['../classoptris_1_1CompositeAlarmStatus.html#a90e29868bbc58f7517cd58ab64f406c0',1,'optris::CompositeAlarmStatus::reset()'],['../classoptris_1_1IpAddress.html#a39b5c95573e30d7d73d3f0658dd99801',1,'optris::IpAddress::reset()'],['../classoptris_1_1MacAddress.html#a1476fbcda33de786f58e9dbce47c4e0f',1,'optris::MacAddress::reset()'],['../classoptris_1_1Port.html#a69753b9f5c5e557ea8d5c80d72b3b427',1,'optris::Port::reset()'],['../structoptris_1_1TemperatureRegion.html#ad3860d864b94315a55d0bc85d14a68d8',1,'optris::TemperatureRegion::reset()']]],
+  ['resetreferencetemperature_11',['resetReferenceTemperature',['../classoptris_1_1IRImager.html#afc1299540ad01613a5b01b9a9c5d8553',1,'optris::IRImager']]],
+  ['resize_12',['resize',['../classoptris_1_1Frame.html#aae16b5287552a1417441a45a0864ef3f',1,'optris::Frame::resize()'],['../classoptris_1_1Image.html#aa71470d3435ece66358e7c02e42888f4',1,'optris::Image::resize()'],['../classoptris_1_1ImageInfo.html#ab9c36d75dbd2b0bc709f64696f0ecf9d',1,'optris::ImageInfo::resize()']]],
+  ['run_13',['run',['../classoptris_1_1EnumerationManager.html#a35930f9c8149aeffdd559149bf6ee80f',1,'optris::EnumerationManager::run()'],['../classoptris_1_1IRImager.html#a852ed91e40cf5fc90a0ff722c8d47f70',1,'optris::IRImager::run()']]],
+  ['runasync_14',['runAsync',['../classoptris_1_1EnumerationManager.html#a229ca4908ae9763f6a5aef6ac706ccc9',1,'optris::EnumerationManager::runAsync()'],['../classoptris_1_1IRImager.html#a45a471b95ad4f1925d7dd9518b598d12',1,'optris::IRImager::runAsync()']]]
 ];

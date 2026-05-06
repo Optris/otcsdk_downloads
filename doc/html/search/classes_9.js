@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['sdk_0',['Sdk',['../classoptris_1_1Sdk.html',1,'optris']]],
-  ['sdkexception_1',['SDKException',['../classoptris_1_1SDKException.html',1,'optris']]],
-  ['slope_2',['Slope',['../classoptris_1_1Slope.html',1,'optris']]],
-  ['snapshotevent_3',['SnapshotEvent',['../structoptris_1_1SnapshotEvent.html',1,'optris']]]
+  ['radiationparameters_0',['RadiationParameters',['../structoptris_1_1RadiationParameters.html',1,'optris']]],
+  ['range_1',['Range',['../structoptris_1_1Range.html',1,'optris']]],
+  ['range_3c_20float_20_3e_2',['Range&lt; float &gt;',['../structoptris_1_1Range.html',1,'optris']]],
+  ['range_3c_20int_20_3e_3',['Range&lt; int &gt;',['../structoptris_1_1Range.html',1,'optris']]],
+  ['rawframeevent_4',['RawFrameEvent',['../structoptris_1_1RawFrameEvent.html',1,'optris']]]
 ];

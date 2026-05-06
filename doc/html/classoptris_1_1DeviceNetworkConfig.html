@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;10.1.1</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.3.0</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -121,7 +121,7 @@ Collaboration diagram for optris::DeviceNetworkConfig:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptris_1_1DeviceNetworkConfig__coll__graph.png" border="0" usemap="#aoptris_1_1DeviceNetworkConfig_coll__map" alt="Collaboration graph"/></div>
 <map name="aoptris_1_1DeviceNetworkConfig_coll__map" id="aoptris_1_1DeviceNetworkConfig_coll__map">
-<area shape="rect" title="Encapsulates the on device network configuration." alt="" coords="5,5,184,267"/>
+<area shape="rect" title="Encapsulates the on device network configuration." alt="" coords="5,5,205,291"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -158,6 +158,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a133fa4dd6f2e5e841485bfa652a615da" id="r_a133fa4dd6f2e5e841485bfa652a615da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a133fa4dd6f2e5e841485bfa652a615da">setSubnetMask</a> (const <a class="el" href="classoptris_1_1IpAddress.html">IpAddress</a> &amp;subnetMask) noexcept</td></tr>
 <tr class="memdesc:a133fa4dd6f2e5e841485bfa652a615da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subnet mask.  <br /></td></tr>
 <tr class="separator:a133fa4dd6f2e5e841485bfa652a615da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40fdfb5259e326666225270cf509eec9" id="r_a40fdfb5259e326666225270cf509eec9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40fdfb5259e326666225270cf509eec9">operator==</a> (const <a class="el" href="classoptris_1_1DeviceNetworkConfig.html">DeviceNetworkConfig</a> &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:a40fdfb5259e326666225270cf509eec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this configuration equals the provided one.  <br /></td></tr>
+<tr class="separator:a40fdfb5259e326666225270cf509eec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a7e53820e002ffccb2dcc536364eed" id="r_a48a7e53820e002ffccb2dcc536364eed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48a7e53820e002ffccb2dcc536364eed">operator!=</a> (const <a class="el" href="classoptris_1_1DeviceNetworkConfig.html">DeviceNetworkConfig</a> &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:a48a7e53820e002ffccb2dcc536364eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this configuration is different from the provided one.  <br /></td></tr>
+<tr class="separator:a48a7e53820e002ffccb2dcc536364eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulates the on device network configuration. </p>
@@ -322,6 +328,74 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the subnet mask. </p>
 <dl class="section return"><dt>Returns</dt><dd>subnet mask. </dd></dl>
+
+</div>
+</div>
+<a id="a48a7e53820e002ffccb2dcc536364eed" name="a48a7e53820e002ffccb2dcc536364eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a7e53820e002ffccb2dcc536364eed">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool optris::DeviceNetworkConfig::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classoptris_1_1DeviceNetworkConfig.html">DeviceNetworkConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns whether this configuration is different from the provided one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>device network configuration to compare this one to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true, if this configuration is different from the provided one. </dd></dl>
+
+</div>
+</div>
+<a id="a40fdfb5259e326666225270cf509eec9" name="a40fdfb5259e326666225270cf509eec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40fdfb5259e326666225270cf509eec9">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool optris::DeviceNetworkConfig::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classoptris_1_1DeviceNetworkConfig.html">DeviceNetworkConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns whether this configuration equals the provided one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>device network configuration to compare this one to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true, if this configuration equals the provided one. </dd></dl>
 
 </div>
 </div>
