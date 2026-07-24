@@ -20,30 +20,37 @@ ldd --version
 strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
 ``` 
 
-## Ubuntu 24.04 LTS
-### Environment
+## Currently Supported Systems
+### Debian 13
+#### Architectures
+- amd64
+- arm64
+
+### Windows
+#### Environment
+- Compiler: `MSVC`
+- Toolset: v143
+- Windows SDK Version: 10.0
+#### Architectures
+- amd64
+
+## Supported By Older SDK Versions
+### Ubuntu 24.04 LTS
+#### Environment
 - Compiler: `gcc`
 - Compiler version: 13.3.0
   - `GLIBC`: 2.39
   - `GLIBCXX`: 3.4.33
-### Architectures
+#### Architectures
 - amd64
 - arm64
 
-## Ubuntu 22.04 LTS
-### Environment
+### Ubuntu 22.04 LTS
+#### Environment
 - Compiler: `gcc`
 - Compiler version: 11.4.0
   - `GLIBC`: 2.35
   - `GLIBCXX`: 3.4.30
-### Architectures
+#### Architectures
 - amd64
 - arm64
-
-## Windows
-### Environment
-- Compiler: `MSVC`
-- Toolset: v143
-- Windows SDK Version: 10.0
-### Architectures
-- amd64
