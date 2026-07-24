@@ -1,0 +1,5 @@
+<map id="CalibrationFileSource.h" name="CalibrationFileSource.h">
+<area shape="rect" id="Node000001" title="Contains an enum representing the different sources from which calibration files can be acquired." alt="" coords="5,5,177,31"/>
+<area shape="rect" id="Node000002" href="$Sdk_8h.html" title="Contains a static class that allows for the basic configuration of the SDK and for retrieving basic i..." alt="" coords="62,79,121,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,44,94,79,89,79,89,44"/>
+</map>

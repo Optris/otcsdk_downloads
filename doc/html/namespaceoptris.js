@@ -63,10 +63,10 @@ var namespaceoptris =
     [ "Version", "classoptris_1_1Version.html", "classoptris_1_1Version" ],
     [ "VersionInfo", "classoptris_1_1VersionInfo.html", "classoptris_1_1VersionInfo" ],
     [ "VideoFormatEvent", "structoptris_1_1VideoFormatEvent.html", "structoptris_1_1VideoFormatEvent" ],
-    [ "RangeF", "namespaceoptris.html#ad8cbcc02f119904c3f42c3e936f0395c", null ],
-    [ "RangeI", "namespaceoptris.html#a5fce772454763d211888e9728e395b61", null ],
-    [ "Vector2f", "namespaceoptris.html#a6f7bff14e4ecee6b1c821eebc869fc58", null ],
-    [ "Vector2i", "namespaceoptris.html#a0c16f7f3b5e40588f265919dcb072992", null ],
+    [ "RangeF", "namespaceoptris.html#aa278dfe2fb70a21510bff6d0dc3d92af", null ],
+    [ "RangeI", "namespaceoptris.html#aac2faaf7ffa9faad438a2653ec544ac3", null ],
+    [ "Vector2f", "namespaceoptris.html#ad7e4faebad67c1382758589c46f97a12", null ],
+    [ "Vector2i", "namespaceoptris.html#a798214409e2d261cc6d967193c59f7bd", null ],
     [ "AlarmInput", "namespaceoptris.html#ac07da41b5fdbc01f070dbf43345f8a48", [
       [ "MeasurementField", "namespaceoptris.html#ac07da41b5fdbc01f070dbf43345f8a48a54f88fc6460a14df3366fa6e9dd40262", null ],
       [ "InternalTemperature", "namespaceoptris.html#ac07da41b5fdbc01f070dbf43345f8a48a5f304e122830aee8d4e03343811798f9", null ],
@@ -91,6 +91,7 @@ var namespaceoptris =
       [ "Device", "namespaceoptris.html#a066621759e93f49769234f4dbfa71485ae0ac20adce6ffee48c7151b070aa5737", null ],
       [ "Filesystem", "namespaceoptris.html#a066621759e93f49769234f4dbfa71485aac52cf637478f3656a1fdee5c02324fd", null ],
       [ "Internet", "namespaceoptris.html#a066621759e93f49769234f4dbfa71485ac8205c7636e728d448c2774e6a4a944b", null ],
+      [ "User", "namespaceoptris.html#a066621759e93f49769234f4dbfa71485a8f9bfe9d1345237cb3b2b205864da075", null ],
       [ "Empty", "namespaceoptris.html#a066621759e93f49769234f4dbfa71485ace2c8aed9c2fa0cfbed56cbda4d8bf07", null ]
     ] ],
     [ "ChipHeatingMode", "namespaceoptris.html#a7d0f766dc37bdb39712f36147350e9ef", [
@@ -100,7 +101,8 @@ var namespaceoptris =
     ] ],
     [ "ColorFormat", "namespaceoptris.html#a0385d3f2a6c742e2cd4dc324c31ec519", [
       [ "RGB", "namespaceoptris.html#a0385d3f2a6c742e2cd4dc324c31ec519a889574aebacda6bfd3e534e2b49b8028", null ],
-      [ "BGR", "namespaceoptris.html#a0385d3f2a6c742e2cd4dc324c31ec519a2ad5640ebdec72fc79531d1778c6c2dc", null ]
+      [ "BGR", "namespaceoptris.html#a0385d3f2a6c742e2cd4dc324c31ec519a2ad5640ebdec72fc79531d1778c6c2dc", null ],
+      [ "BGRA", "namespaceoptris.html#a0385d3f2a6c742e2cd4dc324c31ec519a5a1fe3c61c9e2fd6dbbc823589f6e697", null ]
     ] ],
     [ "ConnectionState", "namespaceoptris.html#abaa62bcdf0e6fc019d653762ce829363", [
       [ "Disconnecting", "namespaceoptris.html#abaa62bcdf0e6fc019d653762ce829363a10b0501000c144cb2a7424bd45e1bcde", null ],

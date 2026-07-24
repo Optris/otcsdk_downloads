@@ -11,7 +11,7 @@ var searchData=
   ['load_20the_20configuration_8',['Load the Configuration',['../basic-usage.html#basic-usage-startup-process-load-the-configuration',1,'']]],
   ['loading_9',['Initial Palettes Loading',['../color-palettes.html#color-palettes-loading-initial',1,'']]],
   ['loading_20palettes_10',['Loading Palettes',['../color-palettes.html#color-palettes-loading',1,'']]],
-  ['loadpalettes_11',['loadPalettes',['../classoptris_1_1Sdk.html#aacb2023851c1634f8297bd12b4d307e4',1,'optris::Sdk::loadPalettes()'],['../classoptris_1_1Sdk.html#ac5d5af8d7bd33921cb40ad67f8762424',1,'optris::Sdk::loadPalettes(const std::string &amp;directory)']]],
+  ['loadpalettes_11',['loadpalettes',['../classoptris_1_1Sdk.html#ac5d5af8d7bd33921cb40ad67f8762424',1,'optris::Sdk::loadPalettes(const std::string &amp;directory)'],['../classoptris_1_1Sdk.html#aacb2023851c1634f8297bd12b4d307e4',1,'optris::Sdk::loadPalettes()']]],
   ['locate_20the_20device_12',['Locate the Device',['../basic-usage.html#basic-usage-startup-process-locate-the-device',1,'']]],
   ['locks_13',['File Locks',['../device-enumeration.html#device-enumeration-detection-details-limitations-file-locks',1,'']]],
   ['log_20callback_14',['Custom Log Callback',['../important-files.html#important-files-logs-callback',1,'']]],

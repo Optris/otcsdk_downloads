@@ -4,6 +4,7 @@ var classoptris_1_1ImageInfo =
     [ "getChannels", "classoptris_1_1ImageInfo.html#abb4e4c702e6eec5530ccbb508b38397e", null ],
     [ "getColorFormat", "classoptris_1_1ImageInfo.html#a715efa2d16889550f72c46c0b63bc184", null ],
     [ "getHeight", "classoptris_1_1ImageInfo.html#a75ceba7f3920654521c40d2c2d318e11", null ],
+    [ "getOffsetAlpha", "classoptris_1_1ImageInfo.html#adf531caa205a3854331151fbb3e33926", null ],
     [ "getOffsetBlue", "classoptris_1_1ImageInfo.html#af6859c53cafd628478a09dea56149022", null ],
     [ "getOffsetGreen", "classoptris_1_1ImageInfo.html#ac0aeb800bf7f19d8277cfe66fd54642d", null ],
     [ "getOffsetRed", "classoptris_1_1ImageInfo.html#af44dac977efd6a5a72c6731c78164644", null ],

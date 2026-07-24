@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['max_0',['max',['../structoptris_1_1Range.html#a33e2e12af8069437cd49c4b24a71bfea',1,'optris::Range::max'],['../structoptris_1_1FieldStats.html#a9421661c617fa1563a346868409c4885',1,'optris::FieldStats::max']]],
+  ['max_0',['max',['../structoptris_1_1FieldStats.html#a9421661c617fa1563a346868409c4885',1,'optris::FieldStats::max'],['../structoptris_1_1Range.html#a33e2e12af8069437cd49c4b24a71bfea',1,'optris::Range::max']]],
   ['maxinterval_1',['maxInterval',['../structoptris_1_1IRImagerConfig.html#ab022212a42d34f4fe7ccefbc951e95c6',1,'optris::IRImagerConfig']]],
   ['maxtemperature_2',['maxTemperature',['../structoptris_1_1IRImagerConfig.html#a93d2b90356a016e4213df39aaa8634ff',1,'optris::IRImagerConfig']]],
   ['mean_3',['mean',['../structoptris_1_1FieldStats.html#a5181fd5e96d061cace565bd80e498935',1,'optris::FieldStats']]],

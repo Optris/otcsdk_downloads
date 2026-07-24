@@ -374,16 +374,19 @@ var NAVTREE =
       [ "Sources", "calibration-file-acquisition.html#calibration-file-acquisition-sources", [
         [ "Device", "calibration-file-acquisition.html#calibration-file-acquisition-sources-device", null ],
         [ "Filesystem", "calibration-file-acquisition.html#calibration-file-acquisition-sources-filesystem", null ],
-        [ "Internet", "calibration-file-acquisition.html#calibration-file-acquisition-sources-internet", null ]
+        [ "Internet", "calibration-file-acquisition.html#calibration-file-acquisition-sources-internet", null ],
+        [ "User", "calibration-file-acquisition.html#calibration-file-acquisition-sources-user", null ]
       ] ],
       [ "Configuration", "calibration-file-acquisition.html#calibration-file-acquisition-configuration", [
         [ "Calibration File Sources", "calibration-file-acquisition.html#calibration-file-acquisition-configuration-sources", null ],
-        [ "Calibration File Source Directory", "calibration-file-acquisition.html#calibration-file-acquisition-configuration-source-directory", null ]
+        [ "Calibration File Source Directory", "calibration-file-acquisition.html#calibration-file-acquisition-configuration-source-directory", null ],
+        [ "Calibration Fallback Servers", "calibration-file-acquisition.html#calibration-file-acquisition-configuration-fallback-servers", null ]
       ] ],
       [ "Runtime Behavior", "calibration-file-acquisition.html#calibration-file-acquisition-runtime-behavior", [
         [ "Device", "calibration-file-acquisition.html#calibration-file-acquisition-runtime-behavior-device", null ],
         [ "Filesystem", "calibration-file-acquisition.html#calibration-file-acquisition-runtime-behavior-filesystem", null ],
-        [ "Internet", "calibration-file-acquisition.html#calibration-file-acquisition-runtime-behavior-internet", null ]
+        [ "Internet", "calibration-file-acquisition.html#calibration-file-acquisition-runtime-behavior-internet", null ],
+        [ "User", "calibration-file-acquisition.html#calibration-file-acquisition-runtime-behavior-user", null ]
       ] ]
     ] ],
     [ "Color Palettes", "color-palettes.html", [
@@ -524,16 +527,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AlarmChannelConfig_8h.html",
+"PifProperties_8h.html#a49dc57659218ebbec401ed0ad00db7ffa521c36a31c2762741cf0f8890cbe05e3",
 "classoptris_1_1CompositeAlarmStatus.html",
 "classoptris_1_1FrameMetadata.html#a1fd7008930f2130f88c777b61a7e2397",
 "classoptris_1_1IRImagerClient.html#a328a9a0e2f413abf928e59ff3f58732a",
-"classoptris_1_1MacAddress.html#a8f11a6b1a255e75e358fa721744e4d07",
-"classoptris_1_1Sdk.html#a4c0332561b4f300c2bf0d8c733a0adca",
-"files.html",
-"namespaceoptris.html#a23ddb213a1599a8ca715eab2198833f8a9bd99a0beea48f10663fc4a7d7a33140",
-"public-api.html#public-api-false-color-images",
-"structoptris_1_1PifAoConfig.html#a59dc4a870d7fc460f2ca835033e1d240"
+"classoptris_1_1MacAddress.html#a868809b8b225c941e6305a7e61c27210",
+"classoptris_1_1Sdk.html#a23b254ed1d394d741b51636ec92d718e",
+"features.html#autotoc_md8",
+"namespaceoptris.html#a1f530c7f3d1b87667e9fa8ced2d56c82a4c0a11247d92f73fb84baa51e37a3263",
+"pif.html#pif-modes-fail-safe",
+"structoptris_1_1PifAoConfig.html#a2942e59607328ff11e8522755f2f4e28"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronization';
-var SYNCOFFMSG = 'click to enable panel synchronization';
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';

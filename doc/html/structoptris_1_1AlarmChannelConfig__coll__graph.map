@@ -1,7 +1,7 @@
 <map id="optris::AlarmChannelConfig" name="optris::AlarmChannelConfig">
-<area shape="rect" id="Node000001" title="Holds the configuration of an alarm channel." alt="" coords="66,228,278,533"/>
-<area shape="rect" id="Node000002" href="$structoptris_1_1PifIndex.html" title="Holds the indices that identify the physical pin on a PIF device for a PIF channel." alt="" coords="5,35,117,121"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,121,59,162,65,203,68,212,63,213,60,205,53,162,54,121"/>
-<area shape="rect" id="Node000003" href="$structoptris_1_1Range.html" title=" " alt="" coords="205,5,363,151"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="272,152,257,205,254,213,249,212,252,203,267,151"/>
+<area shape="rect" id="Node000001" title="Holds the configuration of an alarm channel." alt="" coords="66,168,278,473"/>
+<area shape="rect" id="Node000002" href="$structoptris_1_1PifIndex.html" title="Holds the indices that identify the physical pin on a PIF device for a PIF channel." alt="" coords="5,5,117,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,91,61,117,65,143,68,152,63,153,60,145,55,118,54,91"/>
+<area shape="rect" id="Node000003" href="$structoptris_1_1Range.html" title=" " alt="" coords="205,5,363,91"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="275,92,257,145,254,154,249,152,252,143,270,90"/>
 </map>

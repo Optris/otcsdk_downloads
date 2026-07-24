@@ -8,5 +8,5 @@ var searchData=
   ['normal_5',['Normal',['../namespaceoptris.html#a72d2d3eb7894087743a0dfcdd0b66762a960b44c579bc2f6818d2daaf9e4c16f0',1,'optris']]],
   ['normalization_6',['Normalization',['../important-files.html#important-files-normalization',1,'']]],
   ['normalized_7',['normalized',['../structoptris_1_1FieldShapeConfig.html#a11aa599f343401d3c20d54d3c2fb79c3',1,'optris::FieldShapeConfig::normalized'],['../important-files.html#autotoc_md96',1,'normalized']]],
-  ['number_8',['Number',['../classoptris_1_1Port.html#ada40ab063e6e1599f0851531ae2f507b',1,'optris::Port::Number'],['../important-files.html#important-files-configuration-serial-number',1,'Serial Number']]]
+  ['number_8',['number',['../classoptris_1_1Port.html#ada40ab063e6e1599f0851531ae2f507b',1,'optris::Port::Number'],['../important-files.html#important-files-configuration-serial-number',1,'Serial Number']]]
 ];

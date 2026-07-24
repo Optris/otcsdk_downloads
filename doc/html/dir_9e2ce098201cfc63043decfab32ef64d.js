@@ -1,5 +1,6 @@
 var dir_9e2ce098201cfc63043decfab32ef64d =
 [
+    [ "CalibrationFileSource.h", "CalibrationFileSource_8h.html", "CalibrationFileSource_8h" ],
     [ "ChipHeatingMode.h", "ChipHeatingMode_8h.html", "ChipHeatingMode_8h" ],
     [ "ConnectionState.h", "ConnectionState_8h.html", "ConnectionState_8h" ],
     [ "DeviceInfo.h", "DeviceInfo_8h.html", "DeviceInfo_8h" ],

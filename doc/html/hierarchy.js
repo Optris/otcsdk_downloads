@@ -55,6 +55,7 @@ var hierarchy =
     [ "optris::ProcessInterface", "classoptris_1_1ProcessInterface.html", null ],
     [ "optris::RadiationParameters", "structoptris_1_1RadiationParameters.html", null ],
     [ "optris::Range< T >", "structoptris_1_1Range.html", null ],
+    [ "optris::Range< float >", "structoptris_1_1Range.html", null ],
     [ "optris::RawFrameEvent", "structoptris_1_1RawFrameEvent.html", null ],
     [ "optris::Sdk", "classoptris_1_1Sdk.html", null ],
     [ "optris::Slope", "structoptris_1_1Slope.html", null ],
@@ -63,6 +64,7 @@ var hierarchy =
     [ "optris::UncommittedValueEvent", "structoptris_1_1UncommittedValueEvent.html", null ],
     [ "optris::UncommittedValueStatus", "classoptris_1_1UncommittedValueStatus.html", null ],
     [ "optris::Vector2< T >", "structoptris_1_1Vector2.html", null ],
+    [ "optris::Vector2< float >", "structoptris_1_1Vector2.html", null ],
     [ "optris::Version", "classoptris_1_1Version.html", null ],
     [ "optris::VersionInfo", "classoptris_1_1VersionInfo.html", null ],
     [ "optris::VideoFormatEvent", "structoptris_1_1VideoFormatEvent.html", null ]

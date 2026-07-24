@@ -2,6 +2,8 @@ var classoptris_1_1Sdk =
 [
     [ "LogCallback", "classoptris_1_1Sdk.html#aaa4c886613209e5e4644a7cf2b83dd15", null ],
     [ "Sdk", "classoptris_1_1Sdk.html#ae72b219d175c7ce72d640f6fd5ab1fd4", null ],
+    [ "addCalibrationFallbackServer", "classoptris_1_1Sdk.html#a23b254ed1d394d741b51636ec92d718e", null ],
+    [ "clearCalibrationFallbackServers", "classoptris_1_1Sdk.html#a91ef0563856157b127e3148a5c2721e7", null ],
     [ "clearCalibrationFileSourceDirectory", "classoptris_1_1Sdk.html#a4c0332561b4f300c2bf0d8c733a0adca", null ],
     [ "clearCustomDataDirectory", "classoptris_1_1Sdk.html#a9eefe919adf3a4726706a76e236ce027", null ],
     [ "configureLogger", "classoptris_1_1Sdk.html#a80a330df5cbdc3542887c6080b9c1a9a", null ],
@@ -15,6 +17,7 @@ var classoptris_1_1Sdk =
     [ "savePalette", "classoptris_1_1Sdk.html#a1b48c94bfa91384b7947278c8fd509d9", null ],
     [ "setCalibrationFileSourceDirectory", "classoptris_1_1Sdk.html#a1f4b628e124a0c3fd687a11f764a165c", null ],
     [ "setCalibrationFileSources", "classoptris_1_1Sdk.html#af36addd5b2f300022221455186886e8c", null ],
+    [ "setCalibrationFileSources", "classoptris_1_1Sdk.html#a1bf5a19256fbd66cc01bf903c2a8537e", null ],
     [ "setCustomDataDirectory", "classoptris_1_1Sdk.html#a450b03a2296f9b5b313360acdadcf486", null ],
     [ "setLogCallback", "classoptris_1_1Sdk.html#a3ab0fa9b07954819a3586f38e9634554", null ]
 ];
