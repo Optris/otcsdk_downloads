@@ -34,7 +34,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.4.9</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.4.10</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -211,6 +211,7 @@ Composite Alarm</h3>
 <p>The state of multiple alarm channels can be combined into a single composite alarm. The composite alarm has only two states: <b>active</b> or <b>inactive</b>. It is active, if <b>at least one</b> of the alarm channels it is comprised of is in the alarm state <code>Active</code>. It is inactive, if <b>all</b> its alarm channels are <b>not</b> <code>Active</code> or if it does not have any alarm channels.</p>
 <dl class="section note"><dt>Note</dt><dd>The state of the composite alarm equals the <b>or-linked</b> <code>Active</code> states of its alarm channels. It is also inactive if no alarm channels are linked to it.</dd></dl>
 <p>Whenever the composite alarm state changes the callback <code>onCompositeAlarm()</code> of the <code>IRImagerClient</code> is triggered. The provided <code>CompositeAlarmEvent</code> holds the new <code>CompositeAlarmStatus</code> detailing its new state and the alarm channels that caused it.</p>
+<dl class="section note"><dt>Note</dt><dd><code>onCompositeAlarm()</code> fires on changes of the composite's aggregate active-member count and is evaluated asynchronously on the alarm dispatch thread. Simultaneous member transitions within the same frame are coalesced into a single event, and an equal-count membership swap (one channel clears while another activates) updates the active-member set without emitting an event. To obtain the exact live membership at any time, poll <code>getAlarmChannelStatuses()</code> rather than reconstructing it from the event stream.</dd></dl>
 <p>Whether an alarm channel is part of the composite is determined by its configuration. If the flag <code>partOfComposite</code> in the <code>AlarmChannelConfig</code> or the value in the <code>&lt;part_of_composite&gt;</code> tags in the <a class="el" href="important-files.html#important-files-configuration-alarms">configuration file</a> is <code>true</code> the alarm channel will contribute to the composite alarm.</p>
 <h3><a class="anchor" id="autotoc_md168"></a>
 PIF Output Channels</h3>

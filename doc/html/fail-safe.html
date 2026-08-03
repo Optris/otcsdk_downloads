@@ -34,7 +34,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.4.9</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.4.10</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -158,12 +158,13 @@ Client</h2>
 <p>By calling</p>
 <div class="fragment"><div class="line">interruptFailSafe(<span class="keyword">true</span>, <span class="stringliteral">&quot;GUI thread crashed.&quot;</span>);</div>
 </div><!-- fragment --><p>of the <code>IRImager</code> interface clients can actively fail one of those conditions and thus deactivate the fail safe and its signal. The condition can be restored to a passing state when the same method is called as follows:</p>
-<div class="fragment"><div class="line">setClientFailSafeActive(<span class="keyword">false</span>, <span class="stringliteral">&quot;GUI thread restored.&quot;</span>);</div>
+<div class="fragment"><div class="line">interruptFailSafe(<span class="keyword">false</span>, <span class="stringliteral">&quot;GUI thread restored.&quot;</span>);</div>
 </div><!-- fragment --><p>This will, however, not necessarily activate the fail safe signal, if other required conditions still fail.</p>
 <h1><a class="anchor" id="fail-safe-pif-signals"></a>
 PIF Signals</h1>
 <p>Based on the fail safe checks discussed above the SDK can output a heart beat signal on a PIF analog or digital output channel. Additionally, a level based signal can be provided on a PIF fail safe channel.</p>
 <dl class="section note"><dt>Note</dt><dd>The heart beat signal can only be output on a <b>single</b> PIF analog or digital output channel. This does not affect the PIF fail safe channel. It can be activated independently.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>If a <b>Xi 80</b> is used in conjunction with <b>stackable PIFs</b>, the SDK will not be able to generate the heart beat signal for the fail safe channel. In this case this signal is created directly by the firmware. Thus, a loss of this signal only implies a disruption in the connection between the Xi 80 and the PIF. The conditions discussed above do not have an impact on the resulting heart beat signal.</dd></dl>
 <p>Every time the fail safe check passes the SDK toggles the output value of the used PIF channel. Dependent on the channel type this results in</p>
 <ul>
 <li>transitions between 0 and a configurable X_pulse value on analog channels. The unit of these values depends on the configured analog output range (0 - 10 V, 0 - 20 mA, etc.).</li>

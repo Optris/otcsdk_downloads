@@ -34,7 +34,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.4.9</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.4.10</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -164,6 +164,7 @@ PIF variants.</div></div>
 <td class="markdownTableBodyNone">Stackable   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">yes   </td><td class="markdownTableBodyNone">1 - 10 V, <br  />
  0/4 - 20 mA   </td></tr>
 </table>
+<dl class="section note"><dt>Note</dt><dd>If a <b>Xi 80</b> is used in conjunction with <b>stackable PIFs</b>, the SDK will report that <b>no fail safe channel</b> is available. In this case the fail safe channel is directly managed by the firmware. Thus, the SDK can not relay the fail safe conditions as described in the <a class="el" href="fail-safe.html">Fail Safe</a> section. Nevertheless, the signal on the fail safe channel can be used to detect disruptions in the connection between the Xi 80 and the PIFs.</dd></dl>
 <p>For more details about the different PIF variants please refer to the <a class="el" href="features.html#features-supported-pifs">Supported Process Interfaces (PIFs)</a> section of the <a class="el" href="features.html">Features</a> chapter. It also contains links to their respective product pages that feature more detailed spec sheets and manuals in their download section.</p>
 <p>The process interface and its channels can either be configured via</p>
 <ul>

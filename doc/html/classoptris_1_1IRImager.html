@@ -34,7 +34,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoSmall.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.4.9</span>
+   <div id="projectname">Thermal Camera SDK<span id="projectnumber">&#160;11.4.10</span>
    </div>
    <div id="projectbrief">SDK for Optris Thermal Cameras</div>
   </td>
@@ -3251,7 +3251,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRunning</
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>to update. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>to update the alarm channel with. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>to update the alarm channel with.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classoptris_1_1SDKException.html" title="Exception raised by the SDK.">SDKException</a></td><td>if not connected, if the given alarm channel does not exist for this imager instance, if the new configuration is invalid, or - when the input type changes - if the replacement channel cannot be built, for example because it references a measurement field that no longer exists. </td></tr>
   </table>
   </dd>
 </dl>
