@@ -9,7 +9,7 @@ Additionally, the documentation for the latest version is available online and c
 The following lists the provided binaries for different operating systems and platforms. On request, additional binaries can be provided. 
 Please send your requests to [direct-sdk@optris.com](mailto:direct-sdk@optris.com).
 
-on Linux you can use the following commands to find out the version of your `GLIBC` and `GLIBCXX`. Please, choose a library version that uses 
+On Linux you can use the following commands to find out the version of your `GLIBC` and `GLIBCXX`. Please, choose a library version that uses 
 the same or an older `GLIBC`/`GLIBCXX` version.
 
 ```bash
@@ -20,11 +20,7 @@ ldd --version
 strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
 ``` 
 
-## Currently Supported Systems
-### Debian 13
-#### Architectures
-- amd64
-- arm64
+## Supported Systems
 
 ### Windows
 #### Environment
@@ -34,8 +30,23 @@ strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
 #### Architectures
 - amd64
 
-## Supported By Older SDK Versions
-### Ubuntu 24.04 LTS
+### Debian 13 (Trixie)
+#### Environment
+- Compiler: `gcc`
+- Compiler version: 14.2.0
+#### Architectures
+- amd64
+- arm64
+
+### Debian 12 (Bookworm)
+#### Environment
+- Compiler: `gcc`
+- Compiler version: 12.2.0
+#### Architectures
+- amd64
+- arm64
+
+### Ubuntu 24.04 (Noble Numbat)
 #### Environment
 - Compiler: `gcc`
 - Compiler version: 13.3.0
@@ -45,7 +56,7 @@ strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
 - amd64
 - arm64
 
-### Ubuntu 22.04 LTS
+### Ubuntu 22.04 (Jammy Jellyfish)
 #### Environment
 - Compiler: `gcc`
 - Compiler version: 11.4.0
